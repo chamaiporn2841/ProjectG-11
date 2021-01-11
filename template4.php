@@ -17,6 +17,7 @@
     </div>
     <a href="#home"><b>เมนูหลัก</b></a>
     <hr width=80% size=2 color="#fff" style="margin: 5px 5px 5px 15px;">
+    <a href="templatedetail.php"><i class="fa fa-circle-o fa-fw" style="font-size: 12px;"></i>&ensp;รายละเอียดการใช้สวัสดิการ</a>
     <a href="template.php"><i class="fa fa-circle-o fa-fw" style="font-size: 12px;"></i>&ensp;แบบคำร้องสวัสดิการค่ารักษาพยาบาล</a>
     <a href="template2.php"><i class="fa fa-circle-o fa-fw" style="font-size: 12px;"></i>&ensp;แบบคำร้องสวัสดิการซื้ออุปกรณ์คอมพิวเตอร์</a>
     <a href="template3.php"><i class="fa fa-circle-o fa-fw" style="font-size: 12px;"></i>&ensp;แบบคำร้องสวัสดิการกองทุนสำรองเลี้ยงชีพ</a>
