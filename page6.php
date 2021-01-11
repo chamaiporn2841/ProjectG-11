@@ -205,7 +205,7 @@
                 </div>
 
                 <div class="container" id="col3">
-                    <label>เลขที่บัญชี</label>
+                    <label>เลขที่บัญชีี</label>
                     <div><br>
                         <input type="text" class="form-control" id="input" name="state">
                     </div><br>
