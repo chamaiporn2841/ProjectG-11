@@ -1,25 +1,28 @@
+@font-face {
+  font-family: "Sukhumvit";
+  src: url("fonts/sukhumvit-set/SukhumvitSet-Medium.ttf") format("truetype");
+}
+
 #col {
   margin-left: 120px;
   margin-right: 140px;
 }
 #col1 {
-  float: left;
+  float: left;  
   width: 30%;
   height: 100px;
   margin-left: 120px;
-
 }
 #col2 {
   float: left;
-  width:  30%;
+  width: 28%;
   height: 100px;
-  
 }
 #col3 {
   float: left;
-  width:  30%;
+  width: 30%;
   height: 100px;
-  
+
 }
 #col4 {
   float: left;
@@ -29,7 +32,7 @@
 }
 #col5 {
   float: left;
-  width: 60%;
+  width: 50%;
   height: 100px;
 }
 #col6 {
@@ -38,40 +41,42 @@
   height: 100px;
   margin-left: 120px;
 }
-
-
-
+#col7 {
+  float: left;
+  width: 20%;
+  height: 100px;
+}
+#col8 {
+  float: left;
+  width: 40%;
+  height: 100px;
+}
+#col9 {
+  float: left;
+  width: 80%;
+  height: 100px;
+  margin-left: 120px;
+}
 #input{
   border-radius: 8px;
   font-family: "Sukhumvit", Merriweather, "Helvetica Neue", Arial, sans-serif;
+
 }
 .page4{
   font-size: 28px;
-  font-family: "Sukhumvit", Merriweather, "Helvetica Neue", Arial, sans-serif;
+  font-family: 'Sukhumvit', sans-serif;
   font-weight: bolder;
   text-align: center;
-  color: #005b91;
+  color: #1251ff;
 }
 label{
   font-size: 14px;
   font-family: "Sukhumvit", Merriweather, "Helvetica Neue", Arial, sans-serif;
-  
 }
-#main {
-  background-color:#fff;
-  width:780px;
-  height:100%;
-  margin:60px;
-  float:right;
-  padding-left:40px;
-  padding-right:40px;
-  padding-top:40px;
-  padding-bottom:60px;
-  }
 
-
-
-
-
-
-
+.header{
+  font-size: 15px;
+  font-family: "Sukhumvit", Merriweather, "Helvetica Neue", Arial, sans-serif;
+  font-weight: bolder;
+  color: #1251ff;
+}

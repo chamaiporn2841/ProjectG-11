@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-<meta charset="UTF-8">
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="css\style_page5.css">
@@ -49,14 +49,15 @@
                    
                 </div>
 
-                <div class="container" id="col3">
+                <div  class="container" id="col3">
                     <label>ตำแหน่ง</label>
                     <div><br>
                     <select name="category" id="input">
+                            <option value="โปรดเลือก">โปรดเลือก</option>
                             <option value="วิชาการ">วิชาการ</option>
                             <option value="ปฏิบัติการวิชาชีพและบริหารทั่วไป">ปฏิบัติการวิชาชีพและบริหารทั่วไป</option>
                             <option value="บริหารวิชาการ">บริหารวิชาการ</option>
-                        </select> 
+                        </select>
                     </div><br>
                 </div>
 
@@ -126,6 +127,20 @@
                     </div><br>
                 </div>
                 
+                <div  class="container" id="col2">
+                    <label></label>
+                    <div><br>
+                    
+                    </div><br>  
+                </div>
+                
+                <div  class="container" id="col3">
+                    <label></label>
+                    <div><br>
+                    
+                    </div><br>  
+                </div>
+
                 <div align="right"  class="container" id="col9">
                     <input type="submit" class="btn btn-success" value="บันทึก" style=" font-family: 'Mitr', sans-serif;">
                     <input type="reset" class="btn" VALUE="ล้างข้อมูล" style=" font-family: 'Mitr', sans-serif;" >
