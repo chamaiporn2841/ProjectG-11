@@ -35,7 +35,7 @@
 
                 <div class="container" id="col1">
                     <label>รหัสบุคลากร</label>
-                    <div><br>
+                    <div></br>
                         <input type="text" class="form-control" id="input" name="name">
                     </div><br>
                   
@@ -90,15 +90,21 @@
                 </div>
 
 
-                <div class="container" id="col">
+
+                
+
+               
+                <!-- <div class="container" id="col"> -->
+                <div id="col">
                     <div class="header">
                         เบิกค่ารักษาพยาบาล
                     </div><hr><br>
                 </div>
+                <div>
 
                 <div class="container" id="col1">
                     <label>เบิกค่ารักษาพยาบาลให้กับ</label>
-                    <div><br>
+                    <div></br>
                     <select name="category" id="input">
                             <option value="โปรดเลือก">โปรดเลือก</option>
                             <option value="ตนเอง">ตนเอง</option>
@@ -162,25 +168,41 @@
                     <label>จำนวนเงิน</label>
                     <div><br>
                         <input type="number" class="form-control" id="input" name="cash">
-                    </div><br><br>  
+                    </div></br>
+                </div>
+
+                <div class="container" id="col">
+                    
+                    <div></br>
+                        
+                    </div><br>
                 </div>
 
 
-                <div class="container" id="col">
+
+
+
+
+
+
+
+             <!-- <div class="container" id="col"> -->
+                <div id ="col">
                     <div class="header">
                         รายละเอียดการรับเงิน
                     </div><hr><br>
                 </div>
+                <div>
 
                 <div class="container" id="col1">
                     <label>ช่องทางรับเงิน</label>
-                    <div><br>
-                        <select name="category" id="input">
-                            <option value="โปรดเลือก">โปรดเลือก</option>
-                            <option value="เงินสด">เงินสด</option>
-                            <option value="โอนเงินเข้าบัญชีเงินฝาก">โอนเงินเข้าบัญชีเงินฝาก</option>
-                        </select>
-                    </div><br>
+                    <div></br>
+                    <select name="category" id="input">
+                        <option value="โปรดเลือก">โปรดเลือก</option>
+                        <option value="เงินสด">เงินสด</option>
+                        <option value="โอนเงินเข้าบัญชีเงินฝาก">โอนเงินเข้าบัญชีเงินฝาก</option>
+                    </select>
+                    </div></br>
                 </div>
 
                 <div class="container" id="col2">
