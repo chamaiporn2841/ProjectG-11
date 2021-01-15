@@ -1,3 +1,8 @@
+@font-face {
+    font-family: "Sukhumvit";
+    src: url("fonts/sukhumvit-set/SukhumvitSet-Medium.ttf") format("truetype");
+}
+  
 #col {
     margin-left: 120px;
     margin-right: 140px;
@@ -53,9 +58,10 @@
 }
 #input{
     border-radius: 8px;
-    font-family: 'Sukhumvit', sans-serif;
+    font-family: "Sukhumvit", Merriweather, "Helvetica Neue", Arial, sans-serif;
+
 }
-.page2{
+.page3{
     font-size: 28px;
     font-family: 'Sukhumvit', sans-serif;
     font-weight: bolder;
@@ -64,16 +70,13 @@
 }
 label{
     font-size: 14px;
-    font-family: 'Sukhumvit', sans-serif;
+    font-family: "Sukhumvit", Merriweather, "Helvetica Neue", Arial, sans-serif;
 }
 
 .header{
     font-size: 15px;
-    font-family: 'Sukhumvit', sans-serif;
+    font-family: "Sukhumvit", Merriweather, "Helvetica Neue", Arial, sans-serif;
     font-weight: bolder;
     color: #1251ff;
 }
 
-.container2{
-    margin-left: 20px;
-}

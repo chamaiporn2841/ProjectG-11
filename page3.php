@@ -8,11 +8,11 @@
     <link rel="stylesheet" href="css\style_page3.css">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Mitr:wght@300&display=swap" rel="stylesheet">
     <STYLE type=text/css>
         A:link {COLOR: #ff00d0; TEXT-DECORATION: none}
         A:visited {COLOR: #660000; TEXT-DECORATION: none}
@@ -23,17 +23,17 @@
 <body>
 <form>
     <section>
-            <div class="page2">
+            <div class="page3">
             สวัสดิการซื้ออุปกรณ์คอมพิวเตอร์
             </div><br>
-            <div>
-            <div class="container" id="col">
+            <div  id="col">
                     <div class="header">
-                        ข้อมูลผู้ขอสวัสดิการ
+                        ข้อมูลส่วนตัว
                     </div><hr><br>
                 </div>
+            <div>
                 
-                <div  id="col1">
+                <div class="container"  id="col1">
                     <label>รหัสบุคลากร</label>
                     <div><br>
                         <input type="text" class="form-control" id="input" name="name">
@@ -61,7 +61,7 @@
                     </div><br>
                 </div>
 
-                <div class="container"  id="col1">
+                <div class="container"  id="col4">
                     <label>ประเภทบุคลากร</label>
                     <div><br>
                     <select name="category" id="input">
@@ -89,13 +89,13 @@
                   
                 </div>
 
-               <div  class="container" id="col">
+               <div  id="col">
                     <div class="header">
                         รายละเอียดการขอสวัสดิการ
                     </div><hr><br>
                 </div>
-
-                <div  id="col1">
+             
+                <div class="container" id="col1">
                     <label>วัตถุประสงค์ในการจัดซื้อ</label>
                     <div><br>
                         <input type="text" class="form-control" id="input" name="name">
@@ -117,13 +117,13 @@
                     </div><br>
                 </div>
 
-                <div class="container" id="col">
+                <div  id="col">
                     <div class="header">
                         รายละเอียดการรับเงิน
                     </div><hr><br>
                 </div>
 
-                <div  id="col1">
+                <div class="container" id="col1">
                     <label>ช่องทางรับเงิน</label>
                     <div><br>
                         <select name="category" id="input">
