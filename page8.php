@@ -27,9 +27,9 @@
             <div class="page8">
             ผลการดำเนินการ
             </div><br>
-
+              
                 <div class="container" id="chlids">        
-                <table class="table">
+                <table  class="table">
                     <thead>
                     <tr>
                         <th>ประเภทสวัสดิการ</th>
@@ -51,7 +51,7 @@
                     </tbody>
                 </table>
                 </div>
-
+              
 
     </section>
 </body>
