@@ -45,22 +45,23 @@
             <br>
             <br>
             <br> 
+            
            
         <div  class="container">
             <div  class="row">
                 <div id="col">
                 <div class="col-lg-12">
-                    <div class="row">
+                    <div  class="row">
                         <!-- ***** Features Small Item Start ***** -->
                         <div class="col-lg-4 col-md-6 col-sm-6 col-12" data-scroll-reveal="enter bottom move 50px over 0.6s after 0.2s">
                             <div class="features-small-item">
                                 <div class="icon">
-                                    <i><img src="assets/images/medical-file.png" width="60%" alt=""></i>
+                                    <i><img src="assets/images/medical-file.png" width="40%" alt=""></i>
                                 </div>
                                 <h5 class="features-title">สวัสดิการค่ารักษาพยาบาล</h5>
                             </div>
                        
-</div>
+                        </div>
                         <!-- ***** Features Small Item End ***** -->
 
                         <!-- ***** Features Small Item Start ***** -->
@@ -68,7 +69,7 @@
                         <div class="col-lg-4 col-md-6 col-sm-6 col-12" data-scroll-reveal="enter bottom move 50px over 0.6s after 0.4s">
                             <div class="features-small-item">
                                 <div class="icon">
-                                    <i><img src="assets/images/computer.png" width="60%" alt=""></i>
+                                    <i><img src="assets/images/computer.png" width="40%" alt="" ></i>
                                 </div>
                                 <h5 class="features-title">สวัสดิการซื้ออุปกรณ์คอมพิวเตอร์</h5>
                             </div>
@@ -79,7 +80,7 @@
                         <div class="col-lg-4 col-md-6 col-sm-6 col-12" data-scroll-reveal="enter bottom move 50px over 0.6s after 0.6s">
                             <div class="features-small-item">
                                 <div class="icon">
-                                    <i><img src="assets/images/saving.png" width="60%" alt=""></i>
+                                    <i><img src="assets/images/saving.png" width="40%" alt="" ></i>
                                 </div>
                                 <h5 class="features-title">สวัสดิการกองทุนสำรองเลี้ยงชีพ</h5>
                             </div>
@@ -90,7 +91,7 @@
                          <div class="col-lg-4 col-md-6 col-sm-6 col-12" data-scroll-reveal="enter bottom move 50px over 0.6s after 0.6s">
                             <div class="features-small-item">
                                 <div class="icon">
-                                    <i><img src="assets/images/suit.png" width="60%" alt=""></i>
+                                    <i><img src="assets/images/suit.png" width="40%" alt="" ></i>
                                 </div>
                                 <h5 class="features-title">ขอยืมเงินเพื่อตัดชุดเครื่องแบบปกติขาว</h5>
                             </div>
@@ -101,7 +102,7 @@
                             <div class="col-lg-4 col-md-6 col-sm-6 col-12" data-scroll-reveal="enter bottom move 50px over 0.6s after 0.6s">
                             <div class="features-small-item">
                                 <div class="icon">
-                                    <i><img src="assets/images/social-care.png" width="60%" alt=""></i>
+                                    <i><img src="assets/images/social-care.png" width="40%" alt=""></i>
                                 </div>
                                 <h5 class="features-title">สวัสดิการฌาปนกิจสงเคราะห์</h5>
                             </div>
@@ -112,7 +113,7 @@
                            <div class="col-lg-4 col-md-6 col-sm-6 col-12" data-scroll-reveal="enter bottom move 50px over 0.6s after 0.6s">
                             <div class="features-small-item">
                                 <div class="icon">
-                                    <i><img src="assets/images/study.png" width="60%" alt=""></i>
+                                    <i><img src="assets/images/study.png" width="40%" alt=""></i>
                                 </div>
                                 <h5 class="features-title">สวัสดิการเกี่ยวกับค่าเล่าเรียนบุตร</h5>
                             </div>
@@ -125,14 +126,14 @@
                 </div>
             </div>
         </div>
-    </section>
-
+    </div>
+  
             
 
-               
+        </selection>     
 
             </div>    
-    </section>
+     </section>
     </form>
 </body>
 
