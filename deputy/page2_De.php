@@ -27,8 +27,8 @@
              รายงานสรุปการใช้สวัสดิการ
             </div><br>
             <br>
-
-                <div class="container" id="col1">
+            <div  align="center"class="container" id="col" >
+                <div  class="container" id="col2">
                     <label>ประเภทสวัสดิการ</label>
                     <div><br>
                     <select name="category" id="input">
@@ -45,31 +45,28 @@
 
               
                 
-                <div class="container" id="col2">
-                    <label>รายปี</label>
+                <div  class="container" id="col3">
+                    <label>รายเดือน</label>
                     <div><br>
                     <select name="category" id="input">
                             <option value="โปรดเลือก">โปรดเลือก</option>
-                            <option value="2020">2020</option>
-                            <option value="2021">2021</option>  
+                            <option value="มกราคม">มกราคม</option>
+                            <option value="กุมภาพันธ์">กุมภาพันธ์</option>
+                            <option value="มีนาคม">มีนาคม</option>  
+                            <option value="เมษายน">เมษายน</option>  
+                            <option value="พฤษภาคม">พฤษภาคม</option>  
+                            <option value="มิถุนายน">มิถุนายน</option>  
+                            <option value="กรกฎาคม">กรกฎาคม</option>  
+                            <option value="สิงหาคม">สิงหาคม</option>   
+                            <option value="กันยายน">กันยายน</option>   
+                            <option value="ตุลาคม">ตุลาคม</option>   
+                            <option value="พฤศจิกายน">พฤศจิกายน</option>   
+                            <option value="ธันวาคม">ธันวาคม</option>     
                         </select>
                     </div><br>
                 </div>
-
+            </div>
                 
-                <div class="container" id="col3">
-                    <label>ไตรมาส</label>
-                    <div><br>
-                    <select name="category" id="input">
-                            <option value="โปรดเลือก">โปรดเลือก</option>
-                            <option value="ไตรมาสที่ 1 ">ไตรมาสที่ 1 </option>
-                            <option value="ไตรมาสที่ 2">ไตรมาสที่ 2</option>
-                            <option value="ไตรมาสที่ 3">ไตรมาสที่ 3</option> 
-                            <option value="ไตรมาสที่ 4">ไตรมาสที่ 4</option>       
-                        </select>
-                    </div><br>
-                </div>
-
                 <div class="container" id="col1">
                     
                     <div></br>
