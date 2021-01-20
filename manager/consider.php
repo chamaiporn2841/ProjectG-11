@@ -25,7 +25,7 @@
 <body>
     <section>
         
-            <div class="consider">
+            <div class="consider" >
                 พิจารณาการใช้สวัสดิการ
            <div><br>
            </div>
@@ -36,8 +36,8 @@
                         <!-- <div class="row" > -->
                             <div class="col-md-12"  >
                                 <form class="form-inline" name="searchform" id="searchform">
-                                    <div class="form-group" align="center" >
-                                    <div class="form-inline" >
+                                    <div class="form-group" align="center">
+                                    <div class="form-inline"  >
                                         <label for="textsearch" >ประเภทสวัสดิการ</label>
                                   
                                          <input type="text" name="itemname" id="itemname" class="form-control" placeholder="ข้อความ คำค้นหา!" autocomplete="off">
@@ -53,9 +53,9 @@
                                     </div> 
   
                                             
-                                </form>
+                               
                            
-                        </div>
+                                <div><br></div>     
                         
             
                    
@@ -92,7 +92,7 @@
                                         });
                                 </script>
 
-                                
+                          
                
                 <div id="col" align="left">
                     <div class="header">
@@ -107,15 +107,15 @@
                     
                 </div>
 
-                <div class="container" id="col2" align="left">
+                <div class="container" id="col2" align="left" >
                     <label>วันที่อนุมัติ</label>
                   
                         <input type="date" class="form-control" id="input" name="name">
                     
                 </div>
            
-                <div class="container" id="manager">
-                <table class="table" align="left" width="150" id="chlids">
+                <div class="container" id="manager" >
+                <table class="table"   id="chlids"  colspan="2">
                 <tr>
                     <th>เลือก</th>
                     <th>ผลการอนุมัติ</th>
@@ -127,7 +127,7 @@
                     <th>จำนวนเงิน</th>
                     <th>ไฟล์เอกสาร</th>
                     <th>หมายเหตุ</th>
-                    <th>รายละเอียด</th>
+                    <th >รายละเอียด</th>
                     <th>แก้ไข</th>
                     <th></th>
                 </tr>
@@ -142,17 +142,18 @@
                     <td></td>
                     <td></td>
                     <td></td>
+                    <td align="center"><img  src="images/eye.png" width="20" height="20"/></td>
+                    <td align="center"><img  src="images/edit.png" width="20" height="20"/></td>
                     <td></td>
-                    <td></td>
-                    <td><!-- <img src="edit.png" width="241" height="163"> --></td>
                 </tr>
                 </table>
                 </div> 
-                <div align="right"  class="container">
+                <div  class="container"  align="right" >
                     <input type="submit" class="btn btn-success" value="บันทึก" style=" font-family: 'Mitr', sans-serif;">
                 </div> 
             </div>    
     </section>
+    </form>
 </body>
 
 

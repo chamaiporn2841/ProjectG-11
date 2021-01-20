@@ -1,11 +1,10 @@
 <html>
 <head>
-    <title>Welfare</title>
+    <title>welfare</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">    
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="styles.css">
-    
     
 </head>
 <body>
@@ -20,7 +19,6 @@
     <hr width=80% size=2 color="#fff" style="margin: 5px 5px 5px 15px;">
     <a href="templatedetail.php"><i class="fa fa-circle-o fa-fw" style="font-size: 12px;"></i>&ensp;รายละเอียดการใช้สวัสดิการ</a>
     <a href="templatem.php"><i class="fa fa-circle-o fa-fw" style="font-size: 12px;"></i>&ensp;พิจารณาการใช้สวัสดิการ</a>
- 
 
 </div>
 
@@ -51,8 +49,8 @@
         <div class="dropdown">
             <table class="user-table">
                 <tr class="user-tr">
-                    <td class="user-td"><img class="user" src="images/user2.jpg"/></td>
-                    <td class="user-td"><!-- ฉัตรภัสร์ ฐิติอัคราวงศ์ --></td>
+                    <td class="user-td"><img class="user" src="images/user1.jpg"/></td>
+                    <td class="user-td">ฉัตรภัสร์ ฐิติอัคราวงศ์</td>
                     <td class="user-td"><i class="dropbtn fa fa-chevron-down"></i></td>
                 </tr>
             </table>
@@ -70,18 +68,18 @@
             </div><br>
     </section>
         </div>
-    <form id="consider" > 
+        
+    <form id="detail" > 
     <div class="container">
-
+ 
   <div class="panel ">
     <div class="panel-body"></div>
     <div >
             <?php
-            include_once("consider.php");
+            include_once("detail.php");
             ?>
         </div>
-  
-</div>
+  </div>
 </div>
       
        

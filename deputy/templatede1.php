@@ -74,15 +74,15 @@
     <form id="page1_de" > 
     <div class="container">
         
-
+    
   <div class="panel ">
     <div class="panel-body"></div>
         <div >
             <?php
-            include_once("page1_de.php");
+            include_once("page1_De.php");
             ?>
-       
-    </div>
+        </div>
+    
 </div>
 </div>
       
