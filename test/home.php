@@ -5,6 +5,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv=Content-Type content="text/html; charset=utf-8">
     <title>ระบบบริหารทรัพยากรบุคคล สำนักเทคโนโลยีดิจิทัล</title>
     <!-- Favicon -->
     <link rel="shortcut icon" type="image/icon" href="images/favicon.ico" />
@@ -161,11 +162,14 @@
 
             <main>
                 <news>
+                
                     <div class="container-fluid" id="news">
                         <div class="row">
                             <div class="col-md-12">
                                 <div class="media">
-                                    
+                               
+                                <form name="form1" action="insert1.php" method="post"  target="iframe_target">
+                                <iframe id="iframe_target" name="iframe_target" src="#" style="width:0;height:0;border:0px solid #fff;"></iframe>
                                     <div class="media-body">
                                         <table border="0" Height="30%" align="center">
                                     <H2> ข้อมูลทั่วไป </H2><br/>
@@ -174,20 +178,20 @@
                                             รหัสบุคลากร
                                         </td>
                                         <td width="200">
-                                            <input type="text" class="form-control" id="input" name="name">
+                                            <input type="text" class="form-control" id="pid" name="pid">
                                         </td>
                                         
                                         <td width="200" style="color:#005b91">
                                             ชื่อบุคลากร
                                         </td>
                                         <td width="200">
-                                        <input type="text" class="form-control" id="input" name="name">
+                                        <input type="text" class="form-control" id="namepn" name="namepn">
                                         </td>
                                         <td width="200" style="color:#005b91">
                                             ตำแหน่งทางวิชาการ
                                         </td>
                                         <td width="200">
-                                            <select name="category" id="input">
+                                            <select name="position" id="position">
                                                     <option value="โปรดเลือก">โปรดเลือก</option>
                                                     <option value="วิชาการ">วิชาการ</option>
                                                     <option value="ปฏิบัติการวิชาชีพและบริหารทั่วไป">ปฏิบัติการวิชาชีพและบริหารทั่วไป</option>
@@ -201,7 +205,7 @@
                                             ประเภทบุคลากร
                                         </td>
                                         <td width="200">
-                                            <select name="category" id="input">
+                                            <select name="category" id="category">
                                                     <option value="โปรดเลือก">โปรดเลือก</option>
                                                     <option value="หัวหน้าโครงการ">หัวหน้าโครงการ</option>
                                                     <option value="คณาจารย์">คณาจารย์</option>
@@ -220,7 +224,7 @@
                                             เบิกค่ารักษาพยาบาลให้
                                         </td>
                                         <td width="230">
-                                            <select name="category" id="input">
+                                            <select name="Reveal" id="Reveal">
                                                     <option value="โปรดเลือก">โปรดเลือก</option>
                                                     <option value="ตนเอง">ตนเอง</option>
                                                     <option value="คู่สมรส">คู่สมรส</option>
@@ -233,13 +237,13 @@
                                             ชื่อ-นามสกุล
                                         </td>
                                         <td width="200">
-                                            <input type="text" class="form-control" id="input" name="name">
+                                            <input type="text" class="form-control" id="namerl" name="namerl">
                                         </td>
                                         <td width="200" style="color:#005b91">
                                             วัน/เดือน/ปีเกิด
                                         </td>
                                         <td width="200">
-                                            <input type="date" class="form-control" id="input" name="date">
+                                            <input type="date" class="form-control" id="born" name="born">
                                         </td>
                                     </tr>
                                     <tr>
@@ -247,7 +251,7 @@
                                             <label>ประเภทสถานพยาบาล</label>  
                                         </td>
                                         <td  style="color:#005b91">
-                                        <select name="category" id="input">
+                                        <select name="cinf" id="cinf">
                                                 <option value="โปรดเลือก">โปรดเลือก</option>
                                                 <option value="เอกชน">เอกชน</option>
                                                 <option value="รัฐบาล">รัฐบาล</option>
@@ -257,13 +261,13 @@
                                             <label>ชื่อสถานพยาบาล</label>  
                                         </td>
                                         <td  style="color:#005b91">
-                                            <input type="text" class="form-control" id="input" name="hospital">
+                                            <input type="text" class="form-control" id="nameinf" name="nameinf">
                                         </td>
                                         <td  style="color:#005b91" >
                                             <label>วันที่ทำการรักษาพยาบาล</label>  
                                         </td>
                                         <td  style="color:#005b91">
-                                            <input type="date" class="form-control" id="input" name="member">
+                                            <input type="date" class="form-control" id="operate" name="operate">
                                         </td>
                                     </tr>
                                     <tr>
@@ -271,13 +275,13 @@
                                             <label>อาการป่วย</label>  
                                         </td>
                                         <td  style="color:#005b91">
-                                            <input type="text" class="form-control" id="input" name="state">
+                                            <input type="text" class="form-control" id="symptom" name="symptom">
                                         </td>
                                         <td  style="color:#005b91" >
                                             <label>จำนวนเงิน</label>  
                                         </td>
                                         <td  style="color:#005b91">
-                                            <input type="number" class="form-control" id="input" name="cash">
+                                            <input type="number" class="form-control" id="cmoney" name="cmoney">
                                         </td>
                                         
                                     </tr>
@@ -290,7 +294,7 @@
                                             ช่องทางรับเงิน
                                         </td>
                                         <td width="230">
-                                            <select name="category" id="input">
+                                            <select name="channel" id="channel">
                                                     <option value="โปรดเลือก">โปรดเลือก</option>
                                                     <option value="เงินสด">เงินสด</option>
                                                     <option value="โอนเงินเข้าบัญชีเงินฝาก">โอนเงินเข้าบัญชีเงินฝาก</option>
@@ -300,7 +304,7 @@
                                             บัญชีธนาคาร
                                         </td>
                                         <td width="230">
-                                            <select name="category" id="input">
+                                            <select name="bank" id="bank">
                                                         <option value="โปรดเลือก">โปรดเลือก</option>
                                                         <option value="กรุงไทย">กรุงไทย</option>
                                                         <option value="ไทยพาณิชย์">ไทยพาณิชย์</option>
@@ -310,7 +314,7 @@
                                             เลขที่บัญชี
                                         </td>
                                         <td width="230">
-                                            <input type="text" class="form-control" id="input" name="state">
+                                            <input type="text" class="form-control" id="account" name="account">
                                         </td>
                                         <tr>
                                             <td width="150" style="color:#005b91" >
@@ -337,6 +341,7 @@
                                         </table>
                                                 </div>
                                             </div>
+                                </form>            
                                 <!--news1-->
 
                                 <div class="media">
