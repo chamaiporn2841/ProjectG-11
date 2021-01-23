@@ -51,13 +51,12 @@
 
                 <li>
                     <a href="#formSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">
-                        <i class="fa fa-pencil-square-o"></i>
-                        สวัสดิการ
-                    </a>
-                    <ul class="collapse list-unstyled" id="formSubmenu">
-                        <li><a href="usebenefit.php">เกณฑ์การใช้สวัสดิการ</a></li>
-                        <li><a href="#"></a></li>
-                        <li><a href="#"></a></li>
+                            <i class="fa fa-gift"></i>
+                            สวัสดิการ
+                        </a>
+                    <ul class="collapse list-unstyled" id="learningSubmenu">
+                        <li><a href="definewel.php">เกณฑ์การใช้วสวัสดิการ</a></li>
+                        <li><a href="detailwel.php">รายละเอียดการใช้สวัสดิการ</a></li>
                     </ul>
                 </li>
 
