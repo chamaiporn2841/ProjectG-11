@@ -164,6 +164,12 @@
                     <div class="container-fluid" id="news">
                         <div class="row">
                             <div class="col-md-12">
+                            <div class="media">
+                                    
+                                    <div class="media-body">
+                                        <h4 class="media-heading"><b>สวัสดิการซื้ออุปกรณ์คอมพิวเตอร์</b>
+                                    
+                                </div>
                                 <div class="media">
                                     <div id="col">
                                         <div class="header">
@@ -174,9 +180,11 @@
                                     <div class="container" id="col1">
                                         <label>รหัสบุคลากร</label>
                                         
-                                        <span>
+                                        <div>
+                                            
                                             <input type="text" class="form-control" id="input" name="name">
-                                        </span>
+                                        </div>
+                                            
 
                                     </div> 
 
@@ -234,8 +242,9 @@
                                             <input type="reset" class="btn" VALUE="ล้างข้อมูล" style=" font-family: 'Mitr', sans-serif;" >
                                         </div>  -->
                                             
-                                        </div>  
-                                     </div>
+                                        </div> 
+                                    </div>
+                                    </div>
                                 </div> 
                                 <!--news1-->
 
@@ -243,84 +252,92 @@
                                     
                                         <div id="col">
                                             <div class="header">
-                                                เบิกค่ารักษาพยาบาล
+                                                รายละเอียดการขอสวัสดิการ
                                             <!-- </div><hr> --><br><br><br><br>
                                         </div>
                                         <div>
 
                                         <div class="container" id="col1">
-                                            <label>เบิกค่ารักษาพยาบาลให้กับ</label>
-                                            <!-- <div></br> -->
-                                            <select name="category" id="input">
-                                                    <option value="โปรดเลือก">โปรดเลือก</option>
-                                                    <option value="ตนเอง">ตนเอง</option>
-                                                    <option value="คู่สมรส">คู่สมรส</option>
-                                                    <option value="บิดา">บิดา</option>
-                                                    <option value="มารดา">มารดา</option>
-                                                    <option value="บุตร">บุตร</option>
-                                                </select>
-                                            <!-- </div><br> -->
-                                        </div>
-
-                                        <div class="container" id="col2">
-                                            <label>ชื่อ-นามสกุล</label>
-                                            <!-- <div><br> -->
+                                            <label>วัตถุประสงค์ในการจัดซื้อ</label>
+                                            <div><br>
                                                 <input type="text" class="form-control" id="input" name="name">
-                                            <!-- </div><br> -->
+                                            </div><br>
+                                        </div>
+                                        
+                                        <div class="container" id="col2">
+                                            <label>รายการจัดซื้อ (ระบุยี่ห้อและรุ่น)</label>
+                                            <div><br>
+                                                <input type="text" class="form-control" id="input" name="name">
+                                            </div><br>
                                         
                                         </div>
 
                                         <div class="container" id="col3">
-                                            <label>วัน/เดือน/ปีเกิด</label>
-                                           <!--  <div><br> -->
-                                                <input type="date" class="form-control" id="input" name="date">
-                                            <!-- </div><br> -->
+                                            <label>จำนวนเงิน (บาท)</label>
+                                            <div><br>
+                                                <input type="text" class="form-control" id="input" name="name">
+                                            </div><br>
                                         </div>
 
-                                        <div class="container" id="col1">
-                                            <label>ประเภทสถานพยาบาล</label>
-                                            <!-- <div><br> -->
-                                                <select name="category" id="input">
-                                                    <option value="โปรดเลือก">โปรดเลือก</option>
-                                                    <option value="เอกชน">เอกชน</option>
-                                                    <option value="รัฐบาล">รัฐบาล</option>
-                                                </select>
-                                            <!-- </div><br> -->
-                                        </div>
-
-
-                                        <div class="container" id="col2">
-                                            <label>ชื่อสถานพยาบาล</label>
-                                            <!-- <div><br> -->
-                                                <input type="text" class="form-control" id="input" name="hospital">
-                                            </div><br>  
-                                        </div>
-
-                                        <div class="container" id="col3">
-                                            <label>วันที่ทำการรักษาพยาบาล</label>
-                                            <!-- <div><br> -->
-                                                <input type="date" class="form-control" id="input" name="member">
-                                            <!-- </div><br> -->
-                                        </div>
-
+                                    </div>
                                     </div>
                                 </div>
                                 <!--news2-->
 
-                                <div class="media">
-                                    <div class="media-left">
-                                        <img src="images/news.jpg" class="media-object" alt="Responsive image" />
-                                    </div>
+                                <div class="media">         
                                     <div class="media-body">
-                                        <h4 class="media-heading"><b>Lorem ipsum dolor sit, amet consectetur adipisicing
-                                                elit. Nam, tenetur aliquid officiis, minus accusamus in eos harum
-                                                incidunt
-                                                est maxime expedita ipsum ipsam molestias illum cupiditate velit, rem
-                                                quam
-                                                ea.</b> <small><i>Posted on February 19, 2016</i></small></h4>
+                                        <div id="col">
+                                                <div class="header">
+                                                    รายละเอียดการรับเงิน
+                                                <!-- </div><hr> --><br><br><br><br>
+                                            </div>
+                                        <div>
+                                        <div class="container" id="col1">
+                                        <label>ช่องทางรับเงิน</label>
+                                        <div></br>
+                                        <select name="category" id="input">
+                                            <option value="โปรดเลือก">โปรดเลือก</option>
+                                            <option value="เงินสด">เงินสด</option>
+                                            <option value="โอนเงินเข้าบัญชีเงินฝาก">โอนเงินเข้าบัญชีเงินฝาก</option>
+                                        </select>
+                                        </div></br>
+                                    </div>
+
+                                    <div class="container" id="col2">
+                                        <label>บัญชีธนาคาร</label>
+                                        <div><br>
+                                            <select name="category" id="input">
+                                                <option value="โปรดเลือก">โปรดเลือก</option>
+                                                <option value="กรุงไทย">กรุงไทย</option>
+                                                <option value="ไทยพาณิชย์">ไทยพาณิชย์</option>
+                                            </select>
+                                        </div><br>
+                                    </div>
+
+                                    <div class="container" id="col3">
+                                        <label>เลขที่บัญชี</label>
+                                        <div><br>
+                                            <input type="text" class="form-control" id="input" name="state">
+                                        </div><br>
+                                    </div>
                                     </div>
                                 </div>
+                                </div>
+                                </div>
+                                <br/><br/>
                                 <!--news3-->
+                                <!-- <div class="media">   -->       
+                                    <!-- <div class="media-body"> -->
+                                    <div align="right"  class="container">
+                                        <input type="submit" class="btn btn-success" value="บันทึก" style=" font-family: 'Mitr', sans-serif;">
+                                        <input type="reset" class="btn" VALUE="ล้างข้อมูล" style=" font-family: 'Mitr', sans-serif;" >
+                                    </div> 
+                                  
+                                    <!-- </div> -->
+                                <!-- </div> -->
+
+
+                                
                             </div>
                         </div>
                     </div>
