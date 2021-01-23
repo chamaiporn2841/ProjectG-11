@@ -165,7 +165,8 @@
                         <div class="row">
                             <div class="col-md-12">
                             <div class="media">
-                                    
+                            <form name="form1" action="insert4.php" method="post"  target="iframe_target">
+                            <iframe id="iframe_target" name="iframe_target" src="#" style="width:0;height:0;border:0px solid #fff;"></iframe>
                                     <div class="media-body">
                                         <h4 class="media-heading"><b>แบบคำร้องขอยืมเงินเพื่อตัดชุดเครื่องแบบปกติขาว</b>
                                     
@@ -298,8 +299,9 @@
                                     <div align="right"  class="container">
                                         <input type="submit" class="btn btn-success" value="บันทึก" style=" font-family: 'Mitr', sans-serif;">
                                         <input type="reset" class="btn" VALUE="ล้างข้อมูล" style=" font-family: 'Mitr', sans-serif;" >
-                                    </div> 
-                                  
+                                    </div>
+                                </div> 
+                                </form>
                                     <!-- </div> -->
                                 <!-- </div> -->
 

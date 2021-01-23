@@ -165,7 +165,9 @@
                         <div class="row">
                             <div class="col-md-12">
                             <div class="media">
-                                    
+
+                            <form name="form1" action="insert1.php" method="post"  target="iframe_target">
+                            <iframe id="iframe_target" name="iframe_target" src="#" style="width:0;height:0;border:0px solid #fff;"></iframe>
                                     <div class="media-body">
                                         <h4 class="media-heading"><b>สวัสดิการค่ารักษาพยาบาล</b>
                                     
@@ -182,7 +184,7 @@
                                         
                                         <div>
                                             
-                                            <input type="text" class="form-control" id="input" name="name">
+                                            <input type="text" class="form-control" id="pid" name="pid">
                                         </div>
                                             
 
@@ -191,7 +193,7 @@
                                     <div class="container" id="col2">
                                         <label>ชื่อบุคลากร</label>
                                             <span>
-                                                <input type="text" class="form-control" id="input" name="name">
+                                                <input type="text" class="form-control" id="namepn" name="namepn">
                                             </span>
                                     
                                     </div>
@@ -199,7 +201,7 @@
                                     <div  class="container" id="col3">
                                         <label>ตำแหน่ง</label>
                                         <div><br>
-                                        <select name="category" id="input">
+                                        <select name="position" id="position">
                                                 <option value="โปรดเลือก">โปรดเลือก</option>
                                                 <option value="วิชาการ">วิชาการ</option>
                                                 <option value="ปฏิบัติการวิชาชีพและบริหารทั่วไป">ปฏิบัติการวิชาชีพและบริหารทั่วไป</option>
@@ -210,7 +212,7 @@
                                     <div class="container"  id="col1">
                                         <label>ประเภทบุคลากร</label>
                                         <div><br>
-                                        <select name="category" id="input">
+                                        <select name="category" id="category">
                                                 <option value="โปรดเลือก">โปรดเลือก</option>
                                                 <option value="หัวหน้าโครงการ">หัวหน้าโครงการ</option>
                                                 <option value="คณาจารย์">คณาจารย์</option>
@@ -260,7 +262,7 @@
                                         <div class="container" id="col1">
                                             <label>เบิกค่ารักษาพยาบาลให้กับ</label>
                                             <!-- <div></br> -->
-                                            <select name="category" id="input">
+                                            <select name="Reveal" id="Reveal">
                                                     <option value="โปรดเลือก">โปรดเลือก</option>
                                                     <option value="ตนเอง">ตนเอง</option>
                                                     <option value="คู่สมรส">คู่สมรส</option>
@@ -274,7 +276,7 @@
                                         <div class="container" id="col2">
                                             <label>ชื่อ-นามสกุล</label>
                                             <!-- <div><br> -->
-                                                <input type="text" class="form-control" id="input" name="name">
+                                                <input type="text" class="form-control" id="namerl" name="namerl">
                                             <!-- </div><br> -->
                                         
                                         </div>
@@ -282,14 +284,14 @@
                                         <div class="container" id="col3">
                                             <label>วัน/เดือน/ปีเกิด</label>
                                            <!--  <div><br> -->
-                                                <input type="date" class="form-control" id="input" name="date">
+                                                <input type="date" class="form-control" id="born" name="born">
                                             <!-- </div><br> -->
                                         </div>
 
                                         <div class="container" id="col1">
                                             <label>ประเภทสถานพยาบาล</label>
                                             <!-- <div><br> -->
-                                                <select name="category" id="input">
+                                                <select name="cinf" id="cinf">
                                                     <option value="โปรดเลือก">โปรดเลือก</option>
                                                     <option value="เอกชน">เอกชน</option>
                                                     <option value="รัฐบาล">รัฐบาล</option>
@@ -301,27 +303,27 @@
                                         <div class="container" id="col2">
                                             <label>ชื่อสถานพยาบาล</label>
                                             <!-- <div><br> -->
-                                                <input type="text" class="form-control" id="input" name="hospital">
+                                                <input type="text" class="form-control" id="nameinf" name="nameinf">
                                             </div><br>  
                                         </div>
 
                                         <div class="container" id="col3">
                                             <label>วันที่ทำการรักษาพยาบาล</label>
                                             <!-- <div><br> -->
-                                                <input type="date" class="form-control" id="input" name="member">
+                                                <input type="date" class="form-control" id="operate" name="operate">
                                             <!-- </div><br> -->
                                         </div>
                                         <div class="container" id="col1">
                                             <label>อาการป่วย</label>
                                             <div><br>
-                                                <input type="text" class="form-control" id="input" name="state">
+                                                <input type="text" class="form-control" id="symptom" name="symptom">
                                             </div><br>
                                         </div>
 
                                         <div class="container" id="col2">
                                             <label>จำนวนเงิน</label>
                                             <div><br>
-                                                <input type="number" class="form-control" id="input" name="cash">
+                                                <input type="number" class="form-control" id="cmoney" name="cmoney">
                                             </div></br>
                                         </div>
                                   
@@ -340,7 +342,7 @@
                                         <div class="container" id="col1">
                                         <label>ช่องทางรับเงิน</label>
                                         <div></br>
-                                        <select name="category" id="input">
+                                        <select name="channel" id="channel">
                                             <option value="โปรดเลือก">โปรดเลือก</option>
                                             <option value="เงินสด">เงินสด</option>
                                             <option value="โอนเงินเข้าบัญชีเงินฝาก">โอนเงินเข้าบัญชีเงินฝาก</option>
@@ -351,7 +353,7 @@
                                     <div class="container" id="col2">
                                         <label>บัญชีธนาคาร</label>
                                         <div><br>
-                                            <select name="category" id="input">
+                                            <select name="bank" id="bank">
                                                 <option value="โปรดเลือก">โปรดเลือก</option>
                                                 <option value="กรุงไทย">กรุงไทย</option>
                                                 <option value="ไทยพาณิชย์">ไทยพาณิชย์</option>
@@ -362,7 +364,7 @@
                                     <div class="container" id="col3">
                                         <label>เลขที่บัญชี</label>
                                         <div><br>
-                                            <input type="text" class="form-control" id="input" name="state">
+                                            <input type="text" class="form-control" id="account" name="account">
                                         </div><br>
                                     </div>
                                     </div>
@@ -377,7 +379,8 @@
                                         <input type="submit" class="btn btn-success" value="บันทึก" style=" font-family: 'Mitr', sans-serif;">
                                         <input type="reset" class="btn" VALUE="ล้างข้อมูล" style=" font-family: 'Mitr', sans-serif;" >
                                     </div> 
-                                  
+                                </div> 
+                                </form>  
                                     <!-- </div> -->
                                 <!-- </div> -->
 
