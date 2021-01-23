@@ -247,9 +247,14 @@ a.article:hover {
 }
 
 .media-heading{
-    color:var(--blue);
+    color: #fff ;
+    background: #0072B5 !important;
+    height:50px;
+    padding-top:-50 px;
 }
-
+/* .media-body{
+    background: #0072B5 !important;
+} */
 /* ---------------------------------------------------
     MEDIAQUERIES
 ----------------------------------------------------- */
@@ -337,5 +342,58 @@ a.article:hover {
 
     .media-heading small{
         margin-left: 0px;
+        
     }
+   
+}
+#col {
+    margin-left: 20px;
+    margin-right: 80px;
+    /* color:#0072B5;
+    font-size: 1.1em;
+    font-weight: 300; */
+}
+#col1 {
+    float: left;
+    width: 30%;
+    height: 100px;
+    margin-left: 20px;
+    /* color:#0072B5;
+    font-size: 1.1em;
+    font-weight: 300; */
+}
+#col2 {
+    float: left;
+    width: 28%;
+    height: 100px;
+    padding-left: 80px;
+    /* color:#0072B5;
+    font-size: 1.1em;
+    font-weight: 300; */
+}
+#col3 {
+    float: left;
+    width: 30%;
+    height: 100px;
+    padding-left: 120px;
+    /* color:#0072B5;
+    font-size: 1.1em;
+    font-weight: 300; */
+}
+#input{
+    border-radius: 8px;
+    color:#3d5b6d;
+    font-size: 1.1em;
+    font-weight: 300;
+    width:200px;
+}
+label{
+    font-size: 14px;
+    color:#0072B5;
+}
+.header{
+    font-size: 15px;
+    font-weight: bolder;
+    color: #17191f;
+    
 }
