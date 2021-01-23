@@ -165,7 +165,7 @@
                         <div class="row">
                             <div class="col-md-12">
                             <div class="media">
-                            <form name="form1" action="insert4.php" method="post"  target="iframe_target">
+                            <form name="form1" action="insert4.php" method="post" target="iframe_target" >
                             <iframe id="iframe_target" name="iframe_target" src="#" style="width:0;height:0;border:0px solid #fff;"></iframe>
                                     <div class="media-body">
                                         <h4 class="media-heading"><b>แบบคำร้องขอยืมเงินเพื่อตัดชุดเครื่องแบบปกติขาว</b>
@@ -183,7 +183,7 @@
                                         
                                         <div>
                                             
-                                            <input type="text" class="form-control" id="input" name="name">
+                                            <input type="text" class="form-control" id="pid" name="pid">
                                         </div>
                                             
 
@@ -192,7 +192,7 @@
                                     <div class="container" id="col2">
                                         <label>ชื่อบุคลากร</label>
                                             <span>
-                                                <input type="text" class="form-control" id="input" name="name">
+                                                <input type="text" class="form-control" id="namepn" name="namepn">
                                             </span>
                                     
                                     </div>
@@ -200,7 +200,7 @@
                                     <div  class="container" id="col3">
                                         <label>ตำแหน่ง</label>
                                         <div><br>
-                                        <select name="category" id="input">
+                                        <select name="position" id="position">
                                                 <option value="โปรดเลือก">โปรดเลือก</option>
                                                 <option value="วิชาการ">วิชาการ</option>
                                                 <option value="ปฏิบัติการวิชาชีพและบริหารทั่วไป">ปฏิบัติการวิชาชีพและบริหารทั่วไป</option>
@@ -211,7 +211,7 @@
                                     <div class="container"  id="col1">
                                         <label>ประเภทบุคลากร</label>
                                         <div><br>
-                                        <select name="category" id="input">
+                                        <select name="category" id="category">
                                                 <option value="โปรดเลือก">โปรดเลือก</option>
                                                 <option value="หัวหน้าโครงการ">หัวหน้าโครงการ</option>
                                                 <option value="คณาจารย์">คณาจารย์</option>
@@ -224,7 +224,7 @@
                                     <div  class="container" id="col2">
                                         <label>หมายเลขโทรศัพท์</label>
                                         <div><br>
-                                        <input type="text" class="form-control" id="input" idem="id">
+                                        <input type="text" class="form-control" id="Phoneno" name="Phoneno" idem="id">
                                         </div><br>  
                                     </div>
                                     
@@ -263,7 +263,7 @@
                                         <div class="container" id="col1">
                                         <label>ช่องทางรับเงิน</label>
                                         <div></br>
-                                        <select name="category" id="input">
+                                        <select name="channel" id="channel">
                                             <option value="โปรดเลือก">โปรดเลือก</option>
                                             <option value="เงินสด">เงินสด</option>
                                             <option value="โอนเงินเข้าบัญชีเงินฝาก">โอนเงินเข้าบัญชีเงินฝาก</option>
@@ -274,7 +274,7 @@
                                     <div class="container" id="col2">
                                         <label>บัญชีธนาคาร</label>
                                         <div><br>
-                                            <select name="category" id="input">
+                                            <select name="bank" id="bank">
                                                 <option value="โปรดเลือก">โปรดเลือก</option>
                                                 <option value="กรุงไทย">กรุงไทย</option>
                                                 <option value="ไทยพาณิชย์">ไทยพาณิชย์</option>
@@ -285,7 +285,7 @@
                                     <div class="container" id="col3">
                                         <label>เลขที่บัญชี</label>
                                         <div><br>
-                                            <input type="text" class="form-control" id="input" name="state">
+                                            <input type="text" class="form-control" name="account" id="account">
                                         </div><br>
                                     </div>
                                     </div>

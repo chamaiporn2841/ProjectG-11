@@ -26,9 +26,8 @@
     .$_POST["Amphoe"]. "','"
     .$_POST["province"]. "','"
     .$_POST["Pcode"]. "','"
-	.$_POST["Getw"]. "',"
-	.$_POST["Contribution"].")";
-	
+	.$_POST["Getw"]. "','"
+	.$_POST["Contribution"]."')";
 
 	//echo $sql;
 	if(!mysqli_query( $con,$sql)){
