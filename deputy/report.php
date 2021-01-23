@@ -69,7 +69,7 @@
                         คำร้องออนไลน์
                     </a>
                     <ul class="collapse list-unstyled" id="formSubmenu">
-                        <li><a href="#">คำร้องขอแก้ไขข้อมูลส่วนตัว</a></li>
+                        <li><a href="">คำร้องขอแก้ไขข้อมูลส่วนตัว</a></li>
                         <li><a href="#">คำร้องขอลา</a></li>
                         <li><a href="medexp.php">คำร้องสวัสดิการค่ารักษาพยาบาล</a></li>
                         <li><a href="comdevice.php">คำร้องสวัสดิการซื้ออุปกรณ์คอมพิวเตอร์</a></li>
@@ -177,48 +177,71 @@
                         <div class="row">
                             <div class="col-md-12">
                                 <div class="media">
-                                    <div class="media-left">
-                                        <img src="images/news.jpg" class="media-object" alt="Responsive image" />
-                                    </div>
-                                    <div class="media-body">
-                                        <h4 class="media-heading"><b>Lorem ipsum dolor sit, amet consectetur adipisicing
-                                                elit. Nam, tenetur aliquid officiis, minus accusamus in eos harum
-                                                incidunt
-                                                est maxime expedita ipsum ipsam molestias illum cupiditate velit, rem
-                                                quam
-                                                ea.</b> <small><i>Posted on February 19, 2016</i></small></h4>
-                                    </div>
-                                </div>
-                                <!--news1-->
+                                    <div id="col">
+                                        <div class="header">
+                                            เกณฑ์การใช้สวัสดิการ
+                                        <!-- </div><hr> --><br><br><br>
+                                        </div>
+                                    <div>
+                                    <div class="container" id="col1" >
+                                        <label>ประเภทสวัสดิการ</label>
+                                        <div>
+                                            <select name="category" id="input">
+                                                <option value="โปรดเลือก">โปรดเลือก</option>
+                                                <option value="สวัสดิการค่ารักษาพยาบาล">สวัสดิการค่ารักษาพยาบาล</option>
+                                                <option value="สวัสดิการซื้ออุปกรณ์คอมพิวเตอร์">สวัสดิการซื้ออุปกรณ์คอมพิวเตอร์</option>
+                                                <option value="สวัสดิการกองทุนสำรองเลี้ยงชีพ">สวัสดิการกองทุนสำรองเลี้ยงชีพ</option>
+                                                <option value="สวัสดิการขอยืมเงินเพื่อตัดชุดเครื่องแบบปกติขาว">สวัสดิการขอยืมเงินเพื่อตัดชุดเครื่องแบบปกติขาว</option>
+                                                <option value="สวัสดิการฌาปนกิจสงเคราะห์">สวัสดิการฌาปนกิจสงเคราะห์</option>
+                                                <option value="สวัสดิการเกี่ยวกับค่าเล่าเรียนบุตร">สวัสดิการเกี่ยวกับค่าเล่าเรียนบุตร</option>
+                                            </select>
+                                        </div><br>
+                                        </div>
+                                        <div  class="container" id="col3">
+                                            <label>รายเดือน</label>
+                                            <div>
+                                            <select name="category" id="input">
+                                                    <option value="โปรดเลือก">โปรดเลือก</option>
+                                                    <option value="มกราคม">มกราคม</option>
+                                                    <option value="กุมภาพันธ์">กุมภาพันธ์</option>
+                                                    <option value="มีนาคม">มีนาคม</option>  
+                                                    <option value="เมษายน">เมษายน</option>  
+                                                    <option value="พฤษภาคม">พฤษภาคม</option>  
+                                                    <option value="มิถุนายน">มิถุนายน</option>  
+                                                    <option value="กรกฎาคม">กรกฎาคม</option>  
+                                                    <option value="สิงหาคม">สิงหาคม</option>   
+                                                    <option value="กันยายน">กันยายน</option>   
+                                                    <option value="ตุลาคม">ตุลาคม</option>   
+                                                    <option value="พฤศจิกายน">พฤศจิกายน</option>   
+                                                    <option value="ธันวาคม">ธันวาคม</option>     
+                                                </select>
+                                            </div><br>
+                                        
+                                        
+                                        </div>
+                                        </div>
 
-                                <div class="media">
-                                    <div class="media-left">
-                                        <img src="images/news.jpg" class="media-object" alt="Responsive image" />
-                                    </div>
-                                    <div class="media-body">
-                                        <h4 class="media-heading"><b>Lorem ipsum dolor sit, amet consectetur adipisicing
-                                                elit. Nam, tenetur aliquid officiis, minus accusamus in eos harum
-                                                incidunt
-                                                est maxime expedita ipsum ipsam molestias illum cupiditate velit, rem
-                                                quam
-                                                ea.</b> <small><i>Posted on February 19, 2016</i></small></h4>
                                     </div>
                                 </div>
+
+                                    <div class="media">
+                                    <div id="col">
+                                        <div class="header">
+                                            
+                                        <!-- </div><hr> --><br><br><br><br><br>
+                                        </div>
+                                    <div>
+                                   
+                                   
+                                </div>
+                                <br/><br/>
                                 <!--news2-->
-
-                                <div class="media">
-                                    <div class="media-left">
-                                        <img src="images/news.jpg" class="media-object" alt="Responsive image" />
-                                    </div>
-                                    <div class="media-body">
-                                        <h4 class="media-heading"><b>Lorem ipsum dolor sit, amet consectetur adipisicing
-                                                elit. Nam, tenetur aliquid officiis, minus accusamus in eos harum
-                                                incidunt
-                                                est maxime expedita ipsum ipsam molestias illum cupiditate velit, rem
-                                                quam
-                                                ea.</b> <small><i>Posted on February 19, 2016</i></small></h4>
-                                    </div>
-                                </div>
+                                    <div align="right"  class="container">
+                                            <input type="submit" class="btn btn-success" value="บันทึก" style=" font-family: 'Mitr', sans-serif;">
+                                            <input type="reset" class="btn" VALUE="ล้างข้อมูล" style=" font-family: 'Mitr', sans-serif;" >
+                                        </div> 
+                                            </div>
+                                        </div>
                                 <!--news3-->
                             </div>
                         </div>
@@ -249,5 +272,3 @@
     </script>
 
 </body>
-
-</html>

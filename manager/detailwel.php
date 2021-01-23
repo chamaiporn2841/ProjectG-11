@@ -55,7 +55,7 @@
                             สวัสดิการ
                     </a>
                     <ul class="collapse list-unstyled" id="WelSubmenu">
-                        <li><a href="definewel.php">เกณฑ์การใช้วสวัสดิการ</a></li>
+                        <li><a href="#">เกณฑ์การใช้วสวัสดิการ</a></li>
                         <li><a href="detailwel.php">รายละเอียดการใช้สวัสดิการ</a></li>
                         <li><a href="consider.php">พิจารณาการใช้สวัสดิการ</a></li>
                         <li><a href="approve.php">อนุมัติการใช้สวัสดิการ</a></li>
@@ -69,7 +69,7 @@
                         คำร้องออนไลน์
                     </a>
                     <ul class="collapse list-unstyled" id="formSubmenu">
-                        <li><a href="#">คำร้องขอแก้ไขข้อมูลส่วนตัว</a></li>
+                        <li><a href="">คำร้องขอแก้ไขข้อมูลส่วนตัว</a></li>
                         <li><a href="#">คำร้องขอลา</a></li>
                         <li><a href="medexp.php">คำร้องสวัสดิการค่ารักษาพยาบาล</a></li>
                         <li><a href="comdevice.php">คำร้องสวัสดิการซื้ออุปกรณ์คอมพิวเตอร์</a></li>
@@ -177,48 +177,26 @@
                         <div class="row">
                             <div class="col-md-12">
                                 <div class="media">
-                                    <div class="media-left">
-                                        <img src="images/news.jpg" class="media-object" alt="Responsive image" />
-                                    </div>
-                                    <div class="media-body">
-                                        <h4 class="media-heading"><b>Lorem ipsum dolor sit, amet consectetur adipisicing
-                                                elit. Nam, tenetur aliquid officiis, minus accusamus in eos harum
-                                                incidunt
-                                                est maxime expedita ipsum ipsam molestias illum cupiditate velit, rem
-                                                quam
-                                                ea.</b> <small><i>Posted on February 19, 2016</i></small></h4>
-                                    </div>
+                                    <div id="col">
+                                        
+                                    
+                                    <div class="media">
+                                    <div id="col">
+                                        <div class="header">
+                                            รายละเอียดการใช้สวัสดิการ
+                                        <!-- </div><hr> --><br><br><br><br><br>
+                                        </div>
+                                    <div>
+                                   
+                                    <!-- <div class="container" id="col" align="left" > -->
+                                        
+                                    <!-- </div> --> 
+                                    
+                                         </div>
                                 </div>
-                                <!--news1-->
-
-                                <div class="media">
-                                    <div class="media-left">
-                                        <img src="images/news.jpg" class="media-object" alt="Responsive image" />
-                                    </div>
-                                    <div class="media-body">
-                                        <h4 class="media-heading"><b>Lorem ipsum dolor sit, amet consectetur adipisicing
-                                                elit. Nam, tenetur aliquid officiis, minus accusamus in eos harum
-                                                incidunt
-                                                est maxime expedita ipsum ipsam molestias illum cupiditate velit, rem
-                                                quam
-                                                ea.</b> <small><i>Posted on February 19, 2016</i></small></h4>
-                                    </div>
-                                </div>
+                                <br/><br/>
                                 <!--news2-->
-
-                                <div class="media">
-                                    <div class="media-left">
-                                        <img src="images/news.jpg" class="media-object" alt="Responsive image" />
-                                    </div>
-                                    <div class="media-body">
-                                        <h4 class="media-heading"><b>Lorem ipsum dolor sit, amet consectetur adipisicing
-                                                elit. Nam, tenetur aliquid officiis, minus accusamus in eos harum
-                                                incidunt
-                                                est maxime expedita ipsum ipsam molestias illum cupiditate velit, rem
-                                                quam
-                                                ea.</b> <small><i>Posted on February 19, 2016</i></small></h4>
-                                    </div>
-                                </div>
+                                    
                                 <!--news3-->
                             </div>
                         </div>
