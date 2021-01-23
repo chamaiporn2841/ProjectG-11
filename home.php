@@ -50,14 +50,16 @@
                 </li>
 
                 <li>
-                    <a href="#formSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">
-                        <i class="fa fa-pencil-square-o"></i>
-                        สวัสดิการ
+                    <a href="#WelSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">
+                            <i class="fa fa-gift"></i>
+                            สวัสดิการ
                     </a>
-                    <ul class="collapse list-unstyled" id="formSubmenu">
-                        <li><a href="usebenefit.php">เกณฑ์การใช้สวัสดิการ</a></li>
-                        <li><a href="#"></a></li>
-                        <li><a href="#"></a></li>
+                    <ul class="collapse list-unstyled" id="WelSubmenu">
+                        <li><a href="definewel.php">เกณฑ์การใช้วสวัสดิการ</a></li>
+                        <li><a href="detailwel.php">รายละเอียดการใช้สวัสดิการ</a></li>
+                        <li><a href="consider.php">พิจารณาการใช้สวัสดิการ</a></li>
+                        <li><a href="approve.php">อนุมัติการใช้สวัสดิการ</a></li>
+                        <li><a href="report.php">รายงานสรุปการใช้สวัสดิการ</a></li>
                     </ul>
                 </li>
 
@@ -175,144 +177,31 @@
                         <div class="row">
                             <div class="col-md-12">
                                 <div class="media">
-                                    <div id="col">
-                                        <div class="header">
-                                            ข้อมูลส่วนตัว
-                                        <!-- </div><hr> --><br><br><br><br><br>
-                                        </div>
-                                    <div>
-                                    <div class="container" id="col1">
-                                        <label>รหัสบุคลากร</label>
-                                        
-                                        <span>
-                                            <input type="text" class="form-control" id="input" name="name">
-                                        </span>
-
-                                    </div> 
-
-                                    <div class="container" id="col2">
-                                        <label>ชื่อบุคลากร</label>
-                                            <span>
-                                                <input type="text" class="form-control" id="input" name="name">
-                                            </span>
-                                    
+                                    <div class="media-left">
+                                        <img src="images/news.jpg" class="media-object" alt="Responsive image" />
                                     </div>
-
-                                    <div  class="container" id="col3">
-                                        <label>ตำแหน่ง</label>
-                                        <div><br>
-                                        <select name="category" id="input">
-                                                <option value="โปรดเลือก">โปรดเลือก</option>
-                                                <option value="วิชาการ">วิชาการ</option>
-                                                <option value="ปฏิบัติการวิชาชีพและบริหารทั่วไป">ปฏิบัติการวิชาชีพและบริหารทั่วไป</option>
-                                                <option value="บริหารวิชาการ">บริหารวิชาการ</option>
-                                            </select>
-                                        </div><br>
+                                    <div class="media-body">
+                                        <h4 class="media-heading"><b>Lorem ipsum dolor sit, amet consectetur adipisicing
+                                                elit. Nam, tenetur aliquid officiis, minus accusamus in eos harum
+                                                incidunt
+                                                est maxime expedita ipsum ipsam molestias illum cupiditate velit, rem
+                                                quam
+                                                ea.</b> <small><i>Posted on February 19, 2016</i></small></h4>
                                     </div>
-                                    <div class="container"  id="col1">
-                                        <label>ประเภทบุคลากร</label>
-                                        <div><br>
-                                        <select name="category" id="input">
-                                                <option value="โปรดเลือก">โปรดเลือก</option>
-                                                <option value="หัวหน้าโครงการ">หัวหน้าโครงการ</option>
-                                                <option value="คณาจารย์">คณาจารย์</option>
-                                                <option value="เจ้าหน้าที่">เจ้าหน้าที่</option>
-                                                <option value="ผู้ช่วยสอน">ผู้ช่วยสอน</option>
-                                            </select>
-                                        </div><br>
-                                    </div>
-
-                                    <div class="container" id="col2">
-                                        <label></label>
-                                        <div><br>
-                                            
-                                        </div><br>
-                                    </div>
-                                    
-                                    <div class="container" id="col3">
-                                        <label></label>
-                                        <div><br>
-                                        
-                                        </div><br>
-                                    
-                                    </div><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
-                                        <!-- submit  -->    
-                                           
-                                           
-                                        <!-- <div align="right"  class="container">
-                                            <input type="submit" class="btn btn-success" value="บันทึก" style=" font-family: 'Mitr', sans-serif;">
-                                            <input type="reset" class="btn" VALUE="ล้างข้อมูล" style=" font-family: 'Mitr', sans-serif;" >
-                                        </div>  -->
-                                            
-                                        </div>  
-                                     </div>
-                                </div> 
+                                </div>
                                 <!--news1-->
 
                                 <div class="media">
-                                    
-                                        <div id="col">
-                                            <div class="header">
-                                                เบิกค่ารักษาพยาบาล
-                                            <!-- </div><hr> --><br><br><br><br>
-                                        </div>
-                                        <div>
-
-                                        <div class="container" id="col1">
-                                            <label>เบิกค่ารักษาพยาบาลให้กับ</label>
-                                            <!-- <div></br> -->
-                                            <select name="category" id="input">
-                                                    <option value="โปรดเลือก">โปรดเลือก</option>
-                                                    <option value="ตนเอง">ตนเอง</option>
-                                                    <option value="คู่สมรส">คู่สมรส</option>
-                                                    <option value="บิดา">บิดา</option>
-                                                    <option value="มารดา">มารดา</option>
-                                                    <option value="บุตร">บุตร</option>
-                                                </select>
-                                            <!-- </div><br> -->
-                                        </div>
-
-                                        <div class="container" id="col2">
-                                            <label>ชื่อ-นามสกุล</label>
-                                            <!-- <div><br> -->
-                                                <input type="text" class="form-control" id="input" name="name">
-                                            <!-- </div><br> -->
-                                        
-                                        </div>
-
-                                        <div class="container" id="col3">
-                                            <label>วัน/เดือน/ปีเกิด</label>
-                                           <!--  <div><br> -->
-                                                <input type="date" class="form-control" id="input" name="date">
-                                            <!-- </div><br> -->
-                                        </div>
-
-                                        <div class="container" id="col1">
-                                            <label>ประเภทสถานพยาบาล</label>
-                                            <!-- <div><br> -->
-                                                <select name="category" id="input">
-                                                    <option value="โปรดเลือก">โปรดเลือก</option>
-                                                    <option value="เอกชน">เอกชน</option>
-                                                    <option value="รัฐบาล">รัฐบาล</option>
-                                                </select>
-                                            <!-- </div><br> -->
-                                        </div>
-
-
-                                        <div class="container" id="col2">
-                                            <label>ชื่อสถานพยาบาล</label>
-                                            <!-- <div><br> -->
-                                                <input type="text" class="form-control" id="input" name="hospital">
-                                            </div><br>  
-                                        </div>
-
-                                        <div class="container" id="col3">
-                                            <label>วันที่ทำการรักษาพยาบาล</label>
-                                            <!-- <div><br> -->
-                                                <input type="date" class="form-control" id="input" name="member">
-                                            <!-- </div><br> -->
-                                        </div>
-
+                                    <div class="media-left">
+                                        <img src="images/news.jpg" class="media-object" alt="Responsive image" />
+                                    </div>
+                                    <div class="media-body">
+                                        <h4 class="media-heading"><b>Lorem ipsum dolor sit, amet consectetur adipisicing
+                                                elit. Nam, tenetur aliquid officiis, minus accusamus in eos harum
+                                                incidunt
+                                                est maxime expedita ipsum ipsam molestias illum cupiditate velit, rem
+                                                quam
+                                                ea.</b> <small><i>Posted on February 19, 2016</i></small></h4>
                                     </div>
                                 </div>
                                 <!--news2-->
