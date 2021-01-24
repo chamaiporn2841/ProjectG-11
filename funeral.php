@@ -171,7 +171,7 @@
                             <iframe id="iframe_target" name="iframe_target" src="#" style="width:0;height:0;border:0px solid #fff;"></iframe>
                                     <div class="media-body">
                                         <h4 class="media-heading"><b>สวัสดิการฌาปนกิจสงเคราะห์</b>
-                                    
+                                        </div>
                                 </div>
                                 <div class="media">
                                     <div id="col">
@@ -279,38 +279,23 @@
                                                 แนบไฟลเอกสารที่เกี่ยวข้อง
                                             <!-- </div><hr> --><br><br><br><br>
                                         </div>
-                                        <div>
+                                <div>
+                                        
+                                        <div class="container" id="col2">
+                                        <label>แนบเอกสาร</label>
+                                        <div><br>
+                                        <select  name="cdoc" id="cdoc">
+                                                <option value="โปรดเลือก">โปรดเลือก</option>
+                                                <option value="สำเนาใบมรณบัตร">สำเนาใบมรณบัตร</option>
+                                                <option value="สำเนาทะเบียนบ้าน (ผู้ขอรับสวัสดิการ)">สำเนาทะเบียนบ้าน (ผู้ขอรับสวัสดิการ)</option>
+                                                <option value="สำเนาประจำตัวประชาชน (ผู้ขอรับสวัสดิการ)">สำเนาประจำตัวประชาชน (ผู้ขอรับสวัสดิการ)</option>
+                                                <option value="สำเนาทะเบียนบ้านของผู้ถึงแก่กรรม ที่ประทับคำว่า “ตาย”">สำเนาทะเบียนบ้านของผู้ถึงแก่กรรม ที่ประทับคำว่า “ตาย”</option>
+                                                <option value="ใบเสร็จค่าพวงหรีด">ใบเสร็จค่าพวงหรีด</option>
+                                            </select>
+                                        </div><br>  
+                                    </div>
 
-                                        <div class="container" id="col1">
-                                            <div><br>
-                                            <form action="upload.php" method="post" enctype="multipart/form-data">
-                                                <label>1. สำเนาใบมรณบัตร</label>
-                                            </form>
-                                            </div><br> 
-
-                                            <div><br>
-                                            <form action="upload.php" method="post" enctype="multipart/form-data">
-                                                <label>2. สำเนาทะเบียนบ้าน (ผู้ขอรับสวัสดิการ)</label>
-                                            </form>
-                                            </div><br>
-
-                                            <div><br>
-                                            <form action="upload.php" method="post" enctype="multipart/form-data">
-                                                <label>3. สำเนาประจำตัวประชาชน (ผู้ขอรับสวัสดิการ)</label>
-                                            </form>
-                                            </div><br>
-
-                                            <div><br>
-                                            <form action="upload.php" method="post" enctype="multipart/form-data">
-                                                <label>4. สำเนาทะเบียนบ้านของผู้ถึงแก่กรรม ที่ประทับคำว่า “ตาย”</label>
-                                            </form>
-                                            </div><br>
-
-                                            <div><br>
-                                            <form action="upload.php" method="post" enctype="multipart/form-data">
-                                                <label>5. ใบเสร็จค่าพวงหรีด</label>
-                                            </form>
-                                            </div><br>
+                                
 
                                             </div>
                                                 
@@ -324,20 +309,10 @@
                                             <div class="container"  id="col3">
                                                 <div><br>
                                                         <input class= "imgfile" type="file" name="fileToUpload" id="fileToUpload">
-                                                </div><br>  
-                                                <div><br>
-                                                        <input class= "imgfile" type="file" name="fileToUpload" id="fileToUpload">
-                                                </div><br>  
-                                                <div><br> 
-                                                        <input class= "imgfile" type="file" name="fileToUpload" id="fileToUpload">
-                                                </div><br>  
-                                                <div><br>
-                                                        <input class= "imgfile" type="file" name="fileToUpload" id="fileToUpload">
-                                                </div><br>  
-                                                <div><br>
-                                                        <input class= "imgfile" type="file" name="fileToUpload" id="fileToUpload">
-                                                </div><br>  
+                                                </div><br>                                            
                                             </div>
+
+
                                             <div class="container"  id="col1">
                                                 <label></label>
                                                 <div><br>
@@ -390,7 +365,7 @@
                                     </div>
                                 </div>
                                 <!--news2-->
-
+                                </div>
                                 <div class="media">         
                                     <div class="media-body">
                                         <div id="col">
