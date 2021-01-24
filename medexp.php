@@ -49,19 +49,7 @@
                     </ul>
                 </li>
 
-                <li>
-                    <a href="#WelSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">
-                            <i class="fa fa-gift"></i>
-                            สวัสดิการ
-                    </a>
-                    <ul class="collapse list-unstyled" id="WelSubmenu">
-                        <li><a href="definewel.php">เกณฑ์การใช้วสวัสดิการ</a></li>
-                        <li><a href="detailwel.php">รายละเอียดการใช้สวัสดิการ</a></li>
-                        <li><a href="consider.php">พิจารณาการใช้สวัสดิการ</a></li>
-                        <li><a href="approve.php">อนุมัติการใช้สวัสดิการ</a></li>
-                        <li><a href="report.php">รายงานสรุปการใช้สวัสดิการ</a></li>
-                    </ul>
-                </li>
+                <li><a href="#"><i class="fa fa-gift"></i>สวัสดิการ</a></li>
 
                 <li>
                     <a href="#formSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">
@@ -75,6 +63,7 @@
                         <li><a href="comdevice.php">คำร้องสวัสดิการซื้ออุปกรณ์คอมพิวเตอร์</a></li>
                         <li><a href="profund.php">คำร้องสวัสดิการกองทุนสำรองเลี้ยงชีพ</a></li>
                         <li><a href="uniform.php">คำร้องขอยืมเงินเพื่อตัดชุดเครื่องแบบปกติขาว</a></li>
+                        <li><a href="funeral.php">คำร้องสวัสดิการฌาปนกิจสงเคราะห์</a></li>
                         <li><a href="tuitionfee.php">คำร้องสวัสดิการเกี่ยวกับค่าเล่าเรียนบุตร</a></li>
                         <li><a href="opresult.php">ติดตามผลคำร้อง</a></li>
                     </ul>
@@ -148,7 +137,7 @@
                                 <div class="col-12 col-md-4" id="usermenu">
                                     <div class="btn-group" style="float: right;">
                                         <button type="button" class="btn btn-secondary" style="padding: 16px;"
-                                            id="user_name">user1</button>
+                                            id="user_name">ฉัตรภัสร์ ฐิติอัคราวงศ์</button>
                                         <button type="button"
                                             class="btn btn-secondary dropdown-toggle dropdown-toggle-split"
                                             data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -175,39 +164,38 @@
                     <div class="container-fluid" id="news">
                         <div class="row">
                             <div class="col-md-12">
-                            <div class="media" padding: 20px;>
+                            <div class="media">
 
                             <form name="form1" action="insert1.php" method="post"  target="iframe_target">
                             <iframe id="iframe_target" name="iframe_target" src="#" style="width:0;height:0;border:0px solid #fff;"></iframe>
-                                    <div class="media-body" >
-                                        <h4 class="media-heading" style="width: 100%; "><b>สวัสดิการค่ารักษาพยาบาล</b>
+                                    <div class="media-body">
+                                        <h4 class="media-heading"><b>สวัสดิการค่ารักษาพยาบาล</b>
+                                    
                                 </div>
-                                </div>
-                                <div class="media" >
-                                    <div id="col" >
+                                <div class="media">
+                                    <div id="col">
                                         <div class="header">
                                             ข้อมูลส่วนตัว
-                                        <!-- </div><hr> --><br><br><br><br>
+                                        <!-- </div><hr> --><br><br><br><br><br>
                                         </div>
                                     <div>
                                     <div class="container" id="col1">
                                         <label>รหัสบุคลากร</label>
-                                        <div><br>
                                         
+                                        <div>
                                             
                                             <input type="text" class="form-control" id="pid" name="pid">
-                                        </div><br>
-                                         
+                                        </div>
+                                            
 
                                     </div> 
 
                                     <div class="container" id="col2">
                                         <label>ชื่อบุคลากร</label>
-                                        <div><br>
                                             <span>
                                                 <input type="text" class="form-control" id="namepn" name="namepn">
                                             </span>
-                                        </div> <br>
+                                    
                                     </div>
 
                                     <div  class="container" id="col3">
@@ -221,7 +209,6 @@
                                             </select>
                                         </div><br>
                                     </div>
-                                    
                                     <div class="container"  id="col1">
                                         <label>ประเภทบุคลากร</label>
                                         <div><br>
@@ -262,8 +249,8 @@
                                     </div>
                                 </div> 
                                 <!--news1-->
-                                </div>
-                                <div class="media" >
+
+                                <div class="media">
                                     
                                         <div id="col">
                                             <div class="header">
@@ -274,7 +261,7 @@
 
                                         <div class="container" id="col1">
                                             <label>เบิกค่ารักษาพยาบาลให้กับ</label>
-                                            <div></br>
+                                            <!-- <div></br> -->
                                             <select name="Reveal" id="Reveal">
                                                     <option value="โปรดเลือก">โปรดเลือก</option>
                                                     <option value="ตนเอง">ตนเอง</option>
@@ -283,48 +270,48 @@
                                                     <option value="มารดา">มารดา</option>
                                                     <option value="บุตร">บุตร</option>
                                                 </select>
-                                            </div><br>
+                                            <!-- </div><br> -->
                                         </div>
 
                                         <div class="container" id="col2">
                                             <label>ชื่อ-นามสกุล</label>
-                                            <div><br>
+                                            <!-- <div><br> -->
                                                 <input type="text" class="form-control" id="namerl" name="namerl">
-                                            </div><br>
+                                            <!-- </div><br> -->
                                         
                                         </div>
 
                                         <div class="container" id="col3">
                                             <label>วัน/เดือน/ปีเกิด</label>
-                                            <div><br>
+                                           <!--  <div><br> -->
                                                 <input type="date" class="form-control" id="born" name="born">
-                                            </div><br>
+                                            <!-- </div><br> -->
                                         </div>
 
                                         <div class="container" id="col1">
                                             <label>ประเภทสถานพยาบาล</label>
-                                            <div><br>
+                                            <!-- <div><br> -->
                                                 <select name="cinf" id="cinf">
                                                     <option value="โปรดเลือก">โปรดเลือก</option>
                                                     <option value="เอกชน">เอกชน</option>
                                                     <option value="รัฐบาล">รัฐบาล</option>
                                                 </select>
-                                            </div><br>
+                                            <!-- </div><br> -->
                                         </div>
 
 
                                         <div class="container" id="col2">
                                             <label>ชื่อสถานพยาบาล</label>
-                                            <div><br>
+                                            <!-- <div><br> -->
                                                 <input type="text" class="form-control" id="nameinf" name="nameinf">
                                             </div><br>  
                                         </div>
 
                                         <div class="container" id="col3">
                                             <label>วันที่ทำการรักษาพยาบาล</label>
-                                            <div><br>
+                                            <!-- <div><br> -->
                                                 <input type="date" class="form-control" id="operate" name="operate">
-                                            </div><br>
+                                            <!-- </div><br> -->
                                         </div>
                                         <div class="container" id="col1">
                                             <label>อาการป่วย</label>
@@ -343,7 +330,7 @@
                                     </div>
                                 </div>
                                 <!--news2-->
-                                </div>
+
                                 <div class="media">         
                                     <div class="media-body">
                                         <div id="col">

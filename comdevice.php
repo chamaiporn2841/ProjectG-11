@@ -49,19 +49,7 @@
                     </ul>
                 </li>
 
-                <li>
-                    <a href="#WelSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">
-                            <i class="fa fa-gift"></i>
-                            สวัสดิการ
-                    </a>
-                    <ul class="collapse list-unstyled" id="WelSubmenu">
-                        <li><a href="definewel.php">เกณฑ์การใช้วสวัสดิการ</a></li>
-                        <li><a href="detailwel.php">รายละเอียดการใช้สวัสดิการ</a></li>
-                        <li><a href="consider.php">พิจารณาการใช้สวัสดิการ</a></li>
-                        <li><a href="approve.php">อนุมัติการใช้สวัสดิการ</a></li>
-                        <li><a href="report.php">รายงานสรุปการใช้สวัสดิการ</a></li>
-                    </ul>
-                </li>
+                <li><a href="#"><i class="fa fa-gift"></i>สวัสดิการ</a></li>
 
                 <li>
                     <a href="#formSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">
@@ -75,6 +63,7 @@
                         <li><a href="comdevice.php">คำร้องสวัสดิการซื้ออุปกรณ์คอมพิวเตอร์</a></li>
                         <li><a href="profund.php">คำร้องสวัสดิการกองทุนสำรองเลี้ยงชีพ</a></li>
                         <li><a href="uniform.php">คำร้องขอยืมเงินเพื่อตัดชุดเครื่องแบบปกติขาว</a></li>
+                        <li><a href="funeral.php">คำร้องสวัสดิการฌาปนกิจสงเคราะห์</a></li>
                         <li><a href="tuitionfee.php">คำร้องสวัสดิการเกี่ยวกับค่าเล่าเรียนบุตร</a></li>
                         <li><a href="opresult.php">ติดตามผลคำร้อง</a></li>
                     </ul>
@@ -175,37 +164,38 @@
                     <div class="container-fluid" id="news">
                         <div class="row">
                             <div class="col-md-12">
-                                    <div class="media">
+                            <div class="media">
                                     
-                                        <form name="form1" action="insert2.php" method="post"  target="iframe_target">
-                                            <iframe id="iframe_target" name="iframe_target" src="#" style="width:0;height:0;border:0px solid #fff;"></iframe>
-                                                <div class="media-body">
-                                                    <h4 class="media-heading"><b>สวัสดิการซื้ออุปกรณ์คอมพิวเตอร์</b>
-                                                </div>
-                                    </div>
-
-                                    <div class="media">
-                                        <div id="col">
-                                            <div class="header">
-                                                ข้อมูลส่วนตัว
-                                            <!-- </div><hr> --><br><br><br><br>
-                                            </div>
-                                    </div>
+                            <form name="form1" action="insert2.php" method="post"  target="iframe_target">
+                            <iframe id="iframe_target" name="iframe_target" src="#" style="width:0;height:0;border:0px solid #fff;"></iframe>
+                                    <div class="media-body">
+                                        <h4 class="media-heading"><b>สวัสดิการซื้ออุปกรณ์คอมพิวเตอร์</b>
                                     
+                                </div>
+                                <div class="media">
+                                    <div id="col">
+                                        <div class="header">
+                                            ข้อมูลส่วนตัว
+                                        <!-- </div><hr> --><br><br><br><br><br>
+                                        </div>
+                                    </div>
                                     <div class="container" id="col1">
-                                        <label>รหัสบุคลากร</label> 
-                                        <div><br>
+                                        <label>รหัสบุคลากร</label>
+                                        
+                                        <div>
+                                            
                                             <input type="text" class="form-control" id="pid" name="pid">
-                                        </div><br>
+                                        </div>
+                                            
+
                                     </div> 
 
                                     <div class="container" id="col2">
                                         <label>ชื่อบุคลากร</label>
-                                        <div><br>
                                             <span>
                                                 <input type="text" class="form-control" id="namepn" name="namepn">
                                             </span>
-                                        </div> <br>
+                                    
                                     </div>
 
                                     <div  class="container" id="col3">
@@ -246,48 +236,56 @@
                                         </div><br>
                                     
                                     </div><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
-                                        
+                                        <!-- submit  -->    
+                                           
+                                           
+                                        <!-- <div align="right"  class="container">
+                                            <input type="submit" class="btn btn-success" value="บันทึก" style=" font-family: 'Mitr', sans-serif;">
+                                            <input type="reset" class="btn" VALUE="ล้างข้อมูล" style=" font-family: 'Mitr', sans-serif;" >
+                                        </div>  -->
                                             
-                            </div> 
-                        </div>
-                    </div>
-                               
+                                        </div> 
+                                    </div>
+                                    </div>
+                                </div> 
                                 <!--news1-->
-                                
-                                    <div class="media">
+
+                                <div class="media">
+                                    
                                         <div id="col">
                                             <div class="header">
                                                 รายละเอียดการขอสวัสดิการ
                                             <!-- </div><hr> --><br><br><br><br>
                                         </div>
-                                    <div>
+                                        <div>
 
-                                    <div class="container" id="col1">
-                                        <label>วัตถุประสงค์ในการจัดซื้อ</label>
+                                        <div class="container" id="col1">
+                                            <label>วัตถุประสงค์ในการจัดซื้อ</label>
                                             <div><br>
                                                 <input type="text" class="form-control" id="Purpose" name="Purpose">
                                             </div><br>
-                                    </div>
+                                        </div>
                                         
-                                    <div class="container" id="col2">
-                                        <label>รายการจัดซื้อ (ระบุยี่ห้อและรุ่น)</label>
+                                        <div class="container" id="col2">
+                                            <label>รายการจัดซื้อ (ระบุยี่ห้อและรุ่น)</label>
                                             <div><br>
                                                 <input type="text" class="form-control" id="ListB" name="ListB">
                                             </div><br>
-                                    </div>
+                                        
+                                        </div>
 
-                                    <div class="container" id="col3">
-                                        <label>จำนวนเงิน </label>
+                                        <div class="container" id="col3">
+                                            <label>จำนวนเงิน (บาท)</label>
                                             <div><br>
                                                 <input type="text" class="form-control" id="cmoney" name="cmoney">
                                             </div><br>
-                                    </div>
+                                        </div>
 
-                                    
-                                </div>
-                            </div>
-                                <!--news2-->
                                     </div>
+                                    </div>
+                                </div>
+                                <!--news2-->
+
                                 <div class="media">         
                                     <div class="media-body">
                                         <div id="col">
