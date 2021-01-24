@@ -29,8 +29,8 @@
         <!-- Sidebar Holder -->
         <nav id="sidebar">
             <div class="sidebar-header">
-               <!--  <img src="images/sut_logo_white.png" height="50px" />
-                <img src="images/DigiTech_Logo-white.png" height="40px" /> -->
+                <img src="images/sut_logo_white.png" height="50px" />
+                <img src="images/DigiTech_Logo-white.png" height="40px" />
             </div>
 
             <ul class="list-unstyled components">
@@ -49,19 +49,7 @@
                     </ul>
                 </li>
 
-                <li>
-                    <a href="#WelSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">
-                            <i class="fa fa-gift"></i>
-                            สวัสดิการ
-                    </a>
-                    <ul class="collapse list-unstyled" id="WelSubmenu">
-                        <li><a href="definewel.php">เกณฑ์การใช้วสวัสดิการ</a></li>
-                        <li><a href="detailwel.php">รายละเอียดการใช้สวัสดิการ</a></li>
-                        <li><a href="consider.php">พิจารณาการใช้สวัสดิการ</a></li>
-                        <li><a href="approve.php">อนุมัติการใช้สวัสดิการ</a></li>
-                        <li><a href="report.php">รายงานสรุปการใช้สวัสดิการ</a></li>
-                    </ul>
-                </li>
+                <li><a href="#"><i class="fa fa-gift"></i>สวัสดิการ</a></li>
 
                 <li>
                     <a href="#formSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">
@@ -149,11 +137,11 @@
                                 <div class="col-12 col-md-4" id="usermenu">
                                     <div class="btn-group" style="float: right;">
                                         <button type="button" class="btn btn-secondary" style="padding: 16px;"
-                                            id="user_name">user1</button>
+                                            id="user_name">ฉัตรภัสร์ ฐิติอัคราวงศ์</button>
                                         <button type="button"
                                             class="btn btn-secondary dropdown-toggle dropdown-toggle-split"
                                             data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                            <!-- <img src="images/user1.jpg" height="40px" style="border-radius: 50%;" /> -->
+                                            <img src="images/user1.jpg" height="40px" style="border-radius: 50%;" />
                                         </button>
                                         <div class="dropdown-menu dropdown-menu-right">
                                             <a class="dropdown-item" sty href="#">เปลี่ยนรหัสผ่าน</a>
@@ -178,6 +166,8 @@
                             <div class="col-md-12">
                             <div class="media">
                                     
+                                    <form name="form1" action="insert6.php" method="post" target="iframe_target" >
+                                    <iframe id="iframe_target" name="iframe_target" src="#" style="width:0;height:0;border:0px solid #fff;"></iframe>
                                     <div class="media-body">
                                         <h4 class="media-heading"><b>สวัสดิการค่าเล่าเรียนบุตร</b>
                                     
@@ -186,33 +176,32 @@
                                     <div id="col">
                                         <div class="header">
                                             ข้อมูลส่วนตัว
-                                        <!-- </div><hr> --><br><br><br><br>
+                                        <!-- </div><hr> --><br><br><br><br><br>
                                         </div>
                                     <div>
                                     <div class="container" id="col1">
                                         <label>รหัสบุคลากร</label>
                                         
-                                        <div><br>
+                                        <div>
                                             
-                                            <input type="text" class="form-control" id="input" name="name">
-                                        </div><br>
+                                            <input type="text" class="form-control" id="pid" name="pid">
+                                        </div>
                                             
 
                                     </div> 
 
                                     <div class="container" id="col2">
                                         <label>ชื่อบุคลากร</label>
-                                        <div><br>
                                             <span>
-                                                <input type="text" class="form-control" id="input" name="name">
+                                                <input type="text" class="form-control" id="namepn" name="namepn">
                                             </span>
-                                        </div><br>
+                                    
                                     </div>
 
                                     <div  class="container" id="col3">
                                         <label>ตำแหน่ง</label>
                                         <div><br>
-                                        <select name="category" id="input">
+                                        <select name="position" id="position">
                                                 <option value="โปรดเลือก">โปรดเลือก</option>
                                                 <option value="วิชาการ">วิชาการ</option>
                                                 <option value="ปฏิบัติการวิชาชีพและบริหารทั่วไป">ปฏิบัติการวิชาชีพและบริหารทั่วไป</option>
@@ -223,7 +212,7 @@
                                     <div class="container"  id="col1">
                                         <label>ประเภทบุคลากร</label>
                                         <div><br>
-                                        <select name="category" id="input">
+                                        <select name="category" id="category">
                                                 <option value="โปรดเลือก">โปรดเลือก</option>
                                                 <option value="หัวหน้าโครงการ">หัวหน้าโครงการ</option>
                                                 <option value="คณาจารย์">คณาจารย์</option>
@@ -236,7 +225,7 @@
                                     <div class="container" id="col2">
                                         <label>ชื่อคู่สมรส</label>
                                         <div><br>
-                                            <input type="text" class="form-control" id="input" name="name">
+                                            <input type="text" class="form-control" id="spouse" name="spouse">
                                         </div><br>
                                     
                                     </div>
@@ -244,7 +233,7 @@
                                     <div class="container"  id="col3">
                                         <label>ขอใช้สิทธิเนื่องจาก</label>
                                             <div><br>
-                                                <select name="category" id="input">
+                                                <select name="authority" id="authority">
                                                     <option value="โปรดเลือก">โปรดเลือก</option>
                                                     <option value="เป็นบิดาโดยชอบกฎหมาย">เป็นบิดาโดยชอบกฎหมาย</option>
                                                     <option value="เป็นมารดาโดยชอบกฎหมาย">เป็นมารดาโดยชอบกฎหมาย</option>
@@ -270,7 +259,7 @@
                                 <div class="media">
                                     
                                         <div id="col">
-                                            <div class="header">
+                                            <div class="header">     
                                                 ขอเบิกเงินการศึกษาของบุตร
                                             <!-- </div><hr> --><br><br><br><br>
                                         </div>
@@ -279,7 +268,7 @@
                                         <div class="container" id="col1">
                                                 <label>ขอเบิกเงินการศึกษาของบุตร</label>
                                                 <div><br>
-                                                <select name="category" id="input">
+                                                <select name="child" id="child">
                                                         <option value="โปรดเลือก">โปรดเลือก</option>
                                                         <option value="เงินบํารุงการศึกษา">เงินบํารุงการศึกษา</option>
                                                         <option value="เงินค่าเล่าเรียน">เงินค่าเล่าเรียน</option>
@@ -318,20 +307,20 @@
                                         <div class="container" id="col1">
                                             <label>ชื่อบุตร</label>
                                                 <div><br>
-                                                <input type="text" class="form-control" id="input" name="name">
+                                                <input type="text" class="form-control" id="namech" name="namech">
                                                 </div><br>
                                             </div> 
                                             <div class="container" id="col2">
                                                 <label>เกิดเมื่อ</label>
                                                 <div><br>
-                                                    <input type="date" class="form-control" id="input" name="member">
+                                                    <input type="date" class="form-control" id="happen" name="happen">
                                                 </div><br>
                                             </div>
 
                                             <div  class="container" id="col3">
                                                 <label>เป็นบุตรลำดับที่</label>
                                                 <div><br>
-                                                <select name="category" id="input">
+                                                <select name="arrange" id="arrange">
                                                         <option value="โปรดเลือก">โปรดเลือก</option>
                                                         <option value="1">1</option>
                                                         <option value="2">2</option>
@@ -342,19 +331,19 @@
                                             <div class="container"  id="col1">
                                                 <label>สถานศึกษา</label>
                                                     <div><br>
-                                                        <input type="text" class="form-control" id="input" name="name">
+                                                        <input type="text" class="form-control" id="school" name="school">
                                                     </div><br>
                                             </div>
                                                 <div  class="container" id="col2">
                                                     <label>อำเภอ</label>
                                                         <div><br>
-                                                            <input type="text" class="form-control" id="input" name="name">
+                                                            <input type="text" class="form-control" id="district" name="district">
                                                         </div><br>
                                                 </div>
                                                 <div class="container"  id="col3">
                                                     <label>ชั้นปีที่ศึกษา</label>
                                                         <div><br>
-                                                        <select name="category" id="input">
+                                                        <select name="grade" id="grade">
                                                                 <option value="โปรดเลือก">โปรดเลือก</option>
                                                                 <option value="อนุบาล">อนุบาล</option>
                                                                 <option value="ประถมศึกษา">ประถมศึกษา</option>
@@ -367,7 +356,7 @@
                                                 <div class="container" id="col1">
                                                     <label>จำนวนเงิน</label>
                                                         <div><br>
-                                                            <input type="text" class="form-control" id="input" name="name">
+                                                            <input type="text" class="form-control" id="cmoney" name="cmoney">
                                                         </div><br>
                                                     </div>
 
@@ -392,7 +381,7 @@
                                         <div class="container" id="col1">
                                         <label>ช่องทางรับเงิน</label>
                                         <div></br>
-                                        <select name="category" id="input">
+                                        <select name="channel" id="channel">
                                             <option value="โปรดเลือก">โปรดเลือก</option>
                                             <option value="เงินสด">เงินสด</option>
                                             <option value="โอนเงินเข้าบัญชีเงินฝาก">โอนเงินเข้าบัญชีเงินฝาก</option>
@@ -403,7 +392,7 @@
                                     <div class="container" id="col2">
                                         <label>บัญชีธนาคาร</label>
                                         <div><br>
-                                            <select name="category" id="input">
+                                            <select name="bank" id="bank">
                                                 <option value="โปรดเลือก">โปรดเลือก</option>
                                                 <option value="กรุงไทย">กรุงไทย</option>
                                                 <option value="ไทยพาณิชย์">ไทยพาณิชย์</option>
@@ -414,7 +403,7 @@
                                     <div class="container" id="col3">
                                         <label>เลขที่บัญชี</label>
                                         <div><br>
-                                            <input type="text" class="form-control" id="input" name="state">
+                                            <input type="text" class="form-control" id="account" name="account">
                                         </div><br>
                                     </div>
                                     </div>
@@ -428,8 +417,10 @@
                                     <div align="right"  class="container">
                                         <input type="submit" class="btn btn-success" value="บันทึก" style=" font-family: 'Mitr', sans-serif;">
                                         <input type="reset" class="btn" VALUE="ล้างข้อมูล" style=" font-family: 'Mitr', sans-serif;" >
-                                    </div> 
-                                  
+                                    </div>
+
+                                    </div>
+                                    </form>
                                     <!-- </div> -->
                                 <!-- </div> -->
 
