@@ -259,7 +259,7 @@
                                 <div class="media">
                                     
                                         <div id="col">
-                                            <div class="header">
+                                            <div class="header">     
                                                 ขอเบิกเงินการศึกษาของบุตร
                                             <!-- </div><hr> --><br><br><br><br>
                                         </div>
