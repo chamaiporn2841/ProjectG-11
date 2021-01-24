@@ -403,3 +403,29 @@ label{
     color: #17191f;
     
 }
+#chlids {
+    font-family: 'Sukhumvit', sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+  }
+  
+#chlidss td, #chlids th {
+     /* border: 1px solid #ddd; */
+    padding: 8px;
+  }
+  
+#chlids tr:nth-child(even){
+      background-color: #f2f2f2;
+    }
+  
+#chlids tr:hover {
+    background-color: #ddd;
+}
+  
+#chlids th {
+    font-family: 'Sukhumvit', sans-serif;
+    font-size: 14px;
+    text-align: center;
+    background-color: #0072B5;
+    color: white;
+}
