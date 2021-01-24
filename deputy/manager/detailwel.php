@@ -49,7 +49,19 @@
                     </ul>
                 </li>
 
-                <li><a href="#"><i class="fa fa-gift"></i>สวัสดิการ</a></li>
+                <li>
+                    <a href="#WelSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">
+                            <i class="fa fa-gift"></i>
+                            สวัสดิการ
+                    </a>
+                    <ul class="collapse list-unstyled" id="WelSubmenu">
+                        <li><a href="#">เกณฑ์การใช้วสวัสดิการ</a></li>
+                        <li><a href="detailwel.php">รายละเอียดการใช้สวัสดิการ</a></li>
+                        <li><a href="consider.php">พิจารณาการใช้สวัสดิการ</a></li>
+                        <li><a href="approve.php">อนุมัติการใช้สวัสดิการ</a></li>
+                        <li><a href="report.php">รายงานสรุปการใช้สวัสดิการ</a></li>
+                    </ul>
+                </li>
 
                 <li>
                     <a href="#formSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">
@@ -166,40 +178,25 @@
                             <div class="col-md-12">
                                 <div class="media">
                                     <div id="col">
+                                        
+                                    
+                                    <div class="media">
+                                    <div id="col">
                                         <div class="header">
-                                            ผลการดำเนินการ
+                                            รายละเอียดการใช้สวัสดิการ
                                         <!-- </div><hr> --><br><br><br><br><br>
                                         </div>
                                     <div>
-                                    <div class="container" id="chlids">        
-                                        <table  class="table">
-                                            <thead>
-                                            <tr>
-                                                <th>ประเภทสวัสดิการ</th>
-                                                <th>ประเภทการจ่าย</th>
-                                                <th>กรณีหักผ่านบัญชี</th>
-                                                <th>จำนวนเงิน</th>
-                                                <th>ผลการอนุมัติ</th>
-                                                
-                                            </tr>
-                                            </thead>
-                                            <tbody>
-                                            <tr>
-                                                <td></td>
-                                                <td></td>
-                                                <td></td>
-                                                <td></td>
-                                                <td></td> 
-                                            </tr>
-                                            </tbody>
-                                        </table>
-                                        </div>
-                                
-
-                                
+                                   
+                                    <!-- <div class="container" id="col" align="left" > -->
+                                        
+                                    <!-- </div> --> 
+                                    
+                                         </div>
+                                </div>
+                                <br/><br/>
                                 <!--news2-->
-
-                                
+                                    
                                 <!--news3-->
                             </div>
                         </div>

@@ -52,6 +52,8 @@
                 <li><a href="#"><i class="fa fa-gift"></i>สวัสดิการ</a></li>
 
                 <li>
+
+                <li>
                     <a href="#formSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">
                         <i class="fa fa-pencil-square-o"></i>
                         คำร้องออนไลน์
@@ -167,39 +169,64 @@
                                 <div class="media">
                                     <div id="col">
                                         <div class="header">
-                                            ผลการดำเนินการ
+                                            เกณฑ์การใช้สวัสดิการ
+                                        <!-- </div><hr> --><br><br><br>
+                                        </div>
+                                    <div>
+                                    <div class="container" id="col1" >
+                                        <label>ประเภทสวัสดิการ</label>
+                                        <!-- <div><br> -->
+                                            <select name="category" id="input">
+                                                <option value="โปรดเลือก">โปรดเลือก</option>
+                                                <option value="สวัสดิการค่ารักษาพยาบาล">สวัสดิการค่ารักษาพยาบาล</option>
+                                                <option value="สวัสดิการซื้ออุปกรณ์คอมพิวเตอร์">สวัสดิการซื้ออุปกรณ์คอมพิวเตอร์</option>
+                                                <option value="สวัสดิการกองทุนสำรองเลี้ยงชีพ">สวัสดิการกองทุนสำรองเลี้ยงชีพ</option>
+                                                <option value="สวัสดิการขอยืมเงินเพื่อตัดชุดเครื่องแบบปกติขาว">สวัสดิการขอยืมเงินเพื่อตัดชุดเครื่องแบบปกติขาว</option>
+                                                <option value="สวัสดิการฌาปนกิจสงเคราะห์">สวัสดิการฌาปนกิจสงเคราะห์</option>
+                                                <option value="สวัสดิการเกี่ยวกับค่าเล่าเรียนบุตร">สวัสดิการเกี่ยวกับค่าเล่าเรียนบุตร</option>
+                                            </select>
+                                        <!-- </div><br> -->
+                                        </div>
+                                    <div class="container" id="col2">
+                                        <label>วันที่บันทึก</label>
+                                        <!-- <div><br -->
+                                            <input type="date" class="form-control" id="input" name="date">
+                                        <!-- </div><br> -->
+                                        </div>      
+                                        </div>
+                                    </div>
+                                </div>
+
+                                    <div class="media">
+                                    <div id="col">
+                                        <div class="header">
+                                            รายละเอียดสวัสดิการ
                                         <!-- </div><hr> --><br><br><br><br><br>
                                         </div>
                                     <div>
-                                    <div class="container" id="chlids">        
-                                        <table  class="table">
-                                            <thead>
-                                            <tr>
-                                                <th>ประเภทสวัสดิการ</th>
-                                                <th>ประเภทการจ่าย</th>
-                                                <th>กรณีหักผ่านบัญชี</th>
-                                                <th>จำนวนเงิน</th>
-                                                <th>ผลการอนุมัติ</th>
-                                                
-                                            </tr>
-                                            </thead>
-                                            <tbody>
-                                            <tr>
-                                                <td></td>
-                                                <td></td>
-                                                <td></td>
-                                                <td></td>
-                                                <td></td> 
-                                            </tr>
-                                            </tbody>
-                                        </table>
-                                        </div>
-                                
-
-                                
+                                   
+                                    <!-- <div class="container" id="col" align="left" > -->
+                                        <textarea  name="detail" id="detail" ></textarea>
+                                    <!-- </div> --> 
+                                    <center>
+                                    <script type="text/javascript" src="ckeditor/ckeditor.js"></script>
+                                        <script>
+                                            CKEDITOR.replace('detail');
+                                            function CKupdate() {
+                                                for (instance in CKEDITOR.instances)
+                                                    CKEDITOR.instances[instance].updateElement();
+                                            }
+                                        </script></center>
+                                         </div>
+                                </div>
+                                <br/><br/>
                                 <!--news2-->
-
-                                
+                                    <div align="right"  class="container">
+                                            <input type="submit" class="btn btn-success" value="บันทึก" style=" font-family: 'Mitr', sans-serif;">
+                                            <input type="reset" class="btn" VALUE="ล้างข้อมูล" style=" font-family: 'Mitr', sans-serif;" >
+                                        </div> 
+                                            </div>
+                                        </div>
                                 <!--news3-->
                             </div>
                         </div>

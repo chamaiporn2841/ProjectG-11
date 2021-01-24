@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html>
-
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -49,7 +48,19 @@
                     </ul>
                 </li>
 
-                <li><a href="#"><i class="fa fa-gift"></i>สวัสดิการ</a></li>
+                <li>
+                    <a href="#WelSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">
+                            <i class="fa fa-gift"></i>
+                            สวัสดิการ
+                    </a>
+                    <ul class="collapse list-unstyled" id="WelSubmenu">
+                        <li><a href="definewel.php">เกณฑ์การใช้วสวัสดิการ</a></li>
+                        <li><a href="detailwel.php">รายละเอียดการใช้สวัสดิการ</a></li>
+                        <li><a href="consider.php">พิจารณาการใช้สวัสดิการ</a></li>
+                        <li><a href="approve.php">อนุมัติการใช้สวัสดิการ</a></li>
+                        <li><a href="report.php">รายงานสรุปการใช้สวัสดิการ</a></li>
+                    </ul>
+                </li>
 
                 <li>
                     <a href="#formSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">
@@ -167,39 +178,96 @@
                                 <div class="media">
                                     <div id="col">
                                         <div class="header">
-                                            ผลการดำเนินการ
-                                        <!-- </div><hr> --><br><br><br><br><br>
+                                            รายการคำร้อง
+                                        <!-- </div><hr> --><br><br><br>
                                         </div>
                                     <div>
-                                    <div class="container" id="chlids">        
-                                        <table  class="table">
-                                            <thead>
+                                        <div class="container" id="col2">
+                                            <label>วันที่ทำการ</label>
+                                           
+                                                <input type="date" class="form-control" id="input" name="member">
+                                            
+                                        </div>
+                                    
+                                        <div class="container" id="chlids" >        
+                                        <table class="table" colspan="2">
+                                            
                                             <tr>
-                                                <th>ประเภทสวัสดิการ</th>
-                                                <th>ประเภทการจ่าย</th>
-                                                <th>กรณีหักผ่านบัญชี</th>
-                                                <th>จำนวนเงิน</th>
+                                                <th>เลือก</th>
                                                 <th>ผลการอนุมัติ</th>
-                                                
+                                                <th>ประเภทสวัสสดิการ</th>
+                                                <th>ไฟล์แนบ</th>
+                                                <th>ชื่อผู้ขอ</th>
+                                                <th>จำนวนเงิน</th>
+                                                <th>หมายเหตุ</th>
+                                                <th>ดูรายละเอียด</th>
+                                                <th>แก้ไข</th>
                                             </tr>
-                                            </thead>
-                                            <tbody>
+
                                             <tr>
                                                 <td></td>
                                                 <td></td>
                                                 <td></td>
                                                 <td></td>
-                                                <td></td> 
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td align="center"><img  src="images/eye.png" width="20" height="20"/></td>   
+                                                <td align="center"><img  src="images/edit.png" width="20" height="20"/></td>  
                                             </tr>
-                                            </tbody>
+                                            
                                         </table>
                                         </div>
-                                
-
-                                
+                                        
                                 <!--news2-->
+                                    <div align="right"  class="container">
+                                            <input type="submit" class="btn btn-success" value="บันทึก" style=" font-family: 'Mitr', sans-serif;">
+                                            <input type="reset" class="btn" VALUE="ล้างข้อมูล" style=" font-family: 'Mitr', sans-serif;" >
+                                        </div> 
+                                            </div>
+                                        </div>
+                                <!--news3-->
+                            </div>
+                            </div>
+                        </div>
+                    </div>
+                </news>
+            </main>
 
-                                
+            <div style="height: 40px;"></div>
+        </div>
+
+    </div>
+
+    <footer class="bg-light text-center text-lg-start">
+        <!-- Copyright -->
+        <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2)">
+            © 2020 Copyright:
+            <a class="text-dark" href="https://mdbootstrap.com/">MDBootstrap.com</a>
+        </div>
+        <!-- Copyright -->
+    </footer>
+
+    <script type="text/javascript">
+        $(document).ready(function() {
+            $('#sidebarCollapse').on('click', function() {
+                $('#sidebar').toggleClass('active');
+            });
+        });
+    </script>
+
+</body>
+
+</html>
+
+
+                                        <!--news2-->
+                                            <div align="right"  class="container">
+                                                    <input type="submit" class="btn btn-success" value="บันทึก" style=" font-family: 'Mitr', sans-serif;">
+                                                    <input type="reset" class="btn" VALUE="ล้างข้อมูล" style=" font-family: 'Mitr', sans-serif;" >
+                                                </div> 
+                                                    </div>
+                                                </div>
                                 <!--news3-->
                             </div>
                         </div>

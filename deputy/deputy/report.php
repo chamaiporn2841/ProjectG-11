@@ -49,7 +49,19 @@
                     </ul>
                 </li>
 
-                <li><a href="#"><i class="fa fa-gift"></i>สวัสดิการ</a></li>
+                <li>
+                    <a href="#WelSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">
+                            <i class="fa fa-gift"></i>
+                            สวัสดิการ
+                    </a>
+                    <ul class="collapse list-unstyled" id="WelSubmenu">
+                        <li><a href="definewel.php">เกณฑ์การใช้วสวัสดิการ</a></li>
+                        <li><a href="detailwel.php">รายละเอียดการใช้สวัสดิการ</a></li>
+                        <li><a href="consider.php">พิจารณาการใช้สวัสดิการ</a></li>
+                        <li><a href="approve.php">อนุมัติการใช้สวัสดิการ</a></li>
+                        <li><a href="report.php">รายงานสรุปการใช้สวัสดิการ</a></li>
+                    </ul>
+                </li>
 
                 <li>
                     <a href="#formSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">
@@ -167,39 +179,69 @@
                                 <div class="media">
                                     <div id="col">
                                         <div class="header">
-                                            ผลการดำเนินการ
+                                            เกณฑ์การใช้สวัสดิการ
+                                        <!-- </div><hr> --><br><br><br>
+                                        </div>
+                                    <div>
+                                    <div class="container" id="col1" >
+                                        <label>ประเภทสวัสดิการ</label>
+                                        <div>
+                                            <select name="category" id="input">
+                                                <option value="โปรดเลือก">โปรดเลือก</option>
+                                                <option value="สวัสดิการค่ารักษาพยาบาล">สวัสดิการค่ารักษาพยาบาล</option>
+                                                <option value="สวัสดิการซื้ออุปกรณ์คอมพิวเตอร์">สวัสดิการซื้ออุปกรณ์คอมพิวเตอร์</option>
+                                                <option value="สวัสดิการกองทุนสำรองเลี้ยงชีพ">สวัสดิการกองทุนสำรองเลี้ยงชีพ</option>
+                                                <option value="สวัสดิการขอยืมเงินเพื่อตัดชุดเครื่องแบบปกติขาว">สวัสดิการขอยืมเงินเพื่อตัดชุดเครื่องแบบปกติขาว</option>
+                                                <option value="สวัสดิการฌาปนกิจสงเคราะห์">สวัสดิการฌาปนกิจสงเคราะห์</option>
+                                                <option value="สวัสดิการเกี่ยวกับค่าเล่าเรียนบุตร">สวัสดิการเกี่ยวกับค่าเล่าเรียนบุตร</option>
+                                            </select>
+                                        </div><br>
+                                        </div>
+                                        <div  class="container" id="col3">
+                                            <label>รายเดือน</label>
+                                            <div>
+                                            <select name="category" id="input">
+                                                    <option value="โปรดเลือก">โปรดเลือก</option>
+                                                    <option value="มกราคม">มกราคม</option>
+                                                    <option value="กุมภาพันธ์">กุมภาพันธ์</option>
+                                                    <option value="มีนาคม">มีนาคม</option>  
+                                                    <option value="เมษายน">เมษายน</option>  
+                                                    <option value="พฤษภาคม">พฤษภาคม</option>  
+                                                    <option value="มิถุนายน">มิถุนายน</option>  
+                                                    <option value="กรกฎาคม">กรกฎาคม</option>  
+                                                    <option value="สิงหาคม">สิงหาคม</option>   
+                                                    <option value="กันยายน">กันยายน</option>   
+                                                    <option value="ตุลาคม">ตุลาคม</option>   
+                                                    <option value="พฤศจิกายน">พฤศจิกายน</option>   
+                                                    <option value="ธันวาคม">ธันวาคม</option>     
+                                                </select>
+                                            </div><br>
+                                        
+                                        
+                                        </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+
+                                    <div class="media">
+                                    <div id="col">
+                                        <div class="header">
+                                            
                                         <!-- </div><hr> --><br><br><br><br><br>
                                         </div>
                                     <div>
-                                    <div class="container" id="chlids">        
-                                        <table  class="table">
-                                            <thead>
-                                            <tr>
-                                                <th>ประเภทสวัสดิการ</th>
-                                                <th>ประเภทการจ่าย</th>
-                                                <th>กรณีหักผ่านบัญชี</th>
-                                                <th>จำนวนเงิน</th>
-                                                <th>ผลการอนุมัติ</th>
-                                                
-                                            </tr>
-                                            </thead>
-                                            <tbody>
-                                            <tr>
-                                                <td></td>
-                                                <td></td>
-                                                <td></td>
-                                                <td></td>
-                                                <td></td> 
-                                            </tr>
-                                            </tbody>
-                                        </table>
-                                        </div>
-                                
-
-                                
+                                   
+                                   
+                                </div>
+                                <br/><br/>
                                 <!--news2-->
-
-                                
+                                    <div align="right"  class="container">
+                                            <input type="submit" class="btn btn-success" value="บันทึก" style=" font-family: 'Mitr', sans-serif;">
+                                            <input type="reset" class="btn" VALUE="ล้างข้อมูล" style=" font-family: 'Mitr', sans-serif;" >
+                                        </div> 
+                                            </div>
+                                        </div>
                                 <!--news3-->
                             </div>
                         </div>
@@ -230,5 +272,3 @@
     </script>
 
 </body>
-
-</html>

@@ -49,7 +49,19 @@
                     </ul>
                 </li>
 
-                <li><a href="#"><i class="fa fa-gift"></i>สวัสดิการ</a></li>
+                <li>
+                    <a href="#WelSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">
+                            <i class="fa fa-gift"></i>
+                            สวัสดิการ
+                    </a>
+                    <ul class="collapse list-unstyled" id="WelSubmenu">
+                        <li><a href="definewel.php">เกณฑ์การใช้วสวัสดิการ</a></li>
+                        <li><a href="detailwel.php">รายละเอียดการใช้สวัสดิการ</a></li>
+                        <li><a href="consider.php">พิจารณาการใช้สวัสดิการ</a></li>
+                        <li><a href="approve.php">อนุมัติการใช้สวัสดิการ</a></li>
+                        <li><a href="report.php">รายงานสรุปการใช้สวัสดิการ</a></li>
+                    </ul>
+                </li>
 
                 <li>
                     <a href="#formSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">
@@ -167,39 +179,125 @@
                                 <div class="media">
                                     <div id="col">
                                         <div class="header">
-                                            ผลการดำเนินการ
-                                        <!-- </div><hr> --><br><br><br><br><br>
+                                            พิจารณาการใช้สวัสดิการ
+                                        <!-- </div><hr> --><br><br><br>
                                         </div>
                                     <div>
-                                    <div class="container" id="chlids">        
-                                        <table  class="table">
-                                            <thead>
-                                            <tr>
-                                                <th>ประเภทสวัสดิการ</th>
-                                                <th>ประเภทการจ่าย</th>
-                                                <th>กรณีหักผ่านบัญชี</th>
-                                                <th>จำนวนเงิน</th>
-                                                <th>ผลการอนุมัติ</th>
-                                                
-                                            </tr>
-                                            </thead>
-                                            <tbody>
-                                            <tr>
-                                                <td></td>
-                                                <td></td>
-                                                <td></td>
-                                                <td></td>
-                                                <td></td> 
-                                            </tr>
-                                            </tbody>
-                                        </table>
+                                    
+                                    <form class="form-inline" name="searchform" id="searchform">
+                                    <div class="form-group" align="center">
+                                    <div class="form-inline"  >
+                                        <label for="textsearch" >ประเภทสวัสดิการ</label>
+                                  
+                                         <input type="text" name="itemname" id="itemname" class="form-control" placeholder="ข้อความ คำค้นหา!" autocomplete="off">
+                                
+                                         <button type="button" class="btn btn-primary" id="btnSearch">
+                                            
+                                            <span class="glyphicon glyphicon-search"></span>
+                                               ค้นหา
+                                           </button>
+                                
                                         </div>
-                                
+      
+                                    </div> 
+  
+                                            
+                               
+                           
+                                <div><br></div>     
+                        
+            
+                   
+                                <div class="loading"></div>
+                                    <div class="row" id="list-data" style="margin-top: 10px;">
+                                    </div>
+                               </div>
+                                <script type="text/javascript" src="jquery-1.11.2.min.js"></script>
+                                    <script type="text/javascript">
+                                        $(function () {
+                                            $("#btnSearch").click(function () {
+                                                $.ajax({
+                                                        url: "search.php",
+                                                        type: "post",
+                                                    data: {itemname: $("#itemname").val()},
+                                                        beforeSend: function () {
+                                                        $(".loading").show();
+                                                    },
+                                                    complete: function () {
+                                                        $(".loading").hide();
+                                                    },
+                                                    success: function (data) {
+                                                        $("#list-data").html(data);
+                                                    }
+                                                });
+                                            });
+                                                $("#searchform").on("keyup keypress",function(e){
+                                                    var code = e.keycode || e.which;
+                                                    if(code==13){
+                                                        $("#btnSearch").click();
+                                                        return false;
+                                                    }
+                                                });
+                                        });
+                                </script>
+      
+                                        </div>
+                                    </div>
+                                </div>
 
-                                
-                                <!--news2-->
+                                </div>
+                                    <div class="media">
+                                    <div id="col">
+                                        <div class="header">
+                                            รายละเอียดสวัสดิการ
+                                        <!-- </div><hr> --><br><br><br>
+                                        </div>
+                                    <div>
+                                    <div class="container" id="col2" >
+                                                <label>วันที่อนุมัติ</label>
+                                            
+                                                    <input type="date" class="form-control" id="input" name="name">
+                                                
+                                            </div>
+           
+                                        <div class="container" id="manager" >
+                                        <table class="table"   id="chlids"  colspan="2">
+                                        <tr>
+                                                <th>เลือก</th>
+                                                <th>ผลการอนุมัติ</th>
+                                                <th>ประเภทสวัสสดิการ</th>
+                                                <th>ไฟล์แนบ</th>
+                                                <th>ชื่อผู้ขอ</th>
+                                                <th>จำนวนเงิน</th>
+                                                <th>หมายเหตุ</th>
+                                                <th>ดูรายละเอียด</th>
+                                                <th>แก้ไข</th>
+                                                <th></th>
+                                             
+                                        </tr>
+                                        <tr>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td align="center"><img  src="images/eye.png" width="20" height="20"/></td>
+                                            <td align="center"><img  src="images/edit.png" width="20" height="20"/></td>
+                                            <td></td>
+                                        </tr>
+                                        </table>
+                                        </div>  
 
-                                
+
+                                        <!--news2-->
+                                            <div align="right"  class="container">
+                                                    <input type="submit" class="btn btn-success" value="บันทึก" style=" font-family: 'Mitr', sans-serif;">
+                                                    <input type="reset" class="btn" VALUE="ล้างข้อมูล" style=" font-family: 'Mitr', sans-serif;" >
+                                                </div> 
+                                                    </div>
+                                                </div>
                                 <!--news3-->
                             </div>
                         </div>
