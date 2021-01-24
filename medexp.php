@@ -164,38 +164,41 @@
                     <div class="container-fluid" id="news">
                         <div class="row">
                             <div class="col-md-12">
-                            <div class="media">
-
-                            <form name="form1" action="insert1.php" method="post"  target="iframe_target">
-                            <iframe id="iframe_target" name="iframe_target" src="#" style="width:0;height:0;border:0px solid #fff;"></iframe>
-                                    <div class="media-body">
-                                        <h4 class="media-heading"><b>สวัสดิการค่ารักษาพยาบาล</b>
-                                    
-                                </div>
+                            
                                 <div class="media">
-                                    <div id="col">
-                                        <div class="header">
+
+                                    <form name="form1" action="insert1.php" method="post"  target="iframe_target">
+                                    <iframe id="iframe_target" name="iframe_target" src="#" style="width:0;height:0;border:0px solid #e4e4e4;"></iframe>
+                                    <div class="media-body" >
+                                        <h4 class="media-heading"><b>สวัสดิการค่ารักษาพยาบาล</b>
+                                    </div>
+                                </div>
+                                
+                                <div class="media">
+                                    <div id="col" >
+                                        <div class="header" >
                                             ข้อมูลส่วนตัว
-                                        <!-- </div><hr> --><br><br><br><br><br>
+                                        <!-- </div><hr> --><br><br><br><br>
                                         </div>
                                     <div>
                                     <div class="container" id="col1">
                                         <label>รหัสบุคลากร</label>
                                         
-                                        <div>
+                                        <div><br>
                                             
                                             <input type="text" class="form-control" id="pid" name="pid">
-                                        </div>
+                                        </div><br>
                                             
 
                                     </div> 
 
                                     <div class="container" id="col2">
                                         <label>ชื่อบุคลากร</label>
+                                        <div><br>
                                             <span>
                                                 <input type="text" class="form-control" id="namepn" name="namepn">
                                             </span>
-                                    
+                                        </div><br>
                                     </div>
 
                                     <div  class="container" id="col3">
@@ -249,10 +252,10 @@
                                     </div>
                                 </div> 
                                 <!--news1-->
-
+                                </div>
                                 <div class="media">
                                     
-                                        <div id="col">
+                                        <div id="col" >
                                             <div class="header">
                                                 เบิกค่ารักษาพยาบาล
                                             <!-- </div><hr> --><br><br><br><br>
@@ -261,7 +264,7 @@
 
                                         <div class="container" id="col1">
                                             <label>เบิกค่ารักษาพยาบาลให้กับ</label>
-                                            <!-- <div></br> -->
+                                            <div></br>
                                             <select name="Reveal" id="Reveal">
                                                     <option value="โปรดเลือก">โปรดเลือก</option>
                                                     <option value="ตนเอง">ตนเอง</option>
@@ -270,48 +273,48 @@
                                                     <option value="มารดา">มารดา</option>
                                                     <option value="บุตร">บุตร</option>
                                                 </select>
-                                            <!-- </div><br> -->
+                                            </div><br>
                                         </div>
 
                                         <div class="container" id="col2">
                                             <label>ชื่อ-นามสกุล</label>
-                                            <!-- <div><br> -->
+                                            <div><br>
                                                 <input type="text" class="form-control" id="namerl" name="namerl">
-                                            <!-- </div><br> -->
+                                            </div><br>
                                         
                                         </div>
 
                                         <div class="container" id="col3">
                                             <label>วัน/เดือน/ปีเกิด</label>
-                                           <!--  <div><br> -->
+                                            <div><br>
                                                 <input type="date" class="form-control" id="born" name="born">
-                                            <!-- </div><br> -->
+                                            </div><br>
                                         </div>
 
                                         <div class="container" id="col1">
                                             <label>ประเภทสถานพยาบาล</label>
-                                            <!-- <div><br> -->
+                                            <div><br>
                                                 <select name="cinf" id="cinf">
                                                     <option value="โปรดเลือก">โปรดเลือก</option>
                                                     <option value="เอกชน">เอกชน</option>
                                                     <option value="รัฐบาล">รัฐบาล</option>
                                                 </select>
-                                            <!-- </div><br> -->
+                                            </div><br>
                                         </div>
 
 
                                         <div class="container" id="col2">
                                             <label>ชื่อสถานพยาบาล</label>
-                                            <!-- <div><br> -->
+                                            <div><br>
                                                 <input type="text" class="form-control" id="nameinf" name="nameinf">
                                             </div><br>  
                                         </div>
 
                                         <div class="container" id="col3">
                                             <label>วันที่ทำการรักษาพยาบาล</label>
-                                            <!-- <div><br> -->
+                                            <div><br>
                                                 <input type="date" class="form-control" id="operate" name="operate">
-                                            <!-- </div><br> -->
+                                            </div><br>
                                         </div>
                                         <div class="container" id="col1">
                                             <label>อาการป่วย</label>
@@ -330,7 +333,7 @@
                                     </div>
                                 </div>
                                 <!--news2-->
-
+                                </div>
                                 <div class="media">         
                                     <div class="media-body">
                                         <div id="col">

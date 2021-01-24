@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html>
-
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -69,7 +68,7 @@
                         คำร้องออนไลน์
                     </a>
                     <ul class="collapse list-unstyled" id="formSubmenu">
-                        <li><a href="#">คำร้องขอแก้ไขข้อมูลส่วนตัว</a></li>
+                        <li><a href="">คำร้องขอแก้ไขข้อมูลส่วนตัว</a></li>
                         <li><a href="#">คำร้องขอลา</a></li>
                         <li><a href="medexp.php">คำร้องสวัสดิการค่ารักษาพยาบาล</a></li>
                         <li><a href="comdevice.php">คำร้องสวัสดิการซื้ออุปกรณ์คอมพิวเตอร์</a></li>
@@ -176,48 +175,98 @@
                         <div class="row">
                             <div class="col-md-12">
                                 <div class="media">
-                                    <div class="media-left">
-                                        <img src="images/news.jpg" class="media-object" alt="Responsive image" />
-                                    </div>
-                                    <div class="media-body">
-                                        <h4 class="media-heading"><b>Lorem ipsum dolor sit, amet consectetur adipisicing
-                                                elit. Nam, tenetur aliquid officiis, minus accusamus in eos harum
-                                                incidunt
-                                                est maxime expedita ipsum ipsam molestias illum cupiditate velit, rem
-                                                quam
-                                                ea.</b> <small><i>Posted on February 19, 2016</i></small></h4>
-                                    </div>
-                                </div>
-                                <!--news1-->
+                                    <div id="col">
+                                        <div class="header">
+                                            รายการคำร้อง
+                                        <!-- </div><hr> --><br><br><br>
+                                        </div>
+                                    <div>
+                                        <div class="container" id="col2">
+                                            <label>วันที่ทำการ</label>
+                                           
+                                                <input type="date" class="form-control" id="input" name="member">
+                                            
+                                        </div>
+                                    
+                                        <div class="container" id="chlids" >        
+                                        <table class="table" colspan="2">
+                                            
+                                            <tr>
+                                                <th>เลือก</th>
+                                                <th>ผลการอนุมัติ</th>
+                                                <th>ประเภทสวัสสดิการ</th>
+                                                <th>ไฟล์แนบ</th>
+                                                <th>ชื่อผู้ขอ</th>
+                                                <th>จำนวนเงิน</th>
+                                                <th>หมายเหตุ</th>
+                                                <th>ดูรายละเอียด</th>
+                                                <th>แก้ไข</th>
+                                            </tr>
 
-                                <div class="media">
-                                    <div class="media-left">
-                                        <img src="images/news.jpg" class="media-object" alt="Responsive image" />
-                                    </div>
-                                    <div class="media-body">
-                                        <h4 class="media-heading"><b>Lorem ipsum dolor sit, amet consectetur adipisicing
-                                                elit. Nam, tenetur aliquid officiis, minus accusamus in eos harum
-                                                incidunt
-                                                est maxime expedita ipsum ipsam molestias illum cupiditate velit, rem
-                                                quam
-                                                ea.</b> <small><i>Posted on February 19, 2016</i></small></h4>
-                                    </div>
-                                </div>
+                                            <tr>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td align="center"><img  src="images/eye.png" width="20" height="20"/></td>   
+                                                <td align="center"><img  src="images/edit.png" width="20" height="20"/></td>  
+                                            </tr>
+                                            
+                                        </table>
+                                        </div>
+                                        
                                 <!--news2-->
+                                    <div align="right"  class="container">
+                                            <input type="submit" class="btn btn-success" value="บันทึก" style=" font-family: 'Mitr', sans-serif;">
+                                            <input type="reset" class="btn" VALUE="ล้างข้อมูล" style=" font-family: 'Mitr', sans-serif;" >
+                                        </div> 
+                                            </div>
+                                        </div>
+                                <!--news3-->
+                            </div>
+                            </div>
+                        </div>
+                    </div>
+                </news>
+            </main>
 
-                                <div class="media">
-                                    <div class="media-left">
-                                        <img src="images/news.jpg" class="media-object" alt="Responsive image" />
-                                    </div>
-                                    <div class="media-body">
-                                        <h4 class="media-heading"><b>Lorem ipsum dolor sit, amet consectetur adipisicing
-                                                elit. Nam, tenetur aliquid officiis, minus accusamus in eos harum
-                                                incidunt
-                                                est maxime expedita ipsum ipsam molestias illum cupiditate velit, rem
-                                                quam
-                                                ea.</b> <small><i>Posted on February 19, 2016</i></small></h4>
-                                    </div>
-                                </div>
+            <div style="height: 40px;"></div>
+        </div>
+
+    </div>
+
+    <footer class="bg-light text-center text-lg-start">
+        <!-- Copyright -->
+        <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2)">
+            © 2020 Copyright:
+            <a class="text-dark" href="https://mdbootstrap.com/">MDBootstrap.com</a>
+        </div>
+        <!-- Copyright -->
+    </footer>
+
+    <script type="text/javascript">
+        $(document).ready(function() {
+            $('#sidebarCollapse').on('click', function() {
+                $('#sidebar').toggleClass('active');
+            });
+        });
+    </script>
+
+</body>
+
+</html>
+
+
+                                        <!--news2-->
+                                            <div align="right"  class="container">
+                                                    <input type="submit" class="btn btn-success" value="บันทึก" style=" font-family: 'Mitr', sans-serif;">
+                                                    <input type="reset" class="btn" VALUE="ล้างข้อมูล" style=" font-family: 'Mitr', sans-serif;" >
+                                                </div> 
+                                                    </div>
+                                                </div>
                                 <!--news3-->
                             </div>
                         </div>
