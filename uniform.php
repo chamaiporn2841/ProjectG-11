@@ -49,7 +49,19 @@
                     </ul>
                 </li>
 
-                <li><a href="#"><i class="fa fa-gift"></i>สวัสดิการ</a></li>
+                <li>
+                    <a href="#WelSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">
+                            <i class="fa fa-gift"></i>
+                            สวัสดิการ
+                    </a>
+                    <ul class="collapse list-unstyled" id="WelSubmenu">
+                        <li><a href="definewel.php">เกณฑ์การใช้วสวัสดิการ</a></li>
+                        <li><a href="detailwel.php">รายละเอียดการใช้สวัสดิการ</a></li>
+                        <li><a href="consider.php">พิจารณาการใช้สวัสดิการ</a></li>
+                        <li><a href="approve.php">อนุมัติการใช้สวัสดิการ</a></li>
+                        <li><a href="report.php">รายงานสรุปการใช้สวัสดิการ</a></li>
+                    </ul>
+                </li>
 
                 <li>
                     <a href="#formSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">
@@ -137,7 +149,7 @@
                                 <div class="col-12 col-md-4" id="usermenu">
                                     <div class="btn-group" style="float: right;">
                                         <button type="button" class="btn btn-secondary" style="padding: 16px;"
-                                            id="user_name">ฉัตรภัสร์ ฐิติอัคราวงศ์</button>
+                                            id="user_name">user1</button>
                                         <button type="button"
                                             class="btn btn-secondary dropdown-toggle dropdown-toggle-split"
                                             data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -175,26 +187,27 @@
                                     <div id="col">
                                         <div class="header">
                                             ข้อมูลส่วนตัว
-                                        <!-- </div><hr> --><br><br><br><br><br>
+                                        <!-- </div><hr> --><br><br><br><br>
                                         </div>
                                     <div>
                                     <div class="container" id="col1">
                                         <label>รหัสบุคลากร</label>
                                         
-                                        <div>
+                                        <div><br>
                                             
                                             <input type="text" class="form-control" id="pid" name="pid">
-                                        </div>
+                                        </div><br>
                                             
 
                                     </div> 
 
                                     <div class="container" id="col2">
                                         <label>ชื่อบุคลากร</label>
+                                        <div><br>
                                             <span>
                                                 <input type="text" class="form-control" id="namepn" name="namepn">
                                             </span>
-                                    
+                                        </div><br>
                                     </div>
 
                                     <div  class="container" id="col3">

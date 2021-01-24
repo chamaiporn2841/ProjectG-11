@@ -69,7 +69,7 @@
                         คำร้องออนไลน์
                     </a>
                     <ul class="collapse list-unstyled" id="formSubmenu">
-                        <li><a href="#">คำร้องขอแก้ไขข้อมูลส่วนตัว</a></li>
+                        <li><a href="">คำร้องขอแก้ไขข้อมูลส่วนตัว</a></li>
                         <li><a href="#">คำร้องขอลา</a></li>
                         <li><a href="medexp.php">คำร้องสวัสดิการค่ารักษาพยาบาล</a></li>
                         <li><a href="comdevice.php">คำร้องสวัสดิการซื้ออุปกรณ์คอมพิวเตอร์</a></li>
@@ -176,186 +176,73 @@
                     <div class="container-fluid" id="news">
                         <div class="row">
                             <div class="col-md-12">
-                            <div class="media">
-                                    
-                            <form name="form1" action="insert2.php" method="post"  target="iframe_target">
-                            <iframe id="iframe_target" name="iframe_target" src="#" style="width:0;height:0;border:0px solid #fff;"></iframe>
-                                    <div class="media-body">
-                                        <h4 class="media-heading"><b>สวัสดิการซื้ออุปกรณ์คอมพิวเตอร์</b>
-                                    </div>
-                                </div>
                                 <div class="media">
                                     <div id="col">
                                         <div class="header">
-                                            ข้อมูลส่วนตัว
-                                        <!-- </div><hr> --><br><br><br><br>
+                                            เกณฑ์การใช้สวัสดิการ
+                                        <!-- </div><hr> --><br><br><br>
                                         </div>
-                                    </div>
-                                    
-                                    <div class="container" id="col1">
-                                        <label>รหัสบุคลากร</label>
-                                        
-                                        <div><br>
-                                            
-                                            <input type="text" class="form-control" id="pid" name="pid">
-                                        </div><br>
-                                            
-
-                                    </div> 
-
-                                    <div class="container" id="col2">
-                                        <label>ชื่อบุคลากร</label>
-                                        <div><br>
-                                            <span>
-                                                <input type="text" class="form-control" id="namepn" name="namepn">
-                                            </span>
-                                        </div> <br>
-                                    </div>
-
-                                    <div  class="container" id="col3">
-                                        <label>ตำแหน่ง</label>
-                                        <div><br>
-                                        <select name="position" id="position">
-                                                <option value="โปรดเลือก">โปรดเลือก</option>
-                                                <option value="วิชาการ">วิชาการ</option>
-                                                <option value="ปฏิบัติการวิชาชีพและบริหารทั่วไป">ปฏิบัติการวิชาชีพและบริหารทั่วไป</option>
-                                                <option value="บริหารวิชาการ">บริหารวิชาการ</option>
-                                            </select>
-                                        </div><br>
-                                    </div>
-                                    <div class="container"  id="col1">
-                                        <label>ประเภทบุคลากร</label>
-                                        <div><br>
-                                        <select name="category" id="category">
-                                                <option value="โปรดเลือก">โปรดเลือก</option>
-                                                <option value="หัวหน้าโครงการ">หัวหน้าโครงการ</option>
-                                                <option value="คณาจารย์">คณาจารย์</option>
-                                                <option value="เจ้าหน้าที่">เจ้าหน้าที่</option>
-                                                <option value="ผู้ช่วยสอน">ผู้ช่วยสอน</option>
-                                            </select>
-                                        </div><br>
-                                    </div>
-
-                                    <div class="container" id="col2">
-                                        <label></label>
-                                        <div><br>
-                                            
-                                        </div><br>
-                                    </div>
-                                    
-                                    <div class="container" id="col3">
-                                        <label></label>
-                                        <div><br>
-                                        
-                                        </div><br>
-                                    
-                                    </div><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
-                                        <!-- submit  -->    
-                                           
-                                           
-                                        <!-- <div align="right"  class="container">
-                                            <input type="submit" class="btn btn-success" value="บันทึก" style=" font-family: 'Mitr', sans-serif;">
-                                            <input type="reset" class="btn" VALUE="ล้างข้อมูล" style=" font-family: 'Mitr', sans-serif;" >
-                                        </div>  -->
-                                            
-                                        </div> 
-                                    </div>
-                                    </div>
-                                </div> 
-                                <!--news1-->
-                                </div>
-                                <div class="media">
-                                    
-                                        <div id="col">
-                                            <div class="header">
-                                                รายละเอียดการขอสวัสดิการ
-                                            <!-- </div><hr> --><br><br><br><br>
-                                        </div>
+                                    <div>
+                                    <div class="container" id="col1" >
+                                        <label>ประเภทสวัสดิการ</label>
                                         <div>
-
-                                        <div class="container" id="col1">
-                                            <label>วัตถุประสงค์ในการจัดซื้อ</label>
-                                            <div><br>
-                                                <input type="text" class="form-control" id="Purpose" name="Purpose">
-                                            </div><br>
-                                        </div>
-                                        
-                                        <div class="container" id="col2">
-                                            <label>รายการจัดซื้อ (ระบุยี่ห้อและรุ่น)</label>
-                                            <div><br>
-                                                <input type="text" class="form-control" id="ListB" name="ListB">
-                                            </div><br>
-                                        
-                                        </div>
-
-                                        <div class="container" id="col3">
-                                            <label>จำนวนเงิน </label>
-                                            <div><br>
-                                                <input type="text" class="form-control" id="cmoney" name="cmoney">
-                                            </div><br>
-                                        </div>
-
-                                    
-                                        </div>
-                                    </div>
-                                <!--news2-->
-                                    </div>
-                                <div class="media">         
-                                    <div class="media-body">
-                                        <div id="col">
-                                                <div class="header">
-                                                    รายละเอียดการรับเงิน
-                                                <!-- </div><hr> --><br><br><br><br>
-                                            </div>
-                                        <div>
-                                        <div class="container" id="col1">
-                                        <label>ช่องทางรับเงิน</label>
-                                        <div></br>
-                                        <select name="channel" id="channel">
-                                            <option value="โปรดเลือก">โปรดเลือก</option>
-                                            <option value="เงินสด">เงินสด</option>
-                                            <option value="โอนเงินเข้าบัญชีเงินฝาก">โอนเงินเข้าบัญชีเงินฝาก</option>
-                                        </select>
-                                        </div></br>
-                                    </div>
-
-                                    <div class="container" id="col2">
-                                        <label>บัญชีธนาคาร</label>
-                                        <div><br>
-                                            <select name="bank" id="bank">
+                                            <select name="category" id="input">
                                                 <option value="โปรดเลือก">โปรดเลือก</option>
-                                                <option value="กรุงไทย">กรุงไทย</option>
-                                                <option value="ไทยพาณิชย์">ไทยพาณิชย์</option>
+                                                <option value="สวัสดิการค่ารักษาพยาบาล">สวัสดิการค่ารักษาพยาบาล</option>
+                                                <option value="สวัสดิการซื้ออุปกรณ์คอมพิวเตอร์">สวัสดิการซื้ออุปกรณ์คอมพิวเตอร์</option>
+                                                <option value="สวัสดิการกองทุนสำรองเลี้ยงชีพ">สวัสดิการกองทุนสำรองเลี้ยงชีพ</option>
+                                                <option value="สวัสดิการขอยืมเงินเพื่อตัดชุดเครื่องแบบปกติขาว">สวัสดิการขอยืมเงินเพื่อตัดชุดเครื่องแบบปกติขาว</option>
+                                                <option value="สวัสดิการฌาปนกิจสงเคราะห์">สวัสดิการฌาปนกิจสงเคราะห์</option>
+                                                <option value="สวัสดิการเกี่ยวกับค่าเล่าเรียนบุตร">สวัสดิการเกี่ยวกับค่าเล่าเรียนบุตร</option>
                                             </select>
                                         </div><br>
-                                    </div>
+                                        </div>
+                                        <div  class="container" id="col3">
+                                            <label>รายเดือน</label>
+                                            <div>
+                                            <select name="category" id="input">
+                                                    <option value="โปรดเลือก">โปรดเลือก</option>
+                                                    <option value="มกราคม">มกราคม</option>
+                                                    <option value="กุมภาพันธ์">กุมภาพันธ์</option>
+                                                    <option value="มีนาคม">มีนาคม</option>  
+                                                    <option value="เมษายน">เมษายน</option>  
+                                                    <option value="พฤษภาคม">พฤษภาคม</option>  
+                                                    <option value="มิถุนายน">มิถุนายน</option>  
+                                                    <option value="กรกฎาคม">กรกฎาคม</option>  
+                                                    <option value="สิงหาคม">สิงหาคม</option>   
+                                                    <option value="กันยายน">กันยายน</option>   
+                                                    <option value="ตุลาคม">ตุลาคม</option>   
+                                                    <option value="พฤศจิกายน">พฤศจิกายน</option>   
+                                                    <option value="ธันวาคม">ธันวาคม</option>     
+                                                </select>
+                                            </div><br>
+                                        
+                                        
+                                        </div>
+                                        </div>
 
-                                    <div class="container" id="col3">
-                                        <label>เลขที่บัญชี</label>
-                                        <div><br>
-                                            <input type="text" class="form-control" id="account" name="account">
-                                        </div><br>
-                                    </div>
                                     </div>
                                 </div>
-                                </div>
+
+                                    <div class="media">
+                                    <div id="col">
+                                        <div class="header">
+                                            
+                                        <!-- </div><hr> --><br><br><br><br><br>
+                                        </div>
+                                    <div>
+                                   
+                                   
                                 </div>
                                 <br/><br/>
-                                <!--news3-->
-                                <!-- <div class="media">   -->       
-                                    <!-- <div class="media-body"> -->
+                                <!--news2-->
                                     <div align="right"  class="container">
-                                        <input type="submit" class="btn btn-success" value="บันทึก" style=" font-family: 'Mitr', sans-serif;">
-                                        <input type="reset" class="btn" VALUE="ล้างข้อมูล" style=" font-family: 'Mitr', sans-serif;" >
-                                    </div> 
-                                
-                                </div>
-                                </form>
-                                    <!-- </div> -->
-                                <!-- </div> -->
-
-
-                                
+                                            <input type="submit" class="btn btn-success" value="บันทึก" style=" font-family: 'Mitr', sans-serif;">
+                                            <input type="reset" class="btn" VALUE="ล้างข้อมูล" style=" font-family: 'Mitr', sans-serif;" >
+                                        </div> 
+                                            </div>
+                                        </div>
+                                <!--news3-->
                             </div>
                         </div>
                     </div>
@@ -385,5 +272,3 @@
     </script>
 
 </body>
-
-</html>

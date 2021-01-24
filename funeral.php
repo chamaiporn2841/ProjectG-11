@@ -49,7 +49,19 @@
                     </ul>
                 </li>
 
-                <li><a href="#"><i class="fa fa-gift"></i>สวัสดิการ</a></li>
+                <li>
+                    <a href="#WelSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">
+                            <i class="fa fa-gift"></i>
+                            สวัสดิการ
+                    </a>
+                    <ul class="collapse list-unstyled" id="WelSubmenu">
+                        <li><a href="definewel.php">เกณฑ์การใช้วสวัสดิการ</a></li>
+                        <li><a href="detailwel.php">รายละเอียดการใช้สวัสดิการ</a></li>
+                        <li><a href="consider.php">พิจารณาการใช้สวัสดิการ</a></li>
+                        <li><a href="approve.php">อนุมัติการใช้สวัสดิการ</a></li>
+                        <li><a href="report.php">รายงานสรุปการใช้สวัสดิการ</a></li>
+                    </ul>
+                </li>
 
                 <li>
                     <a href="#formSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">
@@ -166,43 +178,39 @@
                             <div class="col-md-12">
                             <div class="media">
                                     
-                            <!-- target="iframe_target"  -->   
-                            <form name="form1" action="insert5.php" method="post" >
-                            <iframe id="iframe_target" name="iframe_target" src="#" style="width:0;height:0;border:0px solid #fff;"></iframe>
                                     <div class="media-body">
                                         <h4 class="media-heading"><b>สวัสดิการฌาปนกิจสงเคราะห์</b>
-                                        </div>
+                                    
                                 </div>
                                 <div class="media">
                                     <div id="col">
                                         <div class="header">
                                             ข้อมูลส่วนตัว
-                                        <!-- </div><hr> --><br><br><br><br><br>
+                                        <!-- </div><hr> --><br><br><br><br>
                                         </div>
                                     <div>
                                     <div class="container" id="col1">
                                         <label>รหัสบุคลากร</label>
                                         
-                                        <div>
+                                        <div><br>
                                             
-                                            <input type="text" class="form-control" id="pid" name="pid">
-                                        </div>
-                                            
-
+                                            <input type="text" class="form-control" id="input" name="name">
+                                        </div><br>
                                     </div> 
 
                                     <div class="container" id="col2">
                                         <label>ชื่อบุคลากร</label>
+                                        <div><br>
                                             <span>
-                                                <input type="text" class="form-control" id="namepn" name="namepn">
+                                                <input type="text" class="form-control" id="input" name="name">
                                             </span>
-                                    
-                                    </div>
+                                        </div><br>
+                                    </div><br>
 
                                     <div  class="container" id="col3">
                                         <label>ตำแหน่ง</label>
                                         <div><br>
-                                        <select name="position" id="position">
+                                        <select name="category" id="input">
                                                 <option value="โปรดเลือก">โปรดเลือก</option>
                                                 <option value="วิชาการ">วิชาการ</option>
                                                 <option value="ปฏิบัติการวิชาชีพและบริหารทั่วไป">ปฏิบัติการวิชาชีพและบริหารทั่วไป</option>
@@ -213,7 +221,7 @@
                                     <div class="container"  id="col1">
                                         <label>ประเภทบุคลากร</label>
                                         <div><br>
-                                        <select name="category" id="category">
+                                        <select name="category" id="input">
                                                 <option value="โปรดเลือก">โปรดเลือก</option>
                                                 <option value="หัวหน้าโครงการ">หัวหน้าโครงการ</option>
                                                 <option value="คณาจารย์">คณาจารย์</option>
@@ -226,7 +234,7 @@
                                     <div class="container" id="col2">
                                         <label>ผู้เสียชีวิตเกี่ยวข้องเป็น</label>
                                         <div><br>
-                                        <select  name="involved" id="involved">
+                                        <select  name="category" id="input">
                                                 <option value="โปรดเลือก">โปรดเลือก</option>
                                                 <option value="บิดา">บิดา</option>
                                                 <option value="มารดา">มารดา</option>
@@ -239,19 +247,19 @@
                                     <div class="container" id="col3">
                                         <label>ชื่อผู้เสียชีวิต</label>
                                         <div><br>
-                                            <input type="text" class="form-control" id="namedd" name="namedd">
+                                            <input type="text" class="form-control" id="input" name="state">
                                         </div><br>
                                     </div>
                                     <div class="container" id="col1">
                                         <label>วันที่ถึงแก่กรรม</label>
                                         <div><br>
-                                            <input type="date" class="form-control" id="Cultiv" name="Cultiv">
+                                            <input type="date" class="form-control" id="input" name="member">
                                         </div><br>
                                     </div>
                                     <div class="container"  id="col2">
                                         <label>ระบุจำนวนเงิน</label>
                                         <div><br>
-                                            <input type="text" class="form-control" id="cmoney" name="cmoney">
+                                            <input type="text" class="form-control" id="input" name="state">
                                         </div><br>
                                     </div>
 
@@ -279,23 +287,38 @@
                                                 แนบไฟลเอกสารที่เกี่ยวข้อง
                                             <!-- </div><hr> --><br><br><br><br>
                                         </div>
-                                <div>
-                                        
-                                        <div class="container" id="col2">
-                                        <label>แนบเอกสาร</label>
-                                        <div><br>
-                                        <select  name="cdoc" id="cdoc">
-                                                <option value="โปรดเลือก">โปรดเลือก</option>
-                                                <option value="สำเนาใบมรณบัตร">สำเนาใบมรณบัตร</option>
-                                                <option value="สำเนาทะเบียนบ้าน (ผู้ขอรับสวัสดิการ)">สำเนาทะเบียนบ้าน (ผู้ขอรับสวัสดิการ)</option>
-                                                <option value="สำเนาประจำตัวประชาชน (ผู้ขอรับสวัสดิการ)">สำเนาประจำตัวประชาชน (ผู้ขอรับสวัสดิการ)</option>
-                                                <option value="สำเนาทะเบียนบ้านของผู้ถึงแก่กรรม ที่ประทับคำว่า “ตาย”">สำเนาทะเบียนบ้านของผู้ถึงแก่กรรม ที่ประทับคำว่า “ตาย”</option>
-                                                <option value="ใบเสร็จค่าพวงหรีด">ใบเสร็จค่าพวงหรีด</option>
-                                            </select>
-                                        </div><br>  
-                                    </div>
+                                        <div>
 
-                                
+                                        <div class="container" id="col1">
+                                            <div><br>
+                                            <form action="upload.php" method="post" enctype="multipart/form-data">
+                                            <label>1. สำเนาใบมรณบัตร</label>
+                                            </form>
+                                            </div><br> 
+
+                                            <div><br>
+                                            <form action="upload.php" method="post" enctype="multipart/form-data">
+                                            <label>2. สำเนาทะเบียนบ้าน (ผู้ขอรับสวัสดิการ)</label>
+                                            </form>
+                                            </div><br>
+
+                                            <div><br>
+                                            <form action="upload.php" method="post" enctype="multipart/form-data">
+                                            <label>3. สำเนาประจำตัวประชาชน (ผู้ขอรับสวัสดิการ)</label>
+                                            </form>
+                                            </div><br>
+
+                                            <div><br>
+                                            <form action="upload.php" method="post" enctype="multipart/form-data">
+                                            <label>4. สำเนาทะเบียนบ้านของผู้ถึงแก่กรรม ที่ประทับคำว่า “ตาย”</label>
+                                            </form>
+                                            </div><br>
+
+                                            <div><br>
+                                            <form action="upload.php" method="post" enctype="multipart/form-data">
+                                            <label>5. ใบเสร็จค่าพวงหรีด</label>
+                                            </form>
+                                            </div><br>
 
                                             </div>
                                                 
@@ -309,10 +332,20 @@
                                             <div class="container"  id="col3">
                                                 <div><br>
                                                         <input class= "imgfile" type="file" name="fileToUpload" id="fileToUpload">
-                                                </div><br>                                            
+                                                </div><br>  
+                                                <div><br>
+                                                        <input class= "imgfile" type="file" name="fileToUpload" id="fileToUpload">
+                                                </div><br>  
+                                                <div><br>
+                                                        <input class= "imgfile" type="file" name="fileToUpload" id="fileToUpload">
+                                                </div><br>  
+                                                <div><br>
+                                                        <input class= "imgfile" type="file" name="fileToUpload" id="fileToUpload">
+                                                </div><br>  
+                                                <div><br>
+                                                        <input class= "imgfile" type="file" name="fileToUpload" id="fileToUpload">
+                                                </div><br>  
                                             </div>
-
-
                                             <div class="container"  id="col1">
                                                 <label></label>
                                                 <div><br>
@@ -365,7 +398,7 @@
                                     </div>
                                 </div>
                                 <!--news2-->
-                                </div>
+
                                 <div class="media">         
                                     <div class="media-body">
                                         <div id="col">
@@ -377,7 +410,7 @@
                                         <div class="container" id="col1">
                                         <label>ช่องทางรับเงิน</label>
                                         <div></br>
-                                        <select name="channel" id="channel">
+                                        <select name="category" id="input">
                                             <option value="โปรดเลือก">โปรดเลือก</option>
                                             <option value="เงินสด">เงินสด</option>
                                             <option value="โอนเงินเข้าบัญชีเงินฝาก">โอนเงินเข้าบัญชีเงินฝาก</option>
@@ -388,7 +421,7 @@
                                     <div class="container" id="col2">
                                         <label>บัญชีธนาคาร</label>
                                         <div><br>
-                                            <select name="bank" id="bank">
+                                            <select name="category" id="input">
                                                 <option value="โปรดเลือก">โปรดเลือก</option>
                                                 <option value="กรุงไทย">กรุงไทย</option>
                                                 <option value="ไทยพาณิชย์">ไทยพาณิชย์</option>
@@ -399,7 +432,7 @@
                                     <div class="container" id="col3">
                                         <label>เลขที่บัญชี</label>
                                         <div><br>
-                                            <input type="text" class="form-control" id="account" name="account">
+                                            <input type="text" class="form-control" id="input" name="state">
                                         </div><br>
                                     </div>
                                     </div>
@@ -414,9 +447,7 @@
                                         <input type="submit" class="btn btn-success" value="บันทึก" style=" font-family: 'Mitr', sans-serif;">
                                         <input type="reset" class="btn" VALUE="ล้างข้อมูล" style=" font-family: 'Mitr', sans-serif;" >
                                     </div> 
-
-                                    </div> 
-                                    </form>
+                                  
                                     <!-- </div> -->
                                 <!-- </div> -->
 

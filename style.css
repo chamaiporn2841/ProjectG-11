@@ -238,8 +238,9 @@ a.article:hover {
 }
 
 #news .media{
-    padding: 20px;
-    background-color: #fff;
+    
+   background-color: #fff;
+       
 }
 
 .media-heading small{
@@ -249,8 +250,9 @@ a.article:hover {
 .media-heading{
     color: #fff ;
     background: #0072B5 !important;
-    height:50px;
-    padding-top:-50 px;
+    height:100px;
+    
+    /* width:100px; */
 }
 /* .media-body{
     background: #0072B5 !important;
@@ -344,11 +346,15 @@ a.article:hover {
         margin-left: 0px;
         
     }
+    #iframe_target{
+        height:100px;
+    }
    
 }
 #col {
     margin-left: 20px;
     margin-right: 80px;
+    padding: 20px;
     /* color:#0072B5;
     font-size: 1.1em;
     font-weight: 300; */
