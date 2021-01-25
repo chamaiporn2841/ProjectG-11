@@ -8,10 +8,11 @@
         die("Something wrong.: " . $connect->connect_error);
       }
 
+      
     $sql = "SELECT * FROM benefittotal";
     
     $result = $connect->query($sql);
-
+    
 ?>
 <!DOCTYPE html>
 <html>
@@ -26,6 +27,8 @@
     <link rel="shortcut icon" type="image/icon" href="images/favicon.ico" />
     <!-- Bootstrap CSS CDN -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <!-- Bootstrap buttonsave-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
     <!--Font Awesome-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <!-- Our Custom CSS -->
@@ -37,6 +40,9 @@
     <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
     <!-- Bootstrap Js CDN -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+     <!-- Bootstrap Js buttonsave -->
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 </head>
 
 <body>
@@ -223,45 +229,20 @@
                                 <div><br></div>     
                         
             
-                   
+                   <!-- 
                                 <div class="loading"></div>
                                     <div class="row" id="list-data" style="margin-top: 10px;">
-                                    </div>
+                                    </div> -->
                                </div>
-                                <script type="text/javascript" src="jquery-1.11.2.min.js"></script>
-                                    <script type="text/javascript">
-                                        $(function () {
-                                            $("#btnSearch").click(function () {
-                                                $.ajax({
-                                                        url: "search.php",
-                                                        type: "post",
-                                                    data: {itemname: $("#itemname").val()},
-                                                        beforeSend: function () {
-                                                        $(".loading").show();
-                                                    },
-                                                    complete: function () {
-                                                        $(".loading").hide();
-                                                    },
-                                                    success: function (data) {
-                                                        $("#list-data").html(data);
-                                                    }
-                                                });
-                                            });
-                                                $("#searchform").on("keyup keypress",function(e){
-                                                    var code = e.keycode || e.which;
-                                                    if(code==13){
-                                                        $("#btnSearch").click();
-                                                        return false;
-                                                    }
-                                                });
-                                        });
-                                </script>
-      
+                                
                                         </div>
                                     </div>
                                 </div>
 
                                 </div>
+                                <!-- target="iframe_target" -->
+                                <form name="formcd" action="insertcd.php" method="post" >
+                               <!--  <iframe id="iframe_target" name="iframe_target" src="#" style="width:0;height:0;border:0px solid #fff;"></iframe> -->
                                     <div class="media">
                                     <div id="col">
                                         <div class="header">
@@ -281,7 +262,7 @@
                                         <tr>
                                                 <th>เลือก</th>
                                                 <th>ผลการอนุมัติ</th>
-                                                <th>ประเภทสวัสสดิการ</th>                                           
+                                                <th>ประเภทสวัสดิการ</th>                                           
                                                 <th>ชื่อผู้ขอ</th>
                                                 <th>จำนวนเงิน</th>
                                                 <th>หมายเหตุ</th>
@@ -292,28 +273,57 @@
                                         </tr>
                                         <?php while($row = $result->fetch_assoc()): ?>
                                         <tr>
-                                            <td></td>
-                                            <td></td>
+                                            <td><div class="custom-control custom-checkbox">
+                                                <input type="checkbox" class="custom-control-input" name="customCheck1" id="customCheck1" checked>
+                                                <label class="custom-control-label" for="customCheck1"></label>
+                                            </div></td>
+
+                                            <td><select name="actions" id="actions" class="form-select" aria-label="Default select example">
+                                                <option selected>โปรดเลือก</option>
+                                                <option value="1">รอดำเนินการ</option>
+                                                <option value="2">ผ่านการอนุมัติ</option>
+                                                <option value="3">ไม่ผ่านการอนุมัติ</option>
+                                            </select></td>
+                                            
                                             <td><?php echo $row['typebenefit'];?></td>
                                             <td><?php echo $row['namepn'];?></td>
                                             <td><?php echo $row['cmoney'];?></td></td>
                                             <td></td>
                                             <td align="center"><img  src="images/eye.png" width="20" height="20"/></td>
+
                                             <td align="center"><img  src="images/edit.png" width="20" height="20"/></td>
                                             <td></td>
                                         </tr>
                                         <?php endwhile ?>
                                         </table>
+                                        </form>
                                         </div>  
-
-
                                         <!--news2-->
                                             <div align="right"  class="container">
-                                                    <input type="submit" class="btn btn-success" value="บันทึก" style=" font-family: 'Mitr', sans-serif;">
+                                                    <input type="submit" class="btn btn-success"  value="บันทึก"  data-toggle="modal" data-target="#myModal" style=" font-family: 'Mitr', sans-serif;">
                                                     <input type="reset" class="btn" VALUE="ล้างข้อมูล" style=" font-family: 'Mitr', sans-serif;" >
                                                 </div> 
                                                     </div>
                                                 </div>
+                                                </form>
+
+                                                <!-- Modal -->
+                                <div class="modal fade" id="myModal" role="dialog">
+                                    <div class="modal-dialog modal-sm">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                        <h4 class="modal-title">แจ้งเตือนระบบ</h4>
+                                        </div>
+                                        <div class="modal-body">
+                                        <p>บันทึกข้อมูลสำเร็จ</p>
+                                        </div>
+                                        <div class="modal-footer">
+                                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                                        </div>
+                                    </div>
+                                    </div>
+                                </div>
                                 <!--news3-->
                             </div>
                         </div>
