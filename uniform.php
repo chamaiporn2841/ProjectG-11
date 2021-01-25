@@ -10,6 +10,8 @@
     <link rel="shortcut icon" type="image/icon" href="images/favicon.ico" />
     <!-- Bootstrap CSS CDN -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <!-- Bootstrap buttonsave-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
     <!--Font Awesome-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <!-- Our Custom CSS -->
@@ -21,6 +23,9 @@
     <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
     <!-- Bootstrap Js CDN -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <!-- Bootstrap Js buttonsave -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 </head>
 
 <body>
@@ -175,9 +180,10 @@
                     <div class="container-fluid" id="news">
                         <div class="row">
                             <div class="col-md-12">
-                            <div class="media">
-                            <form name="form1" action="insert4.php" method="post" target="iframe_target" >
+
+                            <form name="form4" action="insert4.php" method="post" target="iframe_target" >
                             <iframe id="iframe_target" name="iframe_target" src="#" style="width:0;height:0;border:0px solid #fff;"></iframe>
+                            <div class="media">
                                     <div class="media-body">
                                         <h4 class="media-heading"><b>แบบคำร้องขอยืมเงินเพื่อตัดชุดเครื่องแบบปกติขาว</b>
                                     
@@ -238,7 +244,15 @@
                                         <input type="text" class="form-control" id="Phoneno" name="Phoneno" idem="id">
                                         </div><br>  
                                     </div>
-                                    <div  class="container" id="col3">
+
+                                    <div class="container" id="col3">
+                                            <label>จำนวนเงิน</label>
+                                            <div><br>
+                                                <input type="number" class="form-control" id="cmoney" name="cmoney">
+                                            </div></br>
+                                        </div>
+
+                                    <div  class="container" id="col1">
                                         <label>ประเภทสวัสดิการ</label>
                                         <div><br>
                                         <select name="typebenefit" id="typebenefit">
@@ -247,14 +261,9 @@
                                         </div><br>
                                     </div>
                                     
-                                    <div class="container" id="col3">
-                                            <label>จำนวนเงิน</label>
-                                            <div><br>
-                                                <input type="number" class="form-control" id="cmoney" name="cmoney">
-                                            </div></br>
-                                        </div>
+                                   
                                     
-                                    <div class="container" id="col1">
+                                    <div class="container" id="col2">
                                         <label></label>
                                         <div><br>
                                         
@@ -323,13 +332,30 @@
                                 <!-- <div class="media">   -->       
                                     <!-- <div class="media-body"> -->
                                     <div align="right"  class="container">
-                                        <input type="submit" class="btn btn-success" value="บันทึก" style=" font-family: 'Mitr', sans-serif;">
+                                        <input type="submit" class="btn btn-success" value="บันทึก" data-toggle="modal" data-target="#myModal" style=" font-family: 'Mitr', sans-serif;">
                                         <input type="reset" class="btn" VALUE="ล้างข้อมูล" style=" font-family: 'Mitr', sans-serif;" >
                                     </div>
                                 </div> 
                                 </form>
                                     <!-- </div> -->
                                 <!-- </div> -->
+                                 <!-- Modal -->
+                                 <div class="modal fade" id="myModal" role="dialog">
+                                    <div class="modal-dialog modal-sm">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                        <h4 class="modal-title">แจ้งเตือนระบบ</h4>
+                                        </div>
+                                        <div class="modal-body">
+                                        <p>บันทึกข้อมูลสำเร็จ</p>
+                                        </div>
+                                        <div class="modal-footer">
+                                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                                        </div>
+                                    </div>
+                                    </div>
+                                </div>
 
 
                                 

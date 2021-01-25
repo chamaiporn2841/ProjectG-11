@@ -6,13 +6,11 @@
 <?php
 	$con = mysqli_connect("localhost","root","12345");
 	if(!$con) die("Could not connect: " .mysqli_error());
-	$con = mysqli_connect("localhost","root","12345");
-	if(!$con) die("Could not connect: " .mysqli_error());
+	
 	
     mysqli_select_db( $con,"employees"); 
 	mysqli_query($con,"SET NAMES utf8");
-	mysqli_select_db( $con,"employees"); 
-	mysqli_query($con,"SET NAMES utf8");
+	
 	
 	
 	$sql="INSERT INTO benefituniform(pid, namepn, position, category, Phoneno, cmoney, channel, bank, account) VALUES ("
@@ -27,7 +25,7 @@
 	.$_POST["account"]."');";
 
 	
-	$sql="INSERT INTO benefittotal(pid, namepn, typebenefit, cmoney) VALUES ('"
+	$total="INSERT INTO benefittotal(pid, namepn, typebenefit, cmoney) VALUES ('"
 	.$_POST["pid"]. "',' "
 	.$_POST["namepn"]. "','"
 	.$_POST["typebenefit"]. "',"
@@ -40,10 +38,10 @@
 	}else {
 		echo "บันทึกข้อมูลสำเร็จ ";
 	}
-	mysqli_close($con);
-
+	
+	
 	echo $sql;
-	if(!mysqli_query( $con,$sql)){
+	if(!mysqli_query( $con,$total)){
 		die("Error: " .mysqli_error());
 	}else {
 		echo "บันทึกข้อมูลสำเร็จ ";
