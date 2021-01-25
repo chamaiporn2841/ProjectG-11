@@ -7,17 +7,30 @@
 	<?php
 	$con = mysqli_connect("localhost","root","12345");
 	if(!$con) die("Could not connect: ".mysqli_error());
+
+	$con = mysqli_connect("localhost","root","12345");
+	if(!$con) die("Could not connect: ".mysqli_error());
 	
 	mysqli_select_db("employees",$con);
 	mysqli_query("SET NAMES UTF8");
+
+	mysqli_select_db("employees",$con);
+	mysqli_query("SET NAMES UTF8");
+	
 	
 	$result=mysqli_query("SELECT*FROM benefitmedical");
+	$result=mysqli_query("SELECT*FROM benefittotal");
 	
 	while($row=mysqli_fetch_array($result)){
 	echo $row["pid"]." ".$row["namepn"]." ".$row["position"]." ".$row["category"]." ".$row["Reveal"]." ".$row["namerl"]."  ".$row["born"]."  ".$row["cinf"]." ".$row["nameinf"]." ".$row["operate"]." ".$row["symptom"]." ".$row["cmoney"]." ".$row["channel"]." ".$row["bank"]."".$row["account"];
 	echo "<br />";
 	}
+	while($row=mysqli_fetch_array($result)){
+		echo $row["pid"]." ".$row["namepn"]." ".$row["typebenefit"]." ".$row["cmoney"];
+		echo "<br />";
+		}
 	
+	mysqli_close($con);
 	mysqli_close($con);
 	?>
 

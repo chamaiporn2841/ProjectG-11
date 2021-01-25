@@ -238,8 +238,23 @@
                                         <input type="text" class="form-control" id="Phoneno" name="Phoneno" idem="id">
                                         </div><br>  
                                     </div>
+                                    <div  class="container" id="col3">
+                                        <label>ประเภทสวัสดิการ</label>
+                                        <div><br>
+                                        <select name="typebenefit" id="typebenefit">
+                                                <option value="สวัสดิการขอยืมเงินเพื่อตัดชุดเครื่องแบบปกติขาว">สวัสดิการขอยืมเงินเพื่อตัดชุดเครื่องแบบปกติขาว</option>
+                                        </select>
+                                        </div><br>
+                                    </div>
                                     
                                     <div class="container" id="col3">
+                                            <label>จำนวนเงิน</label>
+                                            <div><br>
+                                                <input type="number" class="form-control" id="cmoney" name="cmoney">
+                                            </div></br>
+                                        </div>
+                                    
+                                    <div class="container" id="col1">
                                         <label></label>
                                         <div><br>
                                         

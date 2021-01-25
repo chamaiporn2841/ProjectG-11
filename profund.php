@@ -7,7 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>ระบบบริหารทรัพยากรบุคคล สำนักเทคโนโลยีดิจิทัล</title>
     <!-- Favicon -->
-    <link rel="shortcut icon" type="image/icon" href="images/favicon.ico" />
+<!--  <link rel="shortcut icon" type="image/icon" href="images/favicon.ico" />    -->
     <!-- Bootstrap CSS CDN -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <!--Font Awesome-->
@@ -49,19 +49,7 @@
                     </ul>
                 </li>
 
-                <li>
-                    <a href="#WelSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">
-                            <i class="fa fa-gift"></i>
-                            สวัสดิการ
-                    </a>
-                    <ul class="collapse list-unstyled" id="WelSubmenu">
-                        <li><a href="#">เกณฑ์การใช้วสวัสดิการ</a></li>
-                        <li><a href="detailwel.php">รายละเอียดการใช้สวัสดิการ</a></li>
-                        <li><a href="consider.php">พิจารณาการใช้สวัสดิการ</a></li>
-                        <li><a href="approve.php">อนุมัติการใช้สวัสดิการ</a></li>
-                        <li><a href="report.php">รายงานสรุปการใช้สวัสดิการ</a></li>
-                    </ul>
-                </li>
+                <li><a href="#"><i class="fa fa-gift"></i>สวัสดิการ</a></li>
 
                 <li>
                     <a href="#formSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">
@@ -75,6 +63,7 @@
                         <li><a href="comdevice.php">คำร้องสวัสดิการซื้ออุปกรณ์คอมพิวเตอร์</a></li>
                         <li><a href="profund.php">คำร้องสวัสดิการกองทุนสำรองเลี้ยงชีพ</a></li>
                         <li><a href="uniform.php">คำร้องขอยืมเงินเพื่อตัดชุดเครื่องแบบปกติขาว</a></li>
+                        <li><a href="funeral.php">คำร้องสวัสดิการฌาปนกิจสงเคราะห์</a></li>
                         <li><a href="tuitionfee.php">คำร้องสวัสดิการเกี่ยวกับค่าเล่าเรียนบุตร</a></li>
                         <li><a href="opresult.php">ติดตามผลคำร้อง</a></li>
                     </ul>
@@ -148,7 +137,7 @@
                                 <div class="col-12 col-md-4" id="usermenu">
                                     <div class="btn-group" style="float: right;">
                                         <button type="button" class="btn btn-secondary" style="padding: 16px;"
-                                            id="user_name">ฉัตรภัสร์ ฐิติอัคราวงศ์</button>
+                                            id="user_name"> </button>
                                         <button type="button"
                                             class="btn btn-secondary dropdown-toggle dropdown-toggle-split"
                                             data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -270,6 +259,14 @@
                                         <div><br>
                                         <input type="text" class="form-control" id="spouse" name="spouse">
                                         </div><br>              
+                                    </div>
+                                    <div  class="container" id="col1">
+                                        <label>ประเภทสวัสดิการ</label>
+                                        <div><br>
+                                        <select name="typebenefit" id="typebenefit">
+                                                <option value="สวัสดิการกองทุนสำรองเลี้ยงชีพ">สวัสดิการกองทุนสำรองเลี้ยงชีพ</option>
+                                        </select>
+                                        </div><br>
                                     </div>
                 
                                     </div><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>

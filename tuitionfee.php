@@ -251,6 +251,14 @@
                                                 </select>
                                             </div><br>
                                         </div>
+                                        <div  class="container" id="col1">
+                                        <label>ประเภทสวัสดิการ</label>
+                                        <div><br>
+                                        <select name="typebenefit" id="typebenefit">
+                                                <option value="สวัสดิการค่าเล่าเรียนบุตร">สวัสดิการค่าเล่าเรียนบุตร</option>
+                                        </select>
+                                        </div><br>
+                                    </div>
                                     
                                     </div><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
                                         <!-- submit  -->    

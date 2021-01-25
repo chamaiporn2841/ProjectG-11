@@ -1,3 +1,18 @@
+<?php 
+    // Create connection
+    $connect = new mysqli('localhost', 'root', '12345', 'employees');
+    
+    // Check Connection
+
+    if ($connect->connect_error) {
+        die("Something wrong.: " . $connect->connect_error);
+      }
+
+    $sql = "SELECT * FROM benefittotal";
+    
+    $result = $connect->query($sql);
+
+?>
 <!DOCTYPE html>
 <html>
 
@@ -5,6 +20,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv=Content-Type content="text/html; charset=utf-8">
     <title>ระบบบริหารทรัพยากรบุคคล สำนักเทคโนโลยีดิจิทัล</title>
     <!-- Favicon -->
     <link rel="shortcut icon" type="image/icon" href="images/favicon.ico" />
@@ -75,6 +91,7 @@
                         <li><a href="comdevice.php">คำร้องสวัสดิการซื้ออุปกรณ์คอมพิวเตอร์</a></li>
                         <li><a href="profund.php">คำร้องสวัสดิการกองทุนสำรองเลี้ยงชีพ</a></li>
                         <li><a href="uniform.php">คำร้องขอยืมเงินเพื่อตัดชุดเครื่องแบบปกติขาว</a></li>
+                        <li><a href="funeral.php">คำร้องสวัสดิการฌาปนกิจสงเคราะห์</a></li>
                         <li><a href="tuitionfee.php">คำร้องสวัสดิการเกี่ยวกับค่าเล่าเรียนบุตร</a></li>
                         <li><a href="opresult.php">ติดตามผลคำร้อง</a></li>
                     </ul>
@@ -264,8 +281,7 @@
                                         <tr>
                                                 <th>เลือก</th>
                                                 <th>ผลการอนุมัติ</th>
-                                                <th>ประเภทสวัสสดิการ</th>
-                                                <th>ไฟล์แนบ</th>
+                                                <th>ประเภทสวัสสดิการ</th>                                           
                                                 <th>ชื่อผู้ขอ</th>
                                                 <th>จำนวนเงิน</th>
                                                 <th>หมายเหตุ</th>
@@ -274,18 +290,19 @@
                                                 <th></th>
                                              
                                         </tr>
+                                        <?php while($row = $result->fetch_assoc()): ?>
                                         <tr>
                                             <td></td>
                                             <td></td>
-                                            <td></td>
-                                            <td></td>
-                                            <td></td>
-                                            <td></td>
+                                            <td><?php echo $row['typebenefit'];?></td>
+                                            <td><?php echo $row['namepn'];?></td>
+                                            <td><?php echo $row['cmoney'];?></td></td>
                                             <td></td>
                                             <td align="center"><img  src="images/eye.png" width="20" height="20"/></td>
                                             <td align="center"><img  src="images/edit.png" width="20" height="20"/></td>
                                             <td></td>
                                         </tr>
+                                        <?php endwhile ?>
                                         </table>
                                         </div>  
 
