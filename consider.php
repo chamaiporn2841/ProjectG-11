@@ -265,34 +265,29 @@
                                                 <th>ประเภทสวัสดิการ</th>                                           
                                                 <th>ชื่อผู้ขอ</th>
                                                 <th>จำนวนเงิน</th>
-                                                <th>หมายเหตุ</th>
                                                 <th>ดูรายละเอียด</th>
-                                                <th>แก้ไข</th>
-                                                <th></th>
+                                              
                                              
                                         </tr>
                                         <?php while($row = $result->fetch_assoc()): ?>
                                         <tr>
-                                            <td><div class="custom-control custom-checkbox">
+                                            <td  align="center"><div class="custom-control custom-checkbox">
                                                 <input type="checkbox" class="custom-control-input" name="customCheck1" id="customCheck1" checked>
                                                 <label class="custom-control-label" for="customCheck1"></label>
                                             </div></td>
 
-                                            <td><select name="actions" id="actions" class="form-select" aria-label="Default select example">
+                                            <td align="center"><select name="actions" id="actions" class="form-select" aria-label="Default select example">
                                                 <option selected>โปรดเลือก</option>
                                                 <option value="1">รอดำเนินการ</option>
                                                 <option value="2">ผ่านการอนุมัติ</option>
                                                 <option value="3">ไม่ผ่านการอนุมัติ</option>
                                             </select></td>
                                             
-                                            <td><?php echo $row['typebenefit'];?></td>
-                                            <td><?php echo $row['namepn'];?></td>
-                                            <td><?php echo $row['cmoney'];?></td></td>
-                                            <td></td>
+                                            <td align="center"><?php echo $row['typebenefit'];?></td>
+                                            <td align="center"><?php echo $row['namepn'];?></td>
+                                            <td align="center"><?php echo $row['cmoney'];?></td></td>
                                             <td align="center"><img  src="images/eye.png" width="20" height="20"/></td>
-
-                                            <td align="center"><img  src="images/edit.png" width="20" height="20"/></td>
-                                            <td></td>
+                                           
                                         </tr>
                                         <?php endwhile ?>
                                         </table>

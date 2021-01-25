@@ -198,21 +198,19 @@
                                                 <th>ไฟล์แนบ</th>
                                                 <th>ชื่อผู้ขอ</th>
                                                 <th>จำนวนเงิน</th>
-                                                <th>หมายเหตุ</th>
                                                 <th>ดูรายละเอียด</th>
-                                                <th>แก้ไข</th>
+                                            
                                             </tr>
 
                                             <tr>
-                                                <td></td>
-                                                <td></td>
-                                                <td></td>
-                                                <td></td>
-                                                <td></td>
-                                                <td></td>
-                                                <td></td>
+                                                <td align="center"></td>
+                                                <td align="center"></td>
+                                                <td align="center"></td>
+                                                <td align="center"></td>
+                                                <td align="center"></td>
+                                                <td align="center"></td>
                                                 <td align="center"><img  src="images/eye.png" width="20" height="20"/></td>   
-                                                <td align="center"><img  src="images/edit.png" width="20" height="20"/></td>  
+                                                
                                             </tr>
                                             
                                         </table>
