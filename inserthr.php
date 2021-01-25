@@ -7,11 +7,11 @@
 	$con = mysqli_connect("localhost","root","12345");
 	if(!$con) die("Could not connect: " .mysqli_error());
 	
-    mysqli_select_db( $con,"hr"); 
+    mysqli_select_db( $con,"benefit"); 
 	mysqli_query($con,"SET NAMES utf8");
 
 	
-	$sql="INSERT INTO `requirement`(`requirement_type`, `requirement_date`, `requirement_text`) VALUES ('"
+	$sql="INSERT INTO `hr`(`requirement_type`, `requirement_date`, `requirement_text`) VALUES ('"
 	.$_POST["requirement_type"]. "','"
 	.$_POST["requirement_date"]. "','"
     .$_POST["requirement_text"]."');";
