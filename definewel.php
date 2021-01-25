@@ -173,13 +173,14 @@
               <div class="row">
                 <div class="col-md-12">
                   <div class="media">
-                    <!-- target="iframe_target" -->
+                   <!--  target="iframe_target" -->
 
-                    <form name="form11" action="insert.php" method="post">
-                      <!-- <iframe id="iframe_target" name="iframe_target" src="#" style="width:0;height:0;border:0px solid #fff;"></iframe> -->
+                    <!-- <form name="form11" action="inserthr.php" method="post">
+                      <iframe id="iframe_target" name="iframe_target" src="#" style="width:0;height:0;border:0px solid #fff;"></iframe> -->
                       <div class="media-body">
                         <h4 class="media-heading"><b>เกณฑ์การใช้สวัสดิการ</b>
                           <!-- </div><hr> --><br><br><br>
+                          
                       </div>
                       <div>
                         <div class="container" id="col1">
