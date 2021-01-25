@@ -195,7 +195,6 @@
                                                 <th>เลือก</th>
                                                 <th>ผลการอนุมัติ</th>
                                                 <th>ประเภทสวัสสดิการ</th>
-                                                <th>ไฟล์แนบ</th>
                                                 <th>ชื่อผู้ขอ</th>
                                                 <th>จำนวนเงิน</th>
                                                 <th>ดูรายละเอียด</th>
@@ -203,7 +202,6 @@
                                             </tr>
 
                                             <tr>
-                                                <td align="center"></td>
                                                 <td align="center"></td>
                                                 <td align="center"></td>
                                                 <td align="center"></td>
