@@ -7,7 +7,7 @@
 	$con = mysqli_connect("localhost","root","12345");
 	if(!$con) die("Could not connect: " .mysqli_error());
 
-    mysqli_select_db( $con,"employees"); 
+    mysqli_select_db( $con,"benefit"); 
 	mysqli_query($con,"SET NAMES utf8");
 
 	$sql="INSERT INTO benefitmedical(pid, namepn, position, category, Reveal, namerl, born, cinf, nameinf, operate, symptom, cmoney, channel, bank, account) VALUES ('"

@@ -1,6 +1,6 @@
 <?php 
     // Create connection
-    $connect = new mysqli('localhost', 'root', '12345', 'employees');
+    $connect = new mysqli('localhost', 'root', '12345', 'benefit');
     
     // Check Connection
 
@@ -265,7 +265,7 @@
                                                 <th>ประเภทสวัสดิการ</th>                                           
                                                 <th>ชื่อผู้ขอ</th>
                                                 <th>จำนวนเงิน</th>
-                                                <th>ดูรายละเอียด</th>
+                                                
                                               
                                              
                                         </tr>
@@ -286,7 +286,7 @@
                                             <td align="center"><?php echo $row['typebenefit'];?></td>
                                             <td align="center"><?php echo $row['namepn'];?></td>
                                             <td align="center"><?php echo $row['cmoney'];?></td></td>
-                                            <td align="center"><img  src="images/eye.png" width="20" height="20"/></td>
+                                            
                                            
                                         </tr>
                                         <?php endwhile ?>

@@ -8,7 +8,7 @@
 	$con = mysqli_connect("localhost","root","12345");
 	if(!$con) die("Could not connect: ".mysqli_error());
 	
-	mysqli_select_db("employees",$con);
+	mysqli_select_db("benefit",$con);
 	mysqli_query("SET NAMES UTF8");
 	
 	
