@@ -11,7 +11,7 @@
 	mysqli_select_db("hr",$con); //เปลี่ยนชื่อฐานข้อมูลตรง employees
 	mysqli_query("SET NAMES UTF8");
 	
-	$result=mysqli_query("SELECT*FROM requirement");
+	$result=mysqli_query($con,"SELECT*FROM requirement");
 	
 	while($row=mysqli_fetch_array($result)){
 	echo $row["requirement_type"]." ".$row["requirement_date"]." ".$row["requirement_text"];

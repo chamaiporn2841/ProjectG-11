@@ -16,7 +16,7 @@
 	.$_POST["requirement_date"]. "','"
     .$_POST["requirement_text"]."');";
 
-	echo $sql;
+	//echo $sql;
 	if(!mysqli_query( $con,$sql)){
 		die("Error: " .mysqli_error());
 	}else {
