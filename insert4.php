@@ -13,14 +13,13 @@
 	
 	
 	
-	$sql="INSERT INTO benefituniform(pid, namepn, position, category, Phoneno, cmoney, channel, bank, account) VALUES ("
+	$sql="INSERT INTO benefituniform(pid, namepn, position, category, Phoneno, cmoney, bank, account) VALUES ("
 	.$_POST["pid"]. ",'"
 	.$_POST["namepn"]. "','"
     .$_POST["position"]. "','"
     .$_POST["category"]. "',"
 	.$_POST["Phoneno"]. ",'"
 	.$_POST["cmoney"]. "','"
-    .$_POST["channel"]. "','"
 	.$_POST["bank"]. "','"
 	.$_POST["account"]."');";
 

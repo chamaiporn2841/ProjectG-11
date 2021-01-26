@@ -340,18 +340,9 @@
                                                 </div> <br><br>
                                             
                                         <div>
-                                        <div class="container" id="col1">
-                                            <label>ช่องทางรับเงิน</label>
-                                        <div></br>
-                                        <select name="channel" id="channel">
-                                            <option value="โปรดเลือก">โปรดเลือก</option>
-                                            <option value="เงินสด">เงินสด</option>
-                                            <option value="โอนเงินเข้าบัญชีเงินฝาก">โอนเงินเข้าบัญชีเงินฝาก</option>
-                                        </select>
-                                        </div></br>
-                                    </div>
+                                        
 
-                                    <div class="container" id="col2">
+                                    <div class="container" id="col1">
                                         <label>บัญชีธนาคาร</label>
                                         <div><br>
                                             <select name="bank" id="bank">
@@ -362,7 +353,7 @@
                                         </div><br>
                                     </div>
 
-                                    <div class="container" id="col3">
+                                    <div class="container" id="col2">
                                         <label>เลขที่บัญชี</label>
                                         <div><br>
                                             <input type="text" class="form-control" id="account" name="account">

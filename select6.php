@@ -18,7 +18,7 @@
 	$resulttotal=mysqli_query($con,"SELECT*FROM benefittotal");
 	
 	while($row=mysqli_fetch_array($result)){
-	echo $row["pid"]." ".$row["namepn"]." ".$row["position"]." ".$row["category"]." ".$row["spouse"]." ".$row["authority"]."  ".$row["child"]."  ".$row["namech"]." ".$row["happen"]." ".$row["arrange"]." ".$row["school"]." ".$row["district"]."  ".$row["grade"]." ".$row["cmoney"]." ".$row["channel"]." ".$row["bank"]."".$row["account"];
+	echo $row["pid"]." ".$row["namepn"]." ".$row["position"]." ".$row["category"]." ".$row["spouse"]." ".$row["authority"]."  ".$row["child"]."  ".$row["namech"]." ".$row["happen"]." ".$row["arrange"]." ".$row["school"]." ".$row["district"]."  ".$row["grade"]." ".$row["cmoney"]." ".$row["bank"]."".$row["account"];
 	echo "<br />";
 	}
 

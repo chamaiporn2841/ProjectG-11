@@ -10,7 +10,7 @@
     mysqli_select_db( $con,"benefit"); 
 	mysqli_query($con,"SET NAMES utf8");
 
-	$sql="INSERT INTO benefitmedical(pid, namepn, position, category, Reveal, namerl, born, cinf, nameinf, operate, symptom, cmoney, channel, bank, account) VALUES ('"
+	$sql="INSERT INTO benefitmedical(pid, namepn, position, category, Reveal, namerl, born, cinf, nameinf, operate, symptom, cmoney, bank, account) VALUES ('"
 	.$_POST["pid"]. "',' "
 	.$_POST["namepn"]. "','"
     .$_POST["position"]. "','"
@@ -23,7 +23,6 @@
     .$_POST["operate"]. "','"
     .$_POST["symptom"]. "','"
     .$_POST["cmoney"]. "','"
-    .$_POST["channel"]. "','"
 	.$_POST["bank"]. "',"
 	.$_POST["account"].")";
 

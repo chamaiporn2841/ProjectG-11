@@ -12,7 +12,7 @@
 	mysqli_query($con,"SET NAMES utf8");
 
 	
-	$sql="INSERT INTO benefitstudy(pid, namepn, position, category, spouse, authority, child, namech, happen, arrange, school, district, grade, cmoney, channel, bank, account) VALUES ('"
+	$sql="INSERT INTO benefitstudy(pid, namepn, position, category, spouse, authority, child, namech, happen, arrange, school, district, grade, cmoney, bank, account) VALUES ('"
 	.$_POST["pid"]. "',' "
 	.$_POST["namepn"]. "','"
     .$_POST["position"]. "','"
@@ -27,7 +27,6 @@
     .$_POST["district"]. "','"
     .$_POST["grade"]. "','"
     .$_POST["cmoney"]. "','"
-    .$_POST["channel"]. "','"
 	.$_POST["bank"]. "',"
 	.$_POST["account"].")";
 
