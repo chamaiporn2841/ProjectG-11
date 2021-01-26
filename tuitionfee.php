@@ -10,8 +10,6 @@
     <link rel="shortcut icon" type="image/icon" href="images/favicon.ico" />
     <!-- Bootstrap CSS CDN -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-    <!-- Bootstrap buttonsave-->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
     <!--Font Awesome-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <!-- Our Custom CSS -->
@@ -23,9 +21,6 @@
     <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
     <!-- Bootstrap Js CDN -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-     <!-- Bootstrap Js buttonsave -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 </head>
 
 <body>
@@ -80,6 +75,7 @@
                         <li><a href="comdevice.php">คำร้องสวัสดิการซื้ออุปกรณ์คอมพิวเตอร์</a></li>
                         <li><a href="profund.php">คำร้องสวัสดิการกองทุนสำรองเลี้ยงชีพ</a></li>
                         <li><a href="uniform.php">คำร้องขอยืมเงินเพื่อตัดชุดเครื่องแบบปกติขาว</a></li>
+                        <li><a href="funeral.php">คำร้องสวัสดิการฌาปนกิจสงเคราะห์</a></li>
                         <li><a href="tuitionfee.php">คำร้องสวัสดิการเกี่ยวกับค่าเล่าเรียนบุตร</a></li>
                         <li><a href="opresult.php">ติดตามผลคำร้อง</a></li>
                     </ul>
@@ -181,38 +177,35 @@
                         <div class="row">
                             <div class="col-md-12">
 
-                            <form name="form6" action="insert6.php" method="post" target="iframe_target" >
-                            <iframe id="iframe_target" name="iframe_target" src="#" style="width:0;height:0;border:0px solid #fff;"></iframe>
-                            <div class="media">
+                                <form name="form6" action="insert6.php" method="post" target="iframe_target" >
+                                    <iframe id="iframe_target" name="iframe_target" src="#" style="width:0;height:0;border:0px solid #fff;"></iframe>
+                                    <div class="media">
                                 
                                     <div class="media-body">
                                         <h4 class="media-heading"><b>สวัสดิการค่าเล่าเรียนบุตร</b>
-                                    
-                                </div>
+                                    </div>
+                                </div> 
                                 <div class="media">
                                     <div id="col">
                                         <div class="header">
                                             ข้อมูลส่วนตัว
-                                        <!-- </div><hr> --><br><br><br><br><br>
-                                        </div>
+                                        </div>  <br><br>
+                                        
                                     <div>
                                     <div class="container" id="col1">
-                                        <label>รหัสบุคลากร</label>
-                                        
-                                        <div>
-                                            
+                                        <label>รหัสบุคลากร</label>    
+                                        <div><br>  
                                             <input type="text" class="form-control" id="pid" name="pid">
-                                        </div>
-                                            
-
+                                        </div><br>          
                                     </div> 
 
                                     <div class="container" id="col2">
                                         <label>ชื่อบุคลากร</label>
+                                            <div><br>
                                             <span>
                                                 <input type="text" class="form-control" id="namepn" name="namepn">
                                             </span>
-                                    
+                                        </div><br>
                                     </div>
 
                                     <div  class="container" id="col3">
@@ -258,37 +251,39 @@
                                             </div><br>
                                         </div>
                                         <div  class="container" id="col1">
-                                        <label>ประเภทสวัสดิการ</label>
-                                        <div><br>
-                                        <select name="typebenefit" id="typebenefit">
-                                                <option value="สวัสดิการค่าเล่าเรียนบุตร">สวัสดิการค่าเล่าเรียนบุตร</option>
-                                        </select>
-                                        </div><br>
-                                    </div>
-                                    
-                                    </div><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
-                                        <!-- submit  -->    
-                                           
-                                           
-                                        <!-- <div align="right"  class="container">
-                                            <input type="submit" class="btn btn-success" value="บันทึก" style=" font-family: 'Mitr', sans-serif;">
-                                            <input type="reset" class="btn" VALUE="ล้างข้อมูล" style=" font-family: 'Mitr', sans-serif;" >
-                                        </div>  -->
+                                            <label>ประเภทสวัสดิการ</label>
+                                            <div><br>
+                                            <select name="typebenefit" id="typebenefit">
+                                                    <option value="สวัสดิการค่าเล่าเรียนบุตร">สวัสดิการค่าเล่าเรียนบุตร</option>
+                                            </select>
+                                            </div><br>
                                         </div>
-                                        </div> 
+                                        <div class="container" id="col2">
+                                                <label></label>
+                                                <div><br>
+                                                    
+                                                </div><br>
+                                            </div>
+                                        <div class="container" id="col3">
+                                            <label></label>
+                                            <div><br>
+                                                    
+                                            </div><br>
+                                        </div>
                                     </div>
-                                    </div>
-                                </div> 
+                                 </div> 
+                            </div>
+                       
+                                
                                 <!--news1-->
 
                                 <div class="media">
-                                    
                                         <div id="col">
-                                            <div class="header">     
-                                                ขอเบิกเงินการศึกษาของบุตร
-                                            <!-- </div><hr> --><br><br><br><br>
-                                        </div>
-                                        <div>
+                                            <div class="media-body">
+                                                <div class="header">     
+                                                    ขอเบิกเงินการศึกษาของบุตร
+                                               </div> <br><br>
+                                            <div>
 
                                         <div class="container" id="col1">
                                                 <label>ขอเบิกเงินการศึกษาของบุตร</label>
@@ -315,18 +310,17 @@
                                                 </div><br>
                                             
                                             </div>
-                                        </div>
-                                        
-                                  
+                                        </div> 
                                     </div>
                                 </div>
+                            </div>
+
                                 <div class="media">
-                                    
+                                    <div class="media-body">
                                         <div id="col">
                                             <div class="header">
                                                 รายละเอียดของบุตร
-                                            <!-- </div><hr> --><br><br><br><br>
-                                        </div>
+                                           </div> <br><br>
                                         <div>
 
                                         <div class="container" id="col1">
@@ -384,13 +378,8 @@
                                                             <input type="text" class="form-control" id="cmoney" name="cmoney">
                                                         </div><br>
                                                     </div>
-
-
-
-
+                                            </div>
                                         </div>
-                                        
-                                  
                                     </div>
                                 </div>
                                 <!--news2-->
@@ -400,8 +389,7 @@
                                         <div id="col">
                                                 <div class="header">
                                                     รายละเอียดการรับเงิน
-                                                <!-- </div><hr> --><br><br><br><br>
-                                            </div>
+                                               </div> <br><br>
                                         <div>
                                         <div class="container" id="col1">
                                         <label>ช่องทางรับเงิน</label>
@@ -431,10 +419,10 @@
                                             <input type="text" class="form-control" id="account" name="account">
                                         </div><br>
                                     </div>
-                                    </div>
                                 </div>
-                                </div>
-                                </div>
+                            </div>
+                        </div>
+                    </div>
                                 <br/><br/>
                                 <!--news3-->
                                 <!-- <div class="media">   -->       

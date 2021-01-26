@@ -55,15 +55,18 @@
           </li>
 
           <li>
-            <a href="#benefitSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">
-              <i class="fa fa-gift"></i>
-              สวัสดิการ
-            </a>
-            <ul class="collapse list-unstyled" id="benefitSubmenu">
-              <li><a href="definewel.php">เกณฑ์การใช้สวัสดิการ</a></li>
-
-            </ul>
-          </li>
+                    <a href="#WelSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">
+                            <i class="fa fa-gift"></i>
+                            สวัสดิการ
+                    </a>
+                    <ul class="collapse list-unstyled" id="WelSubmenu">
+                        <li><a href="definewel.php">เกณฑ์การใช้วสวัสดิการ</a></li>
+                        <li><a href="detailwel.php">รายละเอียดการใช้สวัสดิการ</a></li>
+                        <li><a href="consider.php">พิจารณาการใช้สวัสดิการ</a></li>
+                        <li><a href="approve.php">อนุมัติการใช้สวัสดิการ</a></li>
+                        <li><a href="report.php">รายงานสรุปการใช้สวัสดิการ</a></li>
+                    </ul>
+                </li>
 
 
           <li>
@@ -78,7 +81,6 @@
               <li><a href="comdevice.php">คำร้องสวัสดิการซื้ออุปกรณ์คอมพิวเตอร์</a></li>
               <li><a href="profund.php">คำร้องสวัสดิการกองทุนสำรองเลี้ยงชีพ</a></li>
               <li><a href="uniform.php">คำร้องขอยืมเงินเพื่อตัดชุดเครื่องแบบปกติขาว</a></li>
-              <li><a href="funeral.php">คำร้องสวัสดิการฌาปนกิจสงเคราะห์</a></li>
               <li><a href="tuitionfee.php">คำร้องสวัสดิการเกี่ยวกับค่าเล่าเรียนบุตร</a></li>
               <li><a href="opresult.php">ติดตามผลคำร้อง</a></li>
             </ul>
@@ -178,15 +180,11 @@
               <div class="row">
                 <div class="col-md-12">
                   <div class="media">
-                   
-
                     <form name="form11" action="inserthr.php" method="post"  target="iframe_target">
                       <iframe id="iframe_target" name="iframe_target" src="#" style="width:0;height:0;border:0px solid #fff;"></iframe>
                       <div class="media-body">
                         <h4 class="media-heading"><b>เกณฑ์การใช้สวัสดิการ</b>
-                          <!-- </div><hr> --><br><br><br>
-                          
-                      </div>
+                          </div> <br><br>
                       <div>
                         <div class="container" id="col1">
                           <label>ประเภทสวัสดิการ</label>
@@ -213,27 +211,17 @@
                   </div>
                 </div>
               </div>
+
               <div class="media">
                 <div id="col">
                   <div class="header">
                     รายละเอียดสวัสดิการ
-                    <!-- </div><hr> --><br><br><br>
+                    <br><br><br>
                     <div>
-                      <!-- <center> -->
-                      <textarea name="requirement_text" id="requirement_text" style="width:80%;height: 300px;"></textarea>
 
-                      <!-- <center>
-                                    <script type="text/javascript" src="ckeditor/ckeditor.js"></script>
-                                        <script>
-                                            CKEDITOR.replace('detail');
-                                            function CKupdate() {
-                                                for (instance in CKEDITOR.instances)
-                                                    CKEDITOR.instances[instance].updateElement();
-                                            }
-                                        </script></center>
-                                         </div> -->
+                      <textarea name="requirement_text" id="requirement_text" style="width:80%;height: 300px;"></textarea>
                     </div>
-                    <br /><br />
+                    <br/><br/>
                     <!--news2-->
                     <div align="right" class="container">
                       <input type="submit" class="btn btn-success" value="บันทึก" data-toggle="modal" data-target="#myModal" style=" font-family: 'Mitr', sans-serif;">

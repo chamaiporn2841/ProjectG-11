@@ -10,8 +10,6 @@
     <link rel="shortcut icon" type="image/icon" href="images/favicon.ico" />
     <!-- Bootstrap CSS CDN -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-    <!-- Bootstrap buttonsave-->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
     <!--Font Awesome-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <!-- Our Custom CSS -->
@@ -23,9 +21,6 @@
     <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
     <!-- Bootstrap Js CDN -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-    <!-- Bootstrap Js buttonsave -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 </head>
 
 <body>
@@ -181,37 +176,33 @@
                         <div class="row">
                             <div class="col-md-12">
 
-                            <form name="form4" action="insert4.php" method="post" target="iframe_target" >
-                            <iframe id="iframe_target" name="iframe_target" src="#" style="width:0;height:0;border:0px solid #fff;"></iframe>
-                            <div class="media">
-                                    <div class="media-body">
-                                        <h4 class="media-heading"><b>แบบคำร้องขอยืมเงินเพื่อตัดชุดเครื่องแบบปกติขาว</b>
-                                    
-                                </div>
+                                <form name="form4" action="insert4.php" method="post" target="iframe_target" >
+                                    <iframe id="iframe_target" name="iframe_target" src="#" style="width:0;height:0;border:0px solid #fff;"></iframe>
+                                        <div class="media">
+                                            <div class="media-body">
+                                                <h4 class="media-heading"><b>แบบคำร้องขอยืมเงินเพื่อตัดชุดเครื่องแบบปกติขาว</b>
+                                            </div>
+                                        </div>   
                                 <div class="media">
                                     <div id="col">
                                         <div class="header">
                                             ข้อมูลส่วนตัว
-                                        <!-- </div><hr> --><br><br><br><br><br>
-                                        </div>
+                                        </div> <br><br>
                                     <div>
                                     <div class="container" id="col1">
                                         <label>รหัสบุคลากร</label>
-                                        
-                                        <div>
-                                            
+                                        <div><br>
                                             <input type="text" class="form-control" id="pid" name="pid">
-                                        </div>
-                                            
-
+                                        </div><br>
                                     </div> 
 
                                     <div class="container" id="col2">
                                         <label>ชื่อบุคลากร</label>
+                                        <div><br>
                                             <span>
                                                 <input type="text" class="form-control" id="namepn" name="namepn">
                                             </span>
-                                    
+                                        </div><br>
                                     </div>
 
                                     <div  class="container" id="col3">
@@ -268,20 +259,11 @@
                                         <div><br>
                                         
                                         </div><br>
-                                    
-                                    </div><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
-                                        <!-- submit  -->    
-                                           
-                                           
-                                        <!-- <div align="right"  class="container">
-                                            <input type="submit" class="btn btn-success" value="บันทึก" style=" font-family: 'Mitr', sans-serif;">
-                                            <input type="reset" class="btn" VALUE="ล้างข้อมูล" style=" font-family: 'Mitr', sans-serif;" >
-                                        </div>  -->
-                                            
-                                        </div> 
-                                    </div>
-                                    </div>
-                                </div> 
+                                        
+                                    </div> 
+                                </div>
+                            </div>
+                        </div> 
                                 
 
                                 
@@ -292,8 +274,8 @@
                                         <div id="col">
                                                 <div class="header">
                                                     รายละเอียดการรับเงิน
-                                                <!-- </div><hr> --><br><br><br><br>
-                                            </div>
+                                                </div> <br><br>
+                                            
                                         <div>
                                         <div class="container" id="col1">
                                         <label>ช่องทางรับเงิน</label>

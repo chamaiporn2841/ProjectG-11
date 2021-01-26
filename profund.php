@@ -7,11 +7,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>ระบบบริหารทรัพยากรบุคคล สำนักเทคโนโลยีดิจิทัล</title>
     <!-- Favicon -->
-<!--  <link rel="shortcut icon" type="image/icon" href="images/favicon.ico" />    -->
+    <link rel="shortcut icon" type="image/icon" href="images/favicon.ico" />
     <!-- Bootstrap CSS CDN -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-    <!-- Bootstrap buttonsave-->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
     <!--Font Awesome-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <!-- Our Custom CSS -->
@@ -23,9 +21,6 @@
     <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
     <!-- Bootstrap Js CDN -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-    <!-- Bootstrap Js buttonsave -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 </head>
 
 <body>
@@ -54,7 +49,19 @@
                     </ul>
                 </li>
 
-                <li><a href="#"><i class="fa fa-gift"></i>สวัสดิการ</a></li>
+                <li>
+                    <a href="#WelSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">
+                            <i class="fa fa-gift"></i>
+                            สวัสดิการ
+                    </a>
+                    <ul class="collapse list-unstyled" id="WelSubmenu">
+                        <li><a href="#">เกณฑ์การใช้วสวัสดิการ</a></li>
+                        <li><a href="detailwel.php">รายละเอียดการใช้สวัสดิการ</a></li>
+                        <li><a href="consider.php">พิจารณาการใช้สวัสดิการ</a></li>
+                        <li><a href="approve.php">อนุมัติการใช้สวัสดิการ</a></li>
+                        <li><a href="report.php">รายงานสรุปการใช้สวัสดิการ</a></li>
+                    </ul>
+                </li>
 
                 <li>
                     <a href="#formSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">
@@ -142,7 +149,7 @@
                                 <div class="col-12 col-md-4" id="usermenu">
                                     <div class="btn-group" style="float: right;">
                                         <button type="button" class="btn btn-secondary" style="padding: 16px;"
-                                            id="user_name"> </button>
+                                            id="user_name">ฉัตรภัสร์ ฐิติอัคราวงศ์</button>
                                         <button type="button"
                                             class="btn btn-secondary dropdown-toggle dropdown-toggle-split"
                                             data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -169,39 +176,36 @@
                     <div class="container-fluid" id="news">
                         <div class="row">
                             <div class="col-md-12">
-
                             <form name="form3" action="insert3.php" method="post"  target="iframe_target">
-                            <iframe id="iframe_target" name="iframe_target" src="#" style="width:0;height:0;border:0px solid #fff;"></iframe>
-                            <div class="media">
-                                    
+                                <iframe id="iframe_target" name="iframe_target" src="#" style="width:0;height:0;border:0px solid #fff;"></iframe>
+                                <div class="media">
+  
                                     <div class="media-body">
                                         <h4 class="media-heading"><b>สวัสดิการกองทุนสำรองเลี้ยงชีพ</b>
-                                    
+                                    </div>
                                 </div>
                                 <div class="media">
                                     <div id="col">
                                         <div class="header">
                                             ข้อมูลส่วนตัว
-                                        <!-- </div><hr> --><br><br><br><br><br>
-                                        </div>
+                                        </div><br><br>
                                     <div>
                                     <div class="container" id="col1">
-                                        <label>รหัสบุคลากร</label>
-                                        
-                                        <div>
-                                            
+                                        <label>รหัสบุคลากร</label>                                      
+                                        <div><br>                           
                                             <input type="text" class="form-control" id="pid" name="pid">
-                                        </div>
+                                        </div><br>
                                             
 
                                     </div> 
 
                                     <div class="container" id="col2">
                                         <label>ชื่อบุคลากร</label>
+                                        <div><br>
                                             <span>
                                                 <input type="text" class="form-control" id="namepn" name="namepn">
                                             </span>
-                                    
+                                        </div><br>
                                     </div>
 
                                     <div  class="container" id="col3">
@@ -275,31 +279,20 @@
                                         </div><br>
                                     </div>
                 
-                                    </div><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
-                                        <!-- submit  -->    
-                                           
-                                           
-                                        <!-- <div align="right"  class="container">
-                                            <input type="submit" class="btn btn-success" value="บันทึก" style=" font-family: 'Mitr', sans-serif;">
-                                            <input type="reset" class="btn" VALUE="ล้างข้อมูล" style=" font-family: 'Mitr', sans-serif;" >
-                                        </div>  -->
-                                            
-                                        </div> 
-                                    </div>
-                                    </div>
-                                    </div>
-                                </div> 
+                                 </div>               
+                            </div> 
+                        </div>
+               
+                                    
                                 <!--news1-->
 
                                 <div class="media">
-                                    
-                                        <div id="col">
+                                    <div id="col">
+                                        <div class="media-body">
                                             <div class="header">
                                             ที่อยู่อาศัย
-                                            <!-- </div><hr> --><br><br><br><br>
+                                            </div><br><br>
                                         </div>
-                                        <div>
-
                                         <div class="container" id="col1">
                                             <label>บ้านเลขที่</label>
                                             <div><br>
@@ -341,16 +334,16 @@
                                             </div><br>
                                         </div>
                                     </div>
-                                    </div>
                                 </div>
+                             </div>
+                        </div>
                                 <!--news2-->
                                 <div class="media">         
                                     <div class="media-body">
                                         <div id="col">
                                                 <div class="header">
                                                     รายละเอียดการเข้าทำงาน
-                                                <!-- </div><hr> --><br><br><br><br>
-                                            </div>
+                                               </div><br><br>
                                         <div>
                                         <div class="container" id="col1">
                                             <label>วันที่เริ่มเข้าทำงาน</label>
@@ -375,8 +368,8 @@
 
                                     </div>
                                 </div>
-                                </div>
-                                </div>
+                            </div>
+                        </div>
                                 <br/><br/>
                                 
                                 <!--news3-->
@@ -386,7 +379,7 @@
                                         <input type="submit" class="btn btn-success" value="บันทึก" data-toggle="modal" data-target="#myModal" style=" font-family: 'Mitr', sans-serif;">
                                         <input type="reset" class="btn" VALUE="ล้างข้อมูล" style=" font-family: 'Mitr', sans-serif;" >
                                     </div> 
-                                     
+                                </div>   
                              </form>     
                                     <!-- </div> -->
                                 <!-- </div> -->
