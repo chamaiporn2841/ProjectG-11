@@ -284,7 +284,7 @@
                                     
                                 <!--news1-->
 
-                                <div class="media">
+                                <div class="media" style="padding-bottom: 20px;">
                                     <div id="col">
                                         <div class="media-body">
                                             <div class="header">
@@ -337,7 +337,7 @@
                         </div>
                                 <!--news2-->
                                 <div class="media">         
-                                    <div class="media-body">
+                                    <div class="media-body" style="padding-bottom: 20px;">
                                         <div id="col">
                                                 <div class="header">
                                                     รายละเอียดการเข้าทำงาน
@@ -368,12 +368,12 @@
                                 </div>
                             </div>
                         </div>
-                                <br/><br/>
+                                
                                 
                                 <!--news3-->
                                 <!-- <div class="media">   -->       
                                     <!-- <div class="media-body"> -->
-                                    <div align="right"  class="container">
+                                    <div align="right"  class="container" style="padding-bottom: 30px;padding-top: 30px;">
                                         <input type="submit" class="btn btn-success" value="บันทึก" data-toggle="modal" data-target="#myModal" style=" font-family: 'Mitr', sans-serif;">
                                         <input type="reset" class="btn" VALUE="ล้างข้อมูล" style=" font-family: 'Mitr', sans-serif;" >
                                     </div> 
@@ -407,7 +407,7 @@
                 </news>
             </main>
 
-            <div style="height: 40px;"></div>
+           
         </div>
 
     </div>

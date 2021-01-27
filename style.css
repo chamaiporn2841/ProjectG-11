@@ -431,3 +431,49 @@ label{
 #iframe_target{
     background-color:#e4e4e4;
 }
+
+
+#category{
+    border-radius: 8px;
+    color: #3d5b6d;
+    font-size: 1.1em;
+    font-weight: 300;
+    width: 100%;
+    height: 34px;
+}
+
+#position{
+    border-radius: 8px;
+    color: #3d5b6d;
+    font-size: 1.1em;
+    font-weight: 300;
+    width: 100%;
+    height: 34px;
+}
+
+#FStatus{
+    border-radius: 8px;
+    color: #3d5b6d;
+    font-size: 1.1em;
+    font-weight: 300;
+    width: 100%;
+    height: 34px;
+}
+
+#typebenefit{
+    border-radius: 8px;
+    color: #3d5b6d;
+    font-size: 1.1em;
+    font-weight: 300;
+    width: 100%;
+    height: 34px;
+}
+
+#Contribution{
+    border-radius: 8px;
+    color: #3d5b6d;
+    font-size: 1.1em;
+    font-weight: 300;
+    width: 100%;
+    height: 34px;
+}
