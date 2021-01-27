@@ -177,12 +177,12 @@
                             <div class="col-md-12">
 
                                     
-                                        <div class="media"> 
+                                        <div class="media" > 
                                             <div class="media-body" >
                                                 <h4 class="media-heading" ><b>สวัสดิการซื้ออุปกรณ์คอมพิวเตอร์</b>
                                             </div>
                                         </div>
-                                        <div class="media">
+                                        <div class="media" style="padding-bottom: 20px;">
                                             <div id="col">
                                                 <div class="header">
                                                     ข้อมูลส่วนตัว
@@ -287,7 +287,7 @@
                                         <!--news2-->
                                     
                                         <div class="media">         
-                                            <div class="media-body">
+                                            <div class="media-body" style="padding-bottom: 20px;">
                                                 <div id="col">
                                                         <div class="header">
                                                             รายละเอียดการรับเงิน
