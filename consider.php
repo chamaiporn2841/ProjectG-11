@@ -10,10 +10,11 @@
 
       
     $sql = "SELECT * FROM benefittotal";
-    
+
     $result = $connect->query($sql);
     
 ?>
+
 <!DOCTYPE html>
 <html>
 
@@ -206,22 +207,33 @@
                                         </div>
                                     <div>
                                     
-                                    <form class="form-inline" name="searchform" id="searchform">
+                                    <?php
+                                        ini_set('display_errors', 1);
+                                        error_reporting(~0);
+
+                                        $strKeyword = null;
+
+                                        if(isset($_POST["txtKeyword"]))
+                                        {
+                                            $strKeyword = $_POST["txtKeyword"];
+                                        }
+                                    ?>
+
+
+
+                                <form class="form-inline" name="frmSearch" method="post" action="<?php echo $_SERVER['SCRIPT_NAME'];?>">
                                     <div class="form-group" align="center">
-                                    <div class="form-inline"  >
-                                        <label for="textsearch" >ประเภทสวัสดิการ</label>
-                                  
-                                         <input type="text" name="itemname" id="itemname" class="form-control" placeholder="ข้อความ คำค้นหา!" autocomplete="off">
-                                
-                                         <button type="button" class="btn btn-primary" id="btnSearch">
-                                            
-                                            <span class="glyphicon glyphicon-search"></span>
-                                               ค้นหา
-                                           </button>
-                                
+                                        <div class="form-inline"  >                                    
+                                            <label for="textsearch" >ประเภทสวัสดิการ</label>
+                                            <input name="txtKeyword" type="text" id="txtKeyword" value="<?php echo $strKeyword;?>" class="form-control" placeholder="ข้อความ คำค้นหา!" autocomplete="off">
+                                                <button type="button" class="btn btn-primary"  value="Search">
+                                                    <span class="glyphicon glyphicon-search"></span>
+                                                            ค้นหา
+                                                </button>
                                         </div>
-      
+        
                                     </div> 
+                                </form>
   
                                             
                                
@@ -229,10 +241,7 @@
                                 <div><br></div>     
                         
             
-                   <!-- 
-                                <div class="loading"></div>
-                                    <div class="row" id="list-data" style="margin-top: 10px;">
-                                    </div> -->
+                   
                                </div>
                                 
                                         </div>
@@ -256,7 +265,20 @@
                                                     <input type="date" class="form-control" id="input" name="name">
                                                 
                                             </div>
-           
+                                            <?php
+
+                                                $serverName = "localhost";
+                                                $userName = "root";
+                                                $userPassword = "12345";
+                                                $dbName = "benefit";
+
+                                                $conn = mysqli_connect($serverName,$userName,$userPassword,$dbName);;
+                                                
+                                                $sql = "SELECT * FROM benefittotal WHERE typebenefit LIKE '%".$strKeyword."%' ";
+
+                                                $query = mysqli_query($conn,$sql);
+
+                                                ?>
                                         <div class="container" id="manager" >
                                         <table class="table"   id="chlids"  colspan="2">
                                         <tr>
@@ -269,7 +291,10 @@
                                               
                                              
                                         </tr>
-                                        <?php while($row = $result->fetch_assoc()): ?>
+                       
+                                            <?php while($result=mysqli_fetch_array($query,MYSQLI_ASSOC))
+                                            {
+                                            ?>
                                         <tr>
                                             <td  align="center"><div class="custom-control custom-checkbox">
                                                 <input type="checkbox" class="custom-control-input" name="customCheck1" id="customCheck1" checked>
@@ -283,14 +308,19 @@
                                                 <option value="3">ไม่ผ่านการอนุมัติ</option>
                                             </select></td>
                                             
-                                            <td align="center"><?php echo $row['typebenefit'];?></td>
-                                            <td align="center"><?php echo $row['namepn'];?></td>
-                                            <td align="center"><?php echo $row['cmoney'];?></td></td>
-                                            
-                                           
+                                            <td align="center"><?php echo $result['typebenefit'];?></td>
+                                            <td align="center"><?php echo $result['namepn'];?></td>
+                                            <td align="center"><?php echo $result['cmoney'];?></td></td>
+                                            <?php
+                                            }
+                                            ?>
                                         </tr>
-                                        <?php endwhile ?>
                                         </table>
+                                        <?php mysqli_close($conn); ?>
+                                        
+                                        
+                                        
+                                        </body>
                                         </form>
                                         </div>  
                                         <!--news2-->
