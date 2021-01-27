@@ -182,6 +182,8 @@
                                         <!-- </div><hr> --><br><br><br><br><br>
                                         </div>
                                     <div>
+
+                               
                                     <div class="container" id="chlids">        
                                         <table  class="table">
                                             <thead>
@@ -191,6 +193,7 @@
                                                 <th>กรณีหักผ่านบัญชี</th>
                                                 <th>จำนวนเงิน</th>
                                                 <th>ผลการอนุมัติ</th>
+                                                
                                                 
                                             </tr>
                                             </thead>
@@ -206,7 +209,27 @@
                                         </table>
                                         </div>
                                 
-
+                                
+                                <form name="line-notify" action="line-notify-api.php" method="post">
+                                    <table  width="450" border="0" cellspacing="0" cellpadding="0">
+                                        <tr><td colspan="2" align="center"><img src="images/line.png" width="10%" border="0"></td></tr>
+                                        <tr><td colspan="2" height="10"></td></tr>
+                                        <tr><td colspan="2" align="center"><font color="#0000ff"><b>ส่งข้อมูลติดต่อข้อสงสัย</b></font></td></tr>
+                                        <tr><td colspan="2" height="10"></td></tr>
+                                        <tr><td>ชื่อ:</td><td><input class="textInput" type="text" name="name" size="25" required></td></tr>
+                                        <tr><td colspan="2" height="10"></td></tr>
+                                        <tr><td>อีเมล์:</td><td><input class="textInput" type="text" name="email" size="25" required></td></tr>
+                                        <tr><td colspan="2" height="10"></td></tr>
+                                        <tr><td>โทรศัพท์:</td><td><input class="textInput" type="text" name="phone" size="25" required></td></tr>
+                                        <tr><td colspan="2" height="10"></td></tr>
+                                        <tr><td>LINE ID:</td><td><input class="textInput" type="text" name="lineid" size="25" required></td></tr>
+                                        <tr><td colspan="2" height="10"></td></tr>
+                                        <tr><td>ข้อความ:</td><td><textarea rows='5' name='mesg' cols='50' style='border: 1 solid #99FF00'></textarea>
+                                        <tr><td colspan="2" height="10"></td></tr>
+                                        <tr><td colspan=2 align="center"><input type="submit" name="submit" value=" ส่งข้อความ "></td></tr>
+                                        <tr><td colspan="2" height="10"></td></tr>
+                                    </table>
+                                </form>  
                                 
                                 <!--news2-->
 
