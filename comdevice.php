@@ -177,7 +177,7 @@
                             <div class="col-md-12">
 
                                     
-                                        <div class="media" > 
+                                        <div class="media1" > 
                                             <div class="media-body" >
                                                 <h4 class="media-heading" ><b>สวัสดิการซื้ออุปกรณ์คอมพิวเตอร์</b>
                                             </div>

@@ -175,7 +175,7 @@
                     <div class="container-fluid" id="news">
                         <div class="row">
                             <div class="col-md-12">
-                                <div class="media"> 
+                                <div class="media1"> 
                                             <div class="media-body" >
                                                 <h4 class="media-heading" ><b>ผลการดำเนินการ</b>
                                             </div>

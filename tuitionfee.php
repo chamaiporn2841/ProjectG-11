@@ -176,13 +176,13 @@
                         <div class="row">
                             <div class="col-md-12">
 
-                                    <div class="media">
+                                    <div class="media1">
                                 
                                     <div class="media-body">
                                         <h4 class="media-heading"><b>สวัสดิการค่าเล่าเรียนบุตร</b>
                                     </div>
                                 </div> 
-                                <div class="media">
+                                <div class="media" style="padding-bottom: 20px;">
                                     <div id="col">
                                         <div class="header">
                                             ข้อมูลส่วนตัว
@@ -312,10 +312,10 @@
                                 </div>
                             </div>
 
-                                <div class="media">
-                                    <div class="media-body">
+                                <div class="media" style="padding-bottom: 20px;">
+                                    <div class="media-body" >
                                         <div id="col">
-                                            <div class="header">
+                                            <div class="header" >
                                                 รายละเอียดของบุตร
                                            </div> <br><br>
                                         <div>
@@ -381,7 +381,7 @@
                                 </div>
                                 <!--news2-->
 
-                                <div class="media">         
+                                <div class="media" style="padding-bottom: 20px;">         
                                     <div class="media-body">
                                         <div id="col">
                                                 <div class="header">
@@ -415,7 +415,7 @@
                                 <!--news3-->
                                 <!-- <div class="media">   -->       
                                     <!-- <div class="media-body"> -->
-                                    <div align="right"  class="container">
+                                    <div align="right"  class="container" style="margin-bottom: 20px;">
                                         <input type="submit" class="btn btn-success" value="บันทึก" data-toggle="modal" data-target="#myModal" style=" font-family: 'Mitr', sans-serif;">
                                         <input type="reset" class="btn" VALUE="ล้างข้อมูล" style=" font-family: 'Mitr', sans-serif;" >
                                     </div>
