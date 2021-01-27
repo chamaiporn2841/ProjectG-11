@@ -355,7 +355,7 @@
                 </news>
             </main>
 
-            <div style="height: 40px;"></div>
+      
         </div>
 
     </div>
