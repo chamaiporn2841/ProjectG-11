@@ -177,12 +177,12 @@
                             <div class="col-md-12">
                             
                                 
-                                    <div class="media">
-                                        <div class="media-body">
+                                    <div class="media1" >
+                                        <div class="media-body" >
                                             <h4 class="media-heading"><b>สวัสดิการค่ารักษาพยาบาล</b>
                                         </div>
                                     </div>
-                                <div class="media">
+                                <div class="media" style="padding-bottom: 20px;">
                                     <div id="col">
                                         <div class="header">
                                             ข้อมูลส่วนตัว
@@ -333,7 +333,7 @@
                              </div>
                              </div>
                                 <div class="media">         
-                                    <div class="media-body">
+                                    <div class="media-body" style="padding-bottom: 20px;">
                                         <div id="col">
                                                 <div class="header">
                                                     รายละเอียดการรับเงิน
@@ -367,7 +367,7 @@
                                 <!--news3-->
                                 <!-- <div class="media">   -->       
                                     <!-- <div class="media-body"> -->
-                                    <div align="right"  class="container">
+                                    <div align="right"  class="container" style="margin-bottom: 20px;">
                                         <input type="submit" class="btn btn-success" value="บันทึก" data-toggle="modal" data-target="#myModal" style=" font-family: 'Mitr', sans-serif;">
                                         <input type="reset" class="btn" VALUE="ล้างข้อมูล" style=" font-family: 'Mitr', sans-serif;" >
                                     </div> 
@@ -401,11 +401,11 @@
                 </news>
             </main>
 
-            <div style="height: 40px;"></div>
         </div>
 
     </div>
 
+ 
     <footer class="bg-light text-center text-lg-start">
         <!-- Copyright -->
         <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2)">
