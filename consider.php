@@ -192,7 +192,7 @@
                     <div class="container-fluid" id="news">
                         <div class="row">
                             <div class="col-md-12">
-                                <div class="media">
+                                <div class="media1">
                                     <div class="media-body" >
                                         <h4 class="media-heading" ><b>พิจารณาคำร้องขอสวัสดิการ</b>
                                     </div>
@@ -359,7 +359,7 @@
                 </news>
             </main>
 
-            <div style="height: 40px;"></div>
+           
         </div>
 
     </div>

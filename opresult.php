@@ -212,6 +212,7 @@
                                         </div>
 
                                         <div class="media">
+                                        <div class="media-body" >
                                             <div id="col"> <center>
                                                 <form name="line-notify" action="line-notify-api.php" method="post" id="input">
                                                    <table  width="450" border="0" cellspacing="0" cellpadding="0">
@@ -233,8 +234,9 @@
                                                         <tr><td colspan="2" height="10"></td></tr>
                                                     </table>
                                                 </form>  </center>
-                                
-                                <!--news2-->
+                                                </div>
+                                                </div></br></br></br></br></br></br></br></br></br></br></br></br>
+                                <!--news2--></div>
 
                                 
                                 <!--news3-->

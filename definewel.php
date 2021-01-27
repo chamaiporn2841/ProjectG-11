@@ -176,17 +176,19 @@
             <div class="container-fluid" id="news">
               <div class="row">
                 <div class="col-md-12">
-                  <div class="media">
+                  <div class="media1">
                    
                       <div class="media-body">
-                        <h4 class="media-heading" align ="center" ><b>เกณฑ์การใช้สวัสดิการ</b>
+                        <h4 class="media-heading"  ><b>เกณฑ์การใช้สวัสดิการ</b>
                           </div> 
                       </div>
                       <div class="media">
-                   
-                         <div class="media-body">
-                        <div class="container" id="col">
-                          <label>ประเภทสวัสดิการ</label>
+                                    <div id="col">
+                                        <div class="header">
+                                            รายละเอียดสวัสดิการ
+                                        </div><br><br>
+                                    <div>
+
                           <!-- <div><br> -->
                           <select name="requirement_type" id="requirement_type">
                             <option value="โปรดเลือก">โปรดเลือก</option>
@@ -212,15 +214,14 @@
               </div> -->
 
              <!--  <div class="media"> -->
-                <div id="col">
-                  <div class="header">
-                    รายละเอียดสวัสดิการ
-                    <br><br><br>
+             <div class="media">
+                                    <div id="col">
+                                        <div class="header">
+                                            รายละเอียดสวัสดิการ
+                                        </div><br><br>
+                                    <div>
 
-                     </div>
-                    <div>
-
-                      <textarea name="requirement_text" id="requirement_text" style="width:80%;height: 300px;"></textarea>
+                      <textarea name="requirement_text" id="input" style="width:80%;height: 300px;"></textarea>
                     </div>
                     </div>
                     </div>
@@ -228,7 +229,8 @@
                     </div>
                     <br/><br/>
                     <!--news2-->
-                    <div align="right" class="container">
+                    <br/><br/>  <br/><br/>
+                    <div align="right" class="container"><br/><br/>
                       <input type="submit" class="btn btn-success" value="บันทึก" data-toggle="modal" data-target="#myModal" style=" font-family: 'Mitr', sans-serif;">
                      <!--  <input type="reset" class="btn" VALUE="ล้างข้อมูล" style=" font-family: 'Mitr', sans-serif;"> -->
                     </div>
@@ -267,7 +269,6 @@
     </news>
     </main> -->
 
-  <div style="height: 40px;"></div>
   <!-- </div> -->
 
   <!-- </div> -->

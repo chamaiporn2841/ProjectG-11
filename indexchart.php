@@ -58,7 +58,7 @@
                         <li><a href="detailwel.php">รายละเอียดการใช้สวัสดิการ</a></li>
                         <li><a href="consider.php">พิจารณาการใช้สวัสดิการ</a></li>
                         <li><a href="approve.php">อนุมัติการใช้สวัสดิการ</a></li>
-                        <!-- <li><a href="report.php">รายงานสรุปการใช้สวัสดิการ</a></li> -->
+                        <li><a href="report.php">รายงานสรุปการใช้สวัสดิการ</a></li>
                     </ul>
                 </li>
 
@@ -74,6 +74,7 @@
                         <li><a href="comdevice.php">คำร้องสวัสดิการซื้ออุปกรณ์คอมพิวเตอร์</a></li>
                         <li><a href="profund.php">คำร้องสวัสดิการกองทุนสำรองเลี้ยงชีพ</a></li>
                         <li><a href="uniform.php">คำร้องขอยืมเงินเพื่อตัดชุดเครื่องแบบปกติขาว</a></li>
+                        <li><a href="funeral.php">คำร้องสวัสดิการฌาปนกิจสงเคราะห์</a></li>
                         <li><a href="tuitionfee.php">คำร้องสวัสดิการเกี่ยวกับค่าเล่าเรียนบุตร</a></li>
                         <li><a href="opresult.php">ติดตามผลคำร้อง</a></li>
                     </ul>
@@ -147,11 +148,11 @@
                                 <div class="col-12 col-md-4" id="usermenu">
                                     <div class="btn-group" style="float: right;">
                                         <button type="button" class="btn btn-secondary" style="padding: 16px;"
-                                            id="user_name">xxxxx  xxxxxx</button>
+                                            id="user_name">ฉัตรภัสร์ ฐิติอัคราวงศ์</button>
                                         <button type="button"
                                             class="btn btn-secondary dropdown-toggle dropdown-toggle-split"
                                             data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                            <img src="images/admin.png" height="40px" style="border-radius: 50%;" />
+                                            <img src="images/user1.jpg" height="40px" style="border-radius: 50%;" />
                                         </button>
                                         <div class="dropdown-menu dropdown-menu-right">
                                             <a class="dropdown-item" sty href="#">เปลี่ยนรหัสผ่าน</a>
@@ -168,96 +169,66 @@
 
                 </div>
             </nav>
-
             <main>
                 <news>
                     <div class="container-fluid" id="news">
                         <div class="row">
                             <div class="col-md-12">
-                            <div class="media1">
-                                            <div class="media-body">
-                                                <h4 class="media-heading"><b>อนุมัติการใช้สวัสดิการ</b>
-                                            </div>
-                                        </div> 
-                                        <!-- <div class="container" id="col2">
-                                            <label>วันที่ทำการ</label>
-                                           
-                                                <input type="date" class="form-control" id="input" name="member">
-                                            
-                                        </div> -->
-                                        <div class="media">
-                                                <div id="col">
-                                                    <div class="header"><br><br> 
-                                        <div class="container" id="chlids" >        
-                                        <table class="table" colspan="2">
-                                            
-                                            <tr>
-                                                    <th>รหัสบุคลากร</th>   
-                                                            <th>ชื่อผู้ขอ</th>                                        
-                                                            <th>ประเภทสวัสดิการ</th>
-                                                            <th>จำนวนเงิน</th>
-                                                            <th>ผลการอนุมัติ</th>
-                                            
-                                            </tr>
-
-                                            <tr>
-                                                <td align="center"></td>
-                                                <td align="center"></td>
-                                                <td align="center"></td>
-                                                <td align="center"></td>
-                                                <td align="center"></td>
-                                                
-                                                
-                                            </tr>
-                                            
-                                        </table>
+                            <div class="media">
+                                    
+                                    <div class="media-body">
+                                        <h4 class="media-heading"><b>Dashboard</b>
                                         </div>
-                                        </div></br></br>
-                                        </div></br></br>
-                                        </div></br></br>
-                                <!--news2-->
-                                    <div align="right"  class="container">
-                                            <input type="submit" class="btn btn-success" value="บันทึก" style=" font-family: 'Mitr', sans-serif;">
-                                            <!-- <input type="reset" class="btn" VALUE="ล้างข้อมูล" style=" font-family: 'Mitr', sans-serif;" > -->
-                                        </div> 
-                                            </div>
-                                       <!--  </div> -->
-                                <!--news3-->
-                            </div>
-                            </div>
-                        </div>
-                    </div>
-                </news>
-            </main>
-
-           
-        </div>
-
-    </div>
-
-    <footer class="bg-light text-center text-lg-start">
-        <!-- Copyright -->
-        <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2)">
-            © 2020 Copyright:
-            <a class="text-dark" href="https://mdbootstrap.com/">MDBootstrap.com</a>
-        </div>
-        <!-- Copyright -->
-    </footer>
-
-    <script type="text/javascript">
-        $(document).ready(function() {
-            $('#sidebarCollapse').on('click', function() {
-                $('#sidebar').toggleClass('active');
-            });
-        });
-    </script>
-
-</body>
-
-</html>
+                                </div>
+                                <div class="media">
+                                    
+                                   <!--  <div class="media-body"> -->
+                                    <div id="chart-container">
+                                        <canvas id="graphCanvas"></canvas>
+                                    </div>
 
 
+                                    <script src="https://code.jquery.com/jquery-3.5.0.min.js"></script>
+                                    <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
+                                    <script>
+                                        $(document).ready(function() {
+                                            showGraph();
+                                        });
 
-</body>
+                                        function showGraph(){
+                                            {
+                                                $.post("data.php", function(data) {
+                                                    console.log(data);
+                                                    let typebenefit = [];
+                                                    let cmoney = [];
 
-</html>
+                                                    for (let i in data) {
+                                                        typebenefit.push(data[i].typebenefit);
+                                                        cmoney.push(data[i].cmoney);
+                                                    }
+
+                                                    let benefit = {
+                                                        labels: typebenefit,
+                                                        datasets: [{
+                                                                label: 'รายการสวัสดิการ',
+                                                                backgroundColor: '#49e2ff',
+                                                                borderColor: '#46d5f1',
+                                                                hoverBackgroundColor: '#CCCCCC',
+                                                                hoverBorderColor: '#666666',
+                                                                data: cmoney
+                                                        }]
+                                                    };
+
+                                                    let graphTarget = $('#graphCanvas');
+                                                    let barGraph = new Chart(graphTarget, {
+                                                        type: 'bar',
+                                                        data: benefit
+                                                    })
+                                                })
+                                            }
+                                        }
+                                    </script>
+</div>
+</div>
+                                </body>
+                                </html>
