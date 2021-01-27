@@ -55,11 +55,11 @@
                             สวัสดิการ
                     </a>
                     <ul class="collapse list-unstyled" id="WelSubmenu">
-                        <li><a href="#">เกณฑ์การใช้วสวัสดิการ</a></li>
+                        <li><a href="definewel.php">เกณฑ์การใช้วสวัสดิการ</a></li>
                         <li><a href="detailwel.php">รายละเอียดการใช้สวัสดิการ</a></li>
                         <li><a href="consider.php">พิจารณาการใช้สวัสดิการ</a></li>
                         <li><a href="approve.php">อนุมัติการใช้สวัสดิการ</a></li>
-                        <li><a href="report.php">รายงานสรุปการใช้สวัสดิการ</a></li>
+                       <!--  <li><a href="report.php">รายงานสรุปการใช้สวัสดิการ</a></li> -->
                     </ul>
                 </li>
 
@@ -176,8 +176,7 @@
                         <div class="row">
                             <div class="col-md-12">
 
-                                <form name="form4" action="insert4.php" method="post" target="iframe_target" >
-                                    <iframe id="iframe_target" name="iframe_target" src="#" style="width:0;height:0;border:0px solid #fff;"></iframe>
+                                
                                         <div class="media">
                                             <div class="media-body">
                                                 <h4 class="media-heading"><b>แบบคำร้องขอยืมเงินเพื่อตัดชุดเครื่องแบบปกติขาว</b>
@@ -309,7 +308,7 @@
                                         <input type="reset" class="btn" VALUE="ล้างข้อมูล" style=" font-family: 'Mitr', sans-serif;" >
                                     </div>
                                 </div> 
-                                </form>
+                                
                                     <!-- </div> -->
                                 <!-- </div> -->
                                  <!-- Modal -->

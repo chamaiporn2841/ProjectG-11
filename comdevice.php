@@ -55,11 +55,11 @@
                             สวัสดิการ
                     </a>
                     <ul class="collapse list-unstyled" id="WelSubmenu">
-                        <li><a href="#">เกณฑ์การใช้วสวัสดิการ</a></li>
+                        <li><a href="definewel.php">เกณฑ์การใช้วสวัสดิการ</a></li>
                         <li><a href="detailwel.php">รายละเอียดการใช้สวัสดิการ</a></li>
                         <li><a href="consider.php">พิจารณาการใช้สวัสดิการ</a></li>
                         <li><a href="approve.php">อนุมัติการใช้สวัสดิการ</a></li>
-                        <li><a href="report.php">รายงานสรุปการใช้สวัสดิการ</a></li>
+                       <!--  <li><a href="report.php">รายงานสรุปการใช้สวัสดิการ</a></li> -->
                     </ul>
                 </li>
 
@@ -176,8 +176,7 @@
                         <div class="row">
                             <div class="col-md-12">
 
-                                    <form name="form2" action="insert2.php" method="post"  target="iframe_target">
-                                        <iframe id="iframe_target" name="iframe_target" src="#" style="width:0;height:0;border:0px solid #fff;"></iframe>
+                                    
                                         <div class="media"> 
                                             <div class="media-body" >
                                                 <h4 class="media-heading" ><b>สวัสดิการซื้ออุปกรณ์คอมพิวเตอร์</b>
@@ -189,7 +188,7 @@
                                                     ข้อมูลส่วนตัว
                                                 </div><br><br>
                                                 
-                                            </div>
+                                            <div>
                                             <div class="container" id="col1">
                                                 <label>รหัสบุคลากร</label>
                                                 <div><br>
@@ -209,7 +208,7 @@
                                             <div  class="container" id="col3">
                                                 <label>ตำแหน่ง</label>
                                                 <div><br>
-                                                <select name="position" id="position">
+                                                <select name="position" id="input">
                                                         <option value="โปรดเลือก">โปรดเลือก</option>
                                                         <option value="วิชาการ">วิชาการ</option>
                                                         <option value="ปฏิบัติการวิชาชีพและบริหารทั่วไป">ปฏิบัติการวิชาชีพและบริหารทั่วไป</option>
@@ -220,7 +219,7 @@
                                             <div class="container"  id="col1">
                                                 <label>ประเภทบุคลากร</label>
                                                 <div><br>
-                                                <select name="category" id="category">
+                                                <select name="category" id="input">
                                                         <option value="โปรดเลือก">โปรดเลือก</option>
                                                         <option value="หัวหน้าโครงการ">หัวหน้าโครงการ</option>
                                                         <option value="คณาจารย์">คณาจารย์</option>
@@ -232,7 +231,7 @@
                                             <div  class="container" id="col2">
                                                 <label>ประเภทสวัสดิการ</label>
                                                 <div><br>
-                                                <select name="typebenefit" id="typebenefit">
+                                                <select name="typebenefit" id="input">
                                                         <option value="สวัสดิการซื้ออุปกรณ์คอมพิวเตอร์">สวัสดิการซื้ออุปกรณ์คอมพิวเตอร์</option>
                                                     </select>
                                                 </div><br>
@@ -300,7 +299,7 @@
                                             <div class="container" id="col1">
                                                 <label>บัญชีธนาคาร</label>
                                                 <div><br>
-                                                    <select name="bank" id="bank">
+                                                    <select name="bank" id="input">
                                                         <option value="โปรดเลือก">โปรดเลือก</option>
                                                         <option value="กรุงไทย">กรุงไทย</option>
                                                         <option value="ไทยพาณิชย์">ไทยพาณิชย์</option>
@@ -327,8 +326,8 @@
                                                 <input type="reset" class="btn" VALUE="ล้างข้อมูล" style=" font-family: 'Mitr', sans-serif;" >
                                             </div> 
                                         
-                                        </div>
-                                        </form>
+                                       
+                                     
                                     <!-- </div> -->
                                 <!-- </div> -->
                                 <!-- Modal -->

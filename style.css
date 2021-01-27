@@ -251,8 +251,9 @@ a.article:hover {
     background: #0072B5 !important;
     height:80px;
     width:100 px;
-    padding: 0px;
+    /* padding: 20px; */
     font-size:2em;
+   
 }
 /* .media-body{
     background: #0072B5 !important;
@@ -360,7 +361,8 @@ a.article:hover {
     float: left;
     width: 30%;
     height: 100px;
-    margin-left: 20px;
+    margin-left: 30px;
+    
     /* color:#0072B5;
     font-size: 1.1em;
     font-weight: 300; */

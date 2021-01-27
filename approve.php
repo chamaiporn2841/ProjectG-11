@@ -58,7 +58,7 @@
                         <li><a href="detailwel.php">รายละเอียดการใช้สวัสดิการ</a></li>
                         <li><a href="consider.php">พิจารณาการใช้สวัสดิการ</a></li>
                         <li><a href="approve.php">อนุมัติการใช้สวัสดิการ</a></li>
-                        <li><a href="report.php">รายงานสรุปการใช้สวัสดิการ</a></li>
+                        <!-- <li><a href="report.php">รายงานสรุปการใช้สวัสดิการ</a></li> -->
                     </ul>
                 </li>
 
@@ -174,30 +174,29 @@
                     <div class="container-fluid" id="news">
                         <div class="row">
                             <div class="col-md-12">
-                                <div class="media">
-                                    <div id="col">
-                                        <div class="header">
-                                            รายการคำร้อง
-                                        <!-- </div><hr> --><br><br><br>
-                                        </div>
-                                    <div>
-                                        <div class="container" id="col2">
+                            <div class="media">
+                                            <div class="media-body">
+                                                <h4 class="media-heading"><b>อนุมัติการใช้สวัสดิการ</b>
+                                            </div>
+                                        </div> 
+                                        <!-- <div class="container" id="col2">
                                             <label>วันที่ทำการ</label>
                                            
                                                 <input type="date" class="form-control" id="input" name="member">
                                             
-                                        </div>
-                                    
+                                        </div> -->
+                                        <div class="media">
+                                                <div id="col">
+                                                    <div class="header"><br><br> 
                                         <div class="container" id="chlids" >        
                                         <table class="table" colspan="2">
                                             
                                             <tr>
-                                                <th>เลือก</th>
-                                                <th>ผลการอนุมัติ</th>
-                                                <th>ประเภทสวัสสดิการ</th>
-                                                <th>ชื่อผู้ขอ</th>
-                                                <th>จำนวนเงิน</th>
-                                                <th>ดูรายละเอียด</th>
+                                                    <th>รหัสบุคลากร</th>   
+                                                            <th>ชื่อผู้ขอ</th>                                        
+                                                            <th>ประเภทสวัสดิการ</th>
+                                                            <th>จำนวนเงิน</th>
+                                                            <th>ผลการอนุมัติ</th>
                                             
                                             </tr>
 
@@ -207,20 +206,22 @@
                                                 <td align="center"></td>
                                                 <td align="center"></td>
                                                 <td align="center"></td>
-                                                <td align="center"><img  src="images/eye.png" width="20" height="20"/></td>   
+                                                
                                                 
                                             </tr>
                                             
                                         </table>
                                         </div>
-                                        
+                                        </div></br></br>
+                                        </div></br></br>
+                                        </div></br></br>
                                 <!--news2-->
                                     <div align="right"  class="container">
                                             <input type="submit" class="btn btn-success" value="บันทึก" style=" font-family: 'Mitr', sans-serif;">
-                                            <input type="reset" class="btn" VALUE="ล้างข้อมูล" style=" font-family: 'Mitr', sans-serif;" >
+                                            <!-- <input type="reset" class="btn" VALUE="ล้างข้อมูล" style=" font-family: 'Mitr', sans-serif;" > -->
                                         </div> 
                                             </div>
-                                        </div>
+                                       <!--  </div> -->
                                 <!--news3-->
                             </div>
                             </div>
@@ -256,41 +257,6 @@
 </html>
 
 
-                                        <!--news2-->
-                                            <div align="right"  class="container">
-                                                    <input type="submit" class="btn btn-success" value="บันทึก" style=" font-family: 'Mitr', sans-serif;">
-                                                    <input type="reset" class="btn" VALUE="ล้างข้อมูล" style=" font-family: 'Mitr', sans-serif;" >
-                                                </div> 
-                                                    </div>
-                                                </div>
-                                <!--news3-->
-                            </div>
-                        </div>
-                    </div>
-                </news>
-            </main>
-
-            <div style="height: 40px;"></div>
-        </div>
-
-    </div>
-
-    <footer class="bg-light text-center text-lg-start">
-        <!-- Copyright -->
-        <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2)">
-            © 2020 Copyright:
-            <a class="text-dark" href="https://mdbootstrap.com/">MDBootstrap.com</a>
-        </div>
-        <!-- Copyright -->
-    </footer>
-
-    <script type="text/javascript">
-        $(document).ready(function() {
-            $('#sidebarCollapse').on('click', function() {
-                $('#sidebar').toggleClass('active');
-            });
-        });
-    </script>
 
 </body>
 

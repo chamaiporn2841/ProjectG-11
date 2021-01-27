@@ -59,7 +59,7 @@
                         <li><a href="detailwel.php">รายละเอียดการใช้สวัสดิการ</a></li>
                         <li><a href="consider.php">พิจารณาการใช้สวัสดิการ</a></li>
                         <li><a href="approve.php">อนุมัติการใช้สวัสดิการ</a></li>
-                        <li><a href="report.php">รายงานสรุปการใช้สวัสดิการ</a></li>
+                        <!-- <li><a href="report.php">รายงานสรุปการใช้สวัสดิการ</a></li> -->
                     </ul>
                 </li>
 
@@ -75,7 +75,6 @@
                         <li><a href="comdevice.php">คำร้องสวัสดิการซื้ออุปกรณ์คอมพิวเตอร์</a></li>
                         <li><a href="profund.php">คำร้องสวัสดิการกองทุนสำรองเลี้ยงชีพ</a></li>
                         <li><a href="uniform.php">คำร้องขอยืมเงินเพื่อตัดชุดเครื่องแบบปกติขาว</a></li>
-                        <li><a href="funeral.php">คำร้องสวัสดิการฌาปนกิจสงเคราะห์</a></li>
                         <li><a href="tuitionfee.php">คำร้องสวัสดิการเกี่ยวกับค่าเล่าเรียนบุตร</a></li>
                         <li><a href="opresult.php">ติดตามผลคำร้อง</a></li>
                     </ul>
@@ -177,12 +176,11 @@
                         <div class="row">
                             <div class="col-md-12">
                                 <div class="media">
-                                    <div id="col">
-                                        <div class="header">
-                                            เกณฑ์การใช้สวัสดิการ
-                                        <!-- </div><hr> --><br><br><br>
-                                        </div>
-                                    <div>
+                                <div class="media-body">
+                                        <h4 class="media-heading"><b>สวัสดิการกองทุนสำรองเลี้ยงชีพ</b>
+                                    </div>
+                                </div>
+                                <div class="media">
                                     <div class="container" id="col1" >
                                         <label>ประเภทสวัสดิการ</label>
                                         <div>
@@ -224,13 +222,7 @@
                                     </div>
                                 </div>
 
-                                    <div class="media">
-                                    <div id="col">
-                                        <div class="header">
-                                            
-                                        <!-- </div><hr> --><br><br><br><br><br>
-                                        </div>
-                                    <div>
+                                    
                                    
                                    
                                 </div>
