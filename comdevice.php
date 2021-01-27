@@ -148,11 +148,11 @@
                                 <div class="col-12 col-md-4" id="usermenu">
                                     <div class="btn-group" style="float: right;">
                                         <button type="button" class="btn btn-secondary" style="padding: 16px;"
-                                            id="user_name">ฉัตรภัสร์ ฐิติอัคราวงศ์</button>
+                                            id="user_name">xxxxx  xxxxxx</button>
                                         <button type="button"
                                             class="btn btn-secondary dropdown-toggle dropdown-toggle-split"
                                             data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                            <img src="images/user1.jpg" height="40px" style="border-radius: 50%;" />
+                                            <img src="images/admin.png" height="40px" style="border-radius: 50%;" />
                                         </button>
                                         <div class="dropdown-menu dropdown-menu-right">
                                             <a class="dropdown-item" sty href="#">เปลี่ยนรหัสผ่าน</a>
@@ -321,7 +321,7 @@
                                         <!--news3-->
                                         <!-- <div class="media">   -->       
                                             <!-- <div class="media-body"> -->
-                                            <div align="right"  class="container">
+                                            <div align="right"  class="container" style="margin-bottom: 20px;">
                                                 <input type="submit" class="btn btn-success" value="บันทึก" data-toggle="modal" data-target="#myModal" style=" font-family: 'Mitr', sans-serif;">
                                                 <input type="reset" class="btn" VALUE="ล้างข้อมูล" style=" font-family: 'Mitr', sans-serif;" >
                                             </div> 
