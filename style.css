@@ -200,6 +200,7 @@ a.article:hover {
 #content {
     width: 100%;
     padding: 0px;
+    height: auto;
     min-height: 100vh;
     transition: all 0.3s;
 }
@@ -348,43 +349,24 @@ a.article:hover {
     }
    
 }
-#col {
-    margin-left: 20px;
-    margin-right: 80px;
-    padding: 20px;
-    /* color:#0072B5;
-    font-size: 1.1em;
-    font-weight: 300; */
+
+.form-control{
+    display: block;
+    width: 100%;
+    height: auto;
+    padding: 6px 12px;
+    font-size: 14px;
+    line-height: 1.42857143;
+    color: #555;
+    background-color: #fff;
+    background-image: none;
+    border: 1px solid #ccc;
+    border-radius: 4px;
 }
-#col1 {
-    float: left;
-    width: 30%;
-    height: 100px;
-    margin-left: 30px;
-    
-    /* color:#0072B5;
-    font-size: 1.1em;
-    font-weight: 300; */
-}
-#col2 {
-    float: left;
-    width: 28%;
-    height: 100px;
-    padding-left: 80px;
-    /* color:#0072B5;
-    font-size: 1.1em;
-    font-weight: 300; */
-}
-#col3 {
-    float: left;
-    width: 30%;
-    height: 100px;
-    padding-left: 120px;
-    /* color:#0072B5;
-    font-size: 1.1em;
-    font-weight: 300; */
-}
-#input{
+table {
+    width: 100%;
+  }
+#input{้
     border-radius: 8px;
     color:#3d5b6d;
     font-size: 1.1em;
@@ -397,9 +379,10 @@ label{
     color:#0072B5;
 }
 .header{
-    font-size: 15px;
+    font-size: 20px !important;
     font-weight: bolder;
     color: #17191f;
+    padding: 10px;
     
 }
 #chlids {
@@ -431,7 +414,9 @@ label{
 #iframe_target{
     background-color:#e4e4e4;
 }
-
+td, th {
+    padding: 10px;
+}
 
 #category{
     border-radius: 8px;
