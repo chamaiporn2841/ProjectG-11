@@ -89,7 +89,7 @@
                         รายงาน
                     </a>
                     <ul class="collapse list-unstyled" id="reportSubmenu">
-                        <li><a href="#">Dashboard</a></li>
+                        <li><a href="indexchart.php">Dashboard</a></li>
                         <li><a href="#">รายงานเวลาทำงาน</a></li>
                     </ul>
                 </li>
@@ -175,7 +175,7 @@
                     <div class="container-fluid" id="news">
                         <div class="row">
                             <div class="col-md-12">
-                                <div class="media">
+                                <div class="media1">
                                 <div class="media-body">
                                         <h4 class="media-heading"><b>สวัสดิการกองทุนสำรองเลี้ยงชีพ</b>
                                     </div>
@@ -241,7 +241,7 @@
                 </news>
             </main>
 
-            <div style="height: 40px;"></div>
+
         </div>
 
     </div>

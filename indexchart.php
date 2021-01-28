@@ -89,7 +89,7 @@
                         รายงาน
                     </a>
                     <ul class="collapse list-unstyled" id="reportSubmenu">
-                        <li><a href="#">Dashboard</a></li>
+                        <li><a href="indexchart.php">Dashboard</a></li>
                         <li><a href="#">รายงานเวลาทำงาน</a></li>
                     </ul>
                 </li>
@@ -148,11 +148,11 @@
                                 <div class="col-12 col-md-4" id="usermenu">
                                     <div class="btn-group" style="float: right;">
                                         <button type="button" class="btn btn-secondary" style="padding: 16px;"
-                                            id="user_name">ฉัตรภัสร์ ฐิติอัคราวงศ์</button>
+                                            id="user_name">xxxxx  xxxxxx</button>
                                         <button type="button"
                                             class="btn btn-secondary dropdown-toggle dropdown-toggle-split"
                                             data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                            <img src="images/user1.jpg" height="40px" style="border-radius: 50%;" />
+                                            <img src="images/admin.png" height="40px" style="border-radius: 50%;" />
                                         </button>
                                         <div class="dropdown-menu dropdown-menu-right">
                                             <a class="dropdown-item" sty href="#">เปลี่ยนรหัสผ่าน</a>
@@ -174,7 +174,7 @@
                     <div class="container-fluid" id="news">
                         <div class="row">
                             <div class="col-md-12">
-                            <div class="media">
+                            <div class="media1">
                                     
                                     <div class="media-body">
                                         <h4 class="media-heading"><b>Dashboard</b>

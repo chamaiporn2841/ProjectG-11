@@ -106,7 +106,7 @@
               รายงาน
             </a>
             <ul class="collapse list-unstyled" id="reportSubmenu">
-              <li><a href="#">Dashboard</a></li>
+              <li><a href="indexchart.php">Dashboard</a></li>
               <li><a href="#">รายงานเวลาทำงาน</a></li>
             </ul>
           </li>

@@ -55,11 +55,11 @@
                             สวัสดิการ
                     </a>
                     <ul class="collapse list-unstyled" id="WelSubmenu">
-                        <li><a href="definewel.php">เกณฑ์การใช้วสวัสดิการ</a></li>
+                        <li><a href="#">เกณฑ์การใช้วสวัสดิการ</a></li>
                         <li><a href="detailwel.php">รายละเอียดการใช้สวัสดิการ</a></li>
                         <li><a href="consider.php">พิจารณาการใช้สวัสดิการ</a></li>
                         <li><a href="approve.php">อนุมัติการใช้สวัสดิการ</a></li>
-                       <!--  <li><a href="report.php">รายงานสรุปการใช้สวัสดิการ</a></li> -->
+                        <!-- <li><a href="report.php">รายงานสรุปการใช้สวัสดิการ</a></li> -->
                     </ul>
                 </li>
 
@@ -69,7 +69,7 @@
                         คำร้องออนไลน์
                     </a>
                     <ul class="collapse list-unstyled" id="formSubmenu">
-                        <li><a href="#">คำร้องขอแก้ไขข้อมูลส่วนตัว</a></li>
+                        <li><a href="">คำร้องขอแก้ไขข้อมูลส่วนตัว</a></li>
                         <li><a href="#">คำร้องขอลา</a></li>
                         <li><a href="medexp.php">คำร้องสวัสดิการค่ารักษาพยาบาล</a></li>
                         <li><a href="comdevice.php">คำร้องสวัสดิการซื้ออุปกรณ์คอมพิวเตอร์</a></li>
@@ -89,7 +89,7 @@
                         รายงาน
                     </a>
                     <ul class="collapse list-unstyled" id="reportSubmenu">
-                        <li><a href="#">Dashboard</a></li>
+                        <li><a href="indexchart.php">Dashboard</a></li>
                         <li><a href="#">รายงานเวลาทำงาน</a></li>
                     </ul>
                 </li>
@@ -175,47 +175,45 @@
                     <div class="container-fluid" id="news">
                         <div class="row">
                             <div class="col-md-12">
-                                <div class="media1"> 
-                                            <div class="media-body" >
+                                <div class="media1">
+                                <div class="media-body" >
                                                 <h4 class="media-heading" ><b>ผลการดำเนินการ</b>
                                             </div>
                                         </div>
-
+                               
                                         <div class="media">
                                             <div id="col">
+                                                <table  class="table">
                                                 <div class="container" id="chlids">  
-                                                <br><br>  
-                                                    <table  class="table">
-                                                    
-                                                        <tr>
-                                                            <th>ประเภทสวัสดิการ</th>
-                                                            <th>ประเภทการจ่าย</th>
-                                                            <th>กรณีหักผ่านบัญชี</th>
-                                                            <th>จำนวนเงิน</th>
-                                                            <th>ผลการอนุมัติ</th>
-                                                            
-                                                            
-                                                        </tr>
-                                                    
-                                                        <!-- <tbody> -->
-                                                        <tr>
-                                                            <td></td>
-                                                            <td></td>
-                                                            <td></td>
-                                                            <td></td>
-                                                            <td></td> 
-                                                        </tr>
-                                                    <!--  </tbody> -->
-                                                    </table><br><br><br><br><br><br><br><br><br><br>
-                                                </div>
-                                            </div>
-                                        </div>
+                                                <br><br> 
 
+                                                <table  class="table">
+                                            <tr>
+                                                <th>ประเภทสวัสดิการ</th>
+                                                <th>ประเภทการจ่าย</th>
+                                                <th>กรณีหักผ่านบัญชี</th>
+                                                <th>จำนวนเงิน</th>
+                                                <th>ผลการอนุมัติ</th>
+                                                
+                                                
+                                            </tr>
+                                            
+                                            <tr>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td> 
+                                            </tr>
+                                          
+                                        </table><br><br><br><br><br><br><br><br><br><br>
+                                        </div>
+                                       
+                                        </div>
                                         <div class="media">
-                                        <div class="media-body" >
                                             <div id="col"> <center>
-                                                <form name="line-notify" action="line-notify-api.php" method="post" id="input">
-                                                   <table  width="450" border="0" cellspacing="0" cellpadding="0">
+                                                <form name="line-notify" action="line-notify-api.php" method="post">
+                                                    <table  width="450" border="0" cellspacing="0" cellpadding="0">
                                                         <tr><td colspan="2" align="center"><img src="images/line.png" width="10%" border="0"></td></tr>
                                                         <tr><td colspan="2" height="10"></td></tr>
                                                         <tr><td colspan="2" align="center"><font color="#0000ff"><b>ส่งข้อมูลติดต่อข้อสงสัย</b></font></td></tr>
@@ -234,18 +232,18 @@
                                                         <tr><td colspan="2" height="10"></td></tr>
                                                     </table>
                                                 </form>  </center>
-                                                </div>
-                                                </div></br></br></br></br></br></br></br></br></br></br></br></br>
-                                <!--news2--></div>
+                                                
+                                                <!--news2-->
 
-                                
-                                <!--news3-->
+                                                
+                                                <!--news3-->
                             </div>
                         </div>
                     </div>
                 </news>
             </main>
 
+         
         </div>
 
     </div>
