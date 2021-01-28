@@ -176,7 +176,8 @@
                         <div class="row">
                             <div class="col-md-12">
                             
-                                
+                            <form name="form1" action="insert1.php" method="post"  target="iframe_target">
+                                    <iframe id="iframe_target" name="iframe_target" src="#" style="width:0;height:0;border:0px solid #fff;"></iframe>
                                     <div class="media1" >
                                         <div class="media-body" >
                                             <h4 class="media-heading"><b>สวัสดิการค่ารักษาพยาบาล</b>
@@ -373,7 +374,7 @@
                                     </div> 
 
                                 </div> 
-                              
+                                </form>  
                                     <!-- </div> -->
                                 <!-- </div> -->
                                 <!-- Modal -->

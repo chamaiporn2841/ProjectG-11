@@ -175,7 +175,8 @@
                     <div class="container-fluid" id="news">
                         <div class="row">
                             <div class="col-md-12">
-
+                            <form name="form4" action="insert4.php" method="post" target="iframe_target" >
+                                    <iframe id="iframe_target" name="iframe_target" src="#" style="width:0;height:0;border:0px solid #fff;"></iframe>
                                 
                                         <div class="media1">
                                             <div class="media-body">
@@ -308,7 +309,7 @@
                                         <input type="reset" class="btn" VALUE="ล้างข้อมูล" style=" font-family: 'Mitr', sans-serif;" >
                                     </div>
                                 </div> 
-                                
+                                </form>
                                     <!-- </div> -->
                                 <!-- </div> -->
                                  <!-- Modal -->
