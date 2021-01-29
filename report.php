@@ -10,6 +10,8 @@
     <link rel="shortcut icon" type="image/icon" href="images/favicon.ico" />
     <!-- Bootstrap CSS CDN -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <!-- Bootstrap report -->
+    <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous"> -->
     <!--Font Awesome-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <!-- Our Custom CSS -->
@@ -170,76 +172,42 @@
                 </div>
             </nav>
 
-            <main>
-                <news>
-                    <div class="container-fluid" id="news">
-                        <div class="row">
-                            <div class="col-md-12">
-                                <div class="media1">
+        <main>
+            <news>
+                <div class="container-fluid" id="news">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="media1">
                                 <div class="media-body">
-                                        <h4 class="media-heading"><b>สวัสดิการกองทุนสำรองเลี้ยงชีพ</b>
-                                    </div>
-                                </div>
-                                <div class="media">
-                                    <div class="container" id="col1" >
-                                        <label>ประเภทสวัสดิการ</label>
-                                        <div>
-                                            <select name="category" id="input">
-                                                <option value="โปรดเลือก">โปรดเลือก</option>
-                                                <option value="สวัสดิการค่ารักษาพยาบาล">สวัสดิการค่ารักษาพยาบาล</option>
-                                                <option value="สวัสดิการซื้ออุปกรณ์คอมพิวเตอร์">สวัสดิการซื้ออุปกรณ์คอมพิวเตอร์</option>
-                                                <option value="สวัสดิการกองทุนสำรองเลี้ยงชีพ">สวัสดิการกองทุนสำรองเลี้ยงชีพ</option>
-                                                <option value="สวัสดิการขอยืมเงินเพื่อตัดชุดเครื่องแบบปกติขาว">สวัสดิการขอยืมเงินเพื่อตัดชุดเครื่องแบบปกติขาว</option>
-                                                <option value="สวัสดิการฌาปนกิจสงเคราะห์">สวัสดิการฌาปนกิจสงเคราะห์</option>
-                                                <option value="สวัสดิการเกี่ยวกับค่าเล่าเรียนบุตร">สวัสดิการเกี่ยวกับค่าเล่าเรียนบุตร</option>
-                                            </select>
-                                        </div><br>
-                                        </div>
-                                        <div  class="container" id="col3">
-                                            <label>รายเดือน</label>
-                                            <div>
-                                            <select name="category" id="input">
-                                                    <option value="โปรดเลือก">โปรดเลือก</option>
-                                                    <option value="มกราคม">มกราคม</option>
-                                                    <option value="กุมภาพันธ์">กุมภาพันธ์</option>
-                                                    <option value="มีนาคม">มีนาคม</option>  
-                                                    <option value="เมษายน">เมษายน</option>  
-                                                    <option value="พฤษภาคม">พฤษภาคม</option>  
-                                                    <option value="มิถุนายน">มิถุนายน</option>  
-                                                    <option value="กรกฎาคม">กรกฎาคม</option>  
-                                                    <option value="สิงหาคม">สิงหาคม</option>   
-                                                    <option value="กันยายน">กันยายน</option>   
-                                                    <option value="ตุลาคม">ตุลาคม</option>   
-                                                    <option value="พฤศจิกายน">พฤศจิกายน</option>   
-                                                    <option value="ธันวาคม">ธันวาคม</option>     
-                                                </select>
-                                            </div><br>
-                                        
-                                        
-                                        </div>
-                                        </div>
-
-                                    </div>
-                                </div>
-
+                                        <h4 class="media-heading"><b>รายงานสรุปการใช้สวัสดิการ</b>
+                                </div> 
+                                
+                                    <div class="media">
                                     
-                                   
-                                   
-                                </div>
-                                <br/><br/>
-                                <!--news2-->
-                                    <div align="right"  class="container">
-                                            <input type="submit" class="btn btn-success" value="บันทึก" style=" font-family: 'Mitr', sans-serif;">
-                                            <input type="reset" class="btn" VALUE="ล้างข้อมูล" style=" font-family: 'Mitr', sans-serif;" >
-                                        </div> 
-                                            </div>
+                                        
+                                       <div id="col">
+                                            <?php
+                                                    require_once('condb.php');
+                                                    include('intro.php');
+                                                    $p = (isset($_GET['p']) ? $_GET['p'] : '');
+                                                if($p=='monthy'){
+                                                    include('r_monthy.php');
+                                                    }elseif($p=='yearly'){
+                                                    include('r_yearly.php');
+                                                    }elseif($p=='add'){
+                                                    include('form_db.php');
+                                                    }
+                                                    
+                                            ?>
                                         </div>
-                                <!--news3-->
+                                    </div>
+
                             </div>
                         </div>
                     </div>
-                </news>
-            </main>
+                </div>  
+             </news>
+         </main>
 
 
         </div>
@@ -264,3 +232,7 @@
     </script>
 
 </body>
+</html>
+<!-- <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script> -->
