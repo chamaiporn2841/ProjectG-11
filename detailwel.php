@@ -73,7 +73,7 @@
                         <li><a href="detailwel.php">รายละเอียดการใช้สวัสดิการ</a></li>
                         <li><a href="consider.php">พิจารณาการใช้สวัสดิการ</a></li>
                         <li><a href="approve.php">อนุมัติการใช้สวัสดิการ</a></li>
-                        <!-- <li><a href="report.php">รายงานสรุปการใช้สวัสดิการ</a></li> -->
+                        <li><a href="report.php">รายงานสรุปการใช้สวัสดิการ</a></li>
                     </ul>
                 </li>
 
