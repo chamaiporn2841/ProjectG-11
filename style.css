@@ -381,7 +381,7 @@ label{
 .header{
     font-size: 20px !important;
     font-weight: bolder;
-    color: #17191f;
+    color: #0072B5;
     padding: 10px;
     
 }
@@ -416,6 +416,7 @@ label{
 }
 td, th {
     padding: 10px;
+    color: #0072B5;
 }
 
 #category{
