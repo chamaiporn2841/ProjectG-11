@@ -218,7 +218,7 @@
                           <!-- <div><br> -->
                          
                             <div class="media" padding:30px;>
-                            <div id="col">
+                            
                             <h6> <?php while($row = $result->fetch_assoc()): ?>
                         
                                 <div><?php echo $row['requirement_type']; ?></div><br>

@@ -178,27 +178,53 @@
                 <div class="col-md-12">
                   <div class="media1">
                    
-                      <div class="media-body">
-                        <h4 class="media-heading"  ><b>เกณฑ์การใช้สวัสดิการ</b>
-                          </div> 
-                      </div>
-                      <div class="media">
-                                    <div id="col">
-                                        <div class="header">
-                                            รายละเอียดสวัสดิการ
-                                        </div><br><br>
-                                    <div>
 
-                          <!-- <div><br> -->
-                          <select name="requirement_type" id="requirement_type">
-                            <option value="โปรดเลือก">โปรดเลือก</option>
-                            <option value="สวัสดิการค่ารักษาพยาบาล">สวัสดิการค่ารักษาพยาบาล</option>
-                            <option value="สวัสดิการซื้ออุปกรณ์คอมพิวเตอร์">สวัสดิการซื้ออุปกรณ์คอมพิวเตอร์</option>
-                            <option value="สวัสดิการกองทุนสำรองเลี้ยงชีพ">สวัสดิการกองทุนสำรองเลี้ยงชีพ</option>
-                            <option value="สวัสดิการขอยืมเงินเพื่อตัดชุดเครื่องแบบปกติขาว">สวัสดิการขอยืมเงินเพื่อตัดชุดเครื่องแบบปกติขาว</option>
-                            <option value="สวัสดิการฌาปนกิจสงเคราะห์">สวัสดิการฌาปนกิจสงเคราะห์</option>
-                            <option value="สวัสดิการเกี่ยวกับค่าเล่าเรียนบุตร">สวัสดิการเกี่ยวกับค่าเล่าเรียนบุตร</option>
-                          </select>
+                <form name="form8" action="inserthr.php" method="post"  target="iframe_target">
+                            <iframe id="iframe_target" name="iframe_target" src="#" style="width:0;height:0;border:0px solid #fff;"></iframe>
+                            <div class="media1" >
+                                <div class="media-body" >
+                                    <h4 class="media-heading"><b>เกณฑ์การใช้สวัสดิการ</b>
+                                </div> 
+                            </div>
+                      
+                            <div class="media" style="padding-bottom: 20px;" align="center" >
+                                        
+                                    
+                                    <table >
+                                        <thead>
+                                        <tr>
+                                            <th>ประเภทสวัสดิการ</th>
+                                        </tr>
+                                        </thead>
+                                        <tbody>
+                                        <tr>
+                                            <td>
+                                                <select name="requirement_type" id="requirement_type">
+                                                    <option value="โปรดเลือก">โปรดเลือก</option>
+                                                    <option value="สวัสดิการค่ารักษาพยาบาล">สวัสดิการค่ารักษาพยาบาล</option>
+                                                    <option value="สวัสดิการซื้ออุปกรณ์คอมพิวเตอร์">สวัสดิการซื้ออุปกรณ์คอมพิวเตอร์</option>
+                                                    <option value="สวัสดิการกองทุนสำรองเลี้ยงชีพ">สวัสดิการกองทุนสำรองเลี้ยงชีพ</option>
+                                                    <option value="สวัสดิการขอยืมเงินเพื่อตัดชุดเครื่องแบบปกติขาว">สวัสดิการขอยืมเงินเพื่อตัดชุดเครื่องแบบปกติขาว</option>
+                                                    <option value="สวัสดิการฌาปนกิจสงเคราะห์">สวัสดิการฌาปนกิจสงเคราะห์</option>
+                                                    <option value="สวัสดิการเกี่ยวกับค่าเล่าเรียนบุตร">สวัสดิการเกี่ยวกับค่าเล่าเรียนบุตร</option>
+                                                </select>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th>รายละเอียดสวัสดิการ</th>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <textarea name="requirement_text" id="input" style="width:80%;height: 300px;" ></textarea>
+                                            </td>
+                                        </tr>        
+                                        </tbody>
+                                    </table>
+                            </div><br> 
+                                            
+
+                          
+                          
                           <!-- </div><br> -->
                         </div>
                         <!-- <div class="container" id="col2">
@@ -214,26 +240,18 @@
               </div> -->
 
              <!--  <div class="media"> -->
-             <div class="media">
-                                    <div id="col">
-                                        <div class="header">
-                                            รายละเอียดสวัสดิการ
-                                        </div><br><br>
-                                    <div>
+             
+                                
 
-                      <textarea name="requirement_text" id="input" style="width:80%;height: 300px;"></textarea>
-                    </div>
-                    </div>
-                    </div>
-                    </div>
-                    </div>
-                    <br/><br/>
-                    <!--news2-->
+                                    
+
+                      
+                
                     <br/><br/>  <br/><br/>
                     <div align="right" class="container"><br/><br/>
                       <input type="submit" class="btn btn-success" value="บันทึก" data-toggle="modal" data-target="#myModal" style=" font-family: 'Mitr', sans-serif;">
                      <!--  <input type="reset" class="btn" VALUE="ล้างข้อมูล" style=" font-family: 'Mitr', sans-serif;"> -->
-                    </div>
+                    </div><br>
                   </div>
 
                 </div>

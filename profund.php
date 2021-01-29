@@ -59,7 +59,7 @@
                         <li><a href="detailwel.php">รายละเอียดการใช้สวัสดิการ</a></li>
                         <li><a href="consider.php">พิจารณาการใช้สวัสดิการ</a></li>
                         <li><a href="approve.php">อนุมัติการใช้สวัสดิการ</a></li>
-                        <li><a href="report.php">รายงานสรุปการใช้สวัสดิการ</a></li>
+                        <!-- <li><a href="report.php">รายงานสรุปการใช้สวัสดิการ</a></li> -->
                     </ul>
                 </li>
 
@@ -175,215 +175,194 @@
                     <div class="container-fluid" id="news">
                         <div class="row">
                             <div class="col-md-12">
-                                <form name="form3" action="insert3.php" method="post"  target="iframe_target">
-                                    <iframe id="iframe_target" name="iframe_target" src="#" style="width:0;height:0;border:0px solid #fff;"></iframe>
+
+                            <form name="form3" action="insert3.php" method="post"  target="iframe_target">
+                                <iframe id="iframe_target" name="iframe_target" src="#" style="width:0;height:0;border:0px solid #fff;"></iframe>
                                 <div class="media1">
-  
                                     <div class="media-body">
                                         <h4 class="media-heading"><b>สวัสดิการกองทุนสำรองเลี้ยงชีพ</b>
                                     </div>
                                 </div>
-                                <div class="media">
-                                    <div id="col">
-                                        <div class="header">
-                                            ข้อมูลส่วนตัว
-                                        </div><br><br>
-                                    <div>
-                                    <div class="container" id="col1">
-                                        <label>รหัสบุคลากร</label>                                      
-                                        <div><br>                           
-                                            <input type="text" class="form-control" id="pid" name="pid">
-                                        </div><br>
-                                            
-
-                                    </div> 
-
-                                    <div class="container" id="col2">
-                                        <label>ชื่อบุคลากร</label>
-                                        <div><br>
-                                            <span>
-                                                <input type="text" class="form-control" id="namepn" name="namepn">
-                                            </span>
-                                        </div><br>
-                                    </div>
-
-                                    <div  class="container" id="col3">
-                                        <label>ตำแหน่ง</label>
-                                        <div><br>
-                                        <select name="position" id="position">
-                                                <option value="โปรดเลือก">โปรดเลือก</option>
-                                                <option value="วิชาการ">วิชาการ</option>
-                                                <option value="ปฏิบัติการวิชาชีพและบริหารทั่วไป">ปฏิบัติการวิชาชีพและบริหารทั่วไป</option>
-                                                <option value="บริหารวิชาการ">บริหารวิชาการ</option>
-                                            </select>
-                                        </div><br>
-                                    </div>
-                                    <div class="container"  id="col1">
-                                        <label>ประเภทบุคลากร</label>
-                                        <div><br>
-                                        <select name="category" id="category">
-                                                <option value="โปรดเลือก">โปรดเลือก</option>
-                                                <option value="หัวหน้าโครงการ">หัวหน้าโครงการ</option>
-                                                <option value="คณาจารย์">คณาจารย์</option>
-                                                <option value="เจ้าหน้าที่">เจ้าหน้าที่</option>
-                                                <option value="ผู้ช่วยสอน">ผู้ช่วยสอน</option>
-                                            </select>
-                                        </div><br>
-                                    </div>
-
-                                    <div  class="container" id="col2">
-                                        <label>วัน/เดือน/ปีเกิด</label>
-                                            <div><br>
-                                                <input type="date" class="form-control" id="born" name="born">
-                                            </div><br>
-                                    </div>
-
-                                        <div class="container"  id="col3">
-                                            <label>อายุ</label>
-                                            <div><br>
-                                                <input type="text" class="form-control" id="Age" name="Age">
-                                            </div><br>
-                                    </div>
-                                    <div class="container" id="col1">
-                                        <label>สัญชาติ</label>
-                                        <div><br>
-                                        <input type="text" class="form-control" id="National"  name="National" >
-                                        </div><br>
-                                    </div>
-                                    <div class="container"  id="col2">
-                                        <label>สถานภาพสมรส</label>
-                                        <div><br>
-                                        <select name="FStatus" id="FStatus">
-                                                <option value="โปรดระบุ">โปรดระบุ</option>
-                                                <option value="สมรส">สมรส</option>
-                                                <option value="โสด">โสด</option>
-                                                <option value="หย่าร้าง">หย่าร้าง</option>
-                                                <option value="แยกกันอยู่">แยกกันอยู่</option>
-                                            </select>
-                                        </div><br>  
-                                    </div>
-
-                                    <div class="container"  id="col3">
-                                        <label>ชื่อคู่สมรส</label>
-                                        <div><br>
-                                        <input type="text" class="form-control" id="spouse" name="spouse">
-                                        </div><br>              
-                                    </div>
-                                    <div  class="container" id="col1">
-                                        <label>ประเภทสวัสดิการ</label>
-                                        <div><br>
-                                        <select name="typebenefit" id="typebenefit">
-                                                <option value="สวัสดิการกองทุนสำรองเลี้ยงชีพ">สวัสดิการกองทุนสำรองเลี้ยงชีพ</option>
-                                        </select>
-                                        </div><br>
-                                    </div>
-                
-                                 </div>               
-                            </div> 
-                        </div>
-               
-                                    
-                                <!--news1-->
 
                                 <div class="media" style="padding-bottom: 20px;">
-                                    <div id="col">
-                                        <div class="media-body">
-                                            <div class="header">
-                                            ที่อยู่อาศัย
-                                            </div><br><br>
-                                        </div>
-                                        <div class="container" id="col1">
-                                            <label>บ้านเลขที่</label>
-                                            <div><br>
-                                            <input type="text" class="form-control" id="NoH" name="NoH">
-                                            </div><br>
-                                        </div>
-
-                                        <div class="container" id="col2">
-                                            <label>ถนน</label>
-                                            <div><br>
-                                            <input type="text" class="form-control" id="road" name="road">
-                                            </div><br>
-                                        </div>
-
-                                        <div class="container" id="col3">
-                                            <label>ตำบล/แขวง</label>
-                                            <div><br>
-                                            <input type="text" class="form-control" id="LLocal" name="LLocal">
-                                            </div><br>
-                                        </div>
-                                        <div class="container" id="col1">
-                                            <label>อำเภอ/เขต</label>
-                                            <div><br>
-                                            <input type="text" class="form-control" id="Amphoe" name="Amphoe">
-                                            </div><br>
-                                        </div>
-
-                                        <div class="container" id="col2">
-                                            <label>จังหวัด</label>
-                                            <div><br>
-                                            <input type="text" class="form-control" id="province" name="province">
-                                            </div><br>
-                                        </div>
-
-                                        <div class="container"  id="col3">
-                                            <label>รหัสไปรษณีย์</label>
-                                            <div><br>
-                                                <input type="text" class="form-control" id="Pcode" name="Pcode">
-                                            </div><br>
-                                        </div>
-                                    </div>
-                                </div>
-                             </div>
-                        </div>
-                                <!--news2-->
-                                <div class="media">         
-                                    <div class="media-body" style="padding-bottom: 20px;">
-                                        <div id="col">
-                                                <div class="header">
-                                                    รายละเอียดการเข้าทำงาน
-                                               </div><br><br>
-                                        <div>
-                                        <div class="container" id="col1">
-                                            <label>วันที่เริ่มเข้าทำงาน</label>
-                                            <div><br>
-                                                <input type="date" class="form-control" id="Getw" name="Getw">
-                                            </div><br>
-                                        </div>
-
-                                        <div class="container" id="col2">
-                                            <label>สิทธิได้รับเงินสมทบ</label>
-                                            <div><br>
-                                            <select name="Contribution" id="Contribution">
-                                                    
+                                        <div class="header">
+                                            ข้อมูลส่วนตัว
+                                        </div>  
+  
+                                    <table >
+                                        <thead>
+                                        <tr>
+                                            <th>รหัสบุคลากร</th>
+                                            <th>ชื่อบุคลากร</th>
+                                            <th>ตำแหน่ง</th>
+                                        </tr>
+                                        </thead>
+                                        <tbody>
+                                        <tr>
+                                            <td>
+                                                <input type="text" class="form-control" id="pid" name="pid" required>
+                                            </td>
+                                            <td>
+                                                <input type="text" class="form-control" id="namepn" name="namepn" required>
+                                            </td>
+                                            <td>
+                                                <select class="form-control"  name="position" id="input" required>
                                                     <option value="โปรดเลือก">โปรดเลือก</option>
-                                                    <option value="ระยะเวลาการปฏิบัติงาน ไม่ถึง 5 ปี">ระยะเวลาการปฏิบัติงาน ไม่ถึง 5 ปี</option>
-                                                    <option value="ระยะเวลาการปฏิบัติงาน  5 ปี ไม่ถึง 10 ปี">ระยะเวลาการปฏิบัติงาน  5 ปี ไม่ถึง 10 ปี</option>
-                                                    <option value="ระยะเวลาการปฏิบัติงาน  10 ปี ไม่ถึง 15 ปี">ระยะเวลาการปฏิบัติงาน  10 ปี ไม่ถึง 15 ปี</option>
-                                                    <option value="ระยะเวลาการปฏิบัติงาน  15 ปี เป็นต้นไป">ระยะเวลาการปฏิบัติงาน  15 ปี เป็นต้นไป</option>
+                                                    <option value="วิชาการ">วิชาการ</option>
+                                                    <option value="ปฏิบัติการวิชาชีพและบริหารทั่วไป">ปฏิบัติการวิชาชีพและบริหารทั่วไป</option>
+                                                    <option value="บริหารวิชาการ">บริหารวิชาการ</option>
                                                 </select>
-                                            </div><br>  
-                                        </div>
-
-                                    </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>ประเภทบุคลากร</td>
+                                            <td>วัน/เดือน/ปีเกิด</td>
+                                            <td>อายุ</td>
+                                            <td></td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <select class="form-control"  name="category" id="input" required>
+                                                    <option value="โปรดเลือก">โปรดเลือก</option>
+                                                    <option value="หัวหน้าโครงการ">หัวหน้าโครงการ</option>
+                                                    <option value="คณาจารย์">คณาจารย์</option>
+                                                    <option value="เจ้าหน้าที่">เจ้าหน้าที่</option>
+                                                    <option value="ผู้ช่วยสอน">ผู้ช่วยสอน</option>
+                                                </select>
+                                            </td>
+                                            <td>
+                                                <input type="date" class="form-control" id="born" name="born">
+                                            </td>
+                                            <td>
+                                                <input type="text" class="form-control" id="Age" name="Age">
+                                            </td>
+                                        </tr>    
+                                        <tr>
+                                            <td>สัญชาติ</td>
+                                            <td>สถานภาพสมรส</td>
+                                            <td>ชื่อคู่สมรส</td>
+                                            <td></td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <input type="text" class="form-control" id="National"  name="National" >
+                                            </td>
+                                            <td>
+                                                <select name="FStatus" id="FStatus">
+                                                    <option value="โปรดระบุ">โปรดระบุ</option>
+                                                    <option value="สมรส">สมรส</option>
+                                                    <option value="โสด">โสด</option>
+                                                    <option value="หย่าร้าง">หย่าร้าง</option>
+                                                    <option value="แยกกันอยู่">แยกกันอยู่</option>
+                                                    </select>
+                                            </td>
+                                            <td>
+                                                <input type="text" class="form-control" id="spouse" name="spouse">
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>ประเภทสวัสดิการ</td>
+                                            <td></td>
+                                        </tr>
+                                        <td>
+                                                <select class="form-control"  name="typebenefit" id="input" required>
+                                                    <option value="สวัสดิการกองทุนสำรองเลี้ยงชีพ">สวัสดิการกองทุนสำรองเลี้ยงชีพ</option>
+                                                </select>
+                                            </td>
+                                            <td></td>
+                                        </tbody>
+                                    </table>                
                                 </div>
-                            </div>
-                        </div>
                                 
+                                <div class="media" style="padding-bottom: 20px;">
+                                        <div class="header">
+                                            ที่อยู่อาศัย
+                                        </div>  
+  
+                                    <table >
+                                        <thead>
+                                        <tr>
+                                            <th>บ้านเลขที่</th>
+                                            <th>ถนน</th>
+                                            <th>ตำบล/แขวง</th>
+                                        </tr>
+                                        </thead>
+                                        <tbody>
+                                        <tr>
+                                            <td>
+                                                <input type="text" class="form-control" id="NoH" name="NoH">
+                                            </td>
+                                            <td>
+                                                <input type="text" class="form-control" id="road" name="road">
+                                            </td>
+                                            <td>
+                                                <input type="text" class="form-control" id="LLocal" name="LLocal">
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>อำเภอ/เขต</td>
+                                            <td>จังหวัด</td>
+                                            <td>รหัสไปรษณีย์</td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <input type="text" class="form-control" id="Amphoe" name="Amphoe">
+                                            </td>
+                                            <td>
+                                                <input type="text" class="form-control" id="province" name="province">  
+                                            </td>
+                                            <td>
+                                                <input type="text" class="form-control" id="Pcode" name="Pcode">
+                                            </td>
+                                            <td></td>
+                                        </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
                                 
-                                <!--news3-->
-                                <!-- <div class="media">   -->       
-                                    <!-- <div class="media-body"> -->
-                                    <div align="right"  class="container" style="padding-bottom: 30px;padding-top: 30px;">
+                                <div class="media" style="padding-bottom: 20px;">
+                                        <div class="header">
+                                            รายละเอียดการเข้าทำงาน
+                                        </div>
+                                
+                                    <table >
+                                        <thead>
+                                            <tr>
+                                                <th>วันที่เริ่มเข้าทำงาน</th>
+                                                <th>สิทธิได้รับเงินสมทบ</th>
+                                                <th></th>
+                                            </tr>
+                                            </thead>
+                                            <tbody>
+                                            <tr>
+                                                <td>
+                                                    <input type="date" class="form-control" id="Getw" name="Getw">
+                                                </td>
+                                                <td>
+                                                    <select name="Contribution" id="Contribution">
+                                                        <option value="โปรดเลือก">โปรดเลือก</option>
+                                                        <option value="ระยะเวลาการปฏิบัติงาน ไม่ถึง 5 ปี">ระยะเวลาการปฏิบัติงาน ไม่ถึง 5 ปี</option>
+                                                        <option value="ระยะเวลาการปฏิบัติงาน  5 ปี ไม่ถึง 10 ปี">ระยะเวลาการปฏิบัติงาน  5 ปี ไม่ถึง 10 ปี</option>
+                                                        <option value="ระยะเวลาการปฏิบัติงาน  10 ปี ไม่ถึง 15 ปี">ระยะเวลาการปฏิบัติงาน  10 ปี ไม่ถึง 15 ปี</option>
+                                                        <option value="ระยะเวลาการปฏิบัติงาน  15 ปี เป็นต้นไป">ระยะเวลาการปฏิบัติงาน  15 ปี เป็นต้นไป</option>
+                                                    </select>
+                                                </td>
+                                            </tr>
+                                            </tbody>
+                                    </table>
+                                </div>
+                                
+                                <br/><br/>
+
+                                    <div align="right"  class="container" style="margin-bottom: 20px;">
                                         <input type="submit" class="btn btn-success" value="บันทึก" data-toggle="modal" data-target="#myModal" style=" font-family: 'Mitr', sans-serif;">
                                         <input type="reset" class="btn" VALUE="ล้างข้อมูล" style=" font-family: 'Mitr', sans-serif;" >
                                     </div> 
-                                </div>   
-                                 </form>
-                                    <!-- </div> -->
-                                <!-- </div> -->
-                                 <!-- Modal -->
-                                 <div class="modal fade" id="myModal" role="dialog">
+
+                                </div> 
+                                </form>  
+
+                                <div class="modal fade" id="myModal" role="dialog">
                                     <div class="modal-dialog modal-sm">
                                     <div class="modal-content">
                                         <div class="modal-header">
@@ -401,34 +380,37 @@
                                 </div>
 
 
-                                
                             </div>
                         </div>
                     </div>
                 </news>
             </main>
 
-           
         </div>
 
     </div>
 
-    <footer class="bg-light text-center text-lg-start">
-        <!-- Copyright -->
-        <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2)">
-            © 2020 Copyright:
-            <a class="text-dark" href="https://mdbootstrap.com/">MDBootstrap.com</a>
-        </div>
-        <!-- Copyright -->
-    </footer>
 
-    <script type="text/javascript">
-        $(document).ready(function() {
-            $('#sidebarCollapse').on('click', function() {
-                $('#sidebar').toggleClass('active');
-            });
-        });
-    </script>
+<footer class="bg-light text-center text-lg-start">
+<!-- Copyright -->
+<div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2)">
+© 2020 Copyright:
+<a class="text-dark" href="https://mdbootstrap.com/">MDBootstrap.com</a>
+</div>
+<!-- Copyright -->
+</footer>
+
+<script type="text/javascript">
+$(document).ready(function() {
+$('#sidebarCollapse').on('click', function() {
+$('#sidebar').toggleClass('active');
+});
+});
+</script>
+
+</body>
+
+</html>
 
 </body>
 

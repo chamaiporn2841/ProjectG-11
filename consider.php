@@ -192,12 +192,14 @@
                     <div class="container-fluid" id="news">
                         <div class="row">
                             <div class="col-md-12">
-                                <div class="media1">
-                                    <div class="media-body" >
-                                        <h4 class="media-heading" ><b>พิจารณาคำร้องขอสวัสดิการ</b>
+
+                            <form name="form9" action=".php" method="post"  target="iframe_target">
+                                    <iframe id="iframe_target" name="iframe_target" src="#" style="width:0;height:0;border:0px solid #fff;"></iframe>
+                                    <div class="media1" >
+                                        <div class="media-body" >
+                                            <h4 class="media-heading"><b>พิจารณาคำร้องขอสวัสดิการ</b>
+                                        </div>
                                     </div>
-                                </div>
-                       
                             
                                    <!-- <div class="media">
                                             <div id="col">
@@ -206,7 +208,7 @@
                                                 </div><br><br>
                                                 
                                             </div> --> 
-
+                                        
                                             <div class="media">
                                                 <div id="col">
                                                     <div class="header"><br><br> 
@@ -326,12 +328,12 @@
                                         </div> 
                                     </div> 
                                 </div>
-                                <br/><br/>
+                                <br/>
                                             <!--news2-->
                                                 <div align="right"  class="container">
                                                         <input type="submit" class="btn btn-success"  value="บันทึก"  data-toggle="modal" data-target="#myModal" style=" font-family: 'Mitr', sans-serif;">
                                                         
-                                                </div> 
+                                                </div> <br>
                                                 
                             <!-- </form> -->
 
