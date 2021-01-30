@@ -210,13 +210,57 @@
                                         </div>
                                        
                                         </div>
-                                        <div class="media">
-                                            <div id="col"> <center>
+
+                                        
+                                        
+                                        <div class="media" style="padding-bottom: 20px;">
+                                            <div class="header">
+                                                ติดต่อสอบถาม
+                                            </div><br><br>
+
+
+                                            <table >
+                                        <thead>
+                                        <tr>
+                                            <th>ชื่อ</th>
+                                            <th>อีเมล์</th>
+                                            <th>โทรศัพท์</th>
+                                        </tr>
+                                        </thead>
+                                        <tbody>
+                                        <tr>
+                                        <td>
+                                                <input class="form-control" type="text" name="name"  required>
+                                            </td>
+                                            <td>
+                                                <input class="form-control" type="text" name="email"  required>
+                                            </td>
+                                            <td>
+                                                <input class="form-control" type="text" name="phone"  required>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>LINE ID</td>
+                                            <td>ข้อความ</td>
+                                            
+                                        </tr>
+                                        <tr>
+                                        <td>
+                                            <input class="form-control" type="text" name="lineid"  required>
+                                            </td>
+                                            <td>
+                                                <input class="form-control" type="text" name="email"  required>
+                                            </td>
+                                        </tr>
+                                        <tr><td colspan=2 align="center"><input type="submit" name="submit" value=" ส่งข้อความ "></td></tr>
+                                        </tbody>
+                                    </table>                
+                                </div> 
+
+                                           <!--  <div id="col"> <center>
                                                 <form name="line-notify" action="line-notify-api.php" method="post">
                                                     <table  width="450" border="0" cellspacing="0" cellpadding="0">
-                                                        <tr><td colspan="2" align="center"><img src="images/line.png" width="10%" border="0"></td></tr>
-                                                        <tr><td colspan="2" height="10"></td></tr>
-                                                        <tr><td colspan="2" align="center"><font color="#0000ff"><b>ส่งข้อมูลติดต่อข้อสงสัย</b></font></td></tr>
+                                                        <tr><td colspan="2" height="10"></td></tr>                                                      
                                                         <tr><td colspan="2" height="10"></td></tr>
                                                         <tr><td>ชื่อ:</td><td><input class="textInput" type="text" name="name" size="25" required></td></tr>
                                                         <tr><td colspan="2" height="10"></td></tr>
@@ -231,7 +275,7 @@
                                                         <tr><td colspan=2 align="center"><input type="submit" name="submit" value=" ส่งข้อความ "></td></tr>
                                                         <tr><td colspan="2" height="10"></td></tr>
                                                     </table>
-                                                </form>  </center>
+                                                </form>  </center> -->
                                                 
                                                 <!--news2-->
 

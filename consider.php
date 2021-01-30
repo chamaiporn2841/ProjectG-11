@@ -228,6 +228,7 @@
 
                                         <form class="form-inline" name="frmSearch" method="post" action="<?php echo $_SERVER['SCRIPT_NAME'];?>" align="center">
                                             <div class="form-group" align="center">
+                                                 <form class="form-inline" name="frmSearch" method="post" action="<?php echo $_SERVER['SCRIPT_NAME'];?>" align="center">
                                                 <div class="form-inline"  >                                    
                                                     <label for="textsearch" >ประเภทสวัสดิการ</label>
                                                     <input name="txtKeyword" type="text" id="txtKeyword" value="<?php echo $strKeyword;?>" class="form-control"  autocomplete="off">
