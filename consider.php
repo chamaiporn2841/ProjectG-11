@@ -76,7 +76,7 @@
                         <li><a href="detailwel.php">รายละเอียดการใช้สวัสดิการ</a></li>
                         <li><a href="consider.php">พิจารณาการใช้สวัสดิการ</a></li>
                         <li><a href="approve.php">อนุมัติการใช้สวัสดิการ</a></li>
-                        <li><a href="report.php">รายงานสรุปการใช้สวัสดิการ</a></li>
+                        <!-- <li><a href="report.php">รายงานสรุปการใช้สวัสดิการ</a></li> -->
                     </ul>
                 </li>
 
@@ -192,14 +192,12 @@
                     <div class="container-fluid" id="news">
                         <div class="row">
                             <div class="col-md-12">
-
-                            <form name="form9" action=".php" method="post"  target="iframe_target">
-                                    <iframe id="iframe_target" name="iframe_target" src="#" style="width:0;height:0;border:0px solid #fff;"></iframe>
-                                    <div class="media1" >
-                                        <div class="media-body" >
-                                            <h4 class="media-heading"><b>พิจารณาคำร้องขอสวัสดิการ</b>
-                                        </div>
+                                <div class="media1">
+                                    <div class="media-body" >
+                                        <h4 class="media-heading" ><b>พิจารณาคำร้องขอสวัสดิการ</b>
                                     </div>
+                                </div>
+                       
                             
                                    <!-- <div class="media">
                                             <div id="col">
@@ -208,7 +206,7 @@
                                                 </div><br><br>
                                                 
                                             </div> --> 
-                                        
+
                                             <div class="media">
                                                 <div id="col">
                                                     <div class="header"><br><br> 
@@ -224,15 +222,14 @@
                                                 }
                                             ?>
 
-
+                                            
 
                                         <form class="form-inline" name="frmSearch" method="post" action="<?php echo $_SERVER['SCRIPT_NAME'];?>" align="center">
                                             <div class="form-group" align="center">
-                                                 <form class="form-inline" name="frmSearch" method="post" action="<?php echo $_SERVER['SCRIPT_NAME'];?>" align="center">
                                                 <div class="form-inline"  >                                    
                                                     <label for="textsearch" >ประเภทสวัสดิการ</label>
-                                                    <input name="txtKeyword" type="text" id="txtKeyword" value="<?php echo $strKeyword;?>" class="form-control"  autocomplete="off">
-                                                        <button type="button" class="btn btn-primary"  value="Search">
+                                                    <input name="txtKeyword" type="text" id="txtKeyword" value="<?php echo $strKeyword;?>" class="form-control" >
+                                                        <button type="submit" class="btn btn-primary"  value="Search">
                                                             <span class="glyphicon glyphicon-search"></span>
                                                                     ค้นหา
                                                         </button>
@@ -288,14 +285,14 @@
                                                     $query = mysqli_query($conn,$sql);
 
                                                     ?>
-
+                                                    <form action="insertconsider.php" method="post">
                                                     <div class="container" id="manager" >
                                                     <table class="table"   id="chlids"  colspan="2">
                                                         <tr>
                                                         
                                                           
                                                             <th>รหัสบุคลากร</th>   
-                                                            <th>ชื่อบุคลากร</th>                                        
+                                                            <th>ชื่อผู้ขอ</th>                                        
                                                             <th>ประเภทสวัสดิการ</th>
                                                             <th>จำนวนเงิน</th>
                                                             <th>ผลการอนุมัติ</th>
@@ -320,7 +317,9 @@
                                                             <?php
                                                             }
                                                             ?>
-                                                        </tr>
+                                                            
+                                                        
+                                                            </tr>
                                                     </table>
                                                         <?php mysqli_close($conn); ?>   
                                                 </div>  
@@ -329,12 +328,13 @@
                                         </div> 
                                     </div> 
                                 </div>
-                                <br/>
+                                <br/><br/>
+                                </form>
                                             <!--news2-->
                                                 <div align="right"  class="container">
                                                         <input type="submit" class="btn btn-success"  value="บันทึก"  data-toggle="modal" data-target="#myModal" style=" font-family: 'Mitr', sans-serif;">
                                                         
-                                                </div> <br>
+                                                </div> 
                                                 
                             <!-- </form> -->
 
