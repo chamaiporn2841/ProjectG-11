@@ -211,8 +211,9 @@
                                        
                                         </div>
 
+                                    
                                         
-                                        
+                                    <form name="line-notify" action="line-notify-api.php" method="post">
                                         <div class="media" style="padding-bottom: 20px;">
                                             <div class="header">
                                                 ติดต่อสอบถาม
@@ -224,38 +225,60 @@
                                         <tr>
                                             <th>ชื่อ</th>
                                             <th>อีเมล์</th>
-                                            <th>โทรศัพท์</th>
                                         </tr>
                                         </thead>
                                         <tbody>
                                         <tr>
-                                        <td>
-                                                <input class="form-control" type="text" name="name"  required>
+                                            <td>
+                                                <input class="form-control" type="text" name="name"  size="1" style="width: 390px;" required>
                                             </td>
                                             <td>
-                                                <input class="form-control" type="text" name="email"  required>
-                                            </td>
-                                            <td>
-                                                <input class="form-control" type="text" name="phone"  required>
+                                                <input class="form-control" type="text" name="email"  size="1" style="width: 390px;" required>
                                             </td>
                                         </tr>
                                         <tr>
-                                            <td>LINE ID</td>
-                                            <td>ข้อความ</td>
-                                            
+                                            <th>โทรศัพท์</th>
+                                            <th>LINE ID</th>
                                         </tr>
                                         <tr>
-                                        <td>
-                                            <input class="form-control" type="text" name="lineid"  required>
+                                            <td>
+                                                <input class="form-control" type="text" name="phone" size="1" style="width: 390px;" required>
                                             </td>
                                             <td>
-                                                <input class="form-control" type="text" name="email"  required>
+                                                <input class="form-control" type="text" name="lineid" size="1" style="width: 390px;" required>
+                                            </td>
+                                         </tr>
+                                        <tr>
+                                            <th>ข้อความ</th>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <textarea name="mesg" id="input" style="width:80%;height: 300px;" ></textarea>
+                                                
                                             </td>
                                         </tr>
                                         <tr><td colspan=2 align="center"><input type="submit" name="submit" value=" ส่งข้อความ "></td></tr>
                                         </tbody>
                                     </table>                
                                 </div> 
+
+
+                                <div class="modal fade" id="myModal" role="dialog">
+                                    <div class="modal-dialog modal-sm">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                        <h4 class="modal-title">แจ้งเตือนระบบ</h4>
+                                        </div>
+                                        <div class="modal-body">
+                                        <p>บันทึกข้อมูลสำเร็จ</p>
+                                        </div>
+                                        <div class="modal-footer">
+                                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                                        </div>
+                                    </div>
+                                    </div>
+                                </div>
 
                                            <!--  <div id="col"> <center>
                                                 <form name="line-notify" action="line-notify-api.php" method="post">
