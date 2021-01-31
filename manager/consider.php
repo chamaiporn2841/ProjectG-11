@@ -247,18 +247,18 @@
                                                     $query = mysqli_query($conn,$sql);
 
                                                     ?>
-                                                       <form class="form-inline" name="status" method="post" action="consider.php" align="center">
+                                                       <form class="form-inline" name="status" method="post" action="consider.php" >
                                    
                                                     <div class="container" id="manager" >
-                                                    <table class="table"   id="childs"  colspan="2">
-                                                        <tr>
+                                                    <table class="table"   id="chlids"  colspan="2" >
+                                                        <tr >
                                                         
                                                           
-                                                            <th>รหัสบุคลากร</th>   
-                                                            <th>ชื่อบุคลากร</th>                                        
-                                                            <th>ประเภทสวัสดิการ</th>
-                                                            <th>จำนวนเงิน</th>
-                                                            <th>ผลการอนุมัติ</th>
+                                                            <th >รหัสบุคลากร</th>   
+                                                            <th >ชื่อบุคลากร</th>                                        
+                                                            <th >ประเภทสวัสดิการ</th>
+                                                            <th >จำนวนเงิน</th>
+                                                            <th >ผลการอนุมัติ</th>
                                                         </tr>
                         
                                                         <?php while($result=mysqli_fetch_array($query,MYSQLI_ASSOC))

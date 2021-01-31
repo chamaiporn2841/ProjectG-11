@@ -203,7 +203,7 @@
                                     <form class="form-inline" name="status" method="post" action="opresult.php" align="center">
                                    
                                    <div class="container" id="manager" >
-                                   <table class="table"   id="childs"  colspan="2">
+                                        <table class="table"   id="chlids"  colspan="2">
                                        
                                             <tr>
                                                 <th>รหัสสวัสดิการ</th>

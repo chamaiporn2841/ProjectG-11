@@ -365,14 +365,15 @@ a.article:hover {
 }
 table {
     width: 100%;
-  }
-#input{้
+    color:#3d5b6d;
+}
+
+#input{
     border-radius: 8px;
     color:#3d5b6d;
     font-size: 1.1em;
     font-weight: 300;
-    width:100%;
-    height: 34px;
+    width:200px;
 }
 label{
     font-size: 14px;
@@ -416,8 +417,11 @@ label{
 }
 td, th {
     padding: 10px;
-    color: #0072B5;
+    text-align: center;
+    
 }
+
+
 
 #category{
     border-radius: 8px;
