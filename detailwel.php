@@ -69,8 +69,10 @@
                             สวัสดิการ
                     </a>
                     <ul class="collapse list-unstyled" id="WelSubmenu">
-                        <li><a href="definewel.php">เกณฑ์การใช้วสวัสดิการ</a></li>
+                        <!-- <li><a href="definewel.php">เกณฑ์การใช้วสวัสดิการ</a></li> -->
                         <li><a href="detailwel.php">รายละเอียดการใช้สวัสดิการ</a></li>
+                        <li><a href="opresult.php">ผลการดำนำเนินการ</a></li>
+
                         <!-- <li><a href="#">พิจารณาการใช้สวัสดิการ</a></li>
                         <li><a href="#">อนุมัติการใช้สวัสดิการ</a></li>
                         <li><a href="#">รายงานสรุปการใช้สวัสดิการ</a></li> -->
@@ -84,7 +86,7 @@
               <i class="fa fa-pencil-square-o"></i>
               คำร้องออนไลน์
             </a>
-            <!-- <ul class="collapse list-unstyled" id="formSubmenu">
+            <ul class="collapse list-unstyled" id="formSubmenu">
               <li><a href="">คำร้องขอแก้ไขข้อมูลส่วนตัว</a></li>
               <li><a href="#">คำร้องขอลา</a></li>
               <li><a href="medexp.php">คำร้องสวัสดิการค่ารักษาพยาบาล</a></li>
@@ -93,8 +95,8 @@
               <li><a href="uniform.php">คำร้องขอยืมเงินเพื่อตัดชุดเครื่องแบบปกติขาว</a></li>
               <li><a href="funeral.php">คำร้องสวัสดิการฌาปนกิจสงเคราะห์</a></li>
               <li><a href="tuitionfee.php">คำร้องสวัสดิการเกี่ยวกับค่าเล่าเรียนบุตร</a></li>
-              <li><a href="opresult.php">ติดตามผลคำร้อง</a></li>
-            </ul> -->
+              <li><a href="#">ติดตามผลคำร้อง</a></li>
+            </ul>
           </li>
           <li><a href="#"><i class="fa fa-check-square-o"></i>การประเมิน</a></li>
           <li><a href="#"><i class="fa fa-handshake-o"></i>กิจกรรมสร้างความสัมพันธ์</a></li>
