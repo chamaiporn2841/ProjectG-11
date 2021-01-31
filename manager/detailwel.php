@@ -72,6 +72,8 @@
                         <!-- <li><a href="definewel.php">เกณฑ์การใช้วสวัสดิการ</a></li> -->
                         <li><a href="detailwel.php">รายละเอียดการใช้สวัสดิการ</a></li>
                         <li><a href="consider.php">พิจารณาการใช้สวัสดิการ</a></li>
+                        <!-- <li><a href="opresult.php">ผลการดำนำเนินการ</a></li> -->
+
                         <!-- <li><a href="#">อนุมัติการใช้สวัสดิการ</a></li>
                         <li><a href="#">รายงานสรุปการใช้สวัสดิการ</a></li> -->
                     </ul>
@@ -93,7 +95,7 @@
               <li><a href="uniform.php">คำร้องขอยืมเงินเพื่อตัดชุดเครื่องแบบปกติขาว</a></li>
               <li><a href="funeral.php">คำร้องสวัสดิการฌาปนกิจสงเคราะห์</a></li>
               <li><a href="tuitionfee.php">คำร้องสวัสดิการเกี่ยวกับค่าเล่าเรียนบุตร</a></li> -->
-              <li><a href="opresult.php">ติดตามผลคำร้อง</a></li>
+              <!-- <li><a href="opresult.php">ติดตามผลคำร้อง</a></li> -->
             </ul>
           </li>
           <li><a href="#"><i class="fa fa-check-square-o"></i>การประเมิน</a></li>

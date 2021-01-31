@@ -75,7 +75,7 @@
                         <li><a href="profund.php">คำร้องสวัสดิการกองทุนสำรองเลี้ยงชีพ</a></li>
                         <li><a href="uniform.php">คำร้องขอยืมเงินเพื่อตัดชุดเครื่องแบบปกติขาว</a></li>
                         <li><a href="tuitionfee.php">คำร้องสวัสดิการเกี่ยวกับค่าเล่าเรียนบุตร</a></li> -->
-                        <li><a href="opresult.php">ติดตามผลคำร้อง</a></li>
+                        <li><a href="#">ติดตามผลคำร้อง</a></li>
                     </ul>
                 </li>
                 <li><a href="#"><i class="fa fa-check-square-o"></i>การประเมิน</a></li>
