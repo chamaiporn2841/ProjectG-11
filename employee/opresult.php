@@ -1,3 +1,20 @@
+<?php 
+    // Create connection
+    $connect = new mysqli('localhost', 'root', '12345', 'benefit');
+    
+    // Check Connection
+
+    if ($connect->connect_error) {
+        die("Something wrong.: " . $connect->connect_error);
+      }
+
+      
+    $sql = "SELECT * FROM benefittotal";
+
+    $result = $connect->query($sql);
+
+    
+?>
 <!DOCTYPE html>
 <html>
 
@@ -10,8 +27,6 @@
     <link rel="shortcut icon" type="image/icon" href="images/favicon.ico" />
     <!-- Bootstrap CSS CDN -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-    <!-- Bootstrap report -->
-    <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous"> -->
     <!--Font Awesome-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <!-- Our Custom CSS -->
@@ -57,11 +72,11 @@
                             สวัสดิการ
                     </a>
                     <ul class="collapse list-unstyled" id="WelSubmenu">
-                        <!-- <li><a href="#">เกณฑ์การใช้วสวัสดิการ</a></li>
-                        <li><a href="#">รายละเอียดการใช้สวัสดิการ</a></li>
-                        <li><a href="#">พิจารณาการใช้สวัสดิการ</a></li> -->
+                        <li><a href="#">เกณฑ์การใช้วสวัสดิการ</a></li>
+                        <li><a href="detailwel.php">รายละเอียดการใช้สวัสดิการ</a></li>
+                        <li><a href="consider.php">พิจารณาการใช้สวัสดิการ</a></li>
                         <li><a href="approve.php">อนุมัติการใช้สวัสดิการ</a></li>
-                        <li><a href="report.php">รายงานสรุปการใช้สวัสดิการ</a></li>
+                        <!-- <li><a href="report.php">รายงานสรุปการใช้สวัสดิการ</a></li> -->
                     </ul>
                 </li>
 
@@ -70,7 +85,7 @@
                         <i class="fa fa-pencil-square-o"></i>
                         คำร้องออนไลน์
                     </a>
-                    <!-- <ul class="collapse list-unstyled" id="formSubmenu">
+                    <ul class="collapse list-unstyled" id="formSubmenu">
                         <li><a href="">คำร้องขอแก้ไขข้อมูลส่วนตัว</a></li>
                         <li><a href="#">คำร้องขอลา</a></li>
                         <li><a href="medexp.php">คำร้องสวัสดิการค่ารักษาพยาบาล</a></li>
@@ -79,7 +94,7 @@
                         <li><a href="uniform.php">คำร้องขอยืมเงินเพื่อตัดชุดเครื่องแบบปกติขาว</a></li>
                         <li><a href="tuitionfee.php">คำร้องสวัสดิการเกี่ยวกับค่าเล่าเรียนบุตร</a></li>
                         <li><a href="opresult.php">ติดตามผลคำร้อง</a></li>
-                    </ul> -->
+                    </ul>
                 </li>
                 <li><a href="#"><i class="fa fa-check-square-o"></i>การประเมิน</a></li>
                 <li><a href="#"><i class="fa fa-handshake-o"></i>กิจกรรมสร้างความสัมพันธ์</a></li>
@@ -150,11 +165,11 @@
                                 <div class="col-12 col-md-4" id="usermenu">
                                     <div class="btn-group" style="float: right;">
                                         <button type="button" class="btn btn-secondary" style="padding: 16px;"
-                                            id="user_name">ฉัตรภัสร์ ฐิติอัคราวงศ์</button>
+                                            id="user_name">xxxxx  xxxxxx</button>
                                         <button type="button"
                                             class="btn btn-secondary dropdown-toggle dropdown-toggle-split"
                                             data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                            <img src="images/user1.jpg" height="40px" style="border-radius: 50%;" />
+                                            <img src="images/admin.png" height="40px" style="border-radius: 50%;" />
                                         </button>
                                         <div class="dropdown-menu dropdown-menu-right">
                                             <a class="dropdown-item" sty href="#">เปลี่ยนรหัสผ่าน</a>
@@ -172,44 +187,94 @@
                 </div>
             </nav>
 
-        <main>
-            <news>
-                <div class="container-fluid" id="news">
-                    <div class="row">
-                        <div class="col-md-12">
-                            <div class="media1">
-                                <div class="media-body">
-                                        <h4 class="media-heading"><b>รายงานสรุปการใช้สวัสดิการ</b>
-                                </div> 
-                                
-                                    <div class="media">
-                                    
-                                        
-                                       <div id="col">
-                                            <?php
-                                                    require_once('condb.php');
-                                                    include('intro.php');
-                                                    $p = (isset($_GET['p']) ? $_GET['p'] : '');
-                                                if($p=='monthy'){
-                                                    include('r_monthy.php');
-                                                    }elseif($p=='yearly'){
-                                                    include('r_yearly.php');
-                                                    }elseif($p=='add'){
-                                                    include('form_db.php');
-                                                    }
-                                                    
-                                            ?>
+            <main>
+                <news>
+                    <div class="container-fluid" id="news">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="media1">
+                                <div class="media-body" >
+                                                <h4 class="media-heading" ><b>ผลการดำเนินการ</b>
+                                            </div>
                                         </div>
-                                    </div>
+                               
+                                <div class="media">
+                                    <div id="col">
+                                    <form class="form-inline" name="status" method="post" action="opresult.php" align="center">
+                                   
+                                   <div class="container" id="manager" >
+                                   <table class="table"   id="childs"  colspan="2">
+                                       
+                                            <tr>
+                                                <th>รหัสสวัสดิการ</th>
+                                                <th>ชื่อบุคลากร</th>
+                                                <th>ประเภทสวัสดิการ</th>
+                                                <th>จำนวนเงิน</th>
+                                                <th>ผลการอนุมัติ</th>
+                                                
+                                               
+                                            </tr>
 
+                                            <?php while($row = mysqli_fetch_array($result)) { 
+                                            ?>
+                                                <tr>
+                                                    <td align="center"><?php echo $row['pid'];?></td>
+                                                    
+                                                    <td align="center"><?php echo $row['namepn'];?></td>
+                                                   
+                                                    <td align="center"><?php echo $row['typebenefit'];?></td>
+                                                    
+                                                    <td align="center"><?php echo $row['cmoney'];?></td>
+                                                    
+                                                    <td align="center"><?php echo $row['actions'];?></td>
+                                                   
+                                                    
+                                                </tr>
+                                                <?php  
+                                                }
+                                                
+                                                mysqli_close($connect);
+                                                ?>
+</table>
+                                    
+                                        </div>
+                                       
+                                 </div>
+                                   <!--  </form> -->
+                                        <div class="media">
+                                            <div id="col"> <center>
+                                                <form name="line-notify" action="line-notify-api.php" method="post">
+                                                    <table  width="450" border="0" cellspacing="0" cellpadding="0">
+                                                        <tr><td colspan="2" align="center"><img src="images/line.png" width="10%" border="0"></td></tr>
+                                                        <tr><td colspan="2" height="10"></td></tr>
+                                                        <tr><td colspan="2" align="center"><font color="#0000ff"><b>ส่งข้อมูลติดต่อข้อสงสัย</b></font></td></tr>
+                                                        <tr><td colspan="2" height="10"></td></tr>
+                                                        <tr><td>ชื่อ:</td><td><input class="textInput" type="text" name="name" size="25" required></td></tr>
+                                                        <tr><td colspan="2" height="10"></td></tr>
+                                                        <tr><td>อีเมล์:</td><td><input class="textInput" type="text" name="email" size="25" required></td></tr>
+                                                        <tr><td colspan="2" height="10"></td></tr>
+                                                        <tr><td>โทรศัพท์:</td><td><input class="textInput" type="text" name="phone" size="25" required></td></tr>
+                                                        <tr><td colspan="2" height="10"></td></tr>
+                                                        <tr><td>LINE ID:</td><td><input class="textInput" type="text" name="lineid" size="25" required></td></tr>
+                                                        <tr><td colspan="2" height="10"></td></tr>
+                                                        <tr><td>ข้อความ:</td><td><textarea rows='5' name='mesg' cols='50' style='border: 1 solid #99FF00'></textarea>
+                                                        <tr><td colspan="2" height="10"></td></tr>
+                                                        <tr><td colspan=2 align="center"><input type="submit" name="submit" value=" ส่งข้อความ "></td></tr>
+                                                        <tr><td colspan="2" height="10"></td></tr>
+                                                    </table>
+                                                </form>  </center>
+                                                
+                                                <!--news2-->
+
+                                                
+                                                <!--news3-->
                             </div>
                         </div>
                     </div>
-                </div>  
-             </news>
-         </main>
+                </news>
+            </main>
 
-
+         
         </div>
 
     </div>
@@ -232,7 +297,5 @@
     </script>
 
 </body>
+
 </html>
-<!-- <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script> -->

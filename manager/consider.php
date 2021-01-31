@@ -12,6 +12,7 @@
     $sql = "SELECT * FROM benefittotal";
 
     $result = $connect->query($sql);
+
     
 ?>
 
@@ -72,10 +73,11 @@
                             สวัสดิการ
                     </a>
                     <ul class="collapse list-unstyled" id="WelSubmenu">
-                        <!-- <li><a href="#">เกณฑ์การใช้วสวัสดิการ</a></li> -->
+                        <!-- <li><a href="definewel.php">เกณฑ์การใช้วสวัสดิการ</a></li> -->
                         <li><a href="detailwel.php">รายละเอียดการใช้สวัสดิการ</a></li>
                         <li><a href="consider.php">พิจารณาการใช้สวัสดิการ</a></li>
-                        <!-- <li><a href="#">อนุมัติการใช้สวัสดิการ</a></li> -->
+                        <!-- <li><a href="opresult.php">ผลการดำเนินการ</a></li> -->
+                        <!-- <li><a href="approve.php">อนุมัติการใช้สวัสดิการ</a></li> -->
                         <!-- <li><a href="report.php">รายงานสรุปการใช้สวัสดิการ</a></li> -->
                     </ul>
                 </li>
@@ -86,14 +88,14 @@
                         คำร้องออนไลน์
                     </a>
                     <ul class="collapse list-unstyled" id="formSubmenu">
-                        <!-- <li><a href="#">คำร้องขอแก้ไขข้อมูลส่วนตัว</a></li>
+                        <li><a href="#">คำร้องขอแก้ไขข้อมูลส่วนตัว</a></li>
                         <li><a href="#">คำร้องขอลา</a></li>
-                        <li><a href="medexp.php">คำร้องสวัสดิการค่ารักษาพยาบาล</a></li>
+                       <!--  <li><a href="medexp.php">คำร้องสวัสดิการค่ารักษาพยาบาล</a></li>
                         <li><a href="comdevice.php">คำร้องสวัสดิการซื้ออุปกรณ์คอมพิวเตอร์</a></li>
                         <li><a href="profund.php">คำร้องสวัสดิการกองทุนสำรองเลี้ยงชีพ</a></li>
                         <li><a href="uniform.php">คำร้องขอยืมเงินเพื่อตัดชุดเครื่องแบบปกติขาว</a></li>
                         <li><a href="tuitionfee.php">คำร้องสวัสดิการเกี่ยวกับค่าเล่าเรียนบุตร</a></li> -->
-                        <!-- <li><a href="opresult.php">ติดตามผลคำร้อง</a></li> -->
+                        <li><a href="opresult.php">ติดตามผลคำร้อง</a></li>
                     </ul>
                 </li>
                 <li><a href="#"><i class="fa fa-check-square-o"></i>การประเมิน</a></li>
@@ -198,79 +200,39 @@
                                     </div>
                                 </div>
                        
-                            
-                                   <!-- <div class="media">
-                                            <div id="col">
-                                                <div class="header">
-                                                    รายการคำร้องขอการใช้สวัสดิการ
-                                                </div><br><br>
-                                                
-                                            </div> --> 
+                        
 
                                             <div class="media">
                                                 <div id="col">
                                                     <div class="header"><br><br> 
-                                            <?php
-                                                ini_set('display_errors', 1);
-                                                error_reporting(~0);
-
-                                                $strKeyword = null;
-
-                                                if(isset($_POST["txtKeyword"]))
-                                                {
-                                                    $strKeyword = $_POST["txtKeyword"];
-                                                }
-                                            ?>
+                                   
 
                                             
 
-                                        <form class="form-inline" name="frmSearch" method="post" action="<?php echo $_SERVER['SCRIPT_NAME'];?>" align="center">
-                                            <div class="form-group" align="center">
-                                                <div class="form-inline"  >                                    
-                                                    <label for="textsearch" >ประเภทสวัสดิการ</label>
-                                                    <input name="txtKeyword" type="text" id="txtKeyword" value="<?php echo $strKeyword;?>" class="form-control" >
-                                                        <button type="submit" class="btn btn-primary"  value="Search">
-                                                            <span class="glyphicon glyphicon-search"></span>
-                                                                    ค้นหา
-                                                        </button>
-                                                </div>
-                                            </div> 
-                                        </form>
 
                                         </div>
                                     </div>
                                 
-                                       <!--  <div class="media"> -->
+                                       
                                             <div id="col">
                                                 <div class="header">
                                                     รายการคำร้องขอการใช้สวัสดิการ
                                                 </div>
                                                 
                                             </div>
-                                   <!--  <div><br></div>     
-                        
-                            </div>
-                        </div> -->
+                           
                     
                         
 
                     
                     
                                         <div class="media">
-                                         <!--    <div id="col"> -->
+                                       
                                                 <div class="media-body" >
-                                                <!--  <div class="header">
-                                                        รายละเอียดสวัสดิการ
-                                                </div> <br><br> -->
+                                                
                                                 </div>  
                                             </div>
                                             
-                                            <!-- <div class="container" id="col2" >
-                                                        <label>วันที่อนุมัติ</label>
-                                                    
-                                                            <input type="date" class="form-control" id="input" name="name">
-                                                        
-                                                    </div> -->
                                                 <?php
 
                                                     $serverName = "localhost";
@@ -280,14 +242,15 @@
 
                                                     $conn = mysqli_connect($serverName,$userName,$userPassword,$dbName);;
                                                     
-                                                    $sql = "SELECT * FROM benefittotal WHERE typebenefit LIKE '%".$strKeyword."%' ";
+                                                    $sql = "SELECT * FROM benefittotal ";
 
                                                     $query = mysqli_query($conn,$sql);
 
                                                     ?>
-                                                    <form action="insertconsider.php" method="post">
+                                                       <form class="form-inline" name="status" method="post" action="consider.php" align="center">
+                                   
                                                     <div class="container" id="manager" >
-                                                    <table class="table"   id="chlids"  colspan="2">
+                                                    <table class="table"   id="childs"  colspan="2">
                                                         <tr>
                                                         
                                                           
@@ -304,18 +267,23 @@
                                                         <tr>
                                           
                                                             <td align="center"><?php echo $result['pid'];?></td>
+                                                            <?php
+                                                             
+                                                               
+                                                                ?>
                                                             <td align="center"><?php echo $result['namepn'];?></td>
                                                             <td align="center"><?php echo $result['typebenefit'];?></td>
                                                             <td align="center"><?php echo $result['cmoney'];?></td></td>
-                                                            <td align="center"><select name="actions" id="input" class="form-select" aria-label="Default select example">
-                                                                <option selected>โปรดเลือก</option>
-                                                                <option value="1">รอดำเนินการ</option>
-                                                                <option value="2">ผ่านการอนุมัติ</option>
-                                                                <option value="3">ไม่ผ่านการอนุมัติ</option>
+                                                            <td align="center"><select name=<?php echo $result["pid"];?> id=<?php echo $result["pid"];?> class="form-select" aria-label="Default select example">
+                                                                <option <?php echo $result['actions'];?>><?php echo $result['actions'];?></option>
+                                                                <option value="รอการพิจารณา">รอการพิจารณา</option>
+                                                                <option value="ผ่านการพิจารณา">ผ่านการพิจารณา</option>
+                                                                <option value="ไม่ผ่านพิจารณา">ไม่ผ่านพิจารณา</option>
                                                             </select></td>
                                                             
                                                             <?php
                                                             }
+                                                            
                                                             ?>
                                                             
                                                         
@@ -329,14 +297,17 @@
                                     </div> 
                                 </div>
                                 <br/><br/>
-                                </form>
-                                            <!--news2-->
+                                           <!--news2-->
                                                 <div align="right"  class="container">
-                                                        <input type="submit" class="btn btn-success"  value="บันทึก"  data-toggle="modal" data-target="#myModal" style=" font-family: 'Mitr', sans-serif;">
-                                                        
+                                                <Button  class="btn btn-success" value="บันทึก" data-toggle="modal" data-target="#myModal" onclick="up()" >
+                                                <span>บันทึก</span>
+                                                </Button>                   
+                                                    
+                                                       
+                                   </form>
+                                                      
                                                 </div> 
-                                                
-                            <!-- </form> -->
+                            
 
                                                 <!-- Modal -->
                                 <div class="modal fade" id="myModal" role="dialog">
@@ -382,8 +353,35 @@
                 $('#sidebar').toggleClass('active');
             });
         });
-    </script>
+       
+         
+            function up(){
+             <?php
+      
+              $serverName = "localhost";
+              $userName = "root";
+              $userPassword = "12345";
+              $dbName = "benefit";
 
+              $conn = mysqli_connect($serverName,$userName,$userPassword,$dbName);;
+              
+              $sql = "SELECT * FROM benefittotal ";
+
+              $query = mysqli_query($conn,$sql);
+              while($result=mysqli_fetch_array($query,MYSQLI_ASSOC)){
+
+                  $sum = $result['pid'];
+                $s=$_POST[$sum] ;
+                $sql1 = "UPDATE benefittotal SET actions='".$s."' WHERE pid='". $sum."'";
+               $query1 = mysqli_query($conn,$sql1);
+                
+              }
+                ?>
+               
+            }
+            
+
+        </script>
 </body>
 
 </html>

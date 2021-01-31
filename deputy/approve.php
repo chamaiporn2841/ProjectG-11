@@ -1,5 +1,24 @@
+<?php 
+    // Create connection
+    $connect = new mysqli('localhost', 'root', '12345', 'benefit');
+    
+    // Check Connection
+
+    if ($connect->connect_error) {
+        die("Something wrong.: " . $connect->connect_error);
+      }
+
+      
+    $sql = "SELECT * FROM benefittotal";
+
+    $result = $connect->query($sql);
+
+    
+?>
+
 <!DOCTYPE html>
 <html>
+
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -54,9 +73,9 @@
                             สวัสดิการ
                     </a>
                     <ul class="collapse list-unstyled" id="WelSubmenu">
-                       <!--  <li><a href="#">เกณฑ์การใช้วสวัสดิการ</a></li> -->
+                       <!--  <li><a href="definewel.php">เกณฑ์การใช้วสวัสดิการ</a></li> -->
                         <li><a href="detailwel.php">รายละเอียดการใช้สวัสดิการ</a></li>
-                       <!--  <li><a href="#">พิจารณาการใช้สวัสดิการ</a></li> -->
+                        <!-- <li><a href="#">พิจารณาการใช้สวัสดิการ</a></li> -->
                         <li><a href="approve.php">อนุมัติการใช้สวัสดิการ</a></li>
                         <li><a href="report.php">รายงานสรุปการใช้สวัสดิการ</a></li>
                     </ul>
@@ -68,14 +87,14 @@
                         คำร้องออนไลน์
                     </a>
                     <ul class="collapse list-unstyled" id="formSubmenu">
-                        <!-- <li><a href="">คำร้องขอแก้ไขข้อมูลส่วนตัว</a></li>
+                        <li><a href="#">คำร้องขอแก้ไขข้อมูลส่วนตัว</a></li>
                         <li><a href="#">คำร้องขอลา</a></li>
-                        <li><a href="medexp.php">คำร้องสวัสดิการค่ารักษาพยาบาล</a></li>
+                       <!--  <li><a href="medexp.php">คำร้องสวัสดิการค่ารักษาพยาบาล</a></li>
                         <li><a href="comdevice.php">คำร้องสวัสดิการซื้ออุปกรณ์คอมพิวเตอร์</a></li>
                         <li><a href="profund.php">คำร้องสวัสดิการกองทุนสำรองเลี้ยงชีพ</a></li>
                         <li><a href="uniform.php">คำร้องขอยืมเงินเพื่อตัดชุดเครื่องแบบปกติขาว</a></li>
                         <li><a href="tuitionfee.php">คำร้องสวัสดิการเกี่ยวกับค่าเล่าเรียนบุตร</a></li> -->
-                        <!-- <li><a href="#">ติดตามผลคำร้อง</a></li> -->
+                        <li><a href="#">ติดตามผลคำร้อง</a></li>
                     </ul>
                 </li>
                 <li><a href="#"><i class="fa fa-check-square-o"></i>การประเมิน</a></li>
@@ -147,11 +166,11 @@
                                 <div class="col-12 col-md-4" id="usermenu">
                                     <div class="btn-group" style="float: right;">
                                         <button type="button" class="btn btn-secondary" style="padding: 16px;"
-                                            id="user_name">ผศ. ดร.ธรา อั่งสกุล</button>
+                                            id="user_name">xxxxx  xxxxxx</button>
                                         <button type="button"
                                             class="btn btn-secondary dropdown-toggle dropdown-toggle-split"
                                             data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                            <img src="images/user2.jpg" height="40px" style="border-radius: 50%;" />
+                                            <img src="images/admin.png" height="40px" style="border-radius: 50%;" />
                                         </button>
                                         <div class="dropdown-menu dropdown-menu-right">
                                             <a class="dropdown-item" sty href="#">เปลี่ยนรหัสผ่าน</a>
@@ -174,56 +193,139 @@
                     <div class="container-fluid" id="news">
                         <div class="row">
                             <div class="col-md-12">
-                            <div class="media1">
-                                            <div class="media-body">
-                                                <h4 class="media-heading"><b>อนุมัติการใช้สวัสดิการ</b>
-                                            </div>
-                                        </div> 
-                                        <!-- <div class="container" id="col2">
-                                            <label>วันที่ทำการ</label>
-                                           
-                                                <input type="date" class="form-control" id="input" name="member">
-                                            
-                                        </div> -->
-                                        <div class="media">
+                                <div class="media1">
+                                    <div class="media-body" >
+                                        <h4 class="media-heading" ><b>อนุมัติการใช้สวัสดิการ</b>
+                                    </div>
+                                </div>
+                       
+                            
+                                  
+
+                                            <div class="media">
                                                 <div id="col">
                                                     <div class="header"><br><br> 
-                                        <div class="container" id="chlids" >        
-                                        <table class="table" colspan="2">
+                               
+
                                             
-                                            <tr>
-                                                    <th>รหัสบุคลากร</th>   
+
+                                       
+
+                                        </div>
+                                    </div>
+                                
+                                            <div id="col">
+                                                <div class="header">
+                                                    รายการคำร้องขอการใช้สวัสดิการ
+                                                </div>
+                                                
+                                            </div>
+                             
+                    
+                        
+
+                    
+                    
+                                        <div class="media">
+                                        
+                                                <div class="media-body" >
+                                             
+                                                </div>  
+                                            </div>
+                                            
+                                            
+                                                <?php
+
+                                                    $serverName = "localhost";
+                                                    $userName = "root";
+                                                    $userPassword = "12345";
+                                                    $dbName = "benefit";
+
+                                                    $conn = mysqli_connect($serverName,$userName,$userPassword,$dbName);;
+                                                    
+                                                    $sql = "SELECT * FROM benefittotal";
+
+                                                    $query = mysqli_query($conn,$sql);
+
+                                                    ?>
+                                                       <form class="form-inline" name="status" method="post" action="approve.php" align="center">
+                                   
+                                                    <div class="container" id="manager" >
+                                                    <table class="table"   id="childs"  colspan="2">
+                                                        <tr>
+                                                        
+                                                          
+                                                            <th>รหัสบุคลากร</th>   
                                                             <th>ชื่อบุคลากร</th>                                        
                                                             <th>ประเภทสวัสดิการ</th>
                                                             <th>จำนวนเงิน</th>
                                                             <th>ผลการอนุมัติ</th>
+                                                        </tr>
+                        
+                                                        <?php while($result=mysqli_fetch_array($query,MYSQLI_ASSOC))
+                                                        {
+                                                        ?>
+                                                        <tr>
+                                          
+                                                            <td align="center"><?php echo $result['pid'];?></td>
+                                                            <?php
+                                                             
+                                                               
+                                                                ?>
+                                                            <td align="center"><?php echo $result['namepn'];?></td>
+                                                            <td align="center"><?php echo $result['typebenefit'];?></td>
+                                                            <td align="center"><?php echo $result['cmoney'];?></td></td>
+                                                            <td align="center"><select name=<?php echo $result["pid"];?> id=<?php echo $result["pid"];?> class="form-select" aria-label="Default select example">
+                                                                <option <?php echo $result['actions'];?>><?php echo $result['actions'];?></option>
+                                                                <option value="ผ่านการอนุมัติ">ผ่านการอนุมัติ</option>
+                                                                <option value="ไม่ผ่านการอนุมัติ">ไม่ผ่านการอนุมัติ</option>
+                                                            </select></td>
+                                                        
+                                                            <?php
+                                                            }
+                                                            
+                                                            ?>
+                                                            
+                                                        
+                                                            </tr>
+                                                    </table>
+                                                        <?php mysqli_close($conn); ?>   
+                                                </div>  
+                                            </div> 
                                             
-                                            </tr>
-
-                                            <tr>
-                                                <td align="center"></td>
-                                                <td align="center"></td>
-                                                <td align="center"></td>
-                                                <td align="center"></td>
-                                                <td align="center"></td>
-                                                
-                                                
-                                            </tr>
-                                            
-                                        </table>
-                                        </div>
-                                        </div></br></br>
-                                        </div></br></br>
-                                        </div></br></br>
-                                <!--news2-->
-                                    <div align="right"  class="container">
-                                            <input type="submit" class="btn btn-success" value="บันทึก" style=" font-family: 'Mitr', sans-serif;">
-                                            <!-- <input type="reset" class="btn" VALUE="ล้างข้อมูล" style=" font-family: 'Mitr', sans-serif;" > -->
                                         </div> 
-                                            </div>
-                                       <!--  </div> -->
+                                    </div> 
+                                </div>
+                                <br/><br/>
+                                           <!--news2-->
+                                                <div align="right"  class="container">
+                                                <Button  class="btn btn-success" value="บันทึก" data-toggle="modal" data-target="#myModal" onclick="add()" >
+                                                <span>บันทึก</span>
+                                                </Button>       
+                                   </form>
+                                                      
+                                                </div> 
+                                                
+           
+
+                                                <!-- Modal -->
+                                <div class="modal fade" id="myModal" role="dialog">
+                                    <div class="modal-dialog modal-sm">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                        <h4 class="modal-title">แจ้งเตือนระบบ</h4>
+                                        </div>
+                                        <div class="modal-body">
+                                        <p>บันทึกข้อมูลสำเร็จ</p>
+                                        </div>
+                                        <div class="modal-footer">
+                                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                                        </div>
+                                    </div>
+                                    </div>
+                                </div>
                                 <!--news3-->
-                            </div>
                             </div>
                         </div>
                     </div>
@@ -250,14 +352,33 @@
                 $('#sidebar').toggleClass('active');
             });
         });
-    </script>
+      function add(){
+             <?php
+      
+              $serverName = "localhost";
+              $userName = "root";
+              $userPassword = "12345";
+              $dbName = "benefit";
 
-</body>
+              $conn = mysqli_connect($serverName,$userName,$userPassword,$dbName);;
+              
+              $sql = "SELECT * FROM benefittotal ";
 
-</html>
+              $query = mysqli_query($conn,$sql);
+              while($result=mysqli_fetch_array($query,MYSQLI_ASSOC)){
 
+                  $sum = $result['pid'];
+                $p=$_POST[$sum] ;
+                $sql3 = "UPDATE benefittotal SET actions='".$p."' WHERE pid='". $sum."'";
+               $query3 = mysqli_query($conn,$sql3);
+                
+              }
+                ?>
+               
+            }
+            
 
-
+        </script>
 </body>
 
 </html>
