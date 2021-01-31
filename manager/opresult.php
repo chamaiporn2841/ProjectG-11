@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>ระบบบริหารทรัพยากรบุคคล สำนักเทคโนโลยีดิจิทัล</title>
+    <!-- Favicon -->
+    <link rel="shortcut icon" type="image/icon" href="images/favicon.ico" />
+    <!-- Bootstrap CSS CDN -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <!--Font Awesome-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Our Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="font.css">
+    <link rel="stylesheet" href="news-slider.css">
+    <!-- Script -->
+    <!-- jQuery CDN -->
+    <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+    <!-- Bootstrap Js CDN -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+
+    <div class="wrapper">
+        <!-- Sidebar Holder -->
+        <nav id="sidebar">
+            <div class="sidebar-header">
+                <img src="images/sut_logo_white.png" height="50px" />
+                <img src="images/DigiTech_Logo-white.png" height="40px" />
+            </div>
+
+            <ul class="list-unstyled components">
+                <li class="active"><a href="#"><i class="fa fa-home"></i>หน้าหลัก</a></li>
+
+                <li><a href="#"><i class="fa fa-id-card"></i>ข้อมูลบุคลากร</a></li>
+
+                <li>
+                    <a href="#learningSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">
+                        <i class="fa fa-book"></i>
+                        การจัดการการเรียนรู้
+                    </a>
+                    <ul class="collapse list-unstyled" id="learningSubmenu">
+                        <li><a href="#">บทเรียนทั้งหมด</a></li>
+                        <li><a href="#">บทเรียนที่ลงทะเบียนแล้ว</a></li>
+                    </ul>
+                </li>
+
+                <li>
+                    <a href="#WelSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">
+                            <i class="fa fa-gift"></i>
+                            สวัสดิการ
+                    </a>
+                    <ul class="collapse list-unstyled" id="WelSubmenu">
+                        <!-- <li><a href="#">เกณฑ์การใช้วสวัสดิการ</a></li> -->
+                        <li><a href="detailwel.php">รายละเอียดการใช้สวัสดิการ</a></li>
+                        <li><a href="consider.php">พิจารณาการใช้สวัสดิการ</a></li>
+                        <!-- <li><a href="#">อนุมัติการใช้สวัสดิการ</a></li> -->
+                        <!-- <li><a href="report.php">รายงานสรุปการใช้สวัสดิการ</a></li> -->
+                    </ul>
+                </li>
+
+                <li>
+                    <a href="#formSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">
+                        <i class="fa fa-pencil-square-o"></i>
+                        คำร้องออนไลน์
+                    </a>
+                    <ul class="collapse list-unstyled" id="formSubmenu">
+                       <!--  <li><a href="">คำร้องขอแก้ไขข้อมูลส่วนตัว</a></li>
+                        <li><a href="#">คำร้องขอลา</a></li>
+                        <li><a href="medexp.php">คำร้องสวัสดิการค่ารักษาพยาบาล</a></li>
+                        <li><a href="comdevice.php">คำร้องสวัสดิการซื้ออุปกรณ์คอมพิวเตอร์</a></li>
+                        <li><a href="profund.php">คำร้องสวัสดิการกองทุนสำรองเลี้ยงชีพ</a></li>
+                        <li><a href="uniform.php">คำร้องขอยืมเงินเพื่อตัดชุดเครื่องแบบปกติขาว</a></li>
+                        <li><a href="tuitionfee.php">คำร้องสวัสดิการเกี่ยวกับค่าเล่าเรียนบุตร</a></li> -->
+                        <li><a href="opresult.php">ติดตามผลคำร้อง</a></li>
+                    </ul>
+                </li>
+                <li><a href="#"><i class="fa fa-check-square-o"></i>การประเมิน</a></li>
+                <li><a href="#"><i class="fa fa-handshake-o"></i>กิจกรรมสร้างความสัมพันธ์</a></li>
+                <li><a href="#"><i class="fa fa-calendar"></i>ตารางกิจกรรม</a></li>
+                
+                <li>
+                    <a href="#reportSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">
+                        <i class="fa fa-bar-chart"></i>
+                        รายงาน
+                    </a>
+                    <ul class="collapse list-unstyled" id="reportSubmenu">
+                        <li><a href="indexchart.php">Dashboard</a></li>
+                        <li><a href="#">รายงานเวลาทำงาน</a></li>
+                    </ul>
+                </li>
+
+                <li>
+                    <a href="#infocenterSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">
+                        <i class="fa fa-info-circle"></i>
+                        สาระน่ารู้
+                    </a>
+                    <ul class="collapse list-unstyled" id="infocenterSubmenu">
+                        <li><a href="#">คู่มือบุคลากร</a></li>
+                        <li><a href="#">คู่มือการใช้งานระบบ</a></li>
+                        <li><a href="#">เกร็ดความรู้</a></li>
+                    </ul>
+                </li>
+
+                <li><a href="#"><i class="fa fa-question-circle"></i>FA&Q ถาม-ตอบ บ่อย</a></li>
+            </ul>
+
+        </nav>
+
+        <!-- Page Content Holder -->
+        <div id="content">
+
+            <nav class="navbar navbar-default">
+                <div class="container-fluid">
+
+                    <div class="navbar-header">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-12 col-md-4" id="togglenav">
+                                    <button type="button" id="sidebarCollapse" class="btn btn-primary navbar-btn">
+                                        <i class="fa fa-bars"></i>
+                                    </button>
+                                </div>
+
+                                <div class="col-12 col-md-4" id="datetime">
+                                    <?php
+                                    include("dateandtime.php");
+                                    
+                                    function thai_date($time){
+                                        global $thai_day_arr,$thai_month_arr;
+                                        $thai_date_return="วัน ".$thai_day_arr[date("w",$time)];
+                                        $thai_date_return.= " ที่ ".date("j",$time);
+                                        $thai_date_return.=" ".$thai_month_arr[date("n",$time)];
+                                        $thai_date_return.= "  ".(date("Y",$time)+543);
+                                        $thai_date_return.= "  เวลา".date(" H:i",$time)." น.";
+                                        return $thai_date_return;
+                                    }
+
+                                    $eng_date=time(); // แสดงวันที่ปัจจุบัน
+                                    echo thai_date($eng_date);
+                                ?>
+                                </div>
+
+                                <div class="col-12 col-md-4" id="usermenu">
+                                    <div class="btn-group" style="float: right;">
+                                        <button type="button" class="btn btn-secondary" style="padding: 16px;"
+                                            id="user_name">xxxxx  xxxxxx</button>
+                                        <button type="button"
+                                            class="btn btn-secondary dropdown-toggle dropdown-toggle-split"
+                                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                            <img src="images/admin.png" height="40px" style="border-radius: 50%;" />
+                                        </button>
+                                        <div class="dropdown-menu dropdown-menu-right">
+                                            <a class="dropdown-item" sty href="#">เปลี่ยนรหัสผ่าน</a>
+                                            <div class="dropdown-divider"></div>
+                                            <a class="dropdown-item" href="#">ออกจากระบบ</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+            </nav>
+
+            <main>
+                <news>
+                    <div class="container-fluid" id="news">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="media1">
+                                <div class="media-body" >
+                                                <h4 class="media-heading" ><b>ผลการดำเนินการ</b>
+                                            </div>
+                                        </div>
+                               
+                                        <div class="media">
+                                            <div id="col">
+                                                <table  class="table">
+                                                <div class="container" id="chlids">  
+                                                <br><br> 
+
+                                                <table  class="table">
+                                            <tr>
+                                                <th>รหัสบุคลากร</th>
+                                                <th>ชื่อบุคลากร</th>
+                                                <th>ประเภทสวัสดิการ</th>
+                                                <th>จำนวนเงิน</th>
+                                                <th>ผลการอนุมัติ</th>
+                                                
+                                                
+                                            </tr>
+                                            
+                                            <tr>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td> 
+                                            </tr>
+                                          
+                                        </table><br><br><br><br><br><br><br><br><br><br>
+                                        </div>
+                                       
+                                        </div>
+
+                                    
+                                        
+                                    <form name="line-notify" action="line-notify-api.php" method="post">
+                                        <div class="media" style="padding-bottom: 20px;">
+                                            <div class="header">
+                                                ติดต่อสอบถาม
+                                            </div><br><br>
+
+
+                                            <table >
+                                        <thead>
+                                        <tr>
+                                            <th>ชื่อ</th>
+                                            <th>อีเมล์</th>
+                                        </tr>
+                                        </thead>
+                                        <tbody>
+                                        <tr>
+                                            <td>
+                                                <input class="form-control" type="text" name="name"  size="1" style="width: 390px;" required>
+                                            </td>
+                                            <td>
+                                                <input class="form-control" type="text" name="email"  size="1" style="width: 390px;" required>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th>โทรศัพท์</th>
+                                            <th>LINE ID</th>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <input class="form-control" type="text" name="phone" size="1" style="width: 390px;" required>
+                                            </td>
+                                            <td>
+                                                <input class="form-control" type="text" name="lineid" size="1" style="width: 390px;" required>
+                                            </td>
+                                         </tr>
+                                        <tr>
+                                            <th>ข้อความ</th>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <textarea name="mesg" id="input" style="width:80%;height: 300px;" ></textarea>
+                                                
+                                            </td>
+                                        </tr>
+                                        <tr><td colspan=2 align="center"><input type="submit" name="submit" value=" ส่งข้อความ "></td></tr>
+                                        </tbody>
+                                    </table>                
+                                </div> 
+
+
+                                <div class="modal fade" id="myModal" role="dialog">
+                                    <div class="modal-dialog modal-sm">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                        <h4 class="modal-title">แจ้งเตือนระบบ</h4>
+                                        </div>
+                                        <div class="modal-body">
+                                        <p>บันทึกข้อมูลสำเร็จ</p>
+                                        </div>
+                                        <div class="modal-footer">
+                                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                                        </div>
+                                    </div>
+                                    </div>
+                                </div>
+
+                                           <!--  <div id="col"> <center>
+                                                <form name="line-notify" action="line-notify-api.php" method="post">
+                                                    <table  width="450" border="0" cellspacing="0" cellpadding="0">
+                                                        <tr><td colspan="2" height="10"></td></tr>                                                      
+                                                        <tr><td colspan="2" height="10"></td></tr>
+                                                        <tr><td>ชื่อ:</td><td><input class="textInput" type="text" name="name" size="25" required></td></tr>
+                                                        <tr><td colspan="2" height="10"></td></tr>
+                                                        <tr><td>อีเมล์:</td><td><input class="textInput" type="text" name="email" size="25" required></td></tr>
+                                                        <tr><td colspan="2" height="10"></td></tr>
+                                                        <tr><td>โทรศัพท์:</td><td><input class="textInput" type="text" name="phone" size="25" required></td></tr>
+                                                        <tr><td colspan="2" height="10"></td></tr>
+                                                        <tr><td>LINE ID:</td><td><input class="textInput" type="text" name="lineid" size="25" required></td></tr>
+                                                        <tr><td colspan="2" height="10"></td></tr>
+                                                        <tr><td>ข้อความ:</td><td><textarea rows='5' name='mesg' cols='50' style='border: 1 solid #99FF00'></textarea>
+                                                        <tr><td colspan="2" height="10"></td></tr>
+                                                        <tr><td colspan=2 align="center"><input type="submit" name="submit" value=" ส่งข้อความ "></td></tr>
+                                                        <tr><td colspan="2" height="10"></td></tr>
+                                                    </table>
+                                                </form>  </center> -->
+                                                
+                                                <!--news2-->
+
+                                                
+                                                <!--news3-->
+                            </div>
+                        </div>
+                    </div>
+                </news>
+            </main>
+
+         
+        </div>
+
+    </div>
+
+    <footer class="bg-light text-center text-lg-start">
+        <!-- Copyright -->
+        <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2)">
+            © 2020 Copyright:
+            <a class="text-dark" href="https://mdbootstrap.com/">MDBootstrap.com</a>
+        </div>
+        <!-- Copyright -->
+    </footer>
+
+    <script type="text/javascript">
+        $(document).ready(function() {
+            $('#sidebarCollapse').on('click', function() {
+                $('#sidebar').toggleClass('active');
+            });
+        });
+    </script>
+
+</body>
+
+</html>
