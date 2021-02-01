@@ -219,13 +219,13 @@
                           <label>รายละเอียดสวัสดิการ</label> -->
                           <!-- <div><br> -->
                          
-                            <div class="media" padding:30px;>
+                            <div class="media" style="padding: 50px;">
                             
                             <h6> <?php while($row = $result->fetch_assoc()): 
                               $TEXT= str_replace("\n", "<br>\n", $row['requirement_text']);?>
-                                <div><?php echo $row['requirement_type']; ?></div>
+                                <div class="text_1"><?php echo $row['requirement_type']; ?></div>
                                 <!-- <div><?php echo $row['requirement_date']; ?></div> -->
-                                <p><div><?php echo $TEXT; ?></div></p></br></br>
+                                <p><div class="text_2" ><?php echo $TEXT; ?></div></p></br></br>
 
                                 <?php endwhile ?>
                             </div><br>

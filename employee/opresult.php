@@ -30,7 +30,7 @@
     <!--Font Awesome-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <!-- Our Custom CSS -->
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style_op.css">
     <link rel="stylesheet" href="font.css">
     <link rel="stylesheet" href="news-slider.css">
     <!-- Script -->
