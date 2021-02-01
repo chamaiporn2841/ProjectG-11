@@ -300,7 +300,7 @@
                                    <!--  </form> -->
                                    <form name="line-notify" action="line-notify-api.php" method="post">
                                         <div class="media" style="padding-bottom: 20px;padding-left: 40px;padding-right: 40px;padding-top: 20px;">
-                                            <div class="header">
+                                            <div class="header"><img src="images/line1.png" width="5%" border="0">
                                                 ติดต่อสอบถาม
                                             </div><br><br>
 
@@ -348,7 +348,7 @@
                                                 
                                             </td>
                                         </tr>
-                                        <tr><td colspan=2 align="center"><input type="submit" name="submit" value=" ส่งข้อความ "></td></tr>
+                                        <tr><td colspan=2 align="center"><input type="submit" name="submit" value=" ส่งข้อความ " class="btn btn-primary"></td></tr>
                                         </tbody>
                                     </table>
                                     </form>                
