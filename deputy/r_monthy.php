@@ -3,7 +3,7 @@
         <div class="col-md-12">
             <?php
             $query = "
-            SELECT cmoney, SUM(cmoney) AS totol, DATE_FORMAT(datesave, '%M-%Y') AS datesave
+            SELECT cmoney, SUM(cmoney) AS totol, DATE_FORMAT(datesave, '%M %Y') AS datesave
             FROM benefittotal
             GROUP BY DATE_FORMAT(datesave, '%m%')
             ORDER BY DATE_FORMAT(datesave, '%Y-%m-%d') DESC
@@ -86,7 +86,7 @@
                     
                     <?php while($row = mysqli_fetch_array($result)) { ?>
                     <tr>
-                        <td> -<?php echo $row['datesave'];?></td>
+                        <td> <?php echo $row['datesave'];?></td>
                         <td align="right"><?php echo number_format($row['totol'],2);?></td>
                     </tr>
                     <?php
