@@ -166,11 +166,11 @@
                                 <div class="col-12 col-md-4" id="usermenu">
                                     <div class="btn-group" style="float: right;">
                                         <button type="button" class="btn btn-secondary" style="padding: 16px;"
-                                            id="user_name">xxxxx  xxxxxx</button>
+                                            id="user_name">ผศ. ดร.ธรา อั่งสกุล</button>
                                         <button type="button"
                                             class="btn btn-secondary dropdown-toggle dropdown-toggle-split"
                                             data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                            <img src="images/admin.png" height="40px" style="border-radius: 50%;" />
+                                            <img src="images/user2.jpg" height="40px" style="border-radius: 50%;" />
                                         </button>
                                         <div class="dropdown-menu dropdown-menu-right">
                                             <a class="dropdown-item" sty href="#">เปลี่ยนรหัสผ่าน</a>
@@ -204,7 +204,7 @@
 
                                             <div class="media">
                                                 <div id="col">
-                                                    <div class="header"><br>
+                                                    <div class="header">
                                                     รายการคำร้องขอการใช้สวัสดิการ
 
                                         </div>
@@ -238,7 +238,7 @@
                                                     $query = mysqli_query($conn,$sql);
 
                                                     ?>
-                                                       <form class="form-inline" name="status" method="post" action="approve.php" align="center">
+                                                       <form class="form-inline" name="status" method="post" action="approve.php" align="center" >
                                    
                                                     <div class="container" id="manager" >
                                                     <table class="table"   id="chlids"  colspan="2">
@@ -291,10 +291,12 @@
                                                 <div align="right"  class="container">
                                                 <Button  class="btn btn-success" value="บันทึก" data-toggle="modal" data-target="#myModal" onclick="add()" >
                                                 <span>บันทึก</span>
-                                                </Button>       
+                                                </Button>
+                                                       
                                    </form>
+                                   
                                                       
-                                                </div> 
+                                                </div> <br>
                                                 
            
 

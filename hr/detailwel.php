@@ -165,11 +165,11 @@
                   <div class="col-12 col-md-4" id="usermenu">
                                     <div class="btn-group" style="float: right;">
                                         <button type="button" class="btn btn-secondary" style="padding: 16px;"
-                                            id="user_name">xxxxx  xxxxxx</button>
+                                            id="user_name">ณัฐภา อินทร์อิ่ม</button>
                                         <button type="button"
                                             class="btn btn-secondary dropdown-toggle dropdown-toggle-split"
                                             data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                            <img src="images/admin.png" height="40px" style="border-radius: 50%;" />
+                                            <img src="images/user2.jpg" height="40px" style="border-radius: 50%;" />
                                         </button>
                                         <div class="dropdown-menu dropdown-menu-right">
                                             <a class="dropdown-item" sty href="#">เปลี่ยนรหัสผ่าน</a>
@@ -218,11 +218,11 @@
                          
                             <div class="media" padding:30px;>
                             
-                            <h6> <?php while($row = $result->fetch_assoc()): 
-                              $TEXT= str_replace("\n", "<br>\n", $row['requirement_text']);?>
-                                <div><?php echo $row['requirement_type']; ?></div>
+                            <h6> <?php while($row = $result->fetch_assoc()): ?>
+                        
+                                <div><?php echo $row['requirement_type']; ?></div><br>
                                 <!-- <div><?php echo $row['requirement_date']; ?></div> -->
-                                <p><div><?php echo $TEXT; ?></div></p></br></br>
+                                <p><div><?php echo $row['requirement_text']; ?></div></p></br></br>
 
                                 <?php endwhile ?>
                             </div><br>

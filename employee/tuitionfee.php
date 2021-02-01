@@ -57,7 +57,7 @@
                     <ul class="collapse list-unstyled" id="WelSubmenu">
                        <!--  <li><a href="#">เกณฑ์การใช้วสวัสดิการ</a></li> -->
                         <li><a href="detailwel.php">รายละเอียดการใช้สวัสดิการ</a></li>
-                        <li><a href="opresult.php">ผลการดำนำเนินการ</a></li>
+                        <li><a href="opresult.php">ผลการดำเนินการ</a></li>
 
                         <!-- <li><a href="#">พิจารณาการใช้สวัสดิการ</a></li>
                         <li><a href="#">อนุมัติการใช้สวัสดิการ</a></li>
@@ -150,11 +150,11 @@
                                 <div class="col-12 col-md-4" id="usermenu">
                                     <div class="btn-group" style="float: right;">
                                         <button type="button" class="btn btn-secondary" style="padding: 16px;"
-                                            id="user_name">xxxxx  xxxxxx</button>
+                                            id="user_name">ฐศุภรดา วิเชียรธปภา</button>
                                         <button type="button"
                                             class="btn btn-secondary dropdown-toggle dropdown-toggle-split"
                                             data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                            <img src="images/admin.png" height="40px" style="border-radius: 50%;" />
+                                            <img src="images/user2.jpg" height="40px" style="border-radius: 50%;" />
                                         </button>
                                         <div class="dropdown-menu dropdown-menu-right">
                                             <a class="dropdown-item" sty href="#">เปลี่ยนรหัสผ่าน</a>
@@ -186,7 +186,7 @@
                                     </div>
                                 </div> 
 
-                                <div class="media" style="padding-bottom: 20px;">
+                                <div class="media" style="padding-bottom: 20px;padding-left: 40px;padding-right: 40px;padding-top: 20px;">
                                         <div class="header">
                                             ข้อมูลส่วนตัว
                                         </div> 
@@ -217,10 +217,9 @@
                                             </td>
                                         </tr>
                                         <tr>
-                                            <td>ประเภทบุคลากร</td>
-                                            <td>ชื่อคู่สมรส</td>
-                                            <td>ขอใช้สิทธิเนื่องจาก</td>
-                                            <td></td>
+                                            <th>ประเภทบุคลากร</th>
+                                            <th>ชื่อคู่สมรส</th>
+                                            <th>ขอใช้สิทธิเนื่องจาก</th>
                                         </tr>
                                         <td>
                                             <select name="category" id="category">
@@ -242,7 +241,7 @@
                                             </select>
                                         </td>
                                         <tr>
-                                            <td>ประเภทสวัสดิการ</td>
+                                            <th>ประเภทสวัสดิการ</th>
                                         </tr>
                                         <tr>
                                             <td>
@@ -255,7 +254,7 @@
                                     </table>
                                 </div>
 
-                                <div class="media" style="padding-bottom: 20px;">
+                                <div class="media" style="padding-bottom: 20px;padding-left: 40px;padding-right: 40px;padding-top: 20px;">
                                         <div class="header">
                                             ขอเบิกเงินการศึกษาของบุตร
                                         </div>  
@@ -280,7 +279,7 @@
                                     </table>
                                 </div>    
                                                 
-                                <div class="media" style="padding-bottom: 20px;">
+                                <div class="media" style="padding-bottom: 20px;padding-left: 40px;padding-right: 40px;padding-top: 20px;">
                                         <div class="header">
                                             รายละเอียดของบุตร
                                         </div>  
@@ -310,9 +309,9 @@
                                                 </select>
                                             </td>  
                                         <tr>
-                                            <td>สถานศึกษา</td>
-                                            <td>อำเภอ</td>
-                                            <td>ชั้นปีที่ศึกษา</td>
+                                            <th>สถานศึกษา</th>
+                                            <th>อำเภอ</th>
+                                            <th>ชั้นปีที่ศึกษา</th>
                                         </tr> 
                                         </thead>
                                         <tbody>
@@ -334,7 +333,7 @@
                                                 </select>
                                             </td>
                                         <tr>
-                                            <td>จำนวนเงิน</td>
+                                            <th>จำนวนเงิน</th>
                                         </tr>
                                         <tr>
                                             <td>
@@ -345,7 +344,7 @@
                                     </table>
                                 </div>
 
-                                <div class="media" style="padding-bottom: 20px;">
+                                <div class="media" style="padding-bottom: 20px;padding-left: 40px;padding-right: 40px;padding-top: 20px;">
                                         <div class="header">
                                             รายละเอียดการรับเงิน
                                         </div>  

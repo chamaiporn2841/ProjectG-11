@@ -57,7 +57,7 @@
                     <ul class="collapse list-unstyled" id="WelSubmenu">
                     <!-- <li><a href="#">เกณฑ์การใช้วสวัสดิการ</a></li> -->
                         <li><a href="detailwel.php">รายละเอียดการใช้สวัสดิการ</a></li>
-                        <li><a href="opresult.php">ผลการดำนำเนินการ</a></li>
+                        <li><a href="opresult.php">ผลการดำเนินการ</a></li>
                         <!-- <li><a href="#">พิจารณาการใช้สวัสดิการ</a></li> -->
                         <!-- <li><a href="#">อนุมัติการใช้สวัสดิการ</a></li>
                         <li><a href="#">รายงานสรุปการใช้สวัสดิการ</a></li> -->
@@ -149,11 +149,11 @@
                                 <div class="col-12 col-md-4" id="usermenu">
                                     <div class="btn-group" style="float: right;">
                                         <button type="button" class="btn btn-secondary" style="padding: 16px;"
-                                            id="user_name">xxxxx  xxxxxx</button>
+                                            id="user_name">ฐศุภรดา วิเชียรธปภา</button>
                                         <button type="button"
                                             class="btn btn-secondary dropdown-toggle dropdown-toggle-split"
                                             data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                            <img src="images/admin.png" height="40px" style="border-radius: 50%;" />
+                                            <img src="images/user2.jpg" height="40px" style="border-radius: 50%;" />
                                         </button>
                                         <div class="dropdown-menu dropdown-menu-right">
                                             <a class="dropdown-item" sty href="#">เปลี่ยนรหัสผ่าน</a>
@@ -185,7 +185,7 @@
                                         </div>
                                     </div>
 
-                                <div class="media" style="padding-bottom: 20px;">
+                                <div class="media" style="padding-bottom: 20px;padding-left: 40px;padding-right: 40px;padding-top: 20px;">
                                         <div class="header">
                                             ข้อมูลส่วนตัว
                                         </div>  
@@ -216,9 +216,9 @@
                                             </td>
                                         </tr>
                                         <tr>
-                                            <td>ประเภทบุคลากร</td>
-                                            <td>ประเภทสวัสดิการ</td>
-                                            <td></td>
+                                            <th>ประเภทบุคลากร</th>
+                                            <th>ประเภทสวัสดิการ</th>
+                                            <th></th>
                                         </tr>
                                         <tr>
                                             <td>
@@ -241,7 +241,7 @@
                                     </table>                
                                 </div> 
                               
-                                <div class="media" style="padding-bottom: 20px;">
+                                <div class="media" style="padding-bottom: 20px;padding-left: 40px;padding-right: 40px;padding-top: 20px;">
                                         <div class="header">
                                             เบิกค่ารักษาพยาบาล
                                         </div>  
@@ -273,9 +273,9 @@
                                             </td>
                                         </tr>
                                         <tr>
-                                            <td>ประเภทสถานพยาบาล</td>
-                                            <td>ชื่อสถานพยาบาล</td>
-                                            <td>วันที่ทำการรักษาพยาบาล</td>
+                                            <th>ประเภทสถานพยาบาล</th>
+                                            <th>ชื่อสถานพยาบาล</th>
+                                            <th>วันที่ทำการรักษาพยาบาล</th>
                                         </tr>
                                         <tr>
                                             <td>
@@ -293,9 +293,9 @@
                                             </td>
                                         </tr>
                                         <tr>
-                                            <td>อาการป่วย</td>
-                                            <td>จำนวนเงิน</td>
-                                            <td></td>
+                                            <th>อาการป่วย</th>
+                                            <th>จำนวนเงิน</th>
+                                            <th></th>
                                         </tr>
                                         <tr>
                                             <td>
@@ -311,7 +311,7 @@
                                 </div> 
                 
 
-                                <div class="media" style="padding-bottom: 20px;">
+                                <div class="media" style="padding-bottom: 20px;padding-left: 40px;padding-right: 40px;padding-top: 20px;">
                                         <div class="header">
                                             รายละเอียดการรับเงิน
                                         </div>  

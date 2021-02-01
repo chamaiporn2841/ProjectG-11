@@ -57,7 +57,7 @@
                     <ul class="collapse list-unstyled" id="WelSubmenu">
                         <!-- <li><a href="#">เกณฑ์การใช้วสวัสดิการ</a></li> -->
                         <li><a href="detailwel.php">รายละเอียดการใช้สวัสดิการ</a></li>
-                        <li><a href="opresult.php">ผลการดำนำเนินการ</a></li>
+                        <li><a href="opresult.php">ผลการดำเนินการ</a></li>
 
                        <!--  <li><a href="#">พิจารณาการใช้สวัสดิการ</a></li>
                         <li><a href="#">อนุมัติการใช้สวัสดิการ</a></li>
@@ -150,11 +150,11 @@
                                 <div class="col-12 col-md-4" id="usermenu">
                                     <div class="btn-group" style="float: right;">
                                         <button type="button" class="btn btn-secondary" style="padding: 16px;"
-                                            id="user_name">xxxxx  xxxxxx</button>
+                                            id="user_name">ฐศุภรดา วิเชียรธปภา</button>
                                         <button type="button"
                                             class="btn btn-secondary dropdown-toggle dropdown-toggle-split"
                                             data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                            <img src="images/admin.png" height="40px" style="border-radius: 50%;" />
+                                            <img src="images/user2.jpg" height="40px" style="border-radius: 50%;" />
                                         </button>
                                         <div class="dropdown-menu dropdown-menu-right">
                                             <a class="dropdown-item" sty href="#">เปลี่ยนรหัสผ่าน</a>
@@ -186,7 +186,7 @@
                                         </div>
                                     </div>
 
-                                <div class="media" style="padding-bottom: 20px;">
+                                <div class="media" style="padding-bottom: 20px;padding-left: 40px;padding-right: 40px;padding-top: 20px;">
                                         <div class="header">
                                             ข้อมูลส่วนตัว
                                         </div><br><br>
@@ -217,9 +217,8 @@
                                             </td>
                                         </tr>
                                         <tr>
-                                            <td>ประเภทบุคลากร</td>
-                                            <td>ประเภทสวัสดิการ</td>
-                                            <td></td>
+                                            <th>ประเภทบุคลากร</th>
+                                            <th>ประเภทสวัสดิการ</th>
                                         </tr>
                                         <tr>
                                             <td>
@@ -242,7 +241,7 @@
                                     </table>                
                                 </div>
                                             
-                                <div class="media" style="padding-bottom: 20px;">
+                                <div class="media" style="padding-bottom: 20px;padding-left: 40px;padding-right: 40px;padding-top: 20px;">
                                         <div class="header">
                                         รายละเอียดการขอสวัสดิการ
                                         </div>  
@@ -272,7 +271,7 @@
                                 </div>
 
                                                 
-                                <div class="media" style="padding-bottom: 20px;">
+                                <div class="media" style="padding-bottom: 20px;padding-left: 40px;padding-right: 40px;padding-top: 20px;">
                                         <div class="header">
                                             รายละเอียดการรับเงิน
                                         </div>  
