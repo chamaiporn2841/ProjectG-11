@@ -166,11 +166,11 @@
                                 <div class="col-12 col-md-4" id="usermenu">
                                     <div class="btn-group" style="float: right;">
                                         <button type="button" class="btn btn-secondary" style="padding: 16px;"
-                                            id="user_name">xxxxx  xxxxxx</button>
+                                            id="user_name">ฐศุภรดา วิเชียรธปภา</button>
                                         <button type="button"
                                             class="btn btn-secondary dropdown-toggle dropdown-toggle-split"
                                             data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                            <img src="images/admin.png" height="40px" style="border-radius: 50%;" />
+                                            <img src="images/user2.jpg" height="40px" style="border-radius: 50%;" />
                                         </button>
                                         <div class="dropdown-menu dropdown-menu-right">
                                             <a class="dropdown-item" sty href="#">เปลี่ยนรหัสผ่าน</a>
@@ -229,7 +229,7 @@
                                             </div> 
                                         </form>
 
-
+                                        <br>
                                 
 
 
@@ -260,7 +260,7 @@
                                                 <th>ชื่อบุคลากร</th>
                                                 <th>ประเภทสวัสดิการ</th>
                                                 <th>จำนวนเงิน</th>
-                                                <th>ผลการอนุมัติ</th>
+                                                <th align="center">ผลการอนุมัติ</th>
                                                 
                                                
                                             </tr>
@@ -292,34 +292,71 @@
                                         </div>
                                        
                                  </div>
-                                   <!--  </form> -->
-                                        <div class="media">
-                                            <div id="col"> <center>
-                                                <form name="line-notify" action="line-notify-api.php" method="post">
-                                                    <table  width="450" border="0" cellspacing="0" cellpadding="0">
-                                                        <tr><td colspan="2" align="center"><img src="images/line.png" width="10%" border="0"></td></tr>
-                                                        <tr><td colspan="2" height="10"></td></tr>
-                                                        <tr><td colspan="2" align="center"><font color="#0000ff"><b>ส่งข้อมูลติดต่อข้อสงสัย</b></font></td></tr>
-                                                        <tr><td colspan="2" height="10"></td></tr>
-                                                        <tr><td>ชื่อ:</td><td><input class="textInput" type="text" name="name" size="25" required></td></tr>
-                                                        <tr><td colspan="2" height="10"></td></tr>
-                                                        <tr><td>อีเมล์:</td><td><input class="textInput" type="text" name="email" size="25" required></td></tr>
-                                                        <tr><td colspan="2" height="10"></td></tr>
-                                                        <tr><td>โทรศัพท์:</td><td><input class="textInput" type="text" name="phone" size="25" required></td></tr>
-                                                        <tr><td colspan="2" height="10"></td></tr>
-                                                        <tr><td>LINE ID:</td><td><input class="textInput" type="text" name="lineid" size="25" required></td></tr>
-                                                        <tr><td colspan="2" height="10"></td></tr>
-                                                        <tr><td>ข้อความ:</td><td><textarea rows='5' name='mesg' cols='50' style='border: 1 solid #99FF00'></textarea>
-                                                        <tr><td colspan="2" height="10"></td></tr>
-                                                        <tr><td colspan=2 align="center"><input type="submit" name="submit" value=" ส่งข้อความ "></td></tr>
-                                                        <tr><td colspan="2" height="10"></td></tr>
-                                                    </table>
-                                                </form>  </center>
-                                                
-                                                <!--news2-->
+                               
 
+
+
+                                
+                                   <!--  </form> -->
+                                   <form name="line-notify" action="line-notify-api.php" method="post">
+                                        <div class="media" style="padding-bottom: 20px;padding-left: 40px;padding-right: 40px;padding-top: 20px;">
+                                            <div class="header">
+                                                ติดต่อสอบถาม
+                                            </div><br><br>
+
+
+                                            <table >
+                                        <thead>
+                                        <tr>
+                                            <th>ชื่อ</th>
+                                            <th>อีเมล์</th>
+                                            
+                                        </tr>
+                                        
+                                        </thead>
+                                        <tbody>
+                                        <tr>
+                                            <td>
+                                                <input class="form-control" type="text" name="name"  size="1" style="width: 390px;" required>
+                                            </td>
+                                            
+                                            <td>
+                                                <input class="form-control" type="text" name="email"  size="1" style="width: 390px;" required>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th>โทรศัพท์</th>
+                                            <th>LINE ID</th>
+                                            
+                                            <td></td>
+                                        </tr>
+                                        
+                                        <tr>
+                                            <td>
+                                                <input class="form-control" type="text" name="phone" size="1" style="width: 390px;" required>
+                                            </td>
+                                            <td>
+                                                <input class="form-control" type="text" name="lineid" size="1" style="width: 390px;" required>
+                                            </td>
+                                         </tr>
+                                        <tr>
+                                            <th>ข้อความ</th>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <textarea name="mesg" id="input" align="center" style="width:200%;height: 200px;" ></textarea>
                                                 
-                                                <!--news3-->
+                                            </td>
+                                        </tr>
+                                        <tr><td colspan=2 align="center"><input type="submit" name="submit" value=" ส่งข้อความ "></td></tr>
+                                        </tbody>
+                                    </table>
+                                    </form>                
+                                </div>
+                            </div>                    
+                                              
+
+                            
                             </div>
                         </div>
                     </div>
