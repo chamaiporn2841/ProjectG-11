@@ -204,22 +204,12 @@
 
                                             <div class="media">
                                                 <div id="col">
-                                                    <div class="header"><br><br> 
-                               
-
-                                            
-
-                                       
+                                                    <div class="header"><br>
+                                                    รายการคำร้องขอการใช้สวัสดิการ
 
                                         </div>
                                     </div>
                                 
-                                            <div id="col">
-                                                <div class="header">
-                                                    รายการคำร้องขอการใช้สวัสดิการ
-                                                </div>
-                                                
-                                            </div>
                              
                     
                         

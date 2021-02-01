@@ -194,10 +194,56 @@
                             <div class="col-md-12">
                                 <div class="media1">
                                 <div class="media-body" >
+                                
                                                 <h4 class="media-heading" ><b>ผลการดำเนินการ</b>
                                             </div>
                                         </div>
-                               
+
+                                        <div class="media">
+                                                <div id="col">
+                                                    <div class="header"><br><br> 
+                                        <?php
+                                                ini_set('display_errors', 1);
+                                                error_reporting(~0);
+
+                                                $strKeyword = null;
+
+                                                if(isset($_POST["txtKeyword"]))
+                                                {
+                                                    $strKeyword = $_POST["txtKeyword"];
+                                                }
+                                            ?>
+
+                                        <form class="form-inline" name="frmSearch" method="post" action="<?php echo $_SERVER['SCRIPT_NAME'];?>" align="center">
+                                            <div class="form-group" align="center">
+                                                <div class="form-inline"  >                                    
+                                                    <label for="textsearch" >ประเภทสวัสดิการ</label>
+                                                    <input name="txtKeyword" type="text" id="txtKeyword" value="<?php echo $strKeyword;?>" class="form-control" >
+                                                        <button type="submit" class="btn btn-primary"  value="Search">
+                                                            <span class="glyphicon glyphicon-search"></span>
+                                                                    ค้นหา
+                                                        </button>
+                                                </div>
+                                            </div> 
+                                        </form>
+
+
+
+                                        <?php
+
+                                            $serverName = "localhost";
+                                            $userName = "root";
+                                            $userPassword = "12345";
+                                            $dbName = "benefit";
+
+                                            $conn = mysqli_connect($serverName,$userName,$userPassword,$dbName);;
+
+                                            $sql = "SELECT * FROM benefittotal WHERE pid LIKE '%".$strKeyword."%' ";
+
+                                            $query = mysqli_query($conn,$sql);
+
+                                            ?>
+
                                 <div class="media">
                                     <div id="col">
                                     <form class="form-inline" name="status" method="post" action="opresult.php" align="center">
@@ -215,27 +261,29 @@
                                                
                                             </tr>
 
-                                            <?php while($row = mysqli_fetch_array($result)) { 
-                                            ?>
+                                            <?php while($result=mysqli_fetch_array($query,MYSQLI_ASSOC))
+                                                        {
+                                                        ?>
                                                 <tr>
-                                                    <td align="center"><?php echo $row['pid'];?></td>
+                                                    <td align="center"><?php echo $result['pid'];?></td>
                                                     
-                                                    <td align="center"><?php echo $row['namepn'];?></td>
+                                                    <td align="center"><?php echo $result['namepn'];?></td>
                                                    
-                                                    <td align="center"><?php echo $row['typebenefit'];?></td>
+                                                    <td align="center"><?php echo $result['typebenefit'];?></td>
                                                     
-                                                    <td align="center"><?php echo $row['cmoney'];?></td>
+                                                    <td align="center"><?php echo $result['cmoney'];?></td>
                                                     
-                                                    <td align="center"><?php echo $row['actions'];?></td>
+                                                    <td align="center"><?php echo $result['actions'];?></td>
                                                    
-                                                    
+                                                  <?php
+                                                  } 
+                                                   ?> 
+                                                 
                                                 </tr>
-                                                <?php  
-                                                }
                                                 
-                                                mysqli_close($connect);
-                                                ?>
-</table>
+                                                </table>
+                                                <?php mysqli_close($conn); ?>                                                
+
                                     
                                         </div>
                                        
