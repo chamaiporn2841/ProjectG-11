@@ -221,11 +221,11 @@
                          
                             <div class="media" padding:30px;>
                             
-                            <h6> <?php while($row = $result->fetch_assoc()): ?>
-                        
-                                <div><?php echo $row['requirement_type']; ?></div><br>
+                            <h6> <?php while($row = $result->fetch_assoc()): 
+                              $TEXT= str_replace("\n", "<br>\n", $row['requirement_text']);?>
+                                <div><?php echo $row['requirement_type']; ?></div>
                                 <!-- <div><?php echo $row['requirement_date']; ?></div> -->
-                                <p><div><?php echo $row['requirement_text']; ?></div></p></br></br>
+                                <p><div><?php echo $TEXT; ?></div></p></br></br>
 
                                 <?php endwhile ?>
                             </div><br>
