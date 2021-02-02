@@ -36,7 +36,7 @@
             </div>
 
             <ul class="list-unstyled components">
-                <li class="active"><a href="#"><i class="fa fa-home"></i>หน้าหลัก</a></li>
+                <li><a href="#"><i class="fa fa-home"></i>หน้าหลัก</a></li>
 
                 <li><a href="#"><i class="fa fa-id-card"></i>ข้อมูลบุคลากร</a></li>
 
@@ -61,7 +61,7 @@
                         <li><a href="detailwel.php">รายละเอียดการใช้สวัสดิการ</a></li>
                         <!-- <li><a href="#">พิจารณาการใช้สวัสดิการ</a></li> -->
                         <li><a href="approve.php">อนุมัติการใช้สวัสดิการ</a></li>
-                        <li><a href="report.php">รายงานสรุปการใช้สวัสดิการ</a></li>
+                        <li class="active"><a href="report.php">รายงานสรุปการใช้สวัสดิการ</a></li>
                     </ul>
                 </li>
 

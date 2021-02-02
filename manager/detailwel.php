@@ -48,7 +48,7 @@
         </div>
 
         <ul class="list-unstyled components">
-          <li class="active"><a href="#"><i class="fa fa-home"></i>หน้าหลัก</a></li>
+          <li><a href="#"><i class="fa fa-home"></i>หน้าหลัก</a></li>
 
           <li><a href="#"><i class="fa fa-id-card"></i>ข้อมูลบุคลากร</a></li>
 
@@ -70,7 +70,7 @@
                     </a>
                     <ul class="collapse list-unstyled" id="WelSubmenu">
                         <!-- <li><a href="definewel.php">เกณฑ์การใช้วสวัสดิการ</a></li> -->
-                        <li><a href="detailwel.php">รายละเอียดการใช้สวัสดิการ</a></li>
+                        <li class="active"><a href="detailwel.php">รายละเอียดการใช้สวัสดิการ</a></li>
                         <li><a href="consider.php">พิจารณาการใช้สวัสดิการ</a></li>
                         <!-- <li><a href="opresult.php">ผลการดำเนินการ</a></li> -->
                         <!-- <li><a href="approve.php">อนุมัติการใช้สวัสดิการ</a></li> -->

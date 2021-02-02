@@ -34,7 +34,7 @@
             </div>
 
             <ul class="list-unstyled components">
-                <li class="active"><a href="#"><i class="fa fa-home"></i>หน้าหลัก</a></li>
+                <li><a href="#"><i class="fa fa-home"></i>หน้าหลัก</a></li>
 
                 <li><a href="#"><i class="fa fa-id-card"></i>ข้อมูลบุคลากร</a></li>
 
@@ -76,7 +76,7 @@
                         <li><a href="medexp.php">คำร้องสวัสดิการค่ารักษาพยาบาล</a></li>
                         <li><a href="comdevice.php">คำร้องสวัสดิการซื้ออุปกรณ์คอมพิวเตอร์</a></li>
                         <li><a href="profund.php">คำร้องสวัสดิการกองทุนสำรองเลี้ยงชีพ</a></li>
-                        <li><a href="uniform.php">คำร้องขอยืมเงินเพื่อตัดชุดเครื่องแบบปกติขาว</a></li>
+                        <li class="active"><a href="uniform.php">คำร้องขอยืมเงินเพื่อตัดชุดเครื่องแบบปกติขาว</a></li>
                         <li><a href="tuitionfee.php">คำร้องสวัสดิการเกี่ยวกับค่าเล่าเรียนบุตร</a></li>
                         <li><a href="#">ติดตามผลคำร้อง</a></li>
                     </ul>
