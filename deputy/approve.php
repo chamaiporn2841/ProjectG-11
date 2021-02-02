@@ -31,7 +31,7 @@
     <!--Font Awesome-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <!-- Our Custom CSS -->
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style_approve.css">
     <link rel="stylesheet" href="font.css">
     <link rel="stylesheet" href="news-slider.css">
     <!-- Script -->
@@ -265,7 +265,9 @@
                                                             <td align="center"><?php echo $result['namepn'];?></td>
                                                             <td align="center"><?php echo $result['typebenefit'];?></td>
                                                             <td align="center"><?php echo $result['cmoney'];?></td></td>
-                                                            <td align="center"><select name=<?php echo $result["pid"];?> id=<?php echo $result["pid"];?> class="form-select" aria-label="Default select example">
+                                                            <td align="center">
+
+                                                            <select class="form-control" name=<?php echo $result["pid"];?> id=<?php echo $result["pid"];?> class="form-select" aria-label="Default select example">
                                                                 <option <?php echo $result['actions'];?>><?php echo $result['actions'];?></option>
                                                                 <option value="ผ่านการอนุมัติ">ผ่านการอนุมัติ</option>
                                                                 <option value="ไม่ผ่านการอนุมัติ">ไม่ผ่านการอนุมัติ</option>

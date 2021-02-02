@@ -365,14 +365,15 @@ a.article:hover {
 }
 table {
     width: 100%;
-  }
-#input{้
+    color:#3d5b6d;
+}
+
+#input{
     border-radius: 8px;
     color:#3d5b6d;
     font-size: 1.1em;
     font-weight: 300;
-    width:100%;
-    height: 34px;
+    width:200px;
 }
 label{
     font-size: 14px;
@@ -391,7 +392,7 @@ label{
     width: 100%;
   }
   
-#chlidss td, #chlids th {
+#chlids td, #chlids th {
      /* border: 1px solid #ddd; */
     padding: 8px;
   }
@@ -414,11 +415,14 @@ label{
 #iframe_target{
     background-color:#e4e4e4;
 }
-/* td, th {
+td {
     padding: 10px;
-    color: #0072B5;
-    width: 30%;
-} */
+    text-align: center;
+    /* width: 200px; */
+    
+}
+
+
 
 #category{
     border-radius: 8px;

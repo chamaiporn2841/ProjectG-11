@@ -398,16 +398,15 @@ label{
   }
 
 .text_1{
-    font-size: 20px !important;
+    font-size: 30px !important;
     font-family: 'Sukhumvit', sans-serif;
     font-weight: bolder;
     padding: 10px;
-    color: #0072B5;
-    
+    color: #0072B5;  
 }
 
 .text_2{
-    font-size: 15px !important;
+    font-size: 18px !important;
     font-family: 'Sukhumvit', sans-serif;
     padding: 10px;
     line-height: 18pt;

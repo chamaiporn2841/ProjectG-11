@@ -198,71 +198,28 @@
                       <iframe id="iframe_target" name="iframe_target" src="#" style="width:0;height:0;border:0px solid #fff;"></iframe> -->
                       <div class="media-body">
                         <h4 class="media-heading"><b>รายละเอียดสวัสดิการ</b>
-                          <!-- </div><hr> -->
                       </div>
                       </div>
 
-            <!-- <div class="media">
-                
-                <div class="media-body">
-                <div id="col">
-                    <h4>รายละเอียดสวัสดิการ</h4>
-                </div>
-                </div> -->
-            
-                    <!-- </div><hr> --><!-- <br><br><br> -->
-                  <!--   <div> -->
-                        <!-- <div class="container" id="col">
-                          <label>รายละเอียดสวัสดิการ</label> -->
-                          <!-- <div><br> -->
-                         
-                            <div class="media" padding:30px;>
+       
+                      <div class="media" style="padding: 50px;">
                             
-                            <h6> <?php while($row = $result->fetch_assoc()): 
+                            <?php while($row = $result->fetch_assoc()): 
                               $TEXT= str_replace("\n", "<br>\n", $row['requirement_text']);?>
-                                <div><?php echo $row['requirement_type']; ?></div>
-                                <!-- <div><?php echo $row['requirement_date']; ?></div> -->
-                                <p><div><?php echo $TEXT; ?></div></p></br></br>
+                                <div class="text_1"><?php echo $row['requirement_type']; ?></div>
+                                <div class="text_2" ><?php echo $TEXT; ?></div>
+                                </br></br>
 
                                 <?php endwhile ?>
-                            </div><br>
-                            </h6></div>
+                            <br>
+                          </div>
+                            
                             
                     </div>
                   </div>
                 </div>
               </div>
 
-
-
-
-
-
-
-
-
-<!-- 
-<!DOCTYPE html>
-<html lang="en">
-<head>
-<meta http-equiv="Content-Type" content="text/html; charset=tis-620">
-
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>รายละเอียดสวัสดิการ</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body> -->
-   <!--  <div class="container">
-        <h1>รายละเอียดสวัสดิการ</h1>
-            
-                <?php while($row = $result->fetch_assoc()): ?>
-                    
-                    <div><?php echo $row['requirement_type']; ?></div><br>
-                    <!-- <div><?php echo $row['requirement_date']; ?></div> -->
-                    <div><?php echo $row['requirement_text']; ?></div>
-
-                <?php endwhile ?>
-          
     </div>
 </body>
-</html> -->
+</html>

@@ -31,7 +31,7 @@
     <!--Font Awesome-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <!-- Our Custom CSS -->
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style_consider.css">
     <link rel="stylesheet" href="font.css">
     <link rel="stylesheet" href="news-slider.css">
     <!-- Script -->
@@ -243,15 +243,13 @@
                                    
                                                     <div class="container" id="manager" >
                                                     <table class="table"   id="chlids"  colspan="2" >
-                                                        <tr >
-                                                        
-                                                          
-                                                            <th >รหัสบุคลากร</th>   
-                                                            <th >ชื่อบุคลากร</th>                                        
-                                                            <th >ประเภทสวัสดิการ</th>
-                                                            <th >จำนวนเงิน</th>
-                                                            <th >ผลการอนุมัติ</th>
-                                                        </tr>
+                                                    <tr>
+                                                        <th >รหัสสวัสดิการ</th>
+                                                        <th>ชื่อบุคลากร</th>
+                                                        <th>ประเภทสวัสดิการ</th>
+                                                        <th>จำนวนเงิน</th>
+                                                        <th align="center">ผลการอนุมัติ</th>
+                                                    </tr>
                         
                                                         <?php while($result=mysqli_fetch_array($query,MYSQLI_ASSOC))
                                                         {
@@ -266,12 +264,13 @@
                                                             <td align="center"><?php echo $result['namepn'];?></td>
                                                             <td align="center"><?php echo $result['typebenefit'];?></td>
                                                             <td align="center"><?php echo $result['cmoney'];?></td></td>
-                                                            <td align="center"><select name=<?php echo $result["pid"];?> id=<?php echo $result["pid"];?> class="form-select" aria-label="Default select example">
-                                                                <option <?php echo $result['actions'];?>><?php echo $result['actions'];?></option>
-                                                                <option value="รอการพิจารณา">รอการพิจารณา</option>
-                                                                <option value="ผ่านการพิจารณา">ผ่านการพิจารณา</option>
-                                                                <option value="ไม่ผ่านพิจารณา">ไม่ผ่านพิจารณา</option>
-                                                            </select></td>
+                                                            <td align="center">
+                                                                <select class="form-control" name=<?php echo $result["pid"];?> id=<?php echo $result["pid"];?> class="form-select" aria-label="Default select example">
+                                                                    <option <?php echo $result['actions'];?>><?php echo $result['actions'];?></option>
+                                                                    <option value="รอการพิจารณา">รอการพิจารณา</option>
+                                                                    <option value="ผ่านการพิจารณา">ผ่านการพิจารณา</option>
+                                                                    <option value="ไม่ผ่านพิจารณา">ไม่ผ่านพิจารณา</option>
+                                                                </select></td>
                                                             
                                                             <?php
                                                             }

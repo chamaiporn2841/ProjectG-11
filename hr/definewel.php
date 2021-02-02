@@ -187,7 +187,7 @@
                                 </div> 
                             </div>
                       
-                            <div class="media" style="padding-bottom: 20px;" align="center" >
+                            <div class="media" style="padding-bottom: 20px;padding-left: 40px;padding-right: 40px;padding-top: 20px;" >
                                         
                                     
                                     <table >
@@ -199,7 +199,7 @@
                                         <tbody>
                                         <tr>
                                             <td>
-                                                <select name="requirement_type" id="requirement_type">
+                                                <select  class="form-control" name="requirement_type" id="requirement_type">
                                                     <option value="โปรดเลือก">โปรดเลือก</option>
                                                     <option value="สวัสดิการค่ารักษาพยาบาล">สวัสดิการค่ารักษาพยาบาล</option>
                                                     <option value="สวัสดิการซื้ออุปกรณ์คอมพิวเตอร์">สวัสดิการซื้ออุปกรณ์คอมพิวเตอร์</option>

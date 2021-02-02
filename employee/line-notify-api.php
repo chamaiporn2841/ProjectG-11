@@ -47,3 +47,5 @@ function sendlinemesg() {
 }
 
 ?>
+
+<center><button type="button" onclick="location.href='opresult.php'" class="button2">ย้อนกลับ</button>

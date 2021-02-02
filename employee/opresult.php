@@ -255,14 +255,12 @@
                                    <div class="container" id="manager" >
                                         <table class="table"   id="chlids"  colspan="2">
                                        
-                                            <tr>
-                                                <th>รหัสสวัสดิการ</th>
-                                                <th>ชื่อบุคลากร</th>
-                                                <th>ประเภทสวัสดิการ</th>
-                                                <th>จำนวนเงิน</th>
-                                                <th align="center">ผลการอนุมัติ</th>
-                                                
-                                               
+                                            <tr class="text_h">
+                                                <td>รหัสสวัสดิการ</td>
+                                                <td>ชื่อบุคลากร</td>
+                                                <td>ประเภทสวัสดิการ</td>
+                                                <td>จำนวนเงิน</td>
+                                                <td align="center">ผลการอนุมัติ</td>
                                             </tr>
 
                                             <?php while($result=mysqli_fetch_array($query,MYSQLI_ASSOC))
@@ -292,64 +290,54 @@
                                         </div>
                                        
                                  </div>
-                               
-
-
-
-                                
-                                   <!--  </form> -->
+                                                               
+                                    </form>
                                    <form name="line-notify" action="line-notify-api.php" method="post">
-                                        <div class="media" style="padding-bottom: 20px;padding-left: 40px;padding-right: 40px;padding-top: 20px;">
-                                            <div class="header"><img src="images/line1.png" width="5%" border="0">
+                                        <div class="media" style="padding-bottom: 20px;padding-left: 40px;padding-top: 20px;padding-right: 40px;">
+                                            <div class="header"><img src="images/line1.png" width="5%" >
                                                 ติดต่อสอบถาม
                                             </div><br><br>
 
 
-                                            <table >
-                                        <thead>
+                                            <table  border="0">
+                              
                                         <tr>
                                             <th>ชื่อ</th>
                                             <th>อีเมล์</th>
-                                            
                                         </tr>
                                         
-                                        </thead>
-                                        <tbody>
                                         <tr>
                                             <td>
-                                                <input class="form-control" type="text" name="name"  size="1" style="width: 390px;" required>
+                                                <input class="form-control" type="text" name="name"  size="1"  required>
                                             </td>
-                                            
                                             <td>
-                                                <input class="form-control" type="text" name="email"  size="1" style="width: 390px;" required>
+                                                <input class="form-control" type="text" name="email"  size="1"  required>
                                             </td>
                                         </tr>
                                         <tr>
                                             <th>โทรศัพท์</th>
-                                            <th>LINE ID</th>
-                                            
-                                            <td></td>
+                                            <th>LINE ID</th>                                           
                                         </tr>
                                         
                                         <tr>
-                                            <td>
-                                                <input class="form-control" type="text" name="phone" size="1" style="width: 390px;" required>
-                                            </td>
-                                            <td>
-                                                <input class="form-control" type="text" name="lineid" size="1" style="width: 390px;" required>
-                                            </td>
+                                            <th>
+                                                <input class="form-control" type="text" name="phone" size="1"  required>
+                                            </th>
+                                            <th>
+                                                <input class="form-control" type="text" name="lineid" size="1"  required>
+                                            </th>
                                          </tr>
                                         <tr>
                                             <th>ข้อความ</th>
                                         </tr>
                                         <tr>
-                                            <td>
-                                                <textarea name="mesg" id="input" align="center" style="width:200%;height: 200px;" ></textarea>
-                                                
-                                            </td>
+                                            <th>
+                                                <textarea class="form-control" name="mesg" id="input" align="center" style="width:100%;height:auto;" ></textarea>
+                                            </th>
                                         </tr>
-                                        <tr><td colspan=2 align="center"><input type="submit" name="submit" value=" ส่งข้อความ " class="btn btn-primary"></td></tr>
-                                        </tbody>
+                                       
+                                        <tr><th colspan=2 align="center"> <center><input type="submit" name="submit" value=" ส่งข้อความ " class="btn btn-primary"style="margin-top: 20px;"></th></tr>
+                                        
                                     </table>
                                     </form>                
                                 </div>

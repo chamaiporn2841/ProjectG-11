@@ -392,7 +392,7 @@ label{
     width: 100%;
   }
   
-#chlids td, #chlids th {
+#chlids td, #chlids {
      /* border: 1px solid #ddd; */
     padding: 8px;
   }
@@ -404,21 +404,33 @@ label{
 #chlids tr:hover {
     background-color: #ddd;
 }
-  
-#chlids th {
+
+.text_h{
     font-family: 'Sukhumvit', sans-serif;
     font-size: 14px;
     text-align: center;
     background-color: #0072B5;
     color: white;
 }
+
+#chlids th {
+  
+}
 #iframe_target{
     background-color:#e4e4e4;
 }
+
 td {
     padding: 10px;
     text-align: center;
     /* width: 200px; */
+    
+}
+
+th {
+    padding: 10px;
+    text-align: left;
+    width: 50%;
     
 }
 
