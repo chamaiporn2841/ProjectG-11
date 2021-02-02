@@ -253,14 +253,14 @@
                                     <form class="form-inline" name="status" method="post" action="opresult.php" align="center">
                                    
                                    <div class="container" id="manager" >
-                                        <table class="table"   id="chlids"  colspan="2">
+                                        <table class="table"   colspan="2">
                                        
-                                            <tr class="text_h">
-                                                <td>รหัสสวัสดิการ</td>
-                                                <td>ชื่อบุคลากร</td>
-                                                <td>ประเภทสวัสดิการ</td>
-                                                <td>จำนวนเงิน</td>
-                                                <td align="center">ผลการอนุมัติ</td>
+                                            <tr>
+                                                <td id="chlids" >รหัสสวัสดิการ</td>
+                                                <td  id="chlids" >ชื่อบุคลากร</td>
+                                                <td  id="chlids" >ประเภทสวัสดิการ</td>
+                                                <td  id="chlids" >จำนวนเงิน</td>
+                                                <td align="center"  id="chlids" >ผลการอนุมัติ</td>
                                             </tr>
 
                                             <?php while($result=mysqli_fetch_array($query,MYSQLI_ASSOC))

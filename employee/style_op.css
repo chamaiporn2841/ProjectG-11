@@ -389,7 +389,7 @@ label{
 #chlids {
     font-family: 'Sukhumvit', sans-serif;
     border-collapse: collapse;
-    width: 100%;
+    /* width: 100%; */
   }
   
 #chlids td, #chlids {
@@ -405,17 +405,15 @@ label{
     background-color: #ddd;
 }
 
-.text_h{
+
+
+#chlids {
     font-family: 'Sukhumvit', sans-serif;
-    font-size: 14px;
-    text-align: center;
     background-color: #0072B5;
     color: white;
 }
 
-#chlids th {
-  
-}
+
 #iframe_target{
     background-color:#e4e4e4;
 }
