@@ -463,139 +463,132 @@
                                             </script>
                                             <!--  #g4 -->
                                         <?php
-                                            $servername = "localhost";
-                                            $username = "root";
-                                            $password = "12345";
-                                            $dbname = "benefit";
-                                            $conn = mysqli_connect($servername, $username, $password, $dbname);
-                                            if (!$conn) {
-                                                die("Connection failed: " . mysqli_connect_error());
-                                            }
-                                            $sql = "SELECT `IDsum`, COUNT(IDregis) As ls1 FROM regislesson WHERE `IDsum` LIKE 'l001';";
-                                            $sql2 = "SELECT `IDsum`, COUNT(IDregis) As ls2 FROM regislesson WHERE `IDsum` LIKE 'l002';";
-                                            $sql3 = "SELECT `IDsum`, COUNT(IDregis) As ls3 FROM regislesson WHERE `IDsum` LIKE 'l003';";
-                                            $sql4 = "SELECT `IDsum`, COUNT(IDregis) As ls4 FROM regislesson WHERE `IDsum` LIKE 'l004';";
-                                            $sql5 = "SELECT `IDsum`, COUNT(IDregis) As ls5 FROM regislesson WHERE `IDsum` LIKE 'l005';";
-                                            $sql6 = "SELECT `IDsum`, COUNT(IDregis) As ls6 FROM regislesson WHERE `IDsum` LIKE 'l006';";
-                                            $sql7 = "SELECT `IDregis`, COUNT(IDregis) As ls7 FROM regislesson WHERE `IDregis` LIKE '570001';";
-                                            $sql8 = "SELECT `IDsum`, COUNT(IDregis) As ls8 FROM regislesson WHERE `IDsum` LIKE '620001';";
-                                            $sql9 = "SELECT `IDsum`, COUNT(IDregis) As ls9 FROM regislesson WHERE `IDsum` LIKE '570003';";
-                                            $sql10 = "SELECT `IDsum`, COUNT(IDregis) As ls10 FROM regislesson WHERE `IDsum` LIKE '570004';";
+                                            include 'config.php';
+                                            $sql11 = "SELECT `IDsum`, COUNT(IDregis) As ls11 FROM regislesson WHERE `IDsum` LIKE 'l001';";
+                                            $sql22 = "SELECT `IDsum`, COUNT(IDregis) As ls22 FROM regislesson WHERE `IDsum` LIKE 'l002';";
+                                            $sql33 = "SELECT `IDsum`, COUNT(IDregis) As ls33 FROM regislesson WHERE `IDsum` LIKE 'l003';";
+                                            $sql44 = "SELECT `IDsum`, COUNT(IDregis) As ls44 FROM regislesson WHERE `IDsum` LIKE 'l004';";
+                                            $sql55 = "SELECT `IDsum`, COUNT(IDregis) As ls55 FROM regislesson WHERE `IDsum` LIKE 'l005';";
+                                            $sql66 = "SELECT `IDsum`, COUNT(IDregis) As ls66 FROM regislesson WHERE `IDsum` LIKE 'l006';";
+                                            $sql77 = "SELECT `IDregis`, COUNT(IDregis) As ls77 FROM regislesson WHERE `IDregis` LIKE '570001';";
+                                            $sql88 = "SELECT `IDsum`, COUNT(IDregis) As ls88 FROM regislesson WHERE `IDsum` LIKE '620001';";
+                                            $sql99 = "SELECT `IDsum`, COUNT(IDregis) As ls99 FROM regislesson WHERE `IDsum` LIKE '570003';";
+                                            $sql100 = "SELECT `IDsum`, COUNT(IDregis) As ls100 FROM regislesson WHERE `IDsum` LIKE '570004';";
                                     
 
 
-                                            $result = mysqli_query($conn, $sql);
+                                            $result11 = mysqli_query($con, $sql11);
 
-                                            if (mysqli_num_rows($result) > 0) {
+                                            if (mysqli_num_rows($result11) > 0) {
 
-                                                while ($row = mysqli_fetch_assoc($result)) {
+                                                while ($row11 = mysqli_fetch_assoc($result11)) {
 
                                                     $labels[] = 'การจินตทัศน์ข้อมูลทางธุรกิจ';
 
-                                                    $data[] = $row['ls1'];
+                                                    $data[] = $row11['ls11'];
                                                 }
                                             }
-                                            $result2 = mysqli_query($conn, $sql2);
+                                            $result22 = mysqli_query($con, $sql22);
 
-                                            if (mysqli_num_rows($result2) > 0) {
+                                            if (mysqli_num_rows($result22) > 0) {
 
-                                                while ($row2 = mysqli_fetch_assoc($result2)) {
+                                                while ($row22 = mysqli_fetch_assoc($result22)) {
 
                                                     $labels[] = 'การบริหารจัดการข้อมูลองค์กร';
 
-                                                    $data[] = $row2['ls2'];
+                                                    $data[] = $row22['ls22'];
                                                 }
                                             }
-                                            $result3 = mysqli_query($conn, $sql3);
+                                            $result33 = mysqli_query($con, $sql33);
 
-                                            if (mysqli_num_rows($result3) > 0) {
+                                            if (mysqli_num_rows($result33) > 0) {
 
-                                                while ($row3 = mysqli_fetch_assoc($result3)) {
+                                                while ($row33 = mysqli_fetch_assoc($result33)) {
 
                                                     $labels[] = 'ธุรกิจอัจฉริยะเพื่อการเปลี่ยนผ่านสู่ดิจิทัล';
 
-                                                    $data[] = $row3['ls3'];
+                                                    $data[] = $row33['ls33'];
                                                 }
                                             }
-                                            $result4 = mysqli_query($conn, $sql4);
+                                            $result44 = mysqli_query($con, $sql44);
 
-                                            if (mysqli_num_rows($result4) > 0) {
+                                            if (mysqli_num_rows($result44) > 0) {
 
-                                                while ($row4 = mysqli_fetch_assoc($result4)) {
+                                                while ($row44 = mysqli_fetch_assoc($result44)) {
 
                                                     $labels[] = 'การสื่อสารในภาวะวิกฤติในองค์กรสื่อดิจิทัล';
 
-                                                    $data[] = $row4['ls4'];
+                                                    $data[] = $row44['ls44'];
                                                 }
                                             }
-                                            $result5 = mysqli_query($conn, $sql5);
+                                            $result55 = mysqli_query($con, $sql55);
 
-                                            if (mysqli_num_rows($result5) > 0) {
+                                            if (mysqli_num_rows($result55) > 0) {
 
-                                                while ($row5 = mysqli_fetch_assoc($result5)) {
+                                                while ($row55 = mysqli_fetch_assoc($result55)) {
 
                                                     $labels[] = 'ความมั่นคงปลอดภัยไซเบอร์สำหรับประชาชนทั่วไป';
 
-                                                    $data[] = $row5['ls5'];
+                                                    $data[] = $row55['ls55'];
                                                 }
                                             }
-                                            $result6 = mysqli_query($conn, $sql6);
+                                            $result66 = mysqli_query($con, $sql66);
 
-                                            if (mysqli_num_rows($result6) > 0) {
+                                            if (mysqli_num_rows($result66) > 0) {
 
-                                                while ($row6 = mysqli_fetch_assoc($result6)) {
+                                                while ($row66 = mysqli_fetch_assoc($result66)) {
 
                                                     $labels[] = 'ธรรมาภิบาลข้อมูล';
 
-                                                    $data[] = $row6['ls6'];
+                                                    $data[] = $row66['ls66'];
                                                 }
                                             }
-                                            $result7 = mysqli_query($conn, $sql7);
+                                            $result77 = mysqli_query($con, $sql77);
 
-                                        if (mysqli_num_rows($result7) > 0) {
+                                        if (mysqli_num_rows($result77) > 0) {
 
-                                            while ($row7 = mysqli_fetch_assoc($result7)) {
+                                            while ($row77 = mysqli_fetch_assoc($result77)) {
 
                                                 $labels2[] = '620001';
 
-                                                $data2[] = $row7['ls7'];
+                                                $data2[] = $row77['ls77'];
                                             }
                                         }
-                                        $result8 = mysqli_query($conn, $sql8);
+                                        $result88 = mysqli_query($con, $sql88);
 
-                                        if (mysqli_num_rows($result6) > 0) {
+                                        if (mysqli_num_rows($result88) > 0) {
 
-                                            while ($row8 = mysqli_fetch_assoc($result8)) {
+                                            while ($row88 = mysqli_fetch_assoc($result88)) {
 
                                                 $labels2[] = '570002';
 
-                                                $data2[] = $row8['ls8'];
+                                                $data2[] = $row88['ls88'];
                                             }
                                         }
-                                        $result9 = mysqli_query($conn, $sql9);
+                                        $result99 = mysqli_query($con, $sql99);
 
-                                        if (mysqli_num_rows($result9) > 0) {
+                                        if (mysqli_num_rows($result99) > 0) {
 
-                                            while ($row9 = mysqli_fetch_assoc($result9)) {
+                                            while ($row99 = mysqli_fetch_assoc($result99)) {
 
                                                 $labels2[] = '570003';
 
-                                                $data2[] = $row9['ls9'];
+                                                $data2[] = $row99['ls99'];
                                             }
                                         }
-                                        $result10 = mysqli_query($conn, $sql10);
+                                        $result100 = mysqli_query($con, $sql100);
 
-                                        if (mysqli_num_rows($result10) > 0) {
+                                        if (mysqli_num_rows($result100) > 0) {
 
-                                            while ($row10 = mysqli_fetch_assoc($result10)) {
+                                            while ($row100 = mysqli_fetch_assoc($result100)) {
 
                                                 $labels2[] = '570004';
 
-                                                $data2[] = $row10['ls10'];
+                                                $data2[] = $row100['ls100'];
                                             }
                                         }
 
-                                        mysqli_close($conn);
+                                        mysqli_close($con);
                                         ?>
                                            
                                           
