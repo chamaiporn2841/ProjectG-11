@@ -1,5 +1,3 @@
-
-
 <!DOCTYPE html>
 <html>
 
@@ -23,6 +21,19 @@
     <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
     <!-- Bootstrap Js CDN -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <!-- dashboard -->
+    <!-- Bootstrap core CSS     -->
+   
+
+ 
+
+    <!--  Light Bootstrap Table core CSS    -->
+<!--   <link href="assets/css/light-bootstrap-dashboard.css?v=1.4.0" rel="stylesheet"/>  -->
+
+
+
+
+   
 </head>
 
 <body>
@@ -175,54 +186,94 @@
 
             <main>
                 <news>
-                    <div class="container-fluid" id="news">
+               
+                  <div class="container-fluid" id="news">
                         <div class="row">
+
                             <div class="col-md-12">
-
-
                                   <div class="media1" > 
                                         <div class="media-body" >
                                             <h4 class="media-heading" ><b>Dashboard</b>
                                         </div>
                                     </div>
-                                    <table>
-                                        <tr>
-                                            <td>
-                                                <div class="media" style="padding-bottom: 200px; width: 100%;">
-                                                    <div class="header">
-                                                        <canvas id="myChart1" width="600" height="250" ></canvas>
-                                                    </div><br><br>
-                                                    
-                                                </div>
-                                            </td>
-                                            <td>
-                                                <div class="media" style="padding-bottom: 200px; width: 100%;">
-                                                    <div class="header">
-                                                    <canvas id="myChart2" width="400" height="200" ></canvas>
-                                                    </div><br><br>
-                                                </div>
-                                            </td>
-                                        </tr> 
-                                        <tr>
-                                            <td>
-                                                <div class="media" style="padding-bottom: 200px; width: 100%;">
-                                                    <div class="header">
-                                                    <canvas id="myChart3" width="600" height="500" ></canvas>
-                                                    </div><br><br>
-                                                    
-                                                </div>
-                                            </td>
-                                            <td>
-                                                <div class="media" style="padding-bottom: 200px; width: 100%;">
-                                                    <div class="header">
-                                                    <canvas id="myChart4" width="400" height="200" ></canvas>
-                                                    <canvas id="myChart5" width="400" height="200" ></canvas>
-                                                    </div><br><br>
-                                                </div>
-                                            </td>
-                                        </tr> 
                                     
-                                    </table> 
+                                   
+                                    <br>
+                                  
+                                        <div class="row">
+                                            <div class="col-md-4">
+                                                <div class="media">
+                                                    <div class="header">
+                                                       <!--  <h4 class="title">Email Statistics</h4> -->
+                                                        <h4  align="center">สรุปการประเมิน</h4>
+                                                    </div>
+                                                    <div class="content">
+                                                    <canvas id="myChart2" width="800" height="800" ></canvas>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                       
+
+                                              
+                                                    <div class="col-md-8">
+                                                        <div class="media">
+                                                            <div class="header">
+                                                                <!-- <h4 class="title">Users Behavior</h4> -->
+                                                                <h4  align="center" >สรุปการใช้งบประมาณสวัสดิการ</h4>
+                                                            </div>
+                                                            <div class="content">
+                                                            <canvas id="myChart1" width="300" height="144" ></canvas>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                        </div>    
+                                  
+                                            <br>
+                                          
+                                                    <div class="row">
+                                                    <div class="col-lg-4 col-md-6 col-sm-6 col-xs-12">
+                                                                <div class="media ">
+                                                                    <div class="header">
+                                                                        <!-- <h4>Talent Management and Learning Management</h4> -->
+                                                                        <h4 align="center" >สรุปสถิติการเข้าเรียนของพนักงานรายบุคคล</h4>
+                                                                    </div>
+                                                                    <div class="content">
+                                                                    <canvas id="myChart5" width="300" height="200" ></canvas>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                          
+
+                                                            <div class="col-lg-4 col-md-6 col-sm-6 col-xs-12">
+                                                                <div class="media ">
+                                                                    <div class="header">
+                                                                       <!--  <h4 class="title">Talent Management and Learning Management</h4> -->
+                                                                        <h4 align="center" >สรุปสถิติการเข้าเรียนแต่ละรายวิชา</h4>
+                                                                    </div>
+                                                                    <div class="content">
+                                                                    <canvas id="myChart4" width="200" height="150" ></canvas>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+
+                                                            <div class="col-lg-4 col-md-6 col-sm-6 col-xs-12">
+                                                                <div class="media ">
+                                                                    <div class="header">
+                                                                       <!--  <h4 class="title">2014 Sales</h4> -->
+                                                                        <h4 align="center" >สรุปผลการลา</h4>
+                                                                    </div>
+                                                                    <div class="content">
+                                                                    <canvas id="myChart3" width="200" height="150" ></canvas>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                    </div>
+                                                       
+                                                   
+                                                    
+                                                
+
+                                             
                                     <?php
                                         include 'config.php';
                                         mysqli_query($con, "SET NAMES 'utf8' ");
@@ -288,7 +339,7 @@
                                                             responsive: true,
                                                             title: {
                                                                 display: true,
-                                                                text: 'สรุปการใช้งบประมาณสวัสดิการ'
+                                                                text: ''
                                                             }
                                                             }
                                                         });
@@ -358,7 +409,7 @@
                                                                 responsive: true,
                                                                 title: {
                                                                     display: true,
-                                                                    text: 'สรุปการประเมิน'
+                                                                    text: ''
                                                                 }
                                                             }
                                                         });
@@ -456,7 +507,7 @@
                                                     responsive: true,
                                                     title: {
                                                         display: true,
-                                                        text: 'สรุปผลการลา'
+                                                        text: ''
                                                     }
                                                 }
                                             });
@@ -633,7 +684,7 @@
                                                     responsive: true,
                                                     title: {
                                                         display: true,
-                                                        text: 'สรุปสถิติการเข้าเรียนแต่ละรายวิชารวม'
+                                                        text: ''
                                                     }
                                                 }
                                             });
@@ -679,13 +730,12 @@
                                             responsive: true,
                                             title: {
                                                 display: true,
-                                                text: 'สรุปสถิติการเข้าเรียนของพนักงานรายบุคคล'
+                                                text: ''
                                             }
                                         }
                                     });
                                 </script>
-
-
+                             
 
 
 
