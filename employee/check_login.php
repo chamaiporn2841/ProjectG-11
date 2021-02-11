@@ -38,7 +38,7 @@ session_start();
                       if ($_SESSION["level"]=="emp"){  //ถ้าเป็น member ให้กระโดดไปหน้า user_page.php
 
                         if($_SESSION["Type_position"]=="สายปฏิบัติการ"||$_SESSION["Type_position"]=="สายลูกจ้างชั่วคราว"){
-                          Header("Location:emp/home.php");
+                          Header("Location:home.php");
 
                         }else{
                            Header("Location:home.php");
@@ -59,7 +59,7 @@ session_start();
 
                       if ($_SESSION["level"]=="pa"){  //ถ้าเป็น member ให้กระโดดไปหน้า user_page.php
 
-                        Header("Location:pa/home.php");
+                        Header("Location:home.php");
 
                       }
 
