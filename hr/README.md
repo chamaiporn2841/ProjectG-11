@@ -1,2 +1,0 @@
-# chart-tuts
-chart-tuts
