@@ -8,7 +8,7 @@ if($p=='adddb'){
 		VALUES
 		('$typebenefit', '$cmoney')
 		";
-		$result = mysqli_query($con, $sql) or die ("Error in query: $sql " . mysqli_error());
+		$result = mysqli_query($con, $sql) or die ("Error in query: $sql " . mysqli_connect_error());
 			mysqli_close($con);
 	
 	if($result){
