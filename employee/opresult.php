@@ -110,7 +110,7 @@ while($row = mysqli_fetch_array($result1)){
                         รายงาน
                     </a>
                     <ul class="collapse list-unstyled" id="reportSubmenu">
-                        <li><a href="indexchart.php">Dashboard</a></li>
+                        
                         <li><a href="#">รายงานเวลาทำงาน</a></li>
                     </ul>
                 </li>
@@ -221,7 +221,7 @@ while($row = mysqli_fetch_array($result1)){
                                         <form class="form-inline" name="frmSearch" method="post" action="<?php echo $_SERVER['SCRIPT_NAME'];?>" align="center">
                                             <div class="form-group" align="center">
                                                 <div class="form-inline"  >                                    
-                                                    <label for="textsearch" >รหัสสวัสดิการ</label>
+                                                    <label for="textsearch" >รหัสบุคลากร</label>
                                                     <input name="txtKeyword" type="text" id="txtKeyword" value="<?php echo $strKeyword;?>" class="form-control" >
                                                         <button type="submit" class="btn btn-primary"  value="Search">
                                                             <span class="glyphicon glyphicon-search"></span>
