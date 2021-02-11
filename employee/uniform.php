@@ -1,6 +1,17 @@
 <?php 
 session_start();
-    
+include('config.php');
+$username = $_SESSION["username"];
+
+/*Personal Data*/
+$sql1= " SELECT * FROM personal Where personal.IDpsnl='".$username."' ";
+$result1 = mysqli_query($con,$sql1);
+
+while($row = mysqli_fetch_array($result1)){
+    $empID = $row["IDpsnl"];
+    $ThaiName = $row["NThai"];
+    $imgPath = $row["imgPath"];
+    $Edurank = $row["Edurank"]; 
 ?>
 <!DOCTYPE html>
 <html>
@@ -153,17 +164,16 @@ session_start();
 
                                 <div class="col-12 col-md-4" id="usermenu">
                                     <div class="btn-group" style="float: right;">
-                                        <button type="button" class="btn btn-secondary" style="padding: 16px;"
-                                            id="user_name">ฐศุภรดา วิเชียรธปภา</button>
-                                        <button type="button"
-                                            class="btn btn-secondary dropdown-toggle dropdown-toggle-split"
-                                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                            <img src="images/user2.jpg" height="40px" style="border-radius: 50%;" />
+                                        <button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown"
+                                        aria-haspopup="true" aria-expanded="false" id="user_name">
+                                        <img src="../<?php echo $imgPath; ?>" height="40px" style="border-radius: 50%;" />
+                                        <span
+                                            style="padding-left:20px;text-decoration:none;"><?php echo $Edurank.' '.$ThaiName; }?></span>
                                         </button>
                                         <div class="dropdown-menu dropdown-menu-right">
-                                            <a class="dropdown-item" sty href="#">เปลี่ยนรหัสผ่าน</a>
-                                            <div class="dropdown-divider"></div>
-                                            <a class="dropdown-item" href="#">ออกจากระบบ</a>
+                                        <a class="dropdown-item" sty href="../repassword.php">เปลี่ยนรหัสผ่าน</a>
+                                        <div class="dropdown-divider"></div>
+                                        <a class="dropdown-item" href="../logout.php">ออกจากระบบ</a>
                                         </div>
                                     </div>
                                 </div>
